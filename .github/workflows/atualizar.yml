@@ -2,13 +2,16 @@ name: Atualizar Radar Fiscal
 
 on:
   schedule:
-    # Roda a cada 2 horas, de segunda a sexta (horário UTC)
     - cron: '0 */2 * * 1-5'
-  workflow_dispatch: # Permite rodar manualmente pelo botão
+  workflow_dispatch:
+
+permissions:
+  contents: write  # <-- Adicione esta linha para permitir o push
 
 jobs:
   update:
     runs-on: ubuntu-latest
+    # ... restante do código
 
     steps:
       - name: Checkout do código
