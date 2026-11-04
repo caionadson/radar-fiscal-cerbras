@@ -1,5 +1,5 @@
 {
-  "gerado_em": "2026-11-04T16:01:57-03:00",
+  "gerado_em": "2026-11-04T16:13:13-03:00",
   "versao": "1.2",
   "revisao_radar": "04 nov/2026",
   "automacao": {
@@ -14,7 +14,7 @@
         "ok": true,
         "titulo_pagina": "Portal da Reforma Tributária - Notícias, artigos e estudos",
         "erro": null,
-        "verificado_em": "2026-11-04T16:01:46-03:00"
+        "verificado_em": "2026-11-04T16:13:04-03:00"
       },
       {
         "id": "rfb_curso_rtc",
@@ -23,7 +23,7 @@
         "ok": true,
         "titulo_pagina": "Curso Reforma Tributária do Consumo — Receita Federal",
         "erro": null,
-        "verificado_em": "2026-11-04T16:01:48-03:00"
+        "verificado_em": "2026-11-04T16:13:06-03:00"
       },
       {
         "id": "mf_portal",
@@ -32,7 +32,7 @@
         "ok": true,
         "titulo_pagina": "Reforma Tributária Regulamentação — Ministério da Fazenda",
         "erro": null,
-        "verificado_em": "2026-11-04T16:01:50-03:00"
+        "verificado_em": "2026-11-04T16:13:07-03:00"
       },
       {
         "id": "nfe_portal",
@@ -41,7 +41,7 @@
         "ok": true,
         "titulo_pagina": "Portal Nacional da Nota Fiscal Eletrônica",
         "erro": null,
-        "verificado_em": "2026-11-04T16:01:53-03:00"
+        "verificado_em": "2026-11-04T16:13:11-03:00"
       },
       {
         "id": "cfc",
@@ -50,7 +50,7 @@
         "ok": true,
         "titulo_pagina": "::Conselho Federal de Contabilidade:: |",
         "erro": null,
-        "verificado_em": "2026-11-04T16:01:57-03:00"
+        "verificado_em": "2026-11-04T16:13:13-03:00"
       }
     ],
     "rss": true,
@@ -59,64 +59,40 @@
     ]
   },
   "briefing": {
-    "titulo": "Briefing do dia — Resumo por IA",
+    "titulo": "Briefing do dia — Fallback",
     "bullets": [
-      "A alíquota estimada de 11,3% para a CBS pegou o mercado de surpresa e promete forte pressão sobre preços, margens e custos da economia digital e de serviços.",
-      "A Receita Federal prorrogou o prazo para adesão aos editais de transação tributária até 30 de dezembro, e a MP do Imposto Seletivo está prevista para quarta-feira.",
-      "O time contábil deve mapear débitos para oportunidade de transação tributária e iniciar simulações de impacto do novo IVA na precificação e no Lucro Real."
+      "Atenção: Não foi possível gerar o resumo por IA hoje. Verifique as notícias abaixo.",
+      "Ano-teste em curso: CBS 0,9% + IBS 0,1% com destaque nas notas.",
+      "NTs críticas ativas: NT 2025.002, 2026.008 e tabela cClassTrib."
     ],
-    "acao_prioritaria": "Mapear débitos elegíveis à Transação Tributária até 30/12 e iniciar a simulação do impacto da alíquota de 11,3% da CBS no orçamento da empresa."
+    "acao_prioritaria": "Validar se NF-e/NFC-e/CT-e estão saindo com CST e cClassTrib corretos."
   },
   "alertas": [
     {
-      "tipo": "critico",
-      "titulo": "Alíquota estimada da CBS atinge 11,3%",
-      "texto": "Projeção da alíquota da CBS assusta o setor produtivo e pressionará a precificação, exigindo revisão rápida dos modelos de margem na economia digital e serviços.",
-      "prazo": "Já em vigor"
-    },
-    {
       "tipo": "atencao",
-      "titulo": "Publicação da MP do Imposto Seletivo",
-      "texto": "Ministério da Fazenda confirmou o envio da Medida Provisória do Imposto Seletivo para esta quarta-feira, exigindo análise imediata de incidência nos produtos da empresa.",
-      "prazo": "Quarta-feira"
+      "titulo": "Alerta Padrão",
+      "texto": "Verifique as fontes oficiais.",
+      "prazo": "Contínuo"
     },
     {
-      "tipo": "info",
-      "titulo": "Liminar exclui IBS e CBS do cálculo do ISS",
-      "texto": "Decisão liminar em SP abre precedente para que IBS e CBS não componham a base do ISS na fase de transição iniciada em 2027, sinalizando tese tese jurídica promissora.",
-      "prazo": "A partir de 2027"
+      "tipo": "critico",
+      "titulo": "Validação de Notas",
+      "texto": "NF-e e CT-e exigem destaque CBS/IBS.",
+      "prazo": "Já em vigor"
     }
   ],
   "prazos": [
     {
-      "quando": "30/12/2024",
-      "urgencia": "urgente",
-      "titulo": "Adesão aos Editais de Transação Tributária",
-      "detalhe": "Analisar passivos fiscais e renegociar dívidas com descontos e condições facilitadas aproveitando a prorrogação da Receita Federal."
-    },
-    {
-      "quando": "Quarta-feira",
-      "urgencia": "urgente",
-      "titulo": "Análise do texto da MP do Imposto Seletivo",
-      "detalhe": "Verificar se as mercadorias ou operações da empresa serão afetadas pela incidência do novo tributo regulatório."
-    },
-    {
-      "quando": "A definir pelo Senado",
-      "urgencia": "atencao",
-      "titulo": "Acompanhamento da Audiência Pública da CBS",
-      "detalhe": "Monitorar discussões na Comissão do Senado para antecipar possíveis mudanças na alíquota de 11,3% ou regimes diferenciados."
-    },
-    {
       "quando": "Contínuo",
-      "urgencia": "atencao",
-      "titulo": "Simulação de margem de preços e Lucro Real",
-      "detalhe": "Recalcular o impacto financeiro da carga do IVA Dual (CBS/IBS) nos contratos vigentes e na precificação futura."
+      "urgencia": "urgente",
+      "titulo": "Validação de Notas",
+      "detalhe": "CST, cClassTrib e CBS/IBS."
     },
     {
-      "quando": "31/12/2026",
-      "urgencia": "normal",
-      "titulo": "Adequação de ERP para exclusão do IBS/CBS da base do ISS",
-      "detalhe": "Avaliar com o jurídico a viabilidade de adotar o entendimento da liminar de SP para parametrização dos sistemas fiscais."
+      "quando": "15/12/2026",
+      "urgencia": "atencao",
+      "titulo": "Senado",
+      "detalhe": "Alíquota de referência da CBS."
     }
   ],
   "noticias": [
@@ -124,8 +100,7 @@
       "data": "04/11/2026",
       "titulo": "Justiça de SP concede liminar à ROIT para excluir IBS e CBS do cálculo do ISS a partir de 2027",
       "fonte": "Portal da Reforma Tributária (RSS)",
-      "url": "https://www.reformatributaria.com/justica/justica-de-sp-concede-liminar-a-roit-para-excluir-ibs-e-cbs-do-calculo-do-iss-a-partir-de-2027/",
-      "novo": true
+      "url": "https://www.reformatributaria.com/justica/justica-de-sp-concede-liminar-a-roit-para-excluir-ibs-e-cbs-do-calculo-do-iss-a-partir-de-2027/"
     },
     {
       "data": "04/11/2026",
