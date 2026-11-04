@@ -10,21 +10,10 @@
   <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
   <style>
     :root {
-      --verde-cerbras: #00A651;
-      --verde-escuro: #007A3D;
-      --verde-claro: #E6F7EE;
-      --verde-vibrante: #00C853;
-      --preto: #1A1A1A;
-      --cinza-escuro: #2D2D2D;
-      --cinza: #6B6B6B;
-      --cinza-claro: #F5F5F5;
-      --branco: #FFFFFF;
-      --borda: #E0E0E0;
-      --sombra: 0 4px 20px rgba(0, 0, 0, 0.06);
-      --raio: 12px;
-      --vermelho: #C62828;
-      --amarelo: #F9A825;
-      --azul: #1565C0;
+      --verde-cerbras: #00A651; --verde-escuro: #007A3D; --verde-claro: #E6F7EE; --verde-vibrante: #00C853;
+      --preto: #1A1A1A; --cinza-escuro: #2D2D2D; --cinza: #6B6B6B; --cinza-claro: #F5F5F5; --branco: #FFFFFF;
+      --borda: #E0E0E0; --sombra: 0 4px 20px rgba(0, 0, 0, 0.06); --raio: 12px;
+      --vermelho: #C62828; --amarelo: #F9A825; --azul: #1565C0;
     }
 
     * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -391,6 +380,9 @@
       <div class="tab-panel active" id="tab-normas">
         <p style="font-size:0.8rem;color:var(--cinza);margin-bottom:1rem;">Fontes oficiais: leis, atos conjuntos, notas técnicas, orientações do CFC e deliberações. Priorize sempre o texto publicado no DOU ou nos portais oficiais.</p>
         
+        <!-- Bloco Dinâmico de Novas Normas -->
+        <div id="containerNormasDinamicas" style="margin-bottom: 1.25rem;"></div>
+
         <div class="nt-criticas">
           <h4>⚠️ NTs e atos mais críticos para Lucro Real</h4>
           <ul>
@@ -729,7 +721,7 @@
 
   <script>
     const FEED_URL = 'atualizacoes.json';
-    const FEED_FALLBACK = { revisao_radar: 'Offline', briefing: { titulo: "Fallback", bullets: ["Erro de conexão."], acao_prioritaria: "Verifique." }, alertas: [], prazos: [], noticias: [] };
+    const FEED_FALLBACK = { revisao_radar: 'Offline', briefing: { titulo: "Fallback", bullets: ["Erro de conexão."], acao_prioritaria: "Verifique." }, alertas: [], prazos: [], noticias: [], novas_normas: [] };
 
     function escapeHtml(str) { return String(str || '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;'); }
 
@@ -826,6 +818,33 @@
       }).join('');
     }
 
+    function renderizarNormasDinamicas(normas) {
+      const container = document.getElementById('containerNormasDinamicas');
+      if (!container) return;
+      
+      if (!normas || normas.length === 0) {
+        container.innerHTML = ''; // Se não tiver normas novas, deixa vazio
+        return;
+      }
+
+      container.innerHTML = `
+        <div style="background:var(--branco); border:1px solid var(--borda); border-left:5px solid var(--verde-vibrante); border-radius:var(--raio); padding:1.15rem; box-shadow:var(--sombra);">
+          <h4 style="font-size:0.95rem; font-weight:600; color:var(--verde-escuro); margin-bottom:0.65rem; display:flex; align-items:center; gap:0.4rem;">
+            <span class="badge-novo">NOVO</span> Atualizações Legislativas (Captadas por IA)
+          </h4>
+          <ul style="list-style:none; padding-left:0; font-size:0.85rem; color:#444;">
+            ${normas.map(n => `
+              <li style="margin-bottom:0.6rem; padding-bottom:0.6rem; border-bottom:1px dashed var(--borda);">
+                <strong>${escapeHtml(n.titulo)}</strong> <span style="font-size:0.7rem; background:var(--cinza-claro); padding:0.15rem 0.4rem; border-radius:4px; margin-left:0.3rem;">${escapeHtml(n.instituicao || 'Oficial')}</span><br>
+                <span style="font-size:0.8rem; color:var(--cinza);">${escapeHtml(n.descricao)}</span><br>
+                <a href="${n.link}" target="_blank" style="color:var(--verde-escuro); font-weight:500; font-size:0.75rem; text-decoration:underline;">Acessar material ↗</a>
+              </li>
+            `).join('')}
+          </ul>
+        </div>
+      `;
+    }
+
     function toggleStatus(item) {
       const order = ['pendente', 'andamento', 'concluido'];
       const next = order[(order.indexOf(item.dataset.status) + 1) % 3];
@@ -867,7 +886,12 @@
         const resp = await fetch(FEED_URL + '?t=' + Date.now(), { cache: 'no-store' });
         if (!resp.ok) throw new Error('HTTP ' + resp.status);
         const data = await resp.json();
-        aplicarBriefing(data); renderizarNoticias(data.noticias); renderizarAlertas(data.alertas); renderizarPrazos(data.prazos);
+        aplicarBriefing(data); 
+        renderizarNoticias(data.noticias); 
+        renderizarAlertas(data.alertas); 
+        renderizarPrazos(data.prazos);
+        renderizarNormasDinamicas(data.novas_normas);
+        
         document.getElementById('feedStatus').textContent = 'JSON · OK';
         document.getElementById('feedStatus').style.color = 'var(--verde-escuro)';
       } catch (err) {
@@ -894,7 +918,6 @@
           const corTexto = '#6B6B6B';
           const corGrade = 'rgba(0,0,0,0.04)';
 
-          // 1. Evolução das Alíquotas
           new Chart(document.getElementById('chartTransicao'), {
             type: 'line',
             data: {
@@ -917,7 +940,6 @@
             }
           });
 
-          // 2. Comparativo (Barras)
           new Chart(document.getElementById('chartComparativo'), {
             type: 'bar',
             data: {
@@ -937,7 +959,6 @@
             }
           });
 
-          // 3. Composição (Rosca)
           new Chart(document.getElementById('chartComposicao'), {
             type: 'doughnut',
             data: {
@@ -953,7 +974,6 @@
             }
           });
 
-          // 4. Progresso (Rosca)
           new Chart(document.getElementById('chartProgresso'), {
             type: 'doughnut',
             data: {
