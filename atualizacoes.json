@@ -1,6 +1,6 @@
 {
-  "gerado_em": "2026-11-04T17:25:58-03:00",
-  "versao": "1.2",
+  "gerado_em": "2026-11-04T17:39:01-03:00",
+  "versao": "1.3",
   "revisao_radar": "04 nov/2026",
   "automacao": {
     "script": "atualizar_radar.py",
@@ -14,7 +14,7 @@
         "ok": true,
         "titulo_pagina": "Portal da Reforma Tributária - Notícias, artigos e estudos",
         "erro": null,
-        "verificado_em": "2026-11-04T17:25:51-03:00"
+        "verificado_em": "2026-11-04T17:38:51-03:00"
       },
       {
         "id": "rfb_curso_rtc",
@@ -23,7 +23,7 @@
         "ok": true,
         "titulo_pagina": "Curso Reforma Tributária do Consumo — Receita Federal",
         "erro": null,
-        "verificado_em": "2026-11-04T17:25:52-03:00"
+        "verificado_em": "2026-11-04T17:38:53-03:00"
       },
       {
         "id": "mf_portal",
@@ -32,7 +32,7 @@
         "ok": true,
         "titulo_pagina": "Reforma Tributária Regulamentação — Ministério da Fazenda",
         "erro": null,
-        "verificado_em": "2026-11-04T17:25:53-03:00"
+        "verificado_em": "2026-11-04T17:38:54-03:00"
       },
       {
         "id": "nfe_portal",
@@ -41,7 +41,7 @@
         "ok": true,
         "titulo_pagina": "Portal Nacional da Nota Fiscal Eletrônica",
         "erro": null,
-        "verificado_em": "2026-11-04T17:25:56-03:00"
+        "verificado_em": "2026-11-04T17:38:58-03:00"
       },
       {
         "id": "cfc",
@@ -50,7 +50,7 @@
         "ok": true,
         "titulo_pagina": "::Conselho Federal de Contabilidade:: |",
         "erro": null,
-        "verificado_em": "2026-11-04T17:25:58-03:00"
+        "verificado_em": "2026-11-04T17:39:01-03:00"
       }
     ],
     "rss": true,
@@ -61,64 +61,59 @@
   "briefing": {
     "titulo": "Briefing do dia — Resumo por IA",
     "bullets": [
-      "A alíquota estimada de 11,3% para a CBS pegou empresas e parlamentares de surpresa, pressionando custos e exigindo simulações imediatas de precificação.",
-      "Receita prorrogou a transação tributária para 30/12; MP do Imposto Seletivo sai na quarta-feira e Justiça de SP dá liminar tirando IBS/CBS da base do ISS em 2027.",
-      "As empresas devem analisar com urgência a adesão a editais de transação tributária e revisar o planejamento financeiro para a transição do novo IVA."
+      "A alíquota estimada da CBS em 11,3% surpreendeu o mercado e pressionará preços e margens, exigindo revisão urgente na formação de custos.",
+      "Receita prorroga adesão à transação tributária até 30/12; MP do Imposto Seletivo é esperada para quarta-feira e Justiça de SP concede liminar sobre ISS.",
+      "Mapear passivos fiscais elegíveis à transação tributária e iniciar simulações de impacto financeiro com a alíquota da CBS de 11,3%."
     ],
-    "acao_prioritaria": "Revisar imediatamente o passivo fiscal da empresa para avaliar o benefício da adesão à transação tributária até 30 de dezembro."
+    "acao_prioritaria": "Revisar imediatamente a carteira de débitos fiscais para avaliar adesão à Transação Tributária da RFB até 30 de dezembro."
   },
   "alertas": [
     {
       "tipo": "critico",
-      "titulo": "CBS de 11,3% pressiona margens de preços",
-      "texto": "A alíquota estimada da CBS de 11,3% surpreendeu o mercado e o Congresso, indicando forte impacto em serviços e economia digital.",
-      "prazo": "Em debate"
+      "titulo": "Alíquota da CBS em 11,3%",
+      "texto": "A alíquota projetada da CBS pegou o mercado e relatores de surpresa, sinalizando aumento de carga sobre serviços e economia digital.",
+      "prazo": "Planejamento Tributário"
     },
     {
       "tipo": "atencao",
-      "titulo": "MP do Imposto Seletivo na quarta-feira",
-      "texto": "Ministério da Fazenda confirmou envio da Medida Provisória que regulamentará o Imposto Seletivo para os próximos dias.",
-      "prazo": "Próxima quarta-feira"
+      "titulo": "Transação Tributária Prorrogada",
+      "texto": "Receita Federal estendeu o prazo de adesão aos editais de transação tributária, permitindo regularização de contenciosos.",
+      "prazo": "30 de dezembro"
     },
     {
       "tipo": "info",
-      "titulo": "Liminar exclui IBS e CBS da base do ISS",
-      "texto": "Justiça paulista concedeu decisão impedindo a inclusão dos novos tributos no cálculo do ISS a partir de 2027, abrindo precedente relevante.",
-      "prazo": "A partir de 2027"
+      "titulo": "MP do Imposto Seletivo nesta Quarta",
+      "texto": "Ministério da Fazenda confirmou o envio da Medida Provisória do Imposto Seletivo, que definirá regras e incidências.",
+      "prazo": "Quarta-feira"
     }
   ],
   "prazos": [
     {
-      "quando": "30/12/2024",
+      "quando": "30 de dezembro",
       "urgencia": "urgente",
       "titulo": "Adesão à Transação Tributária da RFB",
-      "detalhe": "Prazo final prorrogado pela Receita Federal para adesão aos editais de negociação de débitos."
+      "detalhe": "Analisar débitos em aberto e formalizar adesão aos editais com condições facilitadas de desconto e parcelamento."
     },
     {
       "quando": "Quarta-feira",
       "urgencia": "urgente",
       "titulo": "Publicação da MP do Imposto Seletivo",
-      "detalhe": "Acompanhar texto oficial publicado pela Fazenda para mapear setores atingidos pelo imposto."
+      "detalhe": "Monitorar publicação oficial da MP para mapear produtos afetados pelo 'Imposto do Pecado'."
     },
     {
-      "quando": "Em breve",
-      "urgencia": "atencao",
-      "titulo": "Audiência Pública no Senado sobre alíquota da CBS",
-      "detalhe": "Monitorar debates parlamentares referentes à fixação e limites da alíquota da CBS."
+      "quando": "A definir (Senado)",
+      "urgencia": "moderada",
+      "titulo": "Audiência Pública da CBS",
+      "detalhe": "Acompanhar pronunciamentos na comissão do Senado sobre o teto e impacto da alíquota de 11,3%."
     },
     {
       "quando": "Contínuo",
-      "urgencia": "atencao",
-      "titulo": "Recálculo do impacto do IVA Duplo no Planejamento",
-      "detalhe": "Simular novos cenários de precificação e margem de lucro com a alíquota da CBS a 11,3%."
-    },
-    {
-      "quando": "01/01/2027",
-      "urgencia": "normal",
-      "titulo": "Adequação tese ISS x IBS/CBS",
-      "detalhe": "Avaliar oportunidade de ação judicial fundamentada na liminar concedida pela Justiça de SP."
+      "urgencia": "moderada",
+      "titulo": "Simulação de Margem com CBS/IBS",
+      "detalhe": "Modelar o impacto dos tributos unificados nos contratos vigentes e na precificação futura de bens e serviços."
     }
   ],
+  "novas_normas": [],
   "noticias": [
     {
       "data": "04/11/2026",
