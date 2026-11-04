@@ -19,18 +19,11 @@ from email.utils import parsedate_to_datetime
 from pathlib import Path
 import os
 
-# Timezone de Brasília (UTC-3, sem DST desde 2019)
 BRT = timezone(timedelta(hours=-3))
-
 DIR = Path(__file__).resolve().parent
 DEFAULT_JSON = DIR / "atualizacoes.json"
-USER_AGENT = (
-    "Mozilla/5.0 (compatible; RadarFiscalCerbras/1.0; +interno-cerbras)"
-)
+USER_AGENT = "Mozilla/5.0 (compatible; RadarFiscalCerbras/1.0; +interno-cerbras)"
 
-# ---------------------------------------------------------------------------
-# Dados Padrão (Caso a IA falhe ou não esteja configurada)
-# ---------------------------------------------------------------------------
 BRIEFING_PADRAO = {
     "titulo": "Briefing do dia — Fallback",
     "bullets": [
@@ -116,13 +109,9 @@ def checar_fontes() -> list[dict]:
     for item in URLS_MONITORADAS:
         ok, info, _ = fetch_text(item["url"])
         resultados.append({
-            "id": item["id"],
-            "label": item["label"],
-            "url": item["url"],
-            "ok": ok,
-            "titulo_pagina": info if ok else None,
-            "erro": None if ok else info,
-            "verificado_em": agora_brt().isoformat(timespec="seconds"),
+            "id": item["id"], "label": item["label"], "url": item["url"],
+            "ok": ok, "titulo_pagina": info if ok else None,
+            "erro": None if ok else info, "verificado_em": agora_brt().isoformat(timespec="seconds"),
         })
     return resultados
 
@@ -144,7 +133,6 @@ def _data_br_from_pubdate(pub: str) -> str:
 def buscar_rss() -> list[dict]:
     coletadas = []
     vistos = set()
-
     for feed in RSS_FEEDS:
         req = urllib.request.Request(feed["url"], headers={"User-Agent": USER_AGENT})
         try:
@@ -152,28 +140,22 @@ def buscar_rss() -> list[dict]:
                 xml_bytes = resp.read()
         except Exception:
             continue
-
         try:
             root = ET.fromstring(xml_bytes)
         except ET.ParseError:
             continue
-
         for it in root.findall(".//item"):
             title = (it.findtext("title") or "").strip()
             link = (it.findtext("link") or "").strip()
             pub = (it.findtext("pubDate") or "").strip()
-
             if not title or not link or link in vistos:
                 continue
             if not _titulo_relevante(title):
                 continue
-            
             vistos.add(link)
             coletadas.append({
-                "data": _data_br_from_pubdate(pub),
-                "titulo": title,
-                "fonte": feed["fonte"] + " (RSS)",
-                "url": link,
+                "data": _data_br_from_pubdate(pub), "titulo": title,
+                "fonte": feed["fonte"] + " (RSS)", "url": link,
             })
     return coletadas
 
@@ -181,7 +163,6 @@ def mesclar_noticias(rss_itens: list[dict]) -> list[dict]:
     out = []
     vistos = set()
     urls_antigas = set()
-    
     if DEFAULT_JSON.exists():
         try:
             dados_antigos = json.loads(DEFAULT_JSON.read_text(encoding="utf-8"))
@@ -195,10 +176,8 @@ def mesclar_noticias(rss_itens: list[dict]) -> list[dict]:
         if not url or url in vistos:
             continue
         vistos.add(url)
-        
         if url not in urls_antigas:
             n["novo"] = True
-            
         out.append(n)
         if len(out) >= MAX_NOTICIAS:
             break
@@ -206,18 +185,18 @@ def mesclar_noticias(rss_itens: list[dict]) -> list[dict]:
 
 def gerar_briefing_com_ia(noticias):
     api_key = os.environ.get("GEMINI_API_KEY")
-    fallback = {"briefing": BRIEFING_PADRAO, "alertas": ALERTAS_PADRAO, "prazos": PRAZOS_PADRAO}
+    fallback = {"briefing": BRIEFING_PADRAO, "alertas": ALERTAS_PADRAO, "prazos": PRAZOS_PADRAO, "novas_normas": []}
     
     if not api_key:
         print("  [Aviso] GEMINI_API_KEY não configurada. Usando dados padrão.")
         return fallback
 
-    titulos = "\n".join([f"- {n.get('titulo', '')}" for n in noticias[:8]])
+    noticias_info = "\n".join([f"- TÍTULO: {n.get('titulo', '')} | LINK: {n.get('url', '')}" for n in noticias[:8]])
     
     prompt = f"""
     Você é um analista contábil sênior especialista em Lucro Real e Reforma Tributária.
     Leia as notícias de hoje:
-    {titulos}
+    {noticias_info}
     
     Gere um JSON estrito (sem marcações markdown) com a estrutura exata abaixo:
     {{
@@ -231,38 +210,26 @@ def gerar_briefing_com_ia(noticias):
         "acao_prioritaria": "Uma frase direta do que o time contábil deve fazer hoje."
       }},
       "alertas": [
-        {{
-          "tipo": "critico", 
-          "titulo": "Título curto do alerta",
-          "texto": "Explicação do alerta baseada na notícia",
-          "prazo": "Data do prazo ou 'Já em vigor'"
-        }}
+        {{ "tipo": "critico", "titulo": "Título curto", "texto": "Explicação", "prazo": "Data do prazo ou 'Já em vigor'" }}
       ],
       "prazos": [
+        {{ "quando": "Data ou Contínuo", "urgencia": "urgente", "titulo": "Título", "detalhe": "O que deve ser feito" }}
+      ],
+      "novas_normas": [
         {{
-          "quando": "Ex: 15/12/2026 ou Contínuo",
-          "urgencia": "urgente",
-          "titulo": "Título do prazo",
-          "detalhe": "O que deve ser feito"
+          "titulo": "Nome exato da Norma (ex: NT 2026.009 ou Ato Conjunto 15/2026)",
+          "descricao": "Resumo em uma frase do que a norma trata",
+          "link": "O link fornecido na notícia",
+          "instituicao": "Ex: RFB, CFC, TCU"
         }}
       ]
     }}
-    Regras para os Alertas e Prazos:
-    - Gere exatamente 3 alertas (use tipo: 'critico', 'atencao' ou 'info').
-    - Gere de 4 a 6 prazos (use urgencia: 'urgente', 'atencao' ou 'normal').
+    Regras: Gere 3 alertas, 4 a 6 prazos. Se alguma notícia citar o lançamento de uma Nota Técnica, Ato ou Instrução Normativa, inclua-a em 'novas_normas' com seu respectivo link. Se não houver, retorne [].
     """
 
     url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent?key={api_key}"
-    payload = {
-        "contents": [{"parts": [{"text": prompt}]}],
-        "generationConfig": {"responseMimeType": "application/json"}
-    }
-    
-    req = urllib.request.Request(
-        url, 
-        data=json.dumps(payload).encode('utf-8'), 
-        headers={'Content-Type': 'application/json'}
-    )
+    payload = {"contents": [{"parts": [{"text": prompt}]}], "generationConfig": {"responseMimeType": "application/json"}}
+    req = urllib.request.Request(url, data=json.dumps(payload).encode('utf-8'), headers={'Content-Type': 'application/json'})
     
     try:
         with urllib.request.urlopen(req, timeout=40) as resp:
@@ -270,11 +237,12 @@ def gerar_briefing_com_ia(noticias):
             texto_ia = resultado['candidates'][0]['content']['parts'][0]['text']
             texto_ia = texto_ia.replace('```json', '').replace('```', '').strip()
             dados_ia = json.loads(texto_ia)
-            print("  [IA] Briefing, Alertas e Prazos gerados com sucesso pelo Gemini.")
+            print("  [IA] Briefing, Alertas, Prazos e Normas gerados com sucesso.")
             return {
                 "briefing": dados_ia.get("briefing", BRIEFING_PADRAO),
                 "alertas": dados_ia.get("alertas", ALERTAS_PADRAO),
-                "prazos": dados_ia.get("prazos", PRAZOS_PADRAO)
+                "prazos": dados_ia.get("prazos", PRAZOS_PADRAO),
+                "novas_normas": dados_ia.get("novas_normas", [])
             }
     except Exception as e:
         print(f"  [Erro IA] {e}. Usando dados padrão.")
@@ -283,7 +251,6 @@ def gerar_briefing_com_ia(noticias):
 def montar_payload(monitoramento: list[dict], noticias: list[dict] | None = None) -> dict:
     hoje = agora_brt()
     meses = {"jan": "jan", "feb": "fev", "mar": "mar", "apr": "abr", "may": "mai", "jun": "jun", "jul": "jul", "aug": "ago", "sep": "set", "oct": "out", "nov": "nov", "dec": "dez"}
-    
     revisao = hoje.strftime("%d %b/%Y").lower().replace(".", "")
     for en, pt in meses.items():
         revisao = revisao.replace(en, pt)
@@ -291,22 +258,20 @@ def montar_payload(monitoramento: list[dict], noticias: list[dict] | None = None
     fontes_ok = sum(1 for m in monitoramento if m["ok"])
     fontes_total = len(monitoramento)
     noticias_finais = noticias if noticias is not None else FONTES_NOTICIAS
-
     dados_ia = gerar_briefing_com_ia(noticias_finais)
 
     return {
         "gerado_em": hoje.isoformat(timespec="seconds"),
-        "versao": "1.2",
+        "versao": "1.3",
         "revisao_radar": revisao,
         "automacao": {
-            "script": "atualizar_radar.py",
-            "fontes_ok": fontes_ok,
-            "fontes_total": fontes_total,
-            "monitoramento": monitoramento,
+            "script": "atualizar_radar.py", "fontes_ok": fontes_ok,
+            "fontes_total": fontes_total, "monitoramento": monitoramento,
         },
         "briefing": dados_ia["briefing"],
         "alertas": dados_ia["alertas"],
         "prazos": dados_ia["prazos"],
+        "novas_normas": dados_ia["novas_normas"],
         "noticias": noticias_finais,
         "nts_criticas_lucro_real": NTS_CRITICAS,
     }
