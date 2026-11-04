@@ -1,5 +1,5 @@
 {
-  "gerado_em": "2026-11-04T14:43:20-03:00",
+  "gerado_em": "2026-11-04T15:12:03-03:00",
   "versao": "1.1",
   "revisao_radar": "04 nov/2026",
   "automacao": {
@@ -14,7 +14,7 @@
         "ok": true,
         "titulo_pagina": "Portal da Reforma Tributária - Notícias, artigos e estudos",
         "erro": null,
-        "verificado_em": "2026-11-04T14:43:11-03:00"
+        "verificado_em": "2026-11-04T15:11:53-03:00"
       },
       {
         "id": "rfb_curso_rtc",
@@ -23,7 +23,7 @@
         "ok": true,
         "titulo_pagina": "Curso Reforma Tributária do Consumo — Receita Federal",
         "erro": null,
-        "verificado_em": "2026-11-04T14:43:13-03:00"
+        "verificado_em": "2026-11-04T15:11:55-03:00"
       },
       {
         "id": "mf_portal",
@@ -32,7 +32,7 @@
         "ok": true,
         "titulo_pagina": "Reforma Tributária Regulamentação — Ministério da Fazenda",
         "erro": null,
-        "verificado_em": "2026-11-04T14:43:14-03:00"
+        "verificado_em": "2026-11-04T15:11:57-03:00"
       },
       {
         "id": "nfe_portal",
@@ -41,7 +41,7 @@
         "ok": true,
         "titulo_pagina": "Portal Nacional da Nota Fiscal Eletrônica",
         "erro": null,
-        "verificado_em": "2026-11-04T14:43:18-03:00"
+        "verificado_em": "2026-11-04T15:12:00-03:00"
       },
       {
         "id": "cfc",
@@ -50,7 +50,7 @@
         "ok": true,
         "titulo_pagina": "::Conselho Federal de Contabilidade:: |",
         "erro": null,
-        "verificado_em": "2026-11-04T14:43:20-03:00"
+        "verificado_em": "2026-11-04T15:12:03-03:00"
       }
     ],
     "rss": true,
@@ -127,20 +127,6 @@
   ],
   "noticias": [
     {
-      "data": "04/11/2026",
-      "titulo": "“Fomos pegos de surpresa”, diz relator da alíquota da CBS",
-      "fonte": "Portal da Reforma Tributária (RSS)",
-      "url": "https://www.reformatributaria.com/iva/fomos-pegos-de-surpresa-diz-relator-da-aliquota-da-cbs/",
-      "novo": true
-    },
-    {
-      "data": "04/11/2026",
-      "titulo": "Milei critica Brasil por ter expectativa de maior IVA do mundo",
-      "fonte": "Portal da Reforma Tributária (RSS)",
-      "url": "https://www.reformatributaria.com/internacional/milei-critica-brasil-por-ter-expectativa-de-maior-iva-do-mundo/",
-      "novo": true
-    },
-    {
       "data": "03/11/2026",
       "titulo": "Fazenda agora diz que MP do Imposto Seletivo sai na 4ª feira",
       "fonte": "Portal da Reforma Tributária (RSS)",
@@ -175,6 +161,20 @@
       "titulo": "Líder de reforma tributária da Unilever recebe reconhecimento da empresa",
       "fonte": "Portal da Reforma Tributária (RSS)",
       "url": "https://www.reformatributaria.com/como-anda-o-mercado/como-anda-o-mercado-lider-de-reforma-tributaria-da-unilever-recebe-reconhecimento-da-empresa/"
+    },
+    {
+      "data": "03/11/2026",
+      "titulo": "Prorrogar o IPI não resolve apagão tributário do Imposto Seletivo",
+      "fonte": "Portal da Reforma Tributária (RSS)",
+      "url": "https://www.reformatributaria.com/opiniao/prorrogar-o-ipi-nao-resolve-apagao-tributario-do-imposto-seletivo/",
+      "novo": true
+    },
+    {
+      "data": "03/11/2026",
+      "titulo": "Eduardo Braga será relator da alíquota da CBS em comissão do Senado",
+      "fonte": "Portal da Reforma Tributária (RSS)",
+      "url": "https://www.reformatributaria.com/reforma-tributaria-congresso-nacional/eduardo-braga-sera-relator-da-aliquota-da-cbs-em-comissao-do-senado/",
+      "novo": true
     },
     {
       "data": "02/11/2026",
