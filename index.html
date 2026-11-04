@@ -36,6 +36,7 @@
     @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
     @keyframes slideDown { from { opacity: 0; transform: translateY(-12px); } to { opacity: 1; transform: translateY(0); } }
     @keyframes pulseSoft { 0%, 100% { box-shadow: 0 0 0 0 rgba(198, 40, 40, 0.35); } 50% { box-shadow: 0 0 0 8px rgba(198, 40, 40, 0); } }
+    @keyframes pulseNovo { 0%, 100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(0, 200, 83, 0.4); } 50% { transform: scale(1.05); box-shadow: 0 0 0 4px rgba(0, 200, 83, 0); } }
     @keyframes spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
 
     .animate-in { opacity: 0; animation: fadeInUp 0.55s ease forwards; }
@@ -62,14 +63,13 @@
     main { max-width: 1280px; margin: 0 auto; padding: 2rem 1.5rem 4rem; }
     .auto-refresh-info { background: var(--branco); border: 1px dashed var(--borda); border-radius: 8px; padding: 0.75rem 1rem; font-size: 0.8rem; color: var(--cinza); margin-bottom: 1.5rem; display: flex; align-items: center; justify-content: space-between; gap: 1rem; flex-wrap: wrap; }
     .auto-refresh-info strong { color: var(--verde-escuro); }
-    
+
     .alertas-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem; margin-bottom: 1.75rem; }
-    .alerta { border-radius: var(--raio); padding: 1.15rem 1.25rem; display: flex; gap: 1rem; align-items: flex-start; box-shadow: var(--sombra); border: 1px solid transparent; transition: transform 0.3s ease, box-shadow 0.3s ease; }
-    .alerta:hover { transform: translateY(-3px); box-shadow: 0 10px 28px rgba(0,0,0,0.1); }
+    .alerta { border-radius: var(--raio); padding: 1.15rem 1.25rem; display: flex; gap: 1rem; align-items: flex-start; box-shadow: var(--sombra); border: 1px solid transparent; }
     .alerta.critico { background: linear-gradient(135deg, #FFEBEE, #FFCDD2); border-color: #EF9A9A; animation: pulseSoft 2.5s ease-in-out infinite; }
     .alerta.atencao { background: linear-gradient(135deg, #FFF8E1, #FFECB3); border-color: #FFE082; }
     .alerta.info { background: linear-gradient(135deg, #E3F2FD, #BBDEFB); border-color: #90CAF9; }
-    .alerta-icone { font-size: 1.4rem; flex-shrink: 0; line-height: 1; }
+    .alerta-icone { font-size: 1.4rem; flex-shrink: 0; }
     .alerta-conteudo h4 { font-size: 0.9rem; font-weight: 600; margin-bottom: 0.25rem; }
     .alerta.critico h4 { color: var(--vermelho); }
     .alerta.atencao h4 { color: #E65100; }
@@ -81,12 +81,10 @@
     .alerta.info .alerta-prazo { color: var(--azul); }
 
     .grid { display: grid; grid-template-columns: repeat(12, 1fr); gap: 1.5rem; margin-bottom: 2rem; }
-    .card { background: var(--branco); border-radius: var(--raio); padding: 1.5rem; box-shadow: var(--sombra); border: 1px solid var(--borda); transition: transform 0.3s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.3s ease; }
-    .card:hover { transform: translateY(-4px); box-shadow: 0 12px 32px rgba(0,0,0,0.1); border-color: rgba(0, 166, 81, 0.25); }
+    .card { background: var(--branco); border-radius: var(--raio); padding: 1.5rem; box-shadow: var(--sombra); border: 1px solid var(--borda); }
     .card-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 1rem; padding-bottom: 0.75rem; border-bottom: 1px solid var(--borda); }
     .card-header h3 { font-size: 1rem; font-weight: 600; display: flex; align-items: center; gap: 0.5rem; }
     .card-header .icon { width: 28px; height: 28px; background: var(--verde-claro); border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 0.9rem; }
-
     .span-4 { grid-column: span 4; }
     .span-6 { grid-column: span 6; }
     .span-8 { grid-column: span 8; }
@@ -115,6 +113,7 @@
     .status-label.pendente { background: #EEEEEE; color: #616161; }
     .status-label.andamento { background: #FFF3E0; color: #E65100; }
     .status-label.concluido { background: var(--verde-claro); color: var(--verde-escuro); }
+    .checklist-legend { display: flex; gap: 1rem; font-size: 0.75rem; color: var(--cinza); margin-top: 1rem; padding-top: 0.75rem; border-top: 1px solid var(--borda); flex-wrap: wrap; }
 
     .timeline { position: relative; padding-left: 1.5rem; }
     .timeline::before { content: ''; position: absolute; left: 6px; top: 8px; bottom: 8px; width: 2px; background: var(--verde-claro); }
@@ -133,7 +132,6 @@
     .news-content h4 { font-size: 0.9rem; font-weight: 600; margin-bottom: 0.25rem; line-height: 1.35; }
     .news-source { font-size: 0.7rem; color: var(--verde-cerbras); font-weight: 500; margin-top: 0.35rem; }
     .badge-novo { display: inline-flex; align-items: center; background: var(--verde-vibrante); color: #fff; font-size: 0.6rem; font-weight: 700; padding: 0.1rem 0.4rem; border-radius: 12px; text-transform: uppercase; letter-spacing: 0.5px; margin-right: 0.4rem; animation: pulseNovo 2s infinite; }
-    @keyframes pulseNovo { 0%, 100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(0, 200, 83, 0.4); } 50% { transform: scale(1.05); box-shadow: 0 0 0 4px rgba(0, 200, 83, 0); } }
 
     .briefing { background: linear-gradient(135deg, #0B3D2E 0%, #00A651 100%); color: #fff; border-radius: var(--raio); padding: 1.25rem 1.4rem; margin-bottom: 1.25rem; box-shadow: 0 4px 20px rgba(0,166,81,0.25); }
     .briefing-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.75rem; flex-wrap: wrap; gap: 0.5rem; }
@@ -166,6 +164,71 @@
     .agenda-texto strong { display: block; font-size: 0.88rem; margin-bottom: 0.15rem; }
     .agenda-texto span { font-size: 0.75rem; color: var(--cinza); }
 
+    .creditos-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.85rem; margin-bottom: 0.85rem; }
+    .cred-card { background: var(--cinza-claro); border: 1px solid var(--borda); border-radius: 10px; padding: 0.9rem 1rem; }
+    .cred-card h4 { font-size: 0.8rem; font-weight: 600; margin-bottom: 0.5rem; }
+    .cred-valor { font-size: 1.15rem; font-weight: 700; color: var(--verde-escuro); }
+    .cred-desc { font-size: 0.72rem; color: var(--cinza); }
+    .cred-card.risco { border-left: 3px solid #E53935; }
+    .cred-card.ok { border-left: 3px solid #00A651; }
+    .cred-card.atencao { border-left: 3px solid #F9A825; }
+
+    .decisoes-lista { max-height: 280px; overflow-y: auto; margin-bottom: 0.85rem; }
+    .decisao-item { background: var(--cinza-claro); border: 1px solid var(--borda); border-radius: 8px; padding: 0.75rem 0.9rem; margin-bottom: 0.55rem; }
+    .decisao-item .dec-meta { display: flex; justify-content: space-between; font-size: 0.7rem; color: var(--cinza); margin-bottom: 0.35rem; }
+    .decisao-item .dec-titulo { font-weight: 600; color: var(--preto); margin-bottom: 0.2rem; }
+    .decisao-item .dec-texto { color: #444; font-size: 0.8rem; }
+    .decisao-form { display: grid; gap: 0.5rem; }
+    .decisao-form input, .decisao-form textarea, .decisao-form select { width: 100%; border: 1px solid var(--borda); border-radius: 8px; padding: 0.55rem 0.75rem; font-size: 0.85rem; font-family: inherit; }
+    .decisao-form textarea { min-height: 64px; resize: vertical; }
+    .decisao-form .row-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 0.5rem; }
+    .btn-decisao { background: var(--verde-cerbras); color: #fff; border: none; border-radius: 8px; padding: 0.6rem 1rem; font-size: 0.85rem; font-weight: 600; cursor: pointer; }
+    .decisoes-vazio { text-align: center; color: var(--cinza); font-size: 0.85rem; padding: 1.25rem; }
+
+    .tabs-section { background: var(--branco); border-radius: var(--raio); box-shadow: var(--sombra); border: 1px solid var(--borda); margin-bottom: 1.75rem; overflow: hidden; }
+    .tabs-nav { display: flex; border-bottom: 1px solid var(--borda); background: var(--cinza-claro); flex-wrap: wrap; }
+    .tab-btn { flex: 1; min-width: 140px; padding: 0.95rem 1.25rem; border: none; background: transparent; font-size: 0.9rem; font-weight: 600; color: var(--cinza); cursor: pointer; border-bottom: 3px solid transparent; }
+    .tab-btn.active { color: var(--verde-escuro); background: var(--branco); border-bottom-color: var(--verde-cerbras); }
+    .tab-panel { display: none; padding: 1.5rem; }
+    .tab-panel.active { display: block; }
+
+    .nt-criticas { background: linear-gradient(135deg, #FFF8E1, #FFECB3); border: 1px solid #FFE082; border-left: 5px solid #F9A825; border-radius: var(--raio); padding: 1.15rem 1.25rem; margin-bottom: 1.25rem; }
+    .nt-criticas h4 { font-size: 0.95rem; font-weight: 600; color: #E65100; margin-bottom: 0.65rem; }
+    .nt-criticas ul { padding-left: 1.15rem; font-size: 0.85rem; color: #444; }
+    .nt-criticas li { margin-bottom: 0.45rem; }
+    .nt-criticas a { color: var(--verde-escuro); font-weight: 500; text-decoration: underline; }
+
+    .artigo-item, .curso-item { display: flex; gap: 1rem; padding: 1.1rem 0; border-bottom: 1px solid var(--borda); }
+    .artigo-item:last-child, .curso-item:last-child { border-bottom: none; }
+    .artigo-item a, .curso-item a { flex: 1; text-decoration: none; color: inherit; }
+    .artigo-item h4, .curso-item h4 { font-size: 0.95rem; color: var(--preto); }
+    .artigo-meta, .curso-meta { font-size: 0.75rem; color: var(--cinza); margin-top: 0.3rem; display: flex; gap: 0.5rem; }
+    .badge-inst { background: var(--verde-claro); color: var(--verde-escuro); font-size: 0.65rem; font-weight: 600; padding: 0.15rem 0.5rem; border-radius: 4px; }
+    .badge-gratis { background: #E8F5E9; color: #2E7D32; font-size: 0.65rem; font-weight: 600; padding: 0.15rem 0.5rem; border-radius: 4px; }
+
+    .comentarios-lista { max-height: 320px; overflow-y: auto; margin-bottom: 1.25rem; display: flex; flex-direction: column; gap: 0.85rem; }
+    .comentario { background: var(--cinza-claro); border-radius: 10px; padding: 0.9rem 1rem; border-left: 3px solid var(--verde-cerbras); }
+    .comentario-header { display: flex; justify-content: space-between; font-size: 0.8rem; margin-bottom: 0.35rem; }
+    .comentario-autor { font-weight: 600; color: var(--verde-escuro); }
+    .comentario-data { color: var(--cinza); font-size: 0.75rem; }
+    .comentario-texto { font-size: 0.9rem; color: #333; }
+    .comentario-form { display: flex; flex-direction: column; gap: 0.75rem; border-top: 1px solid var(--borda); padding-top: 0.5rem; }
+    .comentario-form input, .comentario-form textarea { font-size: 0.9rem; padding: 0.65rem 0.85rem; border: 1px solid var(--borda); border-radius: 8px; }
+    .btn-comentar { align-self: flex-start; background: var(--verde-cerbras); color: white; border: none; padding: 0.55rem 1.2rem; border-radius: 8px; font-weight: 600; cursor: pointer; }
+
+    .video-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem; margin-bottom: 1.25rem; }
+    .video-embed { position: relative; width: 100%; padding-bottom: 56.25%; height: 0; border-radius: 10px; overflow: hidden; background: #000; }
+    .video-embed iframe { position: absolute; width: 100%; height: 100%; border: 0; }
+
+    .fontes { display: flex; flex-wrap: wrap; gap: 0.6rem; }
+    .fonte { background: var(--cinza-claro); padding: 0.4rem 0.85rem; border-radius: 20px; font-size: 0.8rem; font-weight: 500; color: var(--cinza-escuro); border: 1px solid var(--borda); }
+    .fonte:hover { border-color: var(--verde-cerbras); color: var(--verde-escuro); }
+
+    .materiais-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 1rem; }
+    .material-card { background: var(--cinza-claro); border-radius: 10px; padding: 1.15rem; border-left: 4px solid var(--verde-cerbras); display: block; color: inherit; }
+    .material-card h4 { font-size: 0.9rem; font-weight: 600; margin-bottom: 0.35rem; }
+    .material-card p { font-size: 0.8rem; color: var(--cinza); }
+
     @media print {
       header, .auto-refresh-info, .btn-atualizar, .btn-imprimir, footer, .persona-bar, .tabs-section, .chart-container, canvas, .comentario-form, .decisao-form, .status-badge, .dec-excluir, #btnAtualizar { display: none !important; }
       body { background: white !important; font-size: 11pt; color: #000; }
@@ -196,9 +259,7 @@
 
   <main>
     <div class="auto-refresh-info">
-      <span>
-        <strong>Atualização automática:</strong> Feed: <span class="feed-status" id="feedStatus">carregando…</span>
-      </span>
+      <span><strong>Atualização automática:</strong> Feed: <span class="feed-status" id="feedStatus">carregando…</span></span>
       <span style="font-size:0.75rem;">Última atualização: <span id="ultimaAtualizacao">—</span></span>
     </div>
 
@@ -226,47 +287,218 @@
     </div>
 
     <!-- Alertas Dinâmicos -->
-    <div class="alertas-grid" id="containerAlertas">
-      <!-- Preenchido pelo JS -->
-    </div>
+    <div class="alertas-grid" id="containerAlertas"></div>
 
     <!-- Agenda de Prazos Dinâmica -->
     <section class="agenda animate-in delay-2">
-      <div class="agenda-header">
-        <h3>📅 Agenda de prazos</h3>
-      </div>
-      <ul class="agenda-list" id="containerPrazos">
-         <!-- Preenchido pelo JS -->
+      <div class="agenda-header"><h3>📅 Agenda de prazos</h3></div>
+      <ul class="agenda-list" id="containerPrazos"></ul>
+    </section>
+
+    <!-- Resumo -->
+    <section class="resumo animate-in delay-2" style="background:var(--branco); border-radius:var(--raio); padding:1.5rem; border:1px solid var(--borda); margin-bottom:1.75rem; border-left:5px solid var(--verde-cerbras);">
+      <h2 style="font-size:1.1rem; margin-bottom:1rem; display:flex; align-items:center; gap:0.5rem;">📌 O que mudou</h2>
+      <ul style="margin-left:1.1rem; font-size:0.9rem; color:#333;">
+        <li><strong>TCU fixou 11,3%</strong> como alíquota de referência da CBS para 2027 (cálculo de 11,3468%). O valor segue para o Senado, que tem até 15/12 para deliberar.</li>
+        <li><strong>Ato Técnico Conjunto nº 10/2026</strong> aprovou o pacote de NTs da NF-e/NFC-e (incl. valor líquido do produto e cClassTrib v1.71).</li>
       </ul>
     </section>
 
-    <!-- Gráficos -->
+    <!-- KPIs -->
+    <div class="kpi-grid">
+      <div class="kpi"><div class="kpi-value">0,9%</div><div class="kpi-label">CBS (teste 2026)</div><div class="kpi-sub">Compensável com PIS/Cofins</div></div>
+      <div class="kpi"><div class="kpi-value">0,1%</div><div class="kpi-label">IBS (teste 2026)</div><div class="kpi-sub">Compensável com PIS/Cofins</div></div>
+      <div class="kpi"><div class="kpi-value">11,3%</div><div class="kpi-label">CBS referência 2027</div><div class="kpi-sub">Cálculo TCU · Senado até 15/12</div></div>
+      <div class="kpi"><div class="kpi-value">2033</div><div class="kpi-label">Fim da transição</div><div class="kpi-sub">ICMS e ISS extintos</div></div>
+    </div>
+
+    <!-- Gráficos Refinados -->
     <div class="grid">
       <div class="card span-8 animate-in delay-3">
-        <div class="card-header"><h3><span class="icon">📈</span> Evolução das alíquotas</h3></div>
+        <div class="card-header"><h3><span class="icon">📈</span> Evolução das alíquotas na transição</h3></div>
         <div class="chart-container tall"><canvas id="chartTransicao"></canvas></div>
+        <p class="chart-note">Alíquotas de referência aproximadas. CBS 2027 = 11,3% (TCU) − 0,1 p.p. nos anos 2027-2028. IBS sobe gradualmente a partir de 2029.</p>
       </div>
       <div class="card span-4 animate-in delay-4">
-        <div class="card-header"><h3><span class="icon">🔄</span> Comparativo</h3></div>
+        <div class="card-header"><h3><span class="icon">🔄</span> Comparativo atual × futuro</h3></div>
         <div class="chart-container"><canvas id="chartComparativo"></canvas></div>
+        <p class="chart-note">PIS+Cofins não-cumulativo (9,25%) vs CBS referência (11,3%).</p>
+      </div>
+      <div class="card span-6 animate-in delay-5">
+        <div class="card-header"><h3><span class="icon">📊</span> Composição da carga (2033)</h3></div>
+        <div class="chart-container"><canvas id="chartComposicao"></canvas></div>
+      </div>
+      <div class="card span-6 animate-in delay-6">
+        <div class="card-header"><h3><span class="icon">⏱️</span> Progresso da transição</h3></div>
+        <div class="chart-container"><canvas id="chartProgresso"></canvas></div>
       </div>
     </div>
 
     <div class="grid">
+      <!-- Checklist -->
+      <div class="card span-6 animate-in delay-4">
+        <div class="card-header"><h3><span class="icon">✅</span> Checklist por processo</h3></div>
+        <div class="processo-grupo">
+          <ul class="checklist" id="checklist">
+            <li class="checklist-item" data-status="pendente" data-id="nf-layout" onclick="toggleStatus(this)">
+              <div class="status-btn pendente"></div>
+              <div class="check-text">Validar leiaute e campos CST / cClassTrib nas NF-e, NFC-e e CT-e</div>
+              <span class="status-label pendente">Pendente</span>
+            </li>
+            <li class="checklist-item" data-status="pendente" data-id="nf-homolog" onclick="toggleStatus(this)">
+              <div class="status-btn pendente"></div>
+              <div class="check-text">Confirmar homologação do emissor (NTs 2025.002 e 2026.008)</div>
+              <span class="status-label pendente">Pendente</span>
+            </li>
+            <li class="checklist-item" data-status="pendente" data-id="cred-map" onclick="toggleStatus(this)">
+              <div class="status-btn pendente"></div>
+              <div class="check-text">Mapear créditos potenciais de IBS/CBS</div>
+              <span class="status-label pendente">Pendente</span>
+            </li>
+          </ul>
+        </div>
+        <div class="checklist-legend">
+          <span><span class="status-btn pendente" style="width:16px;height:16px;"></span> Pendente</span>
+          <span><span class="status-btn andamento" style="width:16px;height:16px;">…</span> Em andamento</span>
+          <span><span class="status-btn concluido" style="width:16px;height:16px;">✓</span> Concluído</span>
+        </div>
+      </div>
+
+      <!-- Cronograma -->
+      <div class="card span-6 animate-in delay-5">
+        <div class="card-header"><h3><span class="icon">📅</span> Cronograma da Transição</h3></div>
+        <div class="timeline">
+          <div class="timeline-item"><div class="timeline-year">2026 (atual)</div><div class="timeline-desc">Ano de teste: CBS 0,9% + IBS 0,1%. Destaque nas notas.</div></div>
+          <div class="timeline-item futuro"><div class="timeline-year">2027–2028</div><div class="timeline-desc">CBS integral. PIS e Cofins extintos. Início do Imposto Seletivo.</div></div>
+          <div class="timeline-item futuro"><div class="timeline-year">2029–2032</div><div class="timeline-desc">ICMS e ISS reduzidos progressivamente. IBS sobe proporcionalmente.</div></div>
+          <div class="timeline-item futuro"><div class="timeline-year">2033</div><div class="timeline-desc">Extinção completa de ICMS e ISS. IBS e CBS em plena vigência.</div></div>
+        </div>
+      </div>
+
+      <!-- Painel de créditos -->
+      <div class="card span-6 animate-in delay-5">
+        <div class="card-header"><h3><span class="icon">💳</span> Painel de créditos</h3></div>
+        <div class="creditos-grid">
+          <div class="cred-card ok"><h4>📗 PIS / Cofins</h4><div class="cred-valor">Ativo</div><div class="cred-desc">Não-cumulativo em vigor.</div></div>
+          <div class="cred-card atencao"><h4>📘 ICMS</h4><div class="cred-valor">Monitorar</div><div class="cred-desc">Mantido até 2032.</div></div>
+          <div class="cred-card risco"><h4>📙 CBS / IBS</h4><div class="cred-valor">Preparar</div><div class="cred-desc">Crédito amplo a partir da operação.</div></div>
+        </div>
+      </div>
+
+      <!-- Decisões -->
+      <div class="card span-6 animate-in delay-6">
+        <div class="card-header"><h3><span class="icon">📝</span> Decisões do time</h3></div>
+        <div class="decisoes-lista" id="listaDecisoes">
+          <div class="decisoes-vazio" id="decisoesVazio">Nenhuma decisão registrada ainda.</div>
+        </div>
+        <form class="decisao-form" onsubmit="adicionarDecisao(event)">
+          <div class="row-2">
+            <input type="text" id="decAutor" placeholder="Responsável" required />
+            <select id="decArea" required>
+              <option value="">Área</option><option value="Fiscal">Fiscal</option><option value="Contábil">Contábil</option><option value="Sistemas">Sistemas</option>
+            </select>
+          </div>
+          <input type="text" id="decTitulo" placeholder="Título da decisão" required />
+          <textarea id="decTexto" placeholder="O que foi decidido..." required></textarea>
+          <button type="submit" class="btn-decisao">Registrar decisão</button>
+        </form>
+      </div>
+
       <!-- Notícias Dinâmicas -->
       <div class="card span-8 animate-in delay-4">
         <div class="card-header"><h3><span class="icon">📰</span> Notícias e Atualizações</h3></div>
-        <div class="news-list" id="listaNoticias">
-          <!-- Preenchido pelo JS -->
-        </div>
+        <div class="news-list" id="listaNoticias"></div>
       </div>
-      
+
+      <!-- Fontes Originais -->
       <div class="card span-4">
         <div class="card-header"><h3><span class="icon">🔗</span> Fontes Confiáveis</h3></div>
-        <div style="display:flex; flex-wrap:wrap; gap:0.6rem;">
-          <a class="fonte" style="background:var(--cinza-claro); padding:0.4rem 0.85rem; border-radius:20px; font-size:0.8rem;" href="https://www.reformatributaria.com/" target="_blank">Portal da Reforma Tributária</a>
-          <a class="fonte" style="background:var(--cinza-claro); padding:0.4rem 0.85rem; border-radius:20px; font-size:0.8rem;" href="https://www.gov.br/receitafederal/" target="_blank">Receita Federal</a>
+        <div class="fontes">
+          <a class="fonte" href="https://www.reformatributaria.com/" target="_blank">Portal da Reforma Tributária</a>
+          <a class="fonte" href="https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-tributaria-do-consumo" target="_blank">Receita Federal – Reforma</a>
+          <a class="fonte" href="https://www.cgibs.gov.br" target="_blank">CGIBS / Portal do IBS</a>
+          <a class="fonte" href="https://portal.tcu.gov.br" target="_blank">TCU</a>
+          <a class="fonte" href="https://fenacon.org.br/reforma-tributaria/" target="_blank">FENACON</a>
+          <a class="fonte" href="https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/reforma-tributaria-do-consumo/legislacao/principais-marcos-regulatorios/lei-complementar-no-214-de-16-de-janeiro-de-2025" target="_blank">LC 214/2025</a>
+          <a class="fonte" href="https://valor.globo.com" target="_blank">Valor Econômico</a>
+          <a class="fonte" href="https://www.contabeis.com.br" target="_blank">Contábeis.com.br</a>
         </div>
+      </div>
+    </div>
+
+    <!-- Abas Restauradas -->
+    <div class="tabs-section animate-in delay-5">
+      <div class="tabs-nav">
+        <button class="tab-btn active" data-tab="normas" onclick="trocarAba(this)">📜 Normas oficiais</button>
+        <button class="tab-btn" data-tab="cursos" onclick="trocarAba(this)">🎓 Cursos e materiais</button>
+        <button class="tab-btn" data-tab="artigos" onclick="trocarAba(this)">📰 Mídia e análise</button>
+        <button class="tab-btn" data-tab="comentarios" onclick="trocarAba(this)">💬 Comentários</button>
+      </div>
+
+      <!-- Normas -->
+      <div class="tab-panel active" id="tab-normas">
+        <div class="nt-criticas">
+          <h4>⚠️ NTs e atos mais críticos para Lucro Real</h4>
+          <ul>
+            <li><strong>NT 2025.002 (v1.53)</strong> — Adequações NF-e / NFC-e à RTC: campos CST, cClassTrib, destaque de CBS/IBS. <a href="https://www.nfe.fazenda.gov.br" target="_blank">Portal NF-e ↗</a></li>
+            <li><strong>NT 2026.008 (v1.01)</strong> — Valor líquido do produto: a partir de 2027, IBS/CBS/IS compõem o total da nota “por fora”. <a href="https://www.in.gov.br/web/dou/-/ato-tecnico-conjunto-rfb/sufis/cgibs/diretoria-executiva-n-10-de-28-de-outubro-de-2026-741177669" target="_blank">Ato nº 10/2026 ↗</a></li>
+            <li><strong>Orientação Técnica CFC nº 01/2026</strong> — Tratamento contábil do IBS/CBS no ano-teste. <a href="https://www.crcsc.org.br/uploads/evento/15862/YUdr66G97MLStjRe42zXV-DjrEB5rcA_.pdf" target="_blank">PDF ↗</a></li>
+          </ul>
+        </div>
+        <div class="curso-item">
+          <a href="https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/reforma-tributaria-do-consumo/legislacao/principais-marcos-regulatorios/lei-complementar-no-214-de-16-de-janeiro-de-2025" target="_blank">
+            <h4>Lei Complementar 214/2025</h4>
+            <p style="font-size:0.85rem;color:var(--cinza);margin-top:0.25rem;">Institui a CBS, o IBS e o Imposto Seletivo.</p>
+            <div class="curso-meta"><span class="badge-inst">Planalto / RFB</span></div>
+          </a>
+        </div>
+      </div>
+
+      <!-- Mídia -->
+      <div class="tab-panel" id="tab-artigos">
+        <div class="video-grid">
+          <div class="video-card">
+            <h4>🎧 Fenacon Conecta — Reforma e protagonismo contábil</h4>
+            <div class="video-embed">
+              <iframe src="https://www.youtube.com/embed/KElPK2L5z14" allowfullscreen loading="lazy"></iframe>
+            </div>
+          </div>
+          <div class="video-card">
+            <h4>▶️ Módulo 1 — Normas Gerais do Consumo</h4>
+            <div class="video-embed">
+              <iframe src="https://www.youtube.com/embed/94Y7E74L96g" allowfullscreen loading="lazy"></iframe>
+            </div>
+          </div>
+        </div>
+        <div class="artigo-item">
+          <a href="https://fenacon.org.br/noticias/artigo-fenacon-reforma-tributaria-a-mudanca-comeca-na-lei-mas-acontece-nas-empresas/" target="_blank">
+            <h4>📄 A mudança começa na lei, mas acontece nas empresas</h4>
+            <div class="artigo-meta"><span class="badge-inst">Artigo · FENACON</span></div>
+          </a>
+        </div>
+      </div>
+
+      <!-- Cursos -->
+      <div class="tab-panel" id="tab-cursos">
+        <div class="curso-item">
+          <a href="https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/reforma-tributaria-do-consumo/curso" target="_blank">
+            <h4>Curso Reforma Tributária do Consumo (18 módulos)</h4>
+            <p style="font-size:0.85rem;color:var(--cinza);margin-top:0.25rem;">Capacitação oficial RFB + CFC.</p>
+            <div class="curso-meta"><span class="badge-inst">RFB + CFC</span><span class="badge-gratis">Gratuito · Certificado</span></div>
+          </a>
+        </div>
+      </div>
+
+      <!-- Comentários -->
+      <div class="tab-panel" id="tab-comentarios">
+        <div class="comentarios-lista" id="listaComentarios">
+          <div class="comentarios-vazio" id="comentariosVazio">Nenhum comentário ainda.</div>
+        </div>
+        <form class="comentario-form" onsubmit="adicionarComentario(event)">
+          <input type="text" id="comentarioAutor" placeholder="Seu nome" required maxlength="40" />
+          <textarea id="comentarioTexto" placeholder="Escreva sua observação..." required maxlength="500"></textarea>
+          <button type="submit" class="btn-comentar">Publicar comentário</button>
+        </form>
       </div>
     </div>
   </main>
@@ -278,56 +510,43 @@
 
   <script>
     const FEED_URL = 'atualizacoes.json';
-    const FEED_FALLBACK = {
-      revisao_radar: 'Offline',
-      briefing: { titulo: "Briefing do dia — Fallback", bullets: ["Não foi possível conectar ao servidor."], acao_prioritaria: "Verifique a conexão." },
-      alertas: [], prazos: [], noticias: []
-    };
+    const FEED_FALLBACK = { revisao_radar: 'Offline', briefing: { titulo: "Fallback", bullets: ["Erro de conexão."], acao_prioritaria: "Verifique." }, alertas: [], prazos: [], noticias: [] };
 
-    // Função global para escapar HTML
-    function escapeHtml(str) {
-      return String(str || '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
-    }
+    function escapeHtml(str) { return String(str || '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;'); }
 
     function atualizarDashboard() {
-      const icon = document.getElementById('btnIcon');
-      icon.style.animation = 'spin 0.8s linear infinite';
+      document.getElementById('btnIcon').style.animation = 'spin 0.8s linear infinite';
       setTimeout(() => location.reload(), 400);
+    }
+
+    function trocarAba(btn) {
+      document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+      document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+      btn.classList.add('active');
+      document.getElementById('tab-' + btn.dataset.tab).classList.add('active');
     }
 
     function aplicarBriefing(data) {
       if (!data || !data.briefing) return;
-      
       const tituloH2 = document.querySelector('.briefing-header h2');
       if (tituloH2 && data.briefing.titulo) tituloH2.innerHTML = '⚡ ' + data.briefing.titulo;
-      
       const badge = document.querySelector('.briefing-badge');
       if (badge && data.revisao_radar) badge.textContent = data.revisao_radar + ' · Lucro Real';
-
       const ul = document.querySelector('.briefing ul');
       if (ul && data.briefing.bullets) {
         ul.innerHTML = data.briefing.bullets.map(b => {
           const parts = b.split(':');
-          if (parts.length > 1) return '<li><strong>' + escapeHtml(parts[0]) + ':</strong>' + escapeHtml(parts.slice(1).join(':')) + '</li>';
-          return '<li>' + escapeHtml(b) + '</li>';
+          return parts.length > 1 ? '<li><strong>' + escapeHtml(parts[0]) + ':</strong>' + escapeHtml(parts.slice(1).join(':')) + '</li>' : '<li>' + escapeHtml(b) + '</li>';
         }).join('');
       }
-
       const acao = document.querySelector('.briefing-acao span:last-child');
-      if (acao && data.briefing.acao_prioritaria) {
-        acao.innerHTML = '<strong>Ação prioritária hoje:</strong> ' + escapeHtml(data.briefing.acao_prioritaria);
-      }
-
-      if (data.revisao_radar) {
-        const badgeTop = document.getElementById('statusBadge');
-        if (badgeTop) badgeTop.textContent = 'Atualizado ' + data.revisao_radar;
-      }
+      if (acao && data.briefing.acao_prioritaria) acao.innerHTML = '<strong>Ação prioritária hoje:</strong> ' + escapeHtml(data.briefing.acao_prioritaria);
+      if (data.revisao_radar) document.getElementById('statusBadge').textContent = 'Atualizado ' + data.revisao_radar;
     }
 
     function renderizarNoticias(noticias) {
       const container = document.getElementById('listaNoticias');
       if (!container || !noticias || noticias.length === 0) return;
-
       container.innerHTML = noticias.map(n => {
         let dia = "", mes = "";
         if (n.data && n.data.includes('/')) {
@@ -337,7 +556,6 @@
           mes = meses[parseInt(partes[1], 10) - 1] || "";
         }
         const seloNovo = n.novo ? '<span class="badge-novo">NOVO</span>' : '';
-
         return `
           <div class="news-item">
             <a href="${n.url}" target="_blank" rel="noopener">
@@ -355,12 +573,10 @@
     function renderizarAlertas(alertas) {
       const container = document.getElementById('containerAlertas');
       if (!container || !alertas || alertas.length === 0) return;
-
       container.innerHTML = alertas.map(a => {
         let icone = '📑';
         if (a.tipo === 'critico') icone = '📋';
         if (a.tipo === 'atencao') icone = '⏰';
-        
         return `
           <div class="alerta ${a.tipo} animate-in">
             <div class="alerta-icone">${icone}</div>
@@ -377,12 +593,8 @@
     function renderizarPrazos(prazos) {
       const container = document.getElementById('containerPrazos');
       if (!container || !prazos || prazos.length === 0) return;
-
       container.innerHTML = prazos.map(p => {
-        let classeUrgencia = '';
-        if (p.urgencia === 'urgente') classeUrgencia = 'urgente';
-        if (p.urgencia === 'atencao') classeUrgencia = 'atencao';
-
+        let classeUrgencia = p.urgencia === 'urgente' ? 'urgente' : (p.urgencia === 'atencao' ? 'atencao' : '');
         return `
           <li class="agenda-item">
             <div class="agenda-data ${classeUrgencia}">${escapeHtml(p.quando)}</div>
@@ -395,41 +607,64 @@
       }).join('');
     }
 
+    // Checklist e Comentários (LocalStorage)
+    function toggleStatus(item) {
+      const order = ['pendente', 'andamento', 'concluido'];
+      const next = order[(order.indexOf(item.dataset.status) + 1) % 3];
+      item.dataset.status = next;
+      const btn = item.querySelector('.status-btn');
+      const label = item.querySelector('.status-label');
+      const text = item.querySelector('.check-text');
+      btn.className = 'status-btn ' + next; label.className = 'status-label ' + next;
+      text.classList.toggle('concluido', next === 'concluido');
+      if(next === 'pendente') { btn.textContent = ''; label.textContent = 'Pendente'; }
+      if(next === 'andamento') { btn.textContent = '…'; label.textContent = 'Em andamento'; }
+      if(next === 'concluido') { btn.textContent = '✓'; label.textContent = 'Concluído'; }
+    }
+
+    function carregarComentarios() {
+      const lista = document.getElementById('listaComentarios');
+      const vazio = document.getElementById('comentariosVazio');
+      const salvos = JSON.parse(localStorage.getItem('radarFiscalComentarios') || '[]');
+      if (!salvos.length) { if(vazio) vazio.style.display = 'block'; return; }
+      if(vazio) vazio.style.display = 'none';
+      lista.querySelectorAll('.comentario').forEach(c => c.remove());
+      salvos.forEach(c => {
+        lista.innerHTML += `<div class="comentario"><div class="comentario-header"><span class="comentario-autor">${escapeHtml(c.autor)}</span><span class="comentario-data">${c.data}</span></div><div class="comentario-texto">${escapeHtml(c.texto)}</div></div>`;
+      });
+    }
+
+    function adicionarComentario(e) {
+      e.preventDefault();
+      const autor = document.getElementById('comentarioAutor').value;
+      const texto = document.getElementById('comentarioTexto').value;
+      const salvos = JSON.parse(localStorage.getItem('radarFiscalComentarios') || '[]');
+      salvos.unshift({ autor, texto, data: new Date().toLocaleString('pt-BR') });
+      localStorage.setItem('radarFiscalComentarios', JSON.stringify(salvos));
+      carregarComentarios(); e.target.reset();
+    }
+
     async function carregarFeed() {
-      const feedStatus = document.getElementById('feedStatus');
       try {
         const resp = await fetch(FEED_URL + '?t=' + Date.now(), { cache: 'no-store' });
         if (!resp.ok) throw new Error('HTTP ' + resp.status);
-        
         const data = await resp.json();
-        
-        aplicarBriefing(data);
-        renderizarNoticias(data.noticias);
-        renderizarAlertas(data.alertas);
-        renderizarPrazos(data.prazos);
-        
-        if (feedStatus) {
-          feedStatus.textContent = 'JSON · ' + (data.revisao_radar || 'ok');
-          feedStatus.style.color = 'var(--verde-escuro)';
-        }
+        aplicarBriefing(data); renderizarNoticias(data.noticias); renderizarAlertas(data.alertas); renderizarPrazos(data.prazos);
+        document.getElementById('feedStatus').textContent = 'JSON · OK';
+        document.getElementById('feedStatus').style.color = 'var(--verde-escuro)';
       } catch (err) {
-        console.error("Erro ao carregar JSON:", err);
         aplicarBriefing(FEED_FALLBACK);
-        if (feedStatus) {
-          feedStatus.textContent = 'Erro de conexão ou JSON ausente';
-          feedStatus.style.color = '#C62828';
-        }
+        document.getElementById('feedStatus').textContent = 'Erro de conexão';
+        document.getElementById('feedStatus').style.color = '#C62828';
       }
     }
 
-    // Inicialização Segura: Carrega os dados PRIMEIRO e depois tenta desenhar os gráficos
     document.addEventListener("DOMContentLoaded", () => {
-      const agora = new Date();
-      document.getElementById('ultimaAtualizacao').textContent = agora.toLocaleString('pt-BR');
-      
+      document.getElementById('ultimaAtualizacao').textContent = new Date().toLocaleString('pt-BR');
       carregarFeed();
+      carregarComentarios();
 
-      // Tenta desenhar os gráficos apenas se o Chart.js tiver carregado
+      // Gráficos Refinados
       try {
         if (typeof Chart !== 'undefined') {
           new Chart(document.getElementById('chartTransicao'), {
@@ -437,8 +672,8 @@
             data: {
               labels: ['2026', '2027', '2028', '2029', '2030', '2031', '2032', '2033'],
               datasets: [
-                { label: 'CBS (%)', data: [0.9, 11.2, 11.2, 11.3, 11.3, 11.3, 11.3, 11.3], borderColor: '#00A651', backgroundColor: 'rgba(0, 166, 81, 0.1)', fill: true },
-                { label: 'IBS (%)', data: [0.1, 0.1, 0.1, 4.7, 9.4, 14.0, 18.7, 18.7], borderColor: '#1565C0', backgroundColor: 'rgba(21, 101, 192, 0.1)', fill: true }
+                { label: 'CBS (%)', data: [0.9, 11.2, 11.2, 11.3, 11.3, 11.3, 11.3, 11.3], borderColor: '#00A651', backgroundColor: 'rgba(0,166,81,0.1)', fill: true, tension: 0.3 },
+                { label: 'IBS (%)', data: [0.1, 0.1, 0.1, 4.7, 9.4, 14.0, 18.7, 18.7], borderColor: '#1565C0', backgroundColor: 'rgba(21,101,192,0.1)', fill: true, tension: 0.3 }
               ]
             },
             options: { responsive: true, maintainAspectRatio: false }
@@ -447,15 +682,31 @@
           new Chart(document.getElementById('chartComparativo'), {
             type: 'bar',
             data: {
-              labels: ['PIS+Cofins', 'CBS'],
-              datasets: [{ label: 'Alíquota', data: [9.25, 11.3], backgroundColor: ['#9E9E9E', '#00A651'] }]
+              labels: ['PIS/Cofins', 'CBS'],
+              datasets: [{ label: 'Alíquota', data: [9.25, 11.3], backgroundColor: ['#9E9E9E', '#00A651'], borderRadius: 8 }]
             },
             options: { responsive: true, maintainAspectRatio: false }
           });
+
+          new Chart(document.getElementById('chartComposicao'), {
+            type: 'doughnut',
+            data: {
+              labels: ['CBS (Federal)', 'IBS (Estados)'],
+              datasets: [{ data: [11.3, 18.7], backgroundColor: ['#00A651', '#1565C0'], borderWidth: 0 }]
+            },
+            options: { responsive: true, maintainAspectRatio: false }
+          });
+
+          new Chart(document.getElementById('chartProgresso'), {
+            type: 'doughnut',
+            data: {
+              labels: ['Decorrido', 'Restante'],
+              datasets: [{ data: [1, 7], backgroundColor: ['#00A651', '#E0E0E0'], borderWidth: 0 }]
+            },
+            options: { responsive: true, maintainAspectRatio: false, cutout: '70%' }
+          });
         }
-      } catch (e) {
-        console.warn("Chart.js não pôde ser renderizado:", e);
-      }
+      } catch (e) { console.warn("Chart.js error:", e); }
     });
   </script>
 </body>
