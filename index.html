@@ -293,23 +293,27 @@
       <div class="kpi"><div class="kpi-value">2033</div><div class="kpi-label">Fim da transição</div><div class="kpi-sub">ICMS e ISS extintos</div></div>
     </div>
 
-    <!-- Gráficos Refinados -->
+    <!-- Gráficos Otimizados -->
     <div class="grid">
       <div class="card span-8 animate-in delay-3">
         <div class="card-header"><h3><span class="icon">📈</span> Evolução das alíquotas na transição</h3></div>
         <div class="chart-container tall"><canvas id="chartTransicao"></canvas></div>
+        <p class="chart-note">CBS inicia em 11,2% em 2027 (11,3% − 0,1 p.p.) e estabiliza em 11,3%. IBS sobe gradualmente a partir de 2029.</p>
       </div>
       <div class="card span-4 animate-in delay-4">
         <div class="card-header"><h3><span class="icon">🔄</span> Comparativo</h3></div>
         <div class="chart-container"><canvas id="chartComparativo"></canvas></div>
+        <p class="chart-note">Substituição do PIS/Cofins (9,25%) pela CBS (11,3%).</p>
       </div>
       <div class="card span-6 animate-in delay-5">
         <div class="card-header"><h3><span class="icon">📊</span> Composição (2033)</h3></div>
         <div class="chart-container"><canvas id="chartComposicao"></canvas></div>
+        <p class="chart-note">Divisão estimada da carga tributária entre CBS (federal) e IBS (estadual/municipal).</p>
       </div>
       <div class="card span-6 animate-in delay-6">
-        <div class="card-header"><h3><span class="icon">⏱️</span> Progresso</h3></div>
+        <div class="card-header"><h3><span class="icon">⏱️</span> Progresso da transição</h3></div>
         <div class="chart-container"><canvas id="chartProgresso"></canvas></div>
+        <p class="chart-note">2026 é o 1º ano do período de teste. A transição completa-se em 2033.</p>
       </div>
     </div>
 
@@ -374,7 +378,7 @@
       </div>
     </div>
 
-    <!-- Abas Restauradas e Completas -->
+    <!-- Abas Restauradas -->
     <div class="tabs-section animate-in delay-5">
       <div class="tabs-nav">
         <button class="tab-btn active" data-tab="normas" onclick="trocarAba(this)">📜 Normas oficiais</button>
@@ -383,7 +387,7 @@
         <button class="tab-btn" data-tab="comentarios" onclick="trocarAba(this)">💬 Comentários</button>
       </div>
 
-      <!-- Normas (Completo) -->
+      <!-- Normas -->
       <div class="tab-panel active" id="tab-normas">
         <p style="font-size:0.8rem;color:var(--cinza);margin-bottom:1rem;">Fontes oficiais: leis, atos conjuntos, notas técnicas, orientações do CFC e deliberações. Priorize sempre o texto publicado no DOU ou nos portais oficiais.</p>
         
@@ -484,7 +488,7 @@
         </div>
       </div>
 
-      <!-- Cursos (Completo) -->
+      <!-- Cursos -->
       <div class="tab-panel" id="tab-cursos">
         <p style="font-size:0.8rem;color:var(--cinza);margin-bottom:0.75rem;">Materiais organizados em <strong>Destaques</strong> (prioridade atual) e <strong>Acervo</strong> (histórico preservado).</p>
         
@@ -653,7 +657,7 @@
         </div>
       </div>
 
-      <!-- Mídia (Completo) -->
+      <!-- Mídia -->
       <div class="tab-panel" id="tab-artigos">
         <p style="font-size:0.8rem;color:var(--cinza);margin-bottom:1rem;">Análises, vídeos e podcasts de instituições e especialistas. Players embutidos abaixo.</p>
         <div class="video-grid">
@@ -878,46 +882,91 @@
       carregarFeed();
       carregarComentarios();
 
-      // Gráficos Refinados
+      // ===== GRÁFICOS OTIMIZADOS =====
       try {
         if (typeof Chart !== 'undefined') {
+          Chart.defaults.font.family = "'Inter', sans-serif";
+          Chart.defaults.font.size = 11;
+
+          const corVerde = '#00A651';
+          const corAzul = '#1565C0';
+          const corCinza = '#9E9E9E';
+          const corTexto = '#6B6B6B';
+          const corGrade = 'rgba(0,0,0,0.04)';
+
+          // 1. Evolução das Alíquotas
           new Chart(document.getElementById('chartTransicao'), {
             type: 'line',
             data: {
               labels: ['2026', '2027', '2028', '2029', '2030', '2031', '2032', '2033'],
               datasets: [
-                { label: 'CBS (%)', data: [0.9, 11.2, 11.2, 11.3, 11.3, 11.3, 11.3, 11.3], borderColor: '#00A651', backgroundColor: 'rgba(0,166,81,0.1)', fill: true, tension: 0.3 },
-                { label: 'IBS (%)', data: [0.1, 0.1, 0.1, 4.7, 9.4, 14.0, 18.7, 18.7], borderColor: '#1565C0', backgroundColor: 'rgba(21,101,192,0.1)', fill: true, tension: 0.3 }
+                { label: 'CBS (%)', data: [0.9, 11.2, 11.2, 11.3, 11.3, 11.3, 11.3, 11.3], borderColor: corVerde, backgroundColor: 'rgba(0, 166, 81, 0.08)', fill: true, tension: 0.3, borderWidth: 2, pointRadius: 4, pointHoverRadius: 6 },
+                { label: 'IBS (%)', data: [0.1, 0.1, 0.1, 4.7, 9.4, 14.0, 18.7, 18.7], borderColor: corAzul, backgroundColor: 'rgba(21, 101, 192, 0.08)', fill: true, tension: 0.3, borderWidth: 2, pointRadius: 4, pointHoverRadius: 6 }
               ]
             },
-            options: { responsive: true, maintainAspectRatio: false }
+            options: {
+              responsive: true, maintainAspectRatio: false,
+              plugins: {
+                legend: { labels: { usePointStyle: true, boxWidth: 8, font: { size: 11 } } },
+                tooltip: { backgroundColor: '#1A1A1A', titleColor: '#FFF', bodyColor: '#FFF', cornerRadius: 6, padding: 10, displayColors: true }
+              },
+              scales: {
+                x: { grid: { display: false }, ticks: { color: corTexto } },
+                y: { grid: { color: corGrade }, ticks: { color: corTexto, callback: v => v + '%' }, border: { display: false } }
+              }
+            }
           });
 
+          // 2. Comparativo (Barras)
           new Chart(document.getElementById('chartComparativo'), {
             type: 'bar',
             data: {
               labels: ['PIS/Cofins', 'CBS'],
-              datasets: [{ label: 'Alíquota', data: [9.25, 11.3], backgroundColor: ['#9E9E9E', '#00A651'], borderRadius: 8 }]
+              datasets: [{ label: 'Alíquota Nominal', data: [9.25, 11.3], backgroundColor: [corCinza, corVerde], borderRadius: 6, borderSkipped: false, barThickness: 40 }]
             },
-            options: { responsive: true, maintainAspectRatio: false }
+            options: {
+              responsive: true, maintainAspectRatio: false,
+              plugins: {
+                legend: { display: false },
+                tooltip: { backgroundColor: '#1A1A1A', titleColor: '#FFF', bodyColor: '#FFF', cornerRadius: 6, padding: 10, callbacks: { label: ctx => ctx.raw + '%' } }
+              },
+              scales: {
+                x: { grid: { display: false }, ticks: { color: corTexto } },
+                y: { grid: { color: corGrade }, ticks: { color: corTexto, callback: v => v + '%' }, border: { display: false } }
+              }
+            }
           });
 
+          // 3. Composição (Rosca)
           new Chart(document.getElementById('chartComposicao'), {
             type: 'doughnut',
             data: {
-              labels: ['CBS (Federal)', 'IBS (Estados)'],
-              datasets: [{ data: [11.3, 18.7], backgroundColor: ['#00A651', '#1565C0'], borderWidth: 0 }]
+              labels: ['CBS (Federal)', 'IBS (Estados/Municípios)'],
+              datasets: [{ data: [11.3, 18.7], backgroundColor: [corVerde, corAzul], borderWidth: 2, borderColor: '#FFFFFF', hoverOffset: 6 }]
             },
-            options: { responsive: true, maintainAspectRatio: false }
+            options: {
+              responsive: true, maintainAspectRatio: false, cutout: '65%',
+              plugins: {
+                legend: { position: 'bottom', labels: { usePointStyle: true, boxWidth: 8, padding: 16, font: { size: 11 } } },
+                tooltip: { backgroundColor: '#1A1A1A', titleColor: '#FFF', bodyColor: '#FFF', cornerRadius: 6, padding: 10, callbacks: { label: ctx => `${ctx.label}: ${ctx.raw}%` } }
+              }
+            }
           });
 
+          // 4. Progresso (Rosca)
           new Chart(document.getElementById('chartProgresso'), {
             type: 'doughnut',
             data: {
-              labels: ['Decorrido', 'Restante'],
-              datasets: [{ data: [1, 7], backgroundColor: ['#00A651', '#E0E0E0'], borderWidth: 0 }]
+              labels: ['Decorrido (2026)', 'Restante (2027-2033)'],
+              datasets: [{ data: [1, 7], backgroundColor: [corVerde, '#E0E0E0'], borderWidth: 2, borderColor: '#FFFFFF', hoverOffset: 6 }]
             },
-            options: { responsive: true, maintainAspectRatio: false, cutout: '70%' }
+            options: {
+              responsive: true, maintainAspectRatio: false, cutout: '65%',
+              plugins: {
+                legend: { position: 'bottom', labels: { usePointStyle: true, boxWidth: 8, padding: 16, font: { size: 11 } } },
+                tooltip: { backgroundColor: '#1A1A1A', titleColor: '#FFF', bodyColor: '#FFF', cornerRadius: 6, padding: 10 }
+              }
+            }
           });
         }
       } catch (e) { console.warn("Chart.js error:", e); }
