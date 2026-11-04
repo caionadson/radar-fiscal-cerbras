@@ -1,5 +1,5 @@
 {
-  "gerado_em": "2026-11-04T15:29:10-03:00",
+  "gerado_em": "2026-11-04T15:50:32-03:00",
   "versao": "1.1",
   "revisao_radar": "04 nov/2026",
   "automacao": {
@@ -14,7 +14,7 @@
         "ok": true,
         "titulo_pagina": "Portal da Reforma Tributária - Notícias, artigos e estudos",
         "erro": null,
-        "verificado_em": "2026-11-04T15:29:02-03:00"
+        "verificado_em": "2026-11-04T15:50:26-03:00"
       },
       {
         "id": "rfb_curso_rtc",
@@ -23,7 +23,7 @@
         "ok": true,
         "titulo_pagina": "Curso Reforma Tributária do Consumo — Receita Federal",
         "erro": null,
-        "verificado_em": "2026-11-04T15:29:03-03:00"
+        "verificado_em": "2026-11-04T15:50:27-03:00"
       },
       {
         "id": "mf_portal",
@@ -32,7 +32,7 @@
         "ok": true,
         "titulo_pagina": "Reforma Tributária Regulamentação — Ministério da Fazenda",
         "erro": null,
-        "verificado_em": "2026-11-04T15:29:05-03:00"
+        "verificado_em": "2026-11-04T15:50:28-03:00"
       },
       {
         "id": "nfe_portal",
@@ -41,7 +41,7 @@
         "ok": true,
         "titulo_pagina": "Portal Nacional da Nota Fiscal Eletrônica",
         "erro": null,
-        "verificado_em": "2026-11-04T15:29:08-03:00"
+        "verificado_em": "2026-11-04T15:50:31-03:00"
       },
       {
         "id": "cfc",
@@ -50,7 +50,7 @@
         "ok": true,
         "titulo_pagina": "::Conselho Federal de Contabilidade:: |",
         "erro": null,
-        "verificado_em": "2026-11-04T15:29:10-03:00"
+        "verificado_em": "2026-11-04T15:50:32-03:00"
       }
     ],
     "rss": true,
@@ -61,11 +61,11 @@
   "briefing": {
     "titulo": "Briefing do dia — Resumo por IA",
     "bullets": [
-      "A projeção de um IVA elevado e a iminente MP do Imposto Seletivo indicam forte impacto nos custos operacionais e na precificação sob o novo sistema tributário.",
-      "A Receita Federal estendeu até 30 de dezembro o prazo para adesão aos editais de transação tributária, enquanto a MP do Imposto Seletivo é aguardada para quarta-feira.",
-      "As empresas devem reavaliar seus passivos fiscais para parcelamento e investir no fortalecimento do time tributário diante da complexidade da Reforma."
+      "A alíquota projetada da CBS em 11,3% e o custo da economia digital pressionam a estimativa do IVA brasileiro, elevando o risco de um impacto financeiro severo no Lucro Real.",
+      "A MP do Imposto Seletivo tem previsão de publicação para esta quarta-feira, enquanto o Senado inicia audiências públicas para debater o teto da alíquota da CBS.",
+      "Empresas devem recalcular imediatamente suas projeções de precificação e fluxo de caixa, além de mapear operações sujeitas ao novo Imposto Seletivo."
     ],
-    "acao_prioritaria": "Mapear imediatamente os débitos fiscais da empresa elegíveis à transação tributária da Receita Federal antes do encerramento do prazo em 30 de dezembro."
+    "acao_prioritaria": "Simular o impacto da alíquota de 11,3% da CBS na margem operacional e mapear os produtos/serviços afetados pela MP do Imposto Seletivo que sai nesta quarta-feira."
   },
   "alertas": [
     {
@@ -128,9 +128,30 @@
   "noticias": [
     {
       "data": "04/11/2026",
+      "titulo": "CBS de 11,3%: a economia digital que ainda não entrou na conta",
+      "fonte": "Portal da Reforma Tributária (RSS)",
+      "url": "https://www.reformatributaria.com/opiniao/cbs-de-113-a-economia-digital-que-ainda-nao-entrou-na-conta/",
+      "novo": true
+    },
+    {
+      "data": "04/11/2026",
+      "titulo": "Comissão do Senado fará audiência pública sobre alíquota da CBS",
+      "fonte": "Portal da Reforma Tributária (RSS)",
+      "url": "https://www.reformatributaria.com/reforma-tributaria-congresso-nacional/comissao-do-senado-fara-audiencia-publica-sobre-aliquota-da-cbs/",
+      "novo": true
+    },
+    {
+      "data": "04/11/2026",
+      "titulo": "“Fomos pegos de surpresa”, diz relator da alíquota da CBS",
+      "fonte": "Portal da Reforma Tributária (RSS)",
+      "url": "https://www.reformatributaria.com/iva/fomos-pegos-de-surpresa-diz-relator-da-aliquota-da-cbs/",
+      "novo": true
+    },
+    {
+      "data": "04/11/2026",
       "titulo": "Milei critica Brasil por ter expectativa de maior IVA do mundo",
       "fonte": "Portal da Reforma Tributária (RSS)",
-      "url": "https://www.reformatributaria.com/milei-critica-brasil-por-ter-expectativa-de-maior-iva-do-mundo/",
+      "url": "https://www.reformatributaria.com/internacional/milei-critica-brasil-por-ter-expectativa-de-maior-iva-do-mundo/",
       "novo": true
     },
     {
@@ -144,30 +165,6 @@
       "titulo": "Receita prorroga prazo para adesão a editais de transação tributária até 30 de dezembro",
       "fonte": "Portal da Reforma Tributária (RSS)",
       "url": "https://www.reformatributaria.com/economia-reforma-tributaria-impactos/receita-prorroga-prazo-para-adesao-a-editais-de-transacao-tributaria-ate-30-de-dezembro/"
-    },
-    {
-      "data": "03/11/2026",
-      "titulo": "Carrefour, Amazon e Raízen têm novas profissionais na área tributária",
-      "fonte": "Portal da Reforma Tributária (RSS)",
-      "url": "https://www.reformatributaria.com/como-anda-o-mercado/carrefour-amazon-e-raizen-tem-novas-profissionais-na-area-tributaria/"
-    },
-    {
-      "data": "03/11/2026",
-      "titulo": "Sara Oliveira é a nova coordenadora tributária da Energimp",
-      "fonte": "Portal da Reforma Tributária (RSS)",
-      "url": "https://www.reformatributaria.com/como-anda-o-mercado/sara-oliveira-e-a-nova-coordenadora-tributaria-da-energimp/"
-    },
-    {
-      "data": "03/11/2026",
-      "titulo": "Simples Nacional terá emissão de NFSe exclusivamente pelo ambiente nacional a partir de novembro",
-      "fonte": "Portal da Reforma Tributária (RSS)",
-      "url": "https://www.reformatributaria.com/documentos-fiscais/simples-nacional-tera-emissao-de-nfse-exclusivamente-pelo-ambiente-nacional-a-partir-de-novembro/"
-    },
-    {
-      "data": "03/11/2026",
-      "titulo": "Líder de reforma tributária da Unilever recebe reconhecimento da empresa",
-      "fonte": "Portal da Reforma Tributária (RSS)",
-      "url": "https://www.reformatributaria.com/como-anda-o-mercado/como-anda-o-mercado-lider-de-reforma-tributaria-da-unilever-recebe-reconhecimento-da-empresa/"
     },
     {
       "data": "02/11/2026",
