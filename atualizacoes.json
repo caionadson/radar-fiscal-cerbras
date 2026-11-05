@@ -1,5 +1,5 @@
 {
-  "gerado_em": "2026-11-05T10:30:55.390563-03:00",
+  "gerado_em": "2026-11-05T10:49:59.667491-03:00",
   "versao": "1.6",
   "revisao_radar": "05 nov/2026",
   "automacao": {
@@ -7,45 +7,29 @@
     "fontes_total": 2
   },
   "briefing": {
-    "titulo": "Briefing do dia — Foco em Risco e Ação",
+    "titulo": "Briefing do dia — Fallback",
     "bullets": [
-      "RISCO: Majoração expressiva da carga sobre consumo com alíquota estimada da CBS em 11,3% e entrada em vigor do Imposto Seletivo em 2027, gerando forte risco de erosão da margem de lucro e aperto no fluxo de caixa no Lucro Real.",
-      "AÇÃO: Executar auditoria interna na classificação fiscal (NCM) dos produtos para mensurar a exposição ao Imposto Seletivo/IPI e avaliar a viabilidade de teses judiciais para exclusão do IBS/CBS das bases de cálculo municipais.",
-      "PRAZO: As regras entram em vigor produtivo em 2027, mas o redesenho de pricing, parametrização de ERP e planejamento de créditos fiscais deve ser concluído até o 3º trimestre de 2026."
+      "Atenção: Não foi possível gerar o resumo por IA hoje."
     ],
-    "acao_prioritaria": "Revisar imediatamente o enquadramento fiscal dos produtos frente à nova MP do Imposto Seletivo e recalcular a matriz de precificação sob a alíquota de 11,3% da CBS."
+    "acao_prioritaria": "Validar notas fiscais."
   },
   "alertas": [
     {
       "tipo": "critico",
-      "titulo": "Regulamentação do Imposto Seletivo e Transição do IPI",
-      "texto": "A publicação da Medida Provisória estabelece alíquotas para o Imposto Seletivo e diretrizes para a fase de transição do IPI a partir de 2027. Empresas que não reavaliarem seu mix de produtos e obrigações acessórias correm o risco de retenção incorreta de tributos, perda de créditos não cumulativos e autuações fiscais por descumprimento de nova disciplina legal.",
-      "prazo": "2027 (Transição com início em 2026)"
-    },
-    {
-      "tipo": "critico",
-      "titulo": "CBS em 11,3% e Pressão no Fluxo de Caixa",
-      "texto": "A alíquota da CBS em 11,3% supera estimativas prévias do mercado e exigirá das empresas tributadas pelo Lucro Real um rigoroso controle de acreditamento para neutralizar o impacto financeiro. A incapacidade de repassar o custo ou a falha na tomada de créditos de CBS sobre insumos e serviços resultará em perda direta de rentabilidade.",
-      "prazo": "Já em vigor (Fase de planejamento)"
+      "titulo": "Validação de Notas",
+      "texto": "NF-e e CT-e exigem destaque CBS/IBS.",
+      "prazo": "Já em vigor"
     }
   ],
   "prazos": [
     {
-      "quando": "01/01/2027",
+      "quando": "Contínuo",
       "urgencia": "urgente",
-      "titulo": "Adequação de Sistemas e Precificação ao Imposto Seletivo e CBS",
-      "detalhe": "Atualizar os cadastros de regras fiscais e motores de cálculo no ERP para suporte à nova tributação do Imposto Seletivo e CBS (11,3%), evitando recolhimento a menor e penalidades pelo envio de obrigações acessórias com dados incorretos."
+      "titulo": "Validação de Notas",
+      "detalhe": "CST, cClassTrib e CBS/IBS."
     }
   ],
-  "novas_normas": [
-    {
-      "tipo": "MP",
-      "titulo": "Medida Provisória do Imposto Seletivo e Regras de Transição do IPI",
-      "descricao": "Regulamenta as alíquotas do Imposto Seletivo com vigência para 2027 e estabelece a disciplina de transição do IPI. Impacta diretamente o Lucro Real ao exigir reclassificação de produtos (NCM), revisão do aproveitamento de créditos e ajuste nos modelos de custo fabril e de distribuição.",
-      "link": "https://www.in.gov.br/consulta/-/buscar/dou?q=medida+provisoria+imposto+seletivo",
-      "instituicao": "Governo Federal"
-    }
-  ],
+  "novas_normas": [],
   "noticias": [
     {
       "data": "04/11/2026",
@@ -99,8 +83,7 @@
       "data": "04/11/2026",
       "titulo": "Governo publica Medida Provisória regulamentando o Imposto Seletivo e regras de transição do IPI",
       "fonte": "Ministério da Fazenda",
-      "url": "https://www.in.gov.br/consulta/-/buscar/dou?q=medida+provisoria+imposto+seletivo",
-      "novo": true
+      "url": "https://www.in.gov.br/consulta/-/buscar/dou?q=medida+provisoria+imposto+seletivo"
     },
     {
       "data": "03/11/2026",
