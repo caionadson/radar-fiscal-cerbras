@@ -1,5 +1,5 @@
 {
-  "gerado_em": "2026-11-05T14:02:40.761145-03:00",
+  "gerado_em": "2026-11-05T15:48:23.473216-03:00",
   "versao": "1.6",
   "revisao_radar": "05 nov/2026",
   "automacao": {
@@ -33,10 +33,16 @@
   "noticias": [
     {
       "data": "05/11/2026",
+      "titulo": "Reforma Tributária: Ibracon abre pesquisa para avaliar desafios da Auditoria Independente",
+      "fonte": "CFC",
+      "url": "https://cfc.org.br/noticias/reforma-tributaria-ibracon-abre-pesquisa-para-avaliar-desafios-da-auditoria-independente/",
+      "novo": true
+    },
+    {
+      "data": "05/11/2026",
       "titulo": "Vice-presidente do CFC assume presidência de comitê internacional de prevenção à lavagem de dinheiro",
       "fonte": "CFC",
-      "url": "https://cfc.org.br/noticias/vice-presidente-do-cfc-assume-presidencia-de-comite-internacional-de-prevencao-a-lavagem-de-dinheiro/",
-      "novo": true
+      "url": "https://cfc.org.br/noticias/vice-presidente-do-cfc-assume-presidencia-de-comite-internacional-de-prevencao-a-lavagem-de-dinheiro/"
     },
     {
       "data": "05/11/2026",
@@ -84,8 +90,7 @@
       "data": "04/11/2026",
       "titulo": "CFC debate ensino contábil e inteligência artificial em seminário internacional",
       "fonte": "CFC",
-      "url": "https://cfc.org.br/noticias/cfc-debate-ensino-contabil-e-inteligencia-artificial-em-seminario-internacional/",
-      "novo": true
+      "url": "https://cfc.org.br/noticias/cfc-debate-ensino-contabil-e-inteligencia-artificial-em-seminario-internacional/"
     },
     {
       "data": "04/11/2026",
@@ -116,12 +121,6 @@
       "titulo": "Nova aula sobre Eleições 2026 é disponibilizada pelo CFC",
       "fonte": "CFC",
       "url": "https://cfc.org.br/noticias/nova-aula-sobre-eleicoes-2026-e-disponibilizada-pelo-cfc/"
-    },
-    {
-      "data": "02/11/2026",
-      "titulo": "CBS de 11,3% surpreende empresas e pressiona preços, dizem especialistas",
-      "fonte": "Portal da Reforma Tributária",
-      "url": "https://www.reformatributaria.com/iva/aliquota-de-113-da-cbs-surpreende-empresas-e-pressiona-precos-dizem-especialistas/"
     }
   ],
   "nts_criticas_lucro_real": [
