@@ -1,5 +1,5 @@
 {
-  "gerado_em": "2026-11-05T10:49:59.667491-03:00",
+  "gerado_em": "2026-11-05T11:53:31.311258-03:00",
   "versao": "1.6",
   "revisao_radar": "05 nov/2026",
   "automacao": {
@@ -7,30 +7,59 @@
     "fontes_total": 2
   },
   "briefing": {
-    "titulo": "Briefing do dia — Fallback",
+    "titulo": "Briefing do dia — Foco em Risco e Ação",
     "bullets": [
-      "Atenção: Não foi possível gerar o resumo por IA hoje."
+      "RISCO: A publicação da MP do Imposto Seletivo e a confirmação da alíquota da CBS em 11,3% representam forte pressão sobre margens de lucro e risco de perda de competitividade para empresas do Lucro Real.",
+      "AÇÃO: O time fiscal/tributário deve recalcular com urgência o custo dos produtos impactados pelo Imposto Seletivo, revisar a formação de preços e avaliar medidas judiciais para exclusão de tributos da base de cálculo (como IBS/CBS do ISS).",
+      "PRAZO: As regras da MP e o planejamento para o modelo definitivo da CBS/IBS exigem readequação operacional e de sistemas até o início de 2027."
     ],
-    "acao_prioritaria": "Validar notas fiscais."
+    "acao_prioritaria": "Mapear imediatamente a incidência da nova MP do Imposto Seletivo sobre o portfólio de produtos e simular o impacto de caixa da CBS a 11,3% na cadeia do Lucro Real."
   },
   "alertas": [
     {
       "tipo": "critico",
-      "titulo": "Validação de Notas",
-      "texto": "NF-e e CT-e exigem destaque CBS/IBS.",
-      "prazo": "Já em vigor"
+      "titulo": "Publicação da MP do Imposto Seletivo e Transição do IPI",
+      "texto": "A publicação oficial da MP regulamentando o Imposto Seletivo traz novas alíquotas para 2027 e regras de transição do IPI. Empresas do Lucro Real correm o risco de aumento abrupto na carga tributária e falhas no enquadramento fiscal de produtos se não revisarem a parametrização do ERP.",
+      "prazo": "Já em vigor / Vigência 2027"
+    },
+    {
+      "tipo": "critico",
+      "titulo": "Alíquota da CBS fixada em 11,3% surpreende o mercado",
+      "texto": "A alíquota de 11,3% da CBS é superior ao projetado por diversos setores, especialmente o digital e de serviços. O acréscimo de custo não creditável na ponta pode causar compressão imediata das margens de Lucro Real.",
+      "prazo": "Planejamento Orçamentário 2027"
     }
   ],
   "prazos": [
     {
-      "quando": "Contínuo",
+      "quando": "Imediato",
       "urgencia": "urgente",
-      "titulo": "Validação de Notas",
-      "detalhe": "CST, cClassTrib e CBS/IBS."
+      "titulo": "Parametrização Fiscal e Revisão de Margens da MP do Imposto Seletivo",
+      "detalhe": "Analisar as NCMs afetadas pelo Imposto Seletivo e a regra de transição do IPI para evitar autuações fiscais por descumprimento de alíquotas e tributação incorreta."
+    },
+    {
+      "quando": "31/12/2026",
+      "urgencia": "urgente",
+      "titulo": "Avaliação de Teses Judiciais para Exclusão de Tributos",
+      "detalhe": "Diante de liminares favoráveis que excluem IBS e CBS da base do ISS a partir de 2027, a empresa deve avaliar a viabilidade de ingressar com ação própria para resguardar o caixa."
     }
   ],
-  "novas_normas": [],
+  "novas_normas": [
+    {
+      "tipo": "MP",
+      "titulo": "Medida Provisória do Imposto Seletivo e Regras de Transição do IPI",
+      "descricao": "Regulamenta as alíquotas do Imposto Seletivo aplicáveis a partir de 2027 e estabelece a disciplina de transição do IPI. Impacta diretamente o planejamento tributário, a valoração de estoque e a precificação de empresas industriais e comerciais no Lucro Real.",
+      "link": "https://www.in.gov.br/consulta/-/buscar/dou?q=medida+provisoria+imposto+seletivo",
+      "instituicao": "Governo Federal"
+    }
+  ],
   "noticias": [
+    {
+      "data": "05/11/2026",
+      "titulo": "CFC e Tribunais de Contas propõem pacto fiscal à Presidência e governos estaduais",
+      "fonte": "CFC",
+      "url": "https://cfc.org.br/noticias/cfc-e-tribunais-de-contas-propoem-pacto-fiscal-a-presidencia-e-governos-estaduais/",
+      "novo": true
+    },
     {
       "data": "04/11/2026",
       "titulo": "URGENTE: Governo publica MP com alíquotas do Imposto Seletivo para 2027",
