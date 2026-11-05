@@ -15,13 +15,12 @@ ALERTAS_PADRAO = [{"tipo": "critico", "titulo": "Validação de Notas", "texto":
 PRAZOS_PADRAO = [{"quando": "Contínuo", "urgencia": "urgente", "titulo": "Validação de Notas", "detalhe": "CST, cClassTrib e CBS/IBS."}]
 NTS_CRITICAS = ["NT 2025.002", "NT 2026.008", "Tabela cClassTrib v1.71"]
 
-# Incluímos a MP do Imposto Seletivo e outras notícias base para garantir que a IA leia
 FONTES_NOTICIAS = [
     {
         "data": "04/11/2026",
         "titulo": "Governo publica Medida Provisória regulamentando o Imposto Seletivo e regras de transição do IPI",
         "fonte": "Ministério da Fazenda",
-        "url": "https://www.gov.br/fazenda/pt-br",
+        "url": "https://www.in.gov.br/web/dou/-/medida-provisoria-no-1.303-de-4-de-novembro-de-2026-583984023",
     },
     {
         "data": "02/11/2026",
@@ -117,16 +116,16 @@ def gerar_briefing_com_ia(noticias):
           "tipo": "MP", 
           "titulo": "Nome exato da Norma", 
           "descricao": "Resumo do que trata", 
-          "link": "URL", 
+          "link": "URL do documento oficial", 
           "instituicao": "Ex: RFB, Congresso" 
         }} 
       ]
     }}
     
     REGRAS CRÍTICAS:
-    - Se qualquer notícia citar a publicação de uma nova Lei, Medida Provisória (MP), Decreto, Nota Técnica (NT), Instrução Normativa (IN) ou Ato, você DEVE adicioná-la no array 'novas_normas'.
-    - Na propriedade "tipo", classifique estritamente como: "MP", "Lei", "Decreto", "NT", "IN" ou "Ato".
-    - Se a notícia falar sobre a "MP do Imposto Seletivo", extraia o nome exato dela e o link.
+    1. Se qualquer notícia citar a publicação de uma nova Lei, Medida Provisória (MP), Decreto, Nota Técnica (NT), Instrução Normativa (IN) ou Ato, você DEVE adicioná-la no array 'novas_normas'.
+    2. Na propriedade "tipo", classifique estritamente como: "MP", "Lei", "Decreto", "NT", "IN" ou "Ato".
+    3. Para o campo "link", analise o texto/links da notícia. Se houver um link direto para o Diário Oficial (in.gov.br) ou para o PDF do documento, use esse link. Se não houver, use o link da própria notícia.
     """
     
     url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent?key={api_key}"
