@@ -16,6 +16,7 @@
       --vermelho: #C62828; --amarelo: #F9A825; --azul: #1565C0;
     }
 
+    /* ===== DARK MODE AJUSTADO ===== */
     body.dark-mode {
       --preto: #F5F5F5; --cinza-escuro: #E0E0E0; --cinza: #A0A0A0;
       --cinza-claro: #121212; --branco: #1E1E1E; --borda: #333333;
@@ -36,6 +37,21 @@
     body.dark-mode .video-card { background: #252525; }
     body.dark-mode .material-card { background: #252525; }
     body.dark-mode .fonte { background: #252525; }
+    
+    /* Correções de texto no Dark Mode */
+    body.dark-mode .alerta-conteudo p { color: #D0D0D0; }
+    body.dark-mode .nt-criticas { background: #2E2814; border-color: #4A4020; }
+    body.dark-mode .nt-criticas ul { color: #D0D0D0; }
+    body.dark-mode .nt-criticas li strong { color: #FFFFFF; }
+    body.dark-mode .briefing { background: #0A261C; }
+    body.dark-mode .agenda-texto strong { color: #FFFFFF; }
+    body.dark-mode .comentario-texto { color: #D0D0D0; }
+    body.dark-mode .news-content h4 { color: #FFFFFF; }
+    body.dark-mode .material-card h4 { color: #FFFFFF; }
+    body.dark-mode .curso-item h4 { color: #FFFFFF; }
+    body.dark-mode .norma-item strong { color: #FFFFFF; }
+    body.dark-mode .norma-item span { color: #D0D0D0; }
+    body.dark-mode .busca-input { background: #252525; color: #FFF; }
 
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; background: var(--cinza-claro); color: var(--preto); line-height: 1.6; min-height: 100vh; transition: background 0.3s, color 0.3s; }
@@ -362,7 +378,7 @@
           <a class="fonte" href="https://www.cgibs.gov.br" target="_blank">CGIBS / Portal do IBS</a>
           <a class="fonte" href="https://portal.tcu.gov.br" target="_blank">TCU</a>
           <a class="fonte" href="https://fenacon.org.br/reforma-tributaria/" target="_blank">FENACON</a>
-          <a class="fonte" href="https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/reforma-tributaria-do-consumo/legislacao/principais-marcos-regulatorios/lei-complementar-no-214-de-16-de-janeiro-de-2025" target="_blank">LC 214/2025</a>
+          <a class="fonte" href="https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp214.htm" target="_blank">LC 214/2025</a>
           <a class="fonte" href="https://valor.globo.com" target="_blank">Valor Econômico</a>
           <a class="fonte" href="https://www.contabeis.com.br" target="_blank">Contábeis.com.br</a>
         </div>
@@ -395,9 +411,10 @@
         <h4 style="font-size:0.95rem;font-weight:600;color:var(--verde-escuro);margin:0.5rem 0 0.5rem;">⚖️ Legislação e atos (Fixo)</h4>
         
         <div class="curso-item">
-          <a href="https://www.in.gov.br/web/dou/-/medida-provisoria-no-1.303-de-4-de-novembro-de-2026-583984023" target="_blank">
-            <h4>Medida Provisória nº 1.303/2026 — Imposto Seletivo</h4>
-            <p style="font-size:0.85rem;color:var(--cinza);margin-top:0.25rem;">Regulamenta o Imposto Seletivo e define regras de transição do IPI. Publicada no DOU.</p>
+          <!-- Link da MP corrigido para a busca oficial do DOU -->
+          <a href="https://www.in.gov.br/consulta/-/buscar/dou?q=medida+provisoria+imposto+seletivo" target="_blank">
+            <h4>Medida Provisória — Imposto Seletivo</h4>
+            <p style="font-size:0.85rem;color:var(--cinza);margin-top:0.25rem;">Regulamenta o Imposto Seletivo e define regras de transição do IPI. Pesquise no DOU.</p>
             <div class="curso-meta"><span class="badge-inst">Congresso Nacional</span><span class="badge-critico" style="background:#FFEBEE;color:#C62828;padding:0.15rem 0.5rem;border-radius:4px;font-size:0.65rem;">Crítico</span></div>
           </a>
         </div>
