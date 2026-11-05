@@ -1,5 +1,5 @@
 {
-  "gerado_em": "2026-11-05T07:43:05.542099-03:00",
+  "gerado_em": "2026-11-05T07:51:00.054643-03:00",
   "versao": "1.3",
   "revisao_radar": "05 nov/2026",
   "automacao": {
@@ -7,39 +7,37 @@
     "fontes_total": 2
   },
   "briefing": {
-    "titulo": "Briefing do dia — Resumo por IA",
+    "titulo": "Briefing do dia — Fallback",
     "bullets": [
-      "Debates e reações sobre a alíquota da CBS de 11,3%: relator se diz surpreso, Senado marca audiência pública e Milei critica estimativa do IVA brasileiro.",
-      "Receita Federal prorrogou o prazo para adesão aos editais de transação tributária até o dia 30 de dezembro.",
-      "Notícias do setor contábil destacam o uso de IA no ensino, liberação do resultado definitivo do 2º EQT de 2026 e hotsite do Ibracon sobre normas de auditoria revisadas pelo CFC."
+      "Atenção: Não foi possível gerar o resumo por IA hoje."
     ],
-    "acao_prioritaria": "Avaliar passivos fiscais de clientes/empresa para adesão aos editais de transação tributária da Receita Federal antes do limite de 30 de dezembro."
+    "acao_prioritaria": "Validar notas fiscais."
   },
   "alertas": [
     {
       "tipo": "critico",
-      "titulo": "Incerteza e discussões sobre a alíquota de 11,3% da CBS",
-      "texto": "A alíquota projetada da CBS gerou forte repercussão política e internacional, levando a comissão do Senado a convocar audiência pública para tratar do tema.",
-      "prazo": "Acompanhamento contínuo"
+      "titulo": "Validação de Notas",
+      "texto": "NF-e e CT-e exigem destaque CBS/IBS.",
+      "prazo": "Já em vigor"
     }
   ],
   "prazos": [
     {
-      "quando": "30 de dezembro",
+      "quando": "Contínuo",
       "urgencia": "urgente",
-      "titulo": "Adesão aos editais de transação tributária",
-      "detalhe": "Receita Federal prorrogou a data limite para contribuintes aderirem às opções de transação tributária."
+      "titulo": "Validação de Notas",
+      "detalhe": "CST, cClassTrib e CBS/IBS."
     }
   ],
-  "novas_normas": [
-    {
-      "titulo": "Normas de Auditoria Revisadas pelo CFC",
-      "descricao": "Revisão de diretrizes de auditoria consolidadas e disponibilizadas em hotsite exclusivo pelo Ibracon em parceria com o CFC.",
-      "link": "https://cfc.org.br/noticias/ibracon-lanca-hotsite-exclusivo-sobre-normas-de-auditoria-revisadas-pelo-cfc/",
-      "instituicao": "CFC / Ibracon"
-    }
-  ],
+  "novas_normas": [],
   "noticias": [
+    {
+      "data": "04/11/2026",
+      "titulo": "Justiça de SP concede liminar à ROIT para excluir IBS e CBS do cálculo do ISS a partir de 2027",
+      "fonte": "Portal da Reforma Tributária",
+      "url": "https://www.reformatributaria.com/justica/justica-de-sp-concede-liminar-a-roit-para-excluir-ibs-e-cbs-do-calculo-do-iss-a-partir-de-2027/",
+      "novo": true
+    },
     {
       "data": "04/11/2026",
       "titulo": "CBS de 11,3%: a economia digital que ainda não entrou na conta",
@@ -74,49 +72,37 @@
       "data": "04/11/2026",
       "titulo": "CFC debate ensino contábil e inteligência artificial em seminário internacional",
       "fonte": "CFC",
-      "url": "https://cfc.org.br/internacional/cfc-debate-ensino-contabil-e-inteligencia-artificial-em-seminario-internacional/",
-      "novo": true
+      "url": "https://cfc.org.br/internacional/cfc-debate-ensino-contabil-e-inteligencia-artificial-em-seminario-internacional/"
     },
     {
       "data": "04/11/2026",
       "titulo": "Resultado definitivo da prova objetiva do 2º EQT de 2026 já está disponível",
       "fonte": "CFC",
-      "url": "https://cfc.org.br/noticias/resultado-definitivo-da-prova-objetiva-do-2o-eqt-de-2026-ja-esta-disponivel/",
-      "novo": true
+      "url": "https://cfc.org.br/noticias/resultado-definitivo-da-prova-objetiva-do-2o-eqt-de-2026-ja-esta-disponivel/"
     },
     {
       "data": "03/11/2026",
       "titulo": "Ibracon lança hotsite exclusivo sobre normas de auditoria revisadas pelo CFC",
       "fonte": "CFC",
-      "url": "https://cfc.org.br/noticias/ibracon-lanca-hotsite-exclusivo-sobre-normas-de-auditoria-revisadas-pelo-cfc/",
-      "novo": true
+      "url": "https://cfc.org.br/noticias/ibracon-lanca-hotsite-exclusivo-sobre-normas-de-auditoria-revisadas-pelo-cfc/"
     },
     {
       "data": "03/11/2026",
       "titulo": "Nova aula sobre Eleições 2026 é disponibilizada pelo CFC",
       "fonte": "CFC",
-      "url": "https://cfc.org.br/noticias/nova-aula-sobre-eleicoes-2026-e-disponibilizada-pelo-cfc/",
-      "novo": true
+      "url": "https://cfc.org.br/noticias/nova-aula-sobre-eleicoes-2026-e-disponibilizada-pelo-cfc/"
     },
     {
       "data": "30/10/2026",
       "titulo": "Entenda como registrar cursos e consultar pontuação do PEPC em e-book desenvolvido pelo CFC",
       "fonte": "CFC",
-      "url": "https://cfc.org.br/noticias/entenda-como-registrar-cursos-e-consultar-pontuacao-do-pepc-em-e-book-desenvolvido-pelo-cfc/",
-      "novo": true
+      "url": "https://cfc.org.br/noticias/entenda-como-registrar-cursos-e-consultar-pontuacao-do-pepc-em-e-book-desenvolvido-pelo-cfc/"
     },
     {
       "data": "05/11/2026",
       "titulo": "Receita Federal publica Nota Técnica 2026.999 com novas regras de cClassTrib",
       "fonte": "Receita Federal (Teste)",
-      "url": "https://www.gov.br/receitafederal/",
-      "novo": true
-    },
-    {
-      "data": "02/11/2026",
-      "titulo": "CBS de 11,3% surpreende empresas e pressiona preços, dizem especialistas",
-      "fonte": "Portal da Reforma Tributária",
-      "url": "https://www.reformatributaria.com/iva/aliquota-de-113-da-cbs-surpreende-empresas-e-pressiona-precos-dizem-especialistas/"
+      "url": "https://www.gov.br/receitafederal/"
     }
   ],
   "nts_criticas_lucro_real": [
