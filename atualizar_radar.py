@@ -20,7 +20,7 @@ FONTES_NOTICIAS = [
         "data": "04/11/2026",
         "titulo": "Governo publica Medida Provisória regulamentando o Imposto Seletivo e regras de transição do IPI",
         "fonte": "Ministério da Fazenda",
-        "url": "https://www.in.gov.br/web/dou/-/medida-provisoria-no-1.303-de-4-de-novembro-de-2026-583984023",
+        "url": "https://www.in.gov.br/consulta/-/buscar/dou?q=medida+provisoria+imposto+seletivo",
     },
     {
         "data": "02/11/2026",
@@ -104,18 +104,44 @@ def gerar_briefing_com_ia(noticias):
 
     noticias_info = "\n".join([f"- TÍTULO: {n.get('titulo', '')} | DATA: {n.get('data', '')} | LINK: {n.get('url', '')}" for n in noticias[:15]])
     
+    # PROMPT ATUALIZADO COM FOCO EM CONSULTORIA (Riscos, Créditos e Multas)
     prompt = f"""
-    Analise estas notícias: \n{noticias_info}\n
+    Você é um Consultor Tributário Sênior especialista em Lucro Real e Reforma Tributária.
+    Analise as notícias de hoje:
+    {noticias_info}
+    
     Gere um JSON estrito com:
     {{
-      "briefing": {{ "titulo": "Briefing do dia — Resumo por IA", "bullets": ["...", "...", "..."], "acao_prioritaria": "..." }},
-      "alertas": [ {{ "tipo": "critico", "titulo": "...", "texto": "...", "prazo": "..." }} ],
-      "prazos": [ {{ "quando": "...", "urgencia": "urgente", "titulo": "...", "detalhe": "..." }} ],
+      "briefing": {{ 
+        "titulo": "Briefing do dia — Foco em Risco e Ação", 
+        "bullets": [
+          "Resumo 1 focado no RISCO (multa, perda de crédito ou impacto no caixa)",
+          "Resumo 2 focado na AÇÃO (o que o time deve fazer para mitigar o risco)",
+          "Resumo 3 focado em PRAZO (quando isso impacta a empresa)"
+        ], 
+        "acao_prioritaria": "Uma frase direta e incisiva sobre a prioridade máxima do dia." 
+      }},
+      "alertas": [ 
+        {{ 
+          "tipo": "critico", 
+          "titulo": "Nome do Alerta", 
+          "texto": "Explique o risco de multa, perda de crédito de IBS/CBS ou impacto no fluxo de caixa se a empresa não agir.", 
+          "prazo": "Data ou 'Já em vigor'" 
+        }} 
+      ],
+      "prazos": [ 
+        {{ 
+          "quando": "Data", 
+          "urgencia": "urgente", 
+          "titulo": "Título", 
+          "detalhe": "O que deve ser feito para evitar penalidades." 
+        }} 
+      ],
       "novas_normas": [ 
         {{ 
           "tipo": "MP", 
           "titulo": "Nome exato da Norma", 
-          "descricao": "Resumo do que trata", 
+          "descricao": "Resumo do que trata e qual o impacto prático no Lucro Real", 
           "link": "URL do documento oficial", 
           "instituicao": "Ex: RFB, Congresso" 
         }} 
@@ -123,9 +149,10 @@ def gerar_briefing_com_ia(noticias):
     }}
     
     REGRAS CRÍTICAS:
-    1. Se qualquer notícia citar a publicação de uma nova Lei, Medida Provisória (MP), Decreto, Nota Técnica (NT), Instrução Normativa (IN) ou Ato, você DEVE adicioná-la no array 'novas_normas'.
-    2. Na propriedade "tipo", classifique estritamente como: "MP", "Lei", "Decreto", "NT", "IN" ou "Ato".
-    3. Para o campo "link", analise o texto/links da notícia. Se houver um link direto para o Diário Oficial (in.gov.br) ou para o PDF do documento, use esse link. Se não houver, use o link da própria notícia.
+    1. Se qualquer notícia citar a publicação de uma nova Lei, MP, Decreto, NT, IN ou Ato, adicione em 'novas_normas'.
+    2. Na propriedade "tipo", classifique como: "MP", "Lei", "Decreto", "NT", "IN" ou "Ato".
+    3. Para o campo "link", analise a notícia. Se houver link para o Diário Oficial (in.gov.br), use-o. Senão, use o link da notícia.
+    4. O tom do texto deve ser de consultoria: direto, técnico e focado em proteger a empresa de prejuízos fiscais.
     """
     
     url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent?key={api_key}"
@@ -143,7 +170,7 @@ def montar_payload(monitoramento, noticias):
     hoje = agora_brt()
     dados_ia = gerar_briefing_com_ia(noticias)
     return {
-        "gerado_em": hoje.isoformat(), "versao": "1.5", "revisao_radar": hoje.strftime("%d %b/%Y").lower(),
+        "gerado_em": hoje.isoformat(), "versao": "1.6", "revisao_radar": hoje.strftime("%d %b/%Y").lower(),
         "automacao": {"fontes_ok": sum(1 for m in monitoramento if m["ok"]), "fontes_total": len(monitoramento)},
         "briefing": dados_ia["briefing"], "alertas": dados_ia["alertas"], "prazos": dados_ia["prazos"],
         "novas_normas": dados_ia["novas_normas"], "noticias": noticias, "nts_criticas_lucro_real": NTS_CRITICAS,
