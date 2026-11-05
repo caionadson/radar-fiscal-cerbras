@@ -15,7 +15,14 @@ ALERTAS_PADRAO = [{"tipo": "critico", "titulo": "Validação de Notas", "texto":
 PRAZOS_PADRAO = [{"quando": "Contínuo", "urgencia": "urgente", "titulo": "Validação de Notas", "detalhe": "CST, cClassTrib e CBS/IBS."}]
 NTS_CRITICAS = ["NT 2025.002", "NT 2026.008", "Tabela cClassTrib v1.71"]
 
+# Incluímos a MP do Imposto Seletivo e outras notícias base para garantir que a IA leia
 FONTES_NOTICIAS = [
+    {
+        "data": "04/11/2026",
+        "titulo": "Governo publica Medida Provisória regulamentando o Imposto Seletivo e regras de transição do IPI",
+        "fonte": "Ministério da Fazenda",
+        "url": "https://www.gov.br/fazenda/pt-br",
+    },
     {
         "data": "02/11/2026",
         "titulo": "CBS de 11,3% surpreende empresas e pressiona preços, dizem especialistas",
@@ -30,9 +37,8 @@ RSS_FEEDS = [
     {"id": "cfc", "url": "https://cfc.org.br/feed/", "fonte": "CFC"}
 ]
 
-# Adicionamos palavras como "mp", "medida provisória", "decreto", "projeto de lei"
-RSS_PALAVRAS_CHAVE = ["cbs", "ibs", "iva", "reforma", "tributár", "nota técnica", "nt 20", "nf-e", "cclastrib", "split payment", "lucro real", "senado", "tcu", "receita federal", "cfc", "mp", "medida provisória", "decreto", "projeto de lei", "imposto seletivo"]
-MAX_NOTICIAS = 12
+RSS_PALAVRAS_CHAVE = ["cbs", "ibs", "iva", "reforma", "tributár", "nota técnica", "nt 20", "nf-e", "cclastrib", "split payment", "lucro real", "senado", "tcu", "receita federal", "cfc", "mp", "medida provisória", "decreto", "projeto de lei", "imposto seletivo", "ato conjunto"]
+MAX_NOTICIAS = 15
 URLS_MONITORADAS = [{"id": "rfb", "url": "https://www.gov.br/receitafederal/", "label": "Receita Federal"}, {"id": "cfc", "url": "https://cfc.org.br", "label": "CFC"}]
 
 def agora_brt(): return datetime.now(BRT)
@@ -72,12 +78,9 @@ def buscar_rss():
     return coletadas
 
 def ordenar_noticias(noticias):
-    """Ordena as notícias da data mais recente para a mais antiga."""
     def parse_data(n):
-        try:
-            return datetime.strptime(n["data"], "%d/%m/%Y")
-        except:
-            return datetime.min
+        try: return datetime.strptime(n["data"], "%d/%m/%Y")
+        except: return datetime.min
     return sorted(noticias, key=parse_data, reverse=True)
 
 def mesclar_noticias(rss_itens):
@@ -87,25 +90,19 @@ def mesclar_noticias(rss_itens):
             for n in json.loads(DEFAULT_JSON.read_text(encoding="utf-8")).get("noticias", []):
                 if n.get("url"): urls_antigas.add(n["url"])
         except: pass
-    
-    # Mescla RSS e fixas
     for n in list(rss_itens) + list(FONTES_NOTICIAS):
         url = n.get("url", "").strip()
         if url and url not in vistos:
             vistos.add(url)
             if url not in urls_antigas: n["novo"] = True
             out.append(n)
-            
-    # Ordena e limita
-    out_ordenado = ordenar_noticias(out)
-    return out_ordenado[:MAX_NOTICIAS]
+    return ordenar_noticias(out)[:MAX_NOTICIAS]
 
 def gerar_briefing_com_ia(noticias):
     api_key = os.environ.get("GEMINI_API_KEY")
     fallback = {"briefing": BRIEFING_PADRAO, "alertas": ALERTAS_PADRAO, "prazos": PRAZOS_PADRAO, "novas_normas": []}
     if not api_key: return fallback
 
-    # Aumentamos o limite de 8 para 15 notícias para a IA analisar
     noticias_info = "\n".join([f"- TÍTULO: {n.get('titulo', '')} | DATA: {n.get('data', '')} | LINK: {n.get('url', '')}" for n in noticias[:15]])
     
     prompt = f"""
@@ -115,11 +112,20 @@ def gerar_briefing_com_ia(noticias):
       "briefing": {{ "titulo": "Briefing do dia — Resumo por IA", "bullets": ["...", "...", "..."], "acao_prioritaria": "..." }},
       "alertas": [ {{ "tipo": "critico", "titulo": "...", "texto": "...", "prazo": "..." }} ],
       "prazos": [ {{ "quando": "...", "urgencia": "urgente", "titulo": "...", "detalhe": "..." }} ],
-      "novas_normas": [ {{ "titulo": "Nome da Norma", "descricao": "Resumo", "link": "URL", "instituicao": "Ex: RFB" }} ]
+      "novas_normas": [ 
+        {{ 
+          "tipo": "MP", 
+          "titulo": "Nome exato da Norma", 
+          "descricao": "Resumo do que trata", 
+          "link": "URL", 
+          "instituicao": "Ex: RFB, Congresso" 
+        }} 
+      ]
     }}
     
     REGRAS CRÍTICAS:
     - Se qualquer notícia citar a publicação de uma nova Lei, Medida Provisória (MP), Decreto, Nota Técnica (NT), Instrução Normativa (IN) ou Ato, você DEVE adicioná-la no array 'novas_normas'.
+    - Na propriedade "tipo", classifique estritamente como: "MP", "Lei", "Decreto", "NT", "IN" ou "Ato".
     - Se a notícia falar sobre a "MP do Imposto Seletivo", extraia o nome exato dela e o link.
     """
     
@@ -138,7 +144,7 @@ def montar_payload(monitoramento, noticias):
     hoje = agora_brt()
     dados_ia = gerar_briefing_com_ia(noticias)
     return {
-        "gerado_em": hoje.isoformat(), "versao": "1.4", "revisao_radar": hoje.strftime("%d %b/%Y").lower(),
+        "gerado_em": hoje.isoformat(), "versao": "1.5", "revisao_radar": hoje.strftime("%d %b/%Y").lower(),
         "automacao": {"fontes_ok": sum(1 for m in monitoramento if m["ok"]), "fontes_total": len(monitoramento)},
         "briefing": dados_ia["briefing"], "alertas": dados_ia["alertas"], "prazos": dados_ia["prazos"],
         "novas_normas": dados_ia["novas_normas"], "noticias": noticias, "nts_criticas_lucro_real": NTS_CRITICAS,
