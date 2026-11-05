@@ -1,5 +1,5 @@
 {
-  "gerado_em": "2026-11-04T21:51:37-03:00",
+  "gerado_em": "2026-11-04T23:50:51-03:00",
   "versao": "1.3",
   "revisao_radar": "04 nov/2026",
   "automacao": {
@@ -14,7 +14,7 @@
         "ok": true,
         "titulo_pagina": "Portal da Reforma Tributária - Notícias, artigos e estudos",
         "erro": null,
-        "verificado_em": "2026-11-04T21:51:28-03:00"
+        "verificado_em": "2026-11-04T23:50:42-03:00"
       },
       {
         "id": "rfb_curso_rtc",
@@ -23,7 +23,7 @@
         "ok": true,
         "titulo_pagina": "Curso Reforma Tributária do Consumo — Receita Federal",
         "erro": null,
-        "verificado_em": "2026-11-04T21:51:30-03:00"
+        "verificado_em": "2026-11-04T23:50:44-03:00"
       },
       {
         "id": "mf_portal",
@@ -32,7 +32,7 @@
         "ok": true,
         "titulo_pagina": "Reforma Tributária Regulamentação — Ministério da Fazenda",
         "erro": null,
-        "verificado_em": "2026-11-04T21:51:32-03:00"
+        "verificado_em": "2026-11-04T23:50:46-03:00"
       },
       {
         "id": "nfe_portal",
@@ -41,7 +41,7 @@
         "ok": true,
         "titulo_pagina": "Portal Nacional da Nota Fiscal Eletrônica",
         "erro": null,
-        "verificado_em": "2026-11-04T21:51:35-03:00"
+        "verificado_em": "2026-11-04T23:50:49-03:00"
       },
       {
         "id": "cfc",
@@ -50,7 +50,7 @@
         "ok": true,
         "titulo_pagina": "::Conselho Federal de Contabilidade:: |",
         "erro": null,
-        "verificado_em": "2026-11-04T21:51:37-03:00"
+        "verificado_em": "2026-11-04T23:50:51-03:00"
       }
     ],
     "rss": true,
@@ -59,62 +59,58 @@
     ]
   },
   "briefing": {
-    "titulo": "Briefing do dia — Resumo por IA",
+    "titulo": "Briefing do dia — Fallback",
     "bullets": [
-      "Alíquota de 11,3% da CBS surpreende o mercado digital e de serviços, sinalizando forte impacto na precificação de contratos.",
-      "Receita Federal estende prazo de transação tributária até 30 de dezembro e Fazenda prevê MP do Imposto Seletivo para quarta-feira.",
-      "Ação imediata recomendada para refazer simulações de custos de impostos e mapear débitos elegíveis à negociação com a RFB."
+      "Atenção: Não foi possível gerar o resumo por IA hoje. Verifique as notícias abaixo.",
+      "Ano-teste em curso: CBS 0,9% + IBS 0,1% com destaque nas notas.",
+      "NTs críticas ativas: NT 2025.002, 2026.008 e tabela cClassTrib."
     ],
-    "acao_prioritaria": "Recalcular a precificação considerando a CBS em 11,3% e mapear passivos fiscais elegíveis até 30 de dezembro."
+    "acao_prioritaria": "Validar se NF-e/NFC-e/CT-e estão saindo com CST e cClassTrib corretos."
   },
   "alertas": [
     {
+      "tipo": "atencao",
+      "titulo": "Alerta Padrão",
+      "texto": "Verifique as fontes oficiais.",
+      "prazo": "Contínuo"
+    },
+    {
       "tipo": "critico",
-      "titulo": "Alíquota da CBS fixada em 11,3%",
-      "texto": "Projeção da alíquota da CBS em 11,3% supera estimativas anteriores, gerando surpresa no Congresso e pressão direta nos preços da economia digital e serviços.",
+      "titulo": "Validação de Notas",
+      "texto": "NF-e e CT-e exigem destaque CBS/IBS.",
       "prazo": "Já em vigor"
-    },
-    {
-      "tipo": "atencao",
-      "titulo": "Publicação da MP do Imposto Seletivo",
-      "texto": "Ministério da Fazenda confirmou que a Medida Provisória detalhando a incidência do Imposto Seletivo será enviada nesta quarta-feira.",
-      "prazo": "Quarta-feira"
-    },
-    {
-      "tipo": "atencao",
-      "titulo": "Prorrogação de Transação Tributária",
-      "texto": "Receita Federal prorrogou o prazo para adesão aos editais de transação tributária, garantindo mais tempo para regularização de débitos.",
-      "prazo": "30 de dezembro"
     }
   ],
   "prazos": [
     {
-      "quando": "Quarta-feira",
-      "urgencia": "urgente",
-      "titulo": "Publicação da MP do Imposto Seletivo",
-      "detalhe": "Analisar as regras e bens atingidos pelo Imposto Seletivo assim que o texto da MP for publicado."
-    },
-    {
-      "quando": "30 de dezembro",
-      "urgencia": "urgente",
-      "titulo": "Adesão aos Editais de Transação Tributária da Receita Federal",
-      "detalhe": "Levantar contingências tributárias da empresa e formalizar adesão aos acordos com descontos até o final do ano."
-    },
-    {
       "quando": "Contínuo",
-      "urgencia": "medio",
-      "titulo": "Audiência Pública no Senado sobre CBS",
-      "detalhe": "Acompanhar os desdobramentos e possíveis revisões na alíquota da CBS na comissão do Senado."
+      "urgencia": "urgente",
+      "titulo": "Validação de Notas",
+      "detalhe": "CST, cClassTrib e CBS/IBS."
     },
     {
-      "quando": "Imediato",
-      "urgencia": "urgente",
-      "titulo": "Simulação do Impacto Financeiro da CBS (11,3%)",
-      "detalhe": "Rever margens de contribuição e preços de venda para modelos de negócios digitais e prestação de serviços."
+      "quando": "15/12/2026",
+      "urgencia": "atencao",
+      "titulo": "Senado",
+      "detalhe": "Alíquota de referência da CBS."
     }
   ],
   "novas_normas": [],
   "noticias": [
+    {
+      "data": "04/11/2026",
+      "titulo": "URGENTE: Governo publica MP com alíquotas do Imposto Seletivo para 2027",
+      "fonte": "Portal da Reforma Tributária (RSS)",
+      "url": "https://www.reformatributaria.com/impostoseletivo/urgente-governo-publica-mp-do-imposto-seletivo-saiba-as-aliquotas/",
+      "novo": true
+    },
+    {
+      "data": "04/11/2026",
+      "titulo": "Justiça de SP concede liminar à ROIT para excluir IBS e CBS do cálculo do ISS a partir de 2027",
+      "fonte": "Portal da Reforma Tributária (RSS)",
+      "url": "https://www.reformatributaria.com/justica/justica-de-sp-concede-liminar-a-roit-para-excluir-ibs-e-cbs-do-calculo-do-iss-a-partir-de-2027/",
+      "novo": true
+    },
     {
       "data": "04/11/2026",
       "titulo": "CBS de 11,3%: a economia digital que ainda não entrou na conta",
@@ -144,12 +140,6 @@
       "titulo": "Fazenda agora diz que MP do Imposto Seletivo sai na 4ª feira",
       "fonte": "Portal da Reforma Tributária (RSS)",
       "url": "https://www.reformatributaria.com/impostoseletivo/fazenda-agora-diz-que-mp-do-imposto-seletivo-sai-na-4a-feira/"
-    },
-    {
-      "data": "03/11/2026",
-      "titulo": "Receita prorroga prazo para adesão a editais de transação tributária até 30 de dezembro",
-      "fonte": "Portal da Reforma Tributária (RSS)",
-      "url": "https://www.reformatributaria.com/economia-reforma-tributaria-impactos/receita-prorroga-prazo-para-adesao-a-editais-de-transacao-tributaria-ate-30-de-dezembro/"
     },
     {
       "data": "02/11/2026",
