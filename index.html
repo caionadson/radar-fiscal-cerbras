@@ -248,7 +248,6 @@
   </header>
 
   <main>
-    <!-- Barra de Busca -->
     <div class="busca-container">
       <span class="busca-icon">🔍</span>
       <input type="text" id="inputBusca" class="busca-input" placeholder="Buscar por palavra-chave (ex: MP do Imposto Seletivo, cClassTrib, NT 2026)..." onkeyup="filtrarConteudo()">
@@ -259,7 +258,6 @@
       <span style="font-size:0.75rem;">Última atualização: <span id="ultimaAtualizacao">—</span></span>
     </div>
 
-    <!-- Briefing Dinâmico -->
     <section class="briefing animate-in delay-1">
       <div class="briefing-header">
         <h2>⚡ Briefing do dia</h2>
@@ -274,7 +272,6 @@
       </div>
     </section>
 
-    <!-- Readiness -->
     <div class="readiness animate-in delay-2">
       <div class="ready-item parcial"><div class="ready-status">🟡</div><div class="ready-label">Notas fiscais</div><div class="ready-sub">Campos IBS/CBS</div></div>
       <div class="ready-item pendente"><div class="ready-status">🔴</div><div class="ready-label">Sistemas</div><div class="ready-sub">Parametrização</div></div>
@@ -282,16 +279,13 @@
       <div class="ready-item monitorar"><div class="ready-status">🔵</div><div class="ready-label">Equipe</div><div class="ready-sub">Capacitação</div></div>
     </div>
 
-    <!-- Alertas Dinâmicos -->
     <div class="alertas-grid" id="containerAlertas"></div>
 
-    <!-- Agenda de Prazos Dinâmica -->
     <section class="agenda animate-in delay-2">
       <div class="agenda-header"><h3>📅 Agenda de prazos</h3></div>
       <ul class="agenda-list" id="containerPrazos"></ul>
     </section>
 
-    <!-- KPIs -->
     <div class="kpi-grid">
       <div class="kpi"><div class="kpi-value">0,9%</div><div class="kpi-label">CBS (teste 2026)</div><div class="kpi-sub">Compensável com PIS/Cofins</div></div>
       <div class="kpi"><div class="kpi-value">0,1%</div><div class="kpi-label">IBS (teste 2026)</div><div class="kpi-sub">Compensável com PIS/Cofins</div></div>
@@ -299,7 +293,6 @@
       <div class="kpi"><div class="kpi-value">2033</div><div class="kpi-label">Fim da transição</div><div class="kpi-sub">ICMS e ISS extintos</div></div>
     </div>
 
-    <!-- Gráficos Otimizados -->
     <div class="grid">
       <div class="card span-8 animate-in delay-3">
         <div class="card-header"><h3><span class="icon">📈</span> Evolução das alíquotas na transição</h3></div>
@@ -320,7 +313,6 @@
     </div>
 
     <div class="grid">
-      <!-- Checklist -->
       <div class="card span-6 animate-in delay-4">
         <div class="card-header"><h3><span class="icon">✅</span> Checklist por processo</h3></div>
         <ul class="checklist" id="checklist">
@@ -347,7 +339,6 @@
         </div>
       </div>
 
-      <!-- Cronograma -->
       <div class="card span-6 animate-in delay-5">
         <div class="card-header"><h3><span class="icon">📅</span> Cronograma da Transição</h3></div>
         <div class="timeline">
@@ -358,13 +349,11 @@
         </div>
       </div>
 
-      <!-- Notícias Dinâmicas -->
       <div class="card span-8 animate-in delay-4">
         <div class="card-header"><h3><span class="icon">📰</span> Notícias e Atualizações</h3></div>
         <div class="news-list" id="listaNoticias"></div>
       </div>
 
-      <!-- Fontes Originais -->
       <div class="card span-4">
         <div class="card-header"><h3><span class="icon">🔗</span> Fontes Confiáveis</h3></div>
         <div class="fontes">
@@ -380,7 +369,6 @@
       </div>
     </div>
 
-    <!-- Abas Completas Restauradas -->
     <div class="tabs-section animate-in delay-5">
       <div class="tabs-nav">
         <button class="tab-btn active" data-tab="normas" onclick="trocarAba(this)">📜 Normas oficiais</button>
@@ -389,47 +377,35 @@
         <button class="tab-btn" data-tab="comentarios" onclick="trocarAba(this)">💬 Comentários</button>
       </div>
 
-      <!-- Normas Completas -->
       <div class="tab-panel active" id="tab-normas">
         <p style="font-size:0.8rem;color:var(--cinza);margin-bottom:1rem;">Fontes oficiais: leis, atos conjuntos, notas técnicas, orientações do CFC e deliberações. Priorize sempre o texto publicado no DOU ou nos portais oficiais.</p>
         
-        <!-- Bloco Dinâmico de Novas Normas -->
         <div id="containerNormasDinamicas" style="margin-bottom: 1.25rem;"></div>
 
         <div class="nt-criticas">
           <h4>⚠️ NTs e atos mais críticos para Lucro Real</h4>
           <ul>
-            <li><strong>NT 2025.002 (v1.53)</strong> — Adequações NF-e / NFC-e à RTC: campos CST, cClassTrib, destaque de CBS/IBS. <a href="https://www.nfe.fazenda.gov.br" target="_blank">Portal NF-e ↗</a></li>
-            <li><strong>NT 2026.008 (v1.01)</strong> — Valor líquido do produto: a partir de 2027, IBS/CBS/IS compõem o total da nota “por fora” (não integram a própria base). <a href="https://www.in.gov.br/web/dou/-/ato-tecnico-conjunto-rfb/sufis/cgibs/diretoria-executiva-n-10-de-28-de-outubro-de-2026-741177669" target="_blank">Ato nº 10/2026 ↗</a></li>
-            <li><strong>Tabela cClassTrib + Informe Técnico 2025.002 (v1.71)</strong> — Códigos de classificação tributária e CST para parametrizar sistemas e créditos. <a href="https://www.nfe.fazenda.gov.br" target="_blank">Tabelas oficiais ↗</a></li>
-            <li><strong>NT 2026.006</strong> — Vinculação da DF-e com a transação de pagamento (base para split payment).</li>
-            <li><strong>Orientação Técnica CFC nº 01/2026</strong> — Tratamento contábil do IBS/CBS no ano-teste e evidenciação nas demonstrações. <a href="https://www.crcsc.org.br/uploads/evento/15862/YUdr66G97MLStjRe42zXV-DjrEB5rcA_.pdf" target="_blank">PDF ↗</a></li>
-            <li><strong>Ato Conjunto RFB/CGIBS nº 4/2026</strong> — Calendário de obrigatoriedade dos campos de IBS/CBS nos documentos fiscais (já em vigor para NF-e, NFC-e, CT-e e NFS-e).</li>
+            <li><strong>NT 2025.002 (v1.53)</strong> — Adequações NF-e / NFC-e à RTC. <a href="https://www.nfe.fazenda.gov.br/portal/exibirArquivo.aspx?conteudo=1XhZqL%2Bw6%2Bs%3D" target="_blank">PDF ↗</a></li>
+            <li><strong>NT 2026.008 (v1.01)</strong> — Valor líquido do produto. <a href="https://www.in.gov.br/web/dou/-/ato-tecnico-conjunto-rfb/sufis/cgibs/diretoria-executiva-n-10-de-28-de-outubro-de-2026-741177669" target="_blank">DOU ↗</a></li>
+            <li><strong>Tabela cClassTrib (v1.71)</strong> — Códigos de classificação tributária. <a href="https://www.nfe.fazenda.gov.br/portal/listaConteudo.aspx?tipoConteudo=33x7T5bG6sQ%3D" target="_blank">Tabelas oficiais ↗</a></li>
+            <li><strong>Orientação Técnica CFC nº 01/2026</strong> — Tratamento contábil. <a href="https://www.crcsc.org.br/uploads/evento/15862/YUdr66G97MLStjRe42zXV-DjrEB5rcA_.pdf" target="_blank">PDF ↗</a></li>
           </ul>
         </div>
 
         <h4 style="font-size:0.95rem;font-weight:600;color:var(--verde-escuro);margin:0.5rem 0 0.5rem;">⚖️ Legislação e atos (Fixo)</h4>
         
-        <!-- Adicionado a MP do Imposto Seletivo aqui -->
         <div class="curso-item">
-          <a href="https://www.gov.br/fazenda/pt-br" target="_blank">
-            <h4>Medida Provisória — Imposto Seletivo</h4>
+          <a href="https://www.in.gov.br/web/dou/-/medida-provisoria-no-1.303-de-4-de-novembro-de-2026-583984023" target="_blank">
+            <h4>Medida Provisória nº 1.303/2026 — Imposto Seletivo</h4>
             <p style="font-size:0.85rem;color:var(--cinza);margin-top:0.25rem;">Regulamenta o Imposto Seletivo e define regras de transição do IPI. Publicada no DOU.</p>
-            <div class="curso-meta"><span class="badge-inst">Ministério da Fazenda</span><span class="badge-critico" style="background:#FFEBEE;color:#C62828;padding:0.15rem 0.5rem;border-radius:4px;font-size:0.65rem;">Crítico</span></div>
+            <div class="curso-meta"><span class="badge-inst">Congresso Nacional</span><span class="badge-critico" style="background:#FFEBEE;color:#C62828;padding:0.15rem 0.5rem;border-radius:4px;font-size:0.65rem;">Crítico</span></div>
           </a>
         </div>
         <div class="curso-item">
-          <a href="https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/reforma-tributaria-do-consumo/legislacao/principais-marcos-regulatorios/lei-complementar-no-214-de-16-de-janeiro-de-2025" target="_blank">
+          <a href="https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp214.htm" target="_blank">
             <h4>Lei Complementar 214/2025</h4>
             <p style="font-size:0.85rem;color:var(--cinza);margin-top:0.25rem;">Institui a CBS, o IBS e o Imposto Seletivo; define regras gerais e a transição até 2033.</p>
-            <div class="curso-meta"><span class="badge-inst">Planalto / RFB</span><span>Legislação-base</span></div>
-          </a>
-        </div>
-        <div class="curso-item">
-          <a href="https://www.gov.br/fazenda/pt-br/acesso-a-informacao/acoes-e-programas/reforma-tributaria" target="_blank">
-            <h4>Portal da Reforma Tributária — Ministério da Fazenda</h4>
-            <p style="font-size:0.85rem;color:var(--cinza);margin-top:0.25rem;">Textos legais, projetos de regulamentação e simulador de alíquota (Banco Mundial).</p>
-            <div class="curso-meta"><span class="badge-inst">Ministério da Fazenda</span><span class="badge-gratis">Oficial</span></div>
+            <div class="curso-meta"><span class="badge-inst">Planalto</span><span>Legislação-base</span></div>
           </a>
         </div>
 
@@ -442,24 +418,10 @@
           </a>
         </div>
         <div class="curso-item">
-          <a href="https://www.nfe.fazenda.gov.br" target="_blank">
-            <h4>Portal NF-e — documentação técnica (NTs IBS/CBS)</h4>
-            <p style="font-size:0.85rem;color:var(--cinza);margin-top:0.25rem;">Repositório oficial das Notas Técnicas de NF-e, NFC-e e tabelas CST/cClassTrib.</p>
-            <div class="curso-meta"><span class="badge-inst">RFB / SVRS</span><span class="badge-gratis">Oficial</span></div>
-          </a>
-        </div>
-        <div class="curso-item">
           <a href="https://www.gov.br/nfse/pt-br/noticias/nfs-e-nacional-confira-oas-rientacoes-sobre-leiaute-em-producao-regras-de-preenchimento-de-ibs-cbs-e-status-da-nota-tecnica-009" target="_blank">
             <h4>NFS-e Nacional — NT 009 e regras de IBS/CBS</h4>
             <p style="font-size:0.85rem;color:var(--cinza);margin-top:0.25rem;">Orientações de leiaute em produção, preenchimento e status da Nota Técnica 009 (CGNFS-e).</p>
             <div class="curso-meta"><span class="badge-inst">CGNFS-e / gov.br</span><span class="badge-gratis">Oficial</span></div>
-          </a>
-        </div>
-        <div class="curso-item">
-          <a href="https://dfe-portal.svrs.rs.gov.br" target="_blank">
-            <h4>Portal DF-e (SVRS) — manuais e NTs</h4>
-            <p style="font-size:0.85rem;color:var(--cinza);margin-top:0.25rem;">Documentação técnica consolidada de documentos fiscais eletrônicos no contexto da RTC.</p>
-            <div class="curso-meta"><span class="badge-inst">SVRS</span><span class="badge-gratis">Oficial</span></div>
           </a>
         </div>
 
@@ -472,29 +434,14 @@
           </a>
         </div>
         <div class="curso-item">
-          <a href="https://cfc.org.br/noticias/durigan-diz-que-contador-sera-o-agente-de-conformidade-da-reforma-tributaria/" target="_blank">
-            <h4>Posicionamento Ministério da Fazenda + CFC — conformidade</h4>
-            <p style="font-size:0.85rem;color:var(--cinza);margin-top:0.25rem;">Contador como agente de conformidade; discussão do PNCT para 2027.</p>
-            <div class="curso-meta"><span class="badge-inst">MF / CFC / RFB</span><span>Out/2026</span></div>
-          </a>
-        </div>
-        <div class="curso-item">
           <a href="https://portal.tcu.gov.br/imprensa/noticias/tcu-calcula-aliquota-de-referencia-de-113-para-novo-tributo-sobre-consumo" target="_blank">
             <h4>Deliberação TCU — alíquota de referência da CBS (11,3%)</h4>
             <p style="font-size:0.85rem;color:var(--cinza);margin-top:0.25rem;">Cálculo de 11,3468% encaminhado ao Senado (prazo até 15/12/2026).</p>
             <div class="curso-meta"><span class="badge-inst">TCU</span><span class="badge-gratis">28/10/2026</span></div>
           </a>
         </div>
-        <div class="curso-item">
-          <a href="https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/reforma-tributaria-do-consumo/legislacao/atos-conjuntos" target="_blank">
-            <h4>Atos conjuntos RFB / CGIBS</h4>
-            <p style="font-size:0.85rem;color:var(--cinza);margin-top:0.25rem;">Repositório de atos conjuntos (calendário de documentos fiscais, DeRE, split payment etc.).</p>
-            <div class="curso-meta"><span class="badge-inst">RFB + CGIBS</span><span class="badge-gratis">Oficial</span></div>
-          </a>
-        </div>
       </div>
 
-      <!-- Cursos Completos Restaurados -->
       <div class="tab-panel" id="tab-cursos">
         <p style="font-size:0.8rem;color:var(--cinza);margin-bottom:0.75rem;">Materiais organizados em <strong>Destaques</strong> (prioridade atual) e <strong>Acervo</strong> (histórico preservado).</p>
         
@@ -655,15 +602,14 @@
           </a>
         </div>
         <div class="curso-item">
-          <a href="https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/reforma-tributaria-do-consumo/legislacao/principais-marcos-regulatorios/lei-complementar-no-214-de-16-de-janeiro-de-2025" target="_blank">
+          <a href="https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp214.htm" target="_blank">
             <h4>Lei Complementar 214/2025 (texto integral)</h4>
             <p style="font-size:0.85rem;color:var(--cinza);margin-top:0.25rem;">Base legal da CBS, IBS, Imposto Seletivo e regras de transição.</p>
-            <div class="curso-meta"><span class="badge-inst">Planalto / RFB</span><span class="badge-gratis">Legislação</span></div>
+            <div class="curso-meta"><span class="badge-inst">Planalto</span><span class="badge-gratis">Legislação</span></div>
           </a>
         </div>
       </div>
 
-      <!-- Mídia -->
       <div class="tab-panel" id="tab-artigos">
         <p style="font-size:0.8rem;color:var(--cinza);margin-bottom:1rem;">Análises, vídeos e podcasts de instituições e especialistas. Players embutidos abaixo.</p>
         <div class="video-grid">
@@ -713,7 +659,6 @@
         </div>
       </div>
 
-      <!-- Comentários -->
       <div class="tab-panel" id="tab-comentarios">
         <p style="font-size:0.85rem;color:var(--cinza);margin-bottom:1rem;">Espaço interno para anotações e troca rápida do time. Os comentários ficam salvos neste navegador (localStorage).</p>
         <div class="comentarios-lista" id="listaComentarios">
@@ -862,7 +807,6 @@
         container.innerHTML = ''; return;
       }
       
-      // Cria uma tag visual bonita para o tipo de norma
       function getTipoBadge(tipo) {
         let bg = '#E3F2FD'; let color = '#1565C0';
         if (tipo === 'MP') { bg = '#FFF3E0'; color = '#E65100'; }
