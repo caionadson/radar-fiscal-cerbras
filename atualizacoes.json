@@ -1,5 +1,5 @@
 {
-  "gerado_em": "2026-11-05T04:04:35-03:00",
+  "gerado_em": "2026-11-05T05:53:19-03:00",
   "versao": "1.3",
   "revisao_radar": "05 nov/2026",
   "automacao": {
@@ -14,7 +14,7 @@
         "ok": true,
         "titulo_pagina": "Portal da Reforma Tributária - Notícias, artigos e estudos",
         "erro": null,
-        "verificado_em": "2026-11-05T04:04:25-03:00"
+        "verificado_em": "2026-11-05T05:53:12-03:00"
       },
       {
         "id": "rfb_curso_rtc",
@@ -23,7 +23,7 @@
         "ok": true,
         "titulo_pagina": "Curso Reforma Tributária do Consumo — Receita Federal",
         "erro": null,
-        "verificado_em": "2026-11-05T04:04:27-03:00"
+        "verificado_em": "2026-11-05T05:53:14-03:00"
       },
       {
         "id": "mf_portal",
@@ -32,7 +32,7 @@
         "ok": true,
         "titulo_pagina": "Reforma Tributária Regulamentação — Ministério da Fazenda",
         "erro": null,
-        "verificado_em": "2026-11-05T04:04:28-03:00"
+        "verificado_em": "2026-11-05T05:53:15-03:00"
       },
       {
         "id": "nfe_portal",
@@ -41,7 +41,7 @@
         "ok": true,
         "titulo_pagina": "Portal Nacional da Nota Fiscal Eletrônica",
         "erro": null,
-        "verificado_em": "2026-11-05T04:04:32-03:00"
+        "verificado_em": "2026-11-05T05:53:17-03:00"
       },
       {
         "id": "cfc",
@@ -50,7 +50,7 @@
         "ok": true,
         "titulo_pagina": "::Conselho Federal de Contabilidade:: |",
         "erro": null,
-        "verificado_em": "2026-11-05T04:04:35-03:00"
+        "verificado_em": "2026-11-05T05:53:19-03:00"
       }
     ],
     "rss": true,
@@ -99,19 +99,6 @@
   "noticias": [
     {
       "data": "04/11/2026",
-      "titulo": "URGENTE: Governo publica MP com alíquotas do Imposto Seletivo para 2027",
-      "fonte": "Portal da Reforma Tributária (RSS)",
-      "url": "https://www.reformatributaria.com/impostoseletivo/urgente-governo-publica-mp-do-imposto-seletivo-saiba-as-aliquotas/",
-      "novo": true
-    },
-    {
-      "data": "04/11/2026",
-      "titulo": "Justiça de SP concede liminar à ROIT para excluir IBS e CBS do cálculo do ISS a partir de 2027",
-      "fonte": "Portal da Reforma Tributária (RSS)",
-      "url": "https://www.reformatributaria.com/justica/justica-de-sp-concede-liminar-a-roit-para-excluir-ibs-e-cbs-do-calculo-do-iss-a-partir-de-2027/"
-    },
-    {
-      "data": "04/11/2026",
       "titulo": "CBS de 11,3%: a economia digital que ainda não entrou na conta",
       "fonte": "Portal da Reforma Tributária (RSS)",
       "url": "https://www.reformatributaria.com/opiniao/cbs-de-113-a-economia-digital-que-ainda-nao-entrou-na-conta/"
@@ -139,6 +126,13 @@
       "titulo": "Fazenda agora diz que MP do Imposto Seletivo sai na 4ª feira",
       "fonte": "Portal da Reforma Tributária (RSS)",
       "url": "https://www.reformatributaria.com/impostoseletivo/fazenda-agora-diz-que-mp-do-imposto-seletivo-sai-na-4a-feira/"
+    },
+    {
+      "data": "03/11/2026",
+      "titulo": "Receita prorroga prazo para adesão a editais de transação tributária até 30 de dezembro",
+      "fonte": "Portal da Reforma Tributária (RSS)",
+      "url": "https://www.reformatributaria.com/economia-reforma-tributaria-impactos/receita-prorroga-prazo-para-adesao-a-editais-de-transacao-tributaria-ate-30-de-dezembro/",
+      "novo": true
     },
     {
       "data": "02/11/2026",
