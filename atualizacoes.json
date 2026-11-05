@@ -1,6 +1,6 @@
 {
-  "gerado_em": "2026-11-05T07:56:46.591347-03:00",
-  "versao": "1.3",
+  "gerado_em": "2026-11-05T08:09:00.274123-03:00",
+  "versao": "1.4",
   "revisao_radar": "05 nov/2026",
   "automacao": {
     "fontes_ok": 2,
@@ -31,6 +31,13 @@
   ],
   "novas_normas": [],
   "noticias": [
+    {
+      "data": "04/11/2026",
+      "titulo": "URGENTE: Governo publica MP com alíquotas do Imposto Seletivo para 2027",
+      "fonte": "Portal da Reforma Tributária",
+      "url": "https://www.reformatributaria.com/impostoseletivo/urgente-governo-publica-mp-do-imposto-seletivo-saiba-as-aliquotas/",
+      "novo": true
+    },
     {
       "data": "04/11/2026",
       "titulo": "Justiça de SP concede liminar à ROIT para excluir IBS e CBS do cálculo do ISS a partir de 2027",
@@ -75,6 +82,13 @@
     },
     {
       "data": "03/11/2026",
+      "titulo": "Fazenda agora diz que MP do Imposto Seletivo sai na 4ª feira",
+      "fonte": "Portal da Reforma Tributária",
+      "url": "https://www.reformatributaria.com/impostoseletivo/fazenda-agora-diz-que-mp-do-imposto-seletivo-sai-na-4a-feira/",
+      "novo": true
+    },
+    {
+      "data": "03/11/2026",
       "titulo": "Ibracon lança hotsite exclusivo sobre normas de auditoria revisadas pelo CFC",
       "fonte": "CFC",
       "url": "https://cfc.org.br/noticias/ibracon-lanca-hotsite-exclusivo-sobre-normas-de-auditoria-revisadas-pelo-cfc/"
@@ -86,23 +100,10 @@
       "url": "https://cfc.org.br/noticias/nova-aula-sobre-eleicoes-2026-e-disponibilizada-pelo-cfc/"
     },
     {
-      "data": "30/10/2026",
-      "titulo": "Entenda como registrar cursos e consultar pontuação do PEPC em e-book desenvolvido pelo CFC",
-      "fonte": "CFC",
-      "url": "https://cfc.org.br/noticias/entenda-como-registrar-cursos-e-consultar-pontuacao-do-pepc-em-e-book-desenvolvido-pelo-cfc/"
-    },
-    {
-      "data": "05/11/2026",
-      "titulo": "Receita Federal publica Nota Técnica 2026.999 com novas regras de cClassTrib",
-      "fonte": "Receita Federal (Teste)",
-      "url": "https://www.gov.br/receitafederal/"
-    },
-    {
       "data": "02/11/2026",
       "titulo": "CBS de 11,3% surpreende empresas e pressiona preços, dizem especialistas",
       "fonte": "Portal da Reforma Tributária",
-      "url": "https://www.reformatributaria.com/iva/aliquota-de-113-da-cbs-surpreende-empresas-e-pressiona-precos-dizem-especialistas/",
-      "novo": true
+      "url": "https://www.reformatributaria.com/iva/aliquota-de-113-da-cbs-surpreende-empresas-e-pressiona-precos-dizem-especialistas/"
     }
   ],
   "nts_criticas_lucro_real": [
