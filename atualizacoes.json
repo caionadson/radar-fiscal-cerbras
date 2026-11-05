@@ -1,5 +1,5 @@
 {
-  "gerado_em": "2026-11-05T08:54:17.329113-03:00",
+  "gerado_em": "2026-11-05T09:46:12.275340-03:00",
   "versao": "1.5",
   "revisao_radar": "05 nov/2026",
   "automacao": {
@@ -7,29 +7,39 @@
     "fontes_total": 2
   },
   "briefing": {
-    "titulo": "Briefing do dia — Fallback",
+    "titulo": "Briefing do dia — Resumo por IA",
     "bullets": [
-      "Atenção: Não foi possível gerar o resumo por IA hoje."
+      "Publicação da Medida Provisória nº 1.303/2026 regulamentando as alíquotas do Imposto Seletivo e regras de transição do IPI a partir de 2027.",
+      "Anúncio da alíquota da CBS em 11,3% gera surpresa no setor empresarial, no Congresso e traz preocupações sobre a carga na economia digital.",
+      "Justiça de SP concede liminar à ROIT determinando a exclusão do IBS e da CBS do cálculo do ISS a partir de 2027."
     ],
-    "acao_prioritaria": "Validar notas fiscais."
+    "acao_prioritaria": "Analisar os impactos diretos da MP nº 1.303/2026 nas operações sujeitas ao Imposto Seletivo e IPI, além de recalcular projeções financeiras considerando a CBS em 11,3%."
   },
   "alertas": [
     {
       "tipo": "critico",
-      "titulo": "Validação de Notas",
-      "texto": "NF-e e CT-e exigem destaque CBS/IBS.",
-      "prazo": "Já em vigor"
+      "titulo": "Publicação da MP do Imposto Seletivo e Alíquota da CBS em 11,3%",
+      "texto": "Governo publicou a MP com alíquotas do Imposto Seletivo para 2027. Simultaneamente, a confirmação da alíquota de 11,3% da CBS surpreendeu o mercado e relatores, ameaçando pressionar preços e custos da economia digital.",
+      "prazo": "Imediato / Regras para 2027"
     }
   ],
   "prazos": [
     {
-      "quando": "Contínuo",
+      "quando": "A agendar (Senado)",
       "urgencia": "urgente",
-      "titulo": "Validação de Notas",
-      "detalhe": "CST, cClassTrib e CBS/IBS."
+      "titulo": "Audiência pública sobre alíquota da CBS",
+      "detalhe": "Comissão do Senado discutirá com especialistas e parlamentares os impactos da alíquota de 11,3% da CBS."
     }
   ],
-  "novas_normas": [],
+  "novas_normas": [
+    {
+      "tipo": "MP",
+      "titulo": "Medida Provisória nº 1.303, de 4 de Novembro de 2026",
+      "descricao": "Regulamenta o Imposto Seletivo (alíquotas para 2027) e estabelece as regras de transição do Imposto sobre Produtos Industrializados (IPI).",
+      "link": "https://www.in.gov.br/web/dou/-/medida-provisoria-no-1.303-de-4-de-novembro-de-2026-583984023",
+      "instituicao": "Presidência da República"
+    }
+  ],
   "noticias": [
     {
       "data": "04/11/2026",
@@ -83,8 +93,7 @@
       "data": "04/11/2026",
       "titulo": "Governo publica Medida Provisória regulamentando o Imposto Seletivo e regras de transição do IPI",
       "fonte": "Ministério da Fazenda",
-      "url": "https://www.in.gov.br/web/dou/-/medida-provisoria-no-1.303-de-4-de-novembro-de-2026-583984023",
-      "novo": true
+      "url": "https://www.in.gov.br/web/dou/-/medida-provisoria-no-1.303-de-4-de-novembro-de-2026-583984023"
     },
     {
       "data": "03/11/2026",
