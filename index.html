@@ -10,33 +10,17 @@
   <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
   <style>
     :root {
-      --verde-cerbras: #00A651;
-      --verde-escuro: #007A3D;
-      --verde-claro: #E6F7EE;
-      --verde-vibrante: #00C853;
-      --preto: #1A1A1A;
-      --cinza-escuro: #2D2D2D;
-      --cinza: #6B6B6B;
-      --cinza-claro: #F5F5F5;
-      --branco: #FFFFFF;
-      --borda: #E0E0E0;
-      --sombra: 0 4px 20px rgba(0, 0, 0, 0.06);
-      --raio: 12px;
-      --vermelho: #C62828;
-      --amarelo: #F9A825;
-      --azul: #1565C0;
+      --verde-cerbras: #00A651; --verde-escuro: #007A3D; --verde-claro: #E6F7EE; --verde-vibrante: #00C853;
+      --preto: #1A1A1A; --cinza-escuro: #2D2D2D; --cinza: #6B6B6B; --cinza-claro: #F5F5F5; --branco: #FFFFFF;
+      --borda: #E0E0E0; --sombra: 0 4px 20px rgba(0, 0, 0, 0.06); --raio: 12px;
+      --vermelho: #C62828; --amarelo: #F9A825; --azul: #1565C0;
     }
 
     /* ===== DARK MODE ===== */
     body.dark-mode {
-      --preto: #F5F5F5;
-      --cinza-escuro: #E0E0E0;
-      --cinza: #A0A0A0;
-      --cinza-claro: #121212;
-      --branco: #1E1E1E;
-      --borda: #333333;
-      --sombra: 0 4px 20px rgba(0, 0, 0, 0.4);
-      --verde-claro: #1B3D2B;
+      --preto: #F5F5F5; --cinza-escuro: #E0E0E0; --cinza: #A0A0A0;
+      --cinza-claro: #121212; --branco: #1E1E1E; --borda: #333333;
+      --sombra: 0 4px 20px rgba(0, 0, 0, 0.4); --verde-claro: #1B3D2B;
     }
     body.dark-mode header { background: #000; }
     body.dark-mode .news-item { background: #252525; }
@@ -87,7 +71,6 @@
 
     main { max-width: 1280px; margin: 0 auto; padding: 2rem 1.5rem 4rem; }
     
-    /* Barra de Busca */
     .busca-container { margin-bottom: 1.5rem; position: relative; }
     .busca-input { width: 100%; padding: 1rem 1rem 1rem 2.8rem; border-radius: var(--raio); border: 1px solid var(--borda); background: var(--branco); color: var(--preto); font-size: 0.95rem; box-shadow: var(--sombra); transition: 0.2s; }
     .busca-input:focus { outline: none; border-color: var(--verde-cerbras); }
@@ -95,7 +78,6 @@
 
     .auto-refresh-info { background: var(--branco); border: 1px dashed var(--borda); border-radius: 8px; padding: 0.75rem 1rem; font-size: 0.8rem; color: var(--cinza); margin-bottom: 1.5rem; display: flex; align-items: center; justify-content: space-between; gap: 1rem; flex-wrap: wrap; }
 
-    /* Alertas */
     .alertas-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem; margin-bottom: 1.75rem; }
     .alerta { border-radius: var(--raio); padding: 1.15rem 1.25rem; display: flex; gap: 1rem; align-items: flex-start; box-shadow: var(--sombra); border: 1px solid transparent; }
     .alerta.critico { background: linear-gradient(135deg, #FFEBEE, #FFCDD2); border-color: #EF9A9A; animation: pulseSoft 2.5s ease-in-out infinite; }
@@ -112,7 +94,6 @@
     .alerta.atencao .alerta-prazo { color: #E65100; }
     .alerta.info .alerta-prazo { color: var(--azul); }
 
-    /* Briefing */
     .briefing { background: linear-gradient(135deg, #0B3D2E 0%, #00A651 100%); color: #fff; border-radius: var(--raio); padding: 1.25rem 1.4rem; margin-bottom: 1.25rem; box-shadow: 0 4px 20px rgba(0,166,81,0.25); }
     .briefing-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.75rem; flex-wrap: wrap; gap: 0.5rem; }
     .briefing-header h2 { font-size: 1rem; font-weight: 600; }
@@ -121,7 +102,6 @@
     .briefing li { margin-bottom: 0.35rem; }
     .briefing-acao { margin-top: 0.85rem; padding-top: 0.75rem; border-top: 1px solid rgba(255,255,255,0.25); font-size: 0.85rem; display: flex; align-items: flex-start; gap: 0.5rem; }
 
-    /* Agenda de prazos */
     .agenda { background: var(--branco); border: 1px solid var(--borda); border-radius: var(--raio); padding: 1.15rem 1.25rem; margin-bottom: 1.25rem; }
     .agenda-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.85rem; }
     .agenda-header h3 { font-size: 0.95rem; font-weight: 600; display: flex; align-items: center; gap: 0.4rem; }
@@ -145,7 +125,6 @@
     .ready-item.pendente { border-top: 3px solid #E53935; }
     .ready-item.monitorar { border-top: 3px solid #1E88E5; }
 
-    /* Grid e Cards */
     .grid { display: grid; grid-template-columns: repeat(12, 1fr); gap: 1.5rem; margin-bottom: 2rem; }
     .card { background: var(--branco); border-radius: var(--raio); padding: 1.5rem; box-shadow: var(--sombra); border: 1px solid var(--borda); }
     .card-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 1rem; padding-bottom: 0.75rem; border-bottom: 1px solid var(--borda); }
@@ -199,12 +178,10 @@
     .news-source { font-size: 0.7rem; color: var(--verde-cerbras); font-weight: 500; margin-top: 0.35rem; }
     .badge-novo { display: inline-flex; align-items: center; background: var(--verde-vibrante); color: #fff; font-size: 0.6rem; font-weight: 700; padding: 0.1rem 0.4rem; border-radius: 12px; text-transform: uppercase; letter-spacing: 0.5px; margin-right: 0.4rem; animation: pulseNovo 2s infinite; }
 
-    /* Fontes e Materiais */
     .fontes { display: flex; flex-wrap: wrap; gap: 0.6rem; }
     .fonte { background: var(--cinza-claro); padding: 0.4rem 0.85rem; border-radius: 20px; font-size: 0.8rem; font-weight: 500; color: var(--cinza-escuro); border: 1px solid var(--borda); }
     .fonte:hover { border-color: var(--verde-cerbras); color: var(--verde-escuro); text-decoration: none; }
 
-    /* Abas */
     .tabs-section { background: var(--branco); border-radius: var(--raio); box-shadow: var(--sombra); border: 1px solid var(--borda); margin-bottom: 1.75rem; overflow: hidden; }
     .tabs-nav { display: flex; border-bottom: 1px solid var(--borda); background: var(--cinza-claro); flex-wrap: wrap; }
     .tab-btn { flex: 1; min-width: 140px; padding: 0.95rem 1.25rem; border: none; background: transparent; font-size: 0.9rem; font-weight: 600; color: var(--cinza); cursor: pointer; border-bottom: 3px solid transparent; display: flex; align-items: center; justify-content: center; gap: 0.45rem; }
@@ -275,7 +252,7 @@
     <!-- Barra de Busca -->
     <div class="busca-container">
       <span class="busca-icon">🔍</span>
-      <input type="text" id="inputBusca" class="busca-input" placeholder="Buscar por palavra-chave (ex: cClassTrib, split payment, NT 2026)..." onkeyup="filtrarConteudo()">
+      <input type="text" id="inputBusca" class="busca-input" placeholder="Buscar por palavra-chave (ex: cClassTrib, MP do Imposto Seletivo, NT 2026)..." onkeyup="filtrarConteudo()">
     </div>
 
     <div class="auto-refresh-info">
@@ -397,12 +374,14 @@
           <a class="fonte" href="https://www.cgibs.gov.br" target="_blank">CGIBS / Portal do IBS</a>
           <a class="fonte" href="https://portal.tcu.gov.br" target="_blank">TCU</a>
           <a class="fonte" href="https://fenacon.org.br/reforma-tributaria/" target="_blank">FENACON</a>
-          <a class="fonte" href="https://cfc.org.br" target="_blank">CFC</a>
+          <a class="fonte" href="https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/reforma-tributaria-do-consumo/legislacao/principais-marcos-regulatorios/lei-complementar-no-214-de-16-de-janeiro-de-2025" target="_blank">LC 214/2025</a>
+          <a class="fonte" href="https://valor.globo.com" target="_blank">Valor Econômico</a>
+          <a class="fonte" href="https://www.contabeis.com.br" target="_blank">Contábeis.com.br</a>
         </div>
       </div>
     </div>
 
-    <!-- Abas Completas -->
+    <!-- Abas Completas Restauradas -->
     <div class="tabs-section animate-in delay-5">
       <div class="tabs-nav">
         <button class="tab-btn active" data-tab="normas" onclick="trocarAba(this)">📜 Normas oficiais</button>
@@ -411,77 +390,336 @@
         <button class="tab-btn" data-tab="comentarios" onclick="trocarAba(this)">💬 Comentários</button>
       </div>
 
-      <!-- Normas -->
+      <!-- Normas Completas -->
       <div class="tab-panel active" id="tab-normas">
-        <p style="font-size:0.8rem;color:var(--cinza);margin-bottom:1rem;">Fontes oficiais: leis, atos conjuntos, notas técnicas, orientações do CFC e deliberações.</p>
+        <p style="font-size:0.8rem;color:var(--cinza);margin-bottom:1rem;">Fontes oficiais: leis, atos conjuntos, notas técnicas, orientações do CFC e deliberações. Priorize sempre o texto publicado no DOU ou nos portais oficiais.</p>
         
-        <!-- Bloco Dinâmico de Novas Normas -->
         <div id="containerNormasDinamicas" style="margin-bottom: 1.25rem;"></div>
 
         <div class="nt-criticas">
           <h4>⚠️ NTs e atos mais críticos para Lucro Real</h4>
           <ul>
-            <li><strong>NT 2025.002 (v1.53)</strong> — Adequações NF-e / NFC-e à RTC. <a href="https://www.nfe.fazenda.gov.br" target="_blank">Portal NF-e ↗</a></li>
-            <li><strong>NT 2026.008 (v1.01)</strong> — Valor líquido do produto. <a href="https://www.in.gov.br/web/dou/-/ato-tecnico-conjunto-rfb/sufis/cgibs/diretoria-executiva-n-10-de-28-de-outubro-de-2026-741177669" target="_blank">Ato nº 10/2026 ↗</a></li>
-            <li><strong>Tabela cClassTrib (v1.71)</strong> — Códigos de classificação tributária. <a href="https://www.nfe.fazenda.gov.br" target="_blank">Tabelas oficiais ↗</a></li>
-            <li><strong>Orientação Técnica CFC nº 01/2026</strong> — Tratamento contábil do IBS/CBS. <a href="https://www.crcsc.org.br/uploads/evento/15862/YUdr66G97MLStjRe42zXV-DjrEB5rcA_.pdf" target="_blank">PDF ↗</a></li>
+            <li><strong>NT 2025.002 (v1.53)</strong> — Adequações NF-e / NFC-e à RTC: campos CST, cClassTrib, destaque de CBS/IBS. <a href="https://www.nfe.fazenda.gov.br" target="_blank">Portal NF-e ↗</a></li>
+            <li><strong>NT 2026.008 (v1.01)</strong> — Valor líquido do produto: a partir de 2027, IBS/CBS/IS compõem o total da nota “por fora” (não integram a própria base). <a href="https://www.in.gov.br/web/dou/-/ato-tecnico-conjunto-rfb/sufis/cgibs/diretoria-executiva-n-10-de-28-de-outubro-de-2026-741177669" target="_blank">Ato nº 10/2026 ↗</a></li>
+            <li><strong>Tabela cClassTrib + Informe Técnico 2025.002 (v1.71)</strong> — Códigos de classificação tributária e CST para parametrizar sistemas e créditos. <a href="https://www.nfe.fazenda.gov.br" target="_blank">Tabelas oficiais ↗</a></li>
+            <li><strong>NT 2026.006</strong> — Vinculação da DF-e com a transação de pagamento (base para split payment).</li>
+            <li><strong>Orientação Técnica CFC nº 01/2026</strong> — Tratamento contábil do IBS/CBS no ano-teste e evidenciação nas demonstrações. <a href="https://www.crcsc.org.br/uploads/evento/15862/YUdr66G97MLStjRe42zXV-DjrEB5rcA_.pdf" target="_blank">PDF ↗</a></li>
+            <li><strong>Ato Conjunto RFB/CGIBS nº 4/2026</strong> — Calendário de obrigatoriedade dos campos de IBS/CBS nos documentos fiscais (já em vigor para NF-e, NFC-e, CT-e e NFS-e).</li>
           </ul>
         </div>
 
+        <h4 style="font-size:0.95rem;font-weight:600;color:var(--verde-escuro);margin:0.5rem 0 0.5rem;">⚖️ Legislação e atos</h4>
         <div class="curso-item">
           <a href="https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/reforma-tributaria-do-consumo/legislacao/principais-marcos-regulatorios/lei-complementar-no-214-de-16-de-janeiro-de-2025" target="_blank">
             <h4>Lei Complementar 214/2025</h4>
-            <p style="font-size:0.85rem;color:var(--cinza);margin-top:0.25rem;">Institui a CBS, o IBS e o Imposto Seletivo.</p>
+            <p style="font-size:0.85rem;color:var(--cinza);margin-top:0.25rem;">Institui a CBS, o IBS e o Imposto Seletivo; define regras gerais e a transição até 2033.</p>
+            <div class="curso-meta"><span class="badge-inst">Planalto / RFB</span><span>Legislação-base</span></div>
           </a>
         </div>
         <div class="curso-item">
+          <a href="https://www.gov.br/fazenda/pt-br/acesso-a-informacao/acoes-e-programas/reforma-tributaria" target="_blank">
+            <h4>Portal da Reforma Tributária — Ministério da Fazenda</h4>
+            <p style="font-size:0.85rem;color:var(--cinza);margin-top:0.25rem;">Textos legais, projetos de regulamentação e simulador de alíquota (Banco Mundial).</p>
+            <div class="curso-meta"><span class="badge-inst">Ministério da Fazenda</span><span class="badge-gratis">Oficial</span></div>
+          </a>
+        </div>
+        <div class="curso-item">
+          <a href="https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-tributaria-do-consumo/orientacoes-2026" target="_blank">
+            <h4>Orientações da Reforma Tributária para 2026</h4>
+            <p style="font-size:0.85rem;color:var(--cinza);margin-top:0.25rem;">Obrigações acessórias no ano-teste, destaque de CBS/IBS nas notas e dispensa de recolhimento.</p>
+            <div class="curso-meta"><span class="badge-inst">Receita Federal</span><span class="badge-gratis">Oficial</span></div>
+          </a>
+        </div>
+
+        <h4 style="font-size:0.95rem;font-weight:600;color:var(--verde-escuro);margin:1.25rem 0 0.5rem;">📋 Notas técnicas e atos conjuntos</h4>
+        <div class="curso-item">
           <a href="https://www.in.gov.br/web/dou/-/ato-tecnico-conjunto-rfb/sufis/cgibs/diretoria-executiva-n-10-de-28-de-outubro-de-2026-741177669" target="_blank">
-            <h4>Ato Técnico Conjunto nº 10/2026</h4>
-            <p style="font-size:0.85rem;color:var(--cinza);margin-top:0.25rem;">Aprova pacote de NTs da NF-e/NFC-e.</p>
+            <h4>Ato Técnico Conjunto nº 10/2026 (28/10/2026)</h4>
+            <p style="font-size:0.85rem;color:var(--cinza);margin-top:0.25rem;">Aprova pacote de NTs da NF-e/NFC-e: 2025.002, 2026.005 (Simples), 2026.006, 2026.007, 2026.008, Informe Técnico e tabela cClassTrib v1.71.</p>
+            <div class="curso-meta"><span class="badge-inst">RFB + CGIBS</span><span class="badge-critico" style="background:#FFEBEE;color:#C62828;padding:0.15rem 0.5rem;border-radius:4px;font-size:0.65rem;">Crítico · Lucro Real</span><span class="badge-gratis">DOU · 29/10/2026</span></div>
+          </a>
+        </div>
+        <div class="curso-item">
+          <a href="https://www.nfe.fazenda.gov.br" target="_blank">
+            <h4>Portal NF-e — documentação técnica (NTs IBS/CBS)</h4>
+            <p style="font-size:0.85rem;color:var(--cinza);margin-top:0.25rem;">Repositório oficial das Notas Técnicas de NF-e, NFC-e e tabelas CST/cClassTrib.</p>
+            <div class="curso-meta"><span class="badge-inst">RFB / SVRS</span><span class="badge-gratis">Oficial</span></div>
+          </a>
+        </div>
+        <div class="curso-item">
+          <a href="https://www.gov.br/nfse/pt-br/noticias/nfs-e-nacional-confira-oas-rientacoes-sobre-leiaute-em-producao-regras-de-preenchimento-de-ibs-cbs-e-status-da-nota-tecnica-009" target="_blank">
+            <h4>NFS-e Nacional — NT 009 e regras de IBS/CBS</h4>
+            <p style="font-size:0.85rem;color:var(--cinza);margin-top:0.25rem;">Orientações de leiaute em produção, preenchimento e status da Nota Técnica 009 (CGNFS-e).</p>
+            <div class="curso-meta"><span class="badge-inst">CGNFS-e / gov.br</span><span class="badge-gratis">Oficial</span></div>
+          </a>
+        </div>
+        <div class="curso-item">
+          <a href="https://dfe-portal.svrs.rs.gov.br" target="_blank">
+            <h4>Portal DF-e (SVRS) — manuais e NTs</h4>
+            <p style="font-size:0.85rem;color:var(--cinza);margin-top:0.25rem;">Documentação técnica consolidada de documentos fiscais eletrônicos no contexto da RTC.</p>
+            <div class="curso-meta"><span class="badge-inst">SVRS</span><span class="badge-gratis">Oficial</span></div>
+          </a>
+        </div>
+
+        <h4 style="font-size:0.95rem;font-weight:600;color:var(--verde-escuro);margin:1.25rem 0 0.5rem;">📑 Pronunciamentos e orientações técnicas</h4>
+        <div class="curso-item">
+          <a href="https://www.crcsc.org.br/uploads/evento/15862/YUdr66G97MLStjRe42zXV-DjrEB5rcA_.pdf" target="_blank">
+            <h4>Orientação Técnica CFC nº 01/2026</h4>
+            <p style="font-size:0.85rem;color:var(--cinza);margin-top:0.25rem;">Aspectos contábeis do IBS, da CBS e do período de teste operacional de 2026 — julgamento profissional e evidenciação.</p>
+            <div class="curso-meta"><span class="badge-inst">CFC</span><span class="badge-critico" style="background:#FFEBEE;color:#C62828;padding:0.15rem 0.5rem;border-radius:4px;font-size:0.65rem;">Crítico · Contábil</span><span class="badge-gratis">PDF · Oficial</span></div>
+          </a>
+        </div>
+        <div class="curso-item">
+          <a href="https://cfc.org.br/noticias/durigan-diz-que-contador-sera-o-agente-de-conformidade-da-reforma-tributaria/" target="_blank">
+            <h4>Posicionamento Ministério da Fazenda + CFC — conformidade</h4>
+            <p style="font-size:0.85rem;color:var(--cinza);margin-top:0.25rem;">Contador como agente de conformidade; discussão do PNCT para 2027.</p>
+            <div class="curso-meta"><span class="badge-inst">MF / CFC / RFB</span><span>Out/2026</span></div>
+          </a>
+        </div>
+        <div class="curso-item">
+          <a href="https://portal.tcu.gov.br/imprensa/noticias/tcu-calcula-aliquota-de-referencia-de-113-para-novo-tributo-sobre-consumo" target="_blank">
+            <h4>Deliberação TCU — alíquota de referência da CBS (11,3%)</h4>
+            <p style="font-size:0.85rem;color:var(--cinza);margin-top:0.25rem;">Cálculo de 11,3468% encaminhado ao Senado (prazo até 15/12/2026).</p>
+            <div class="curso-meta"><span class="badge-inst">TCU</span><span class="badge-gratis">28/10/2026</span></div>
+          </a>
+        </div>
+        <div class="curso-item">
+          <a href="https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/reforma-tributaria-do-consumo/legislacao/atos-conjuntos" target="_blank">
+            <h4>Atos conjuntos RFB / CGIBS</h4>
+            <p style="font-size:0.85rem;color:var(--cinza);margin-top:0.25rem;">Repositório de atos conjuntos (calendário de documentos fiscais, DeRE, split payment etc.).</p>
+            <div class="curso-meta"><span class="badge-inst">RFB + CGIBS</span><span class="badge-gratis">Oficial</span></div>
           </a>
         </div>
       </div>
 
-      <!-- Cursos -->
+      <!-- Cursos Completos Restaurados -->
       <div class="tab-panel" id="tab-cursos">
+        <p style="font-size:0.8rem;color:var(--cinza);margin-bottom:0.75rem;">Materiais organizados em <strong>Destaques</strong> (prioridade atual) e <strong>Acervo</strong> (histórico preservado).</p>
+        
+        <h4 style="font-size:0.95rem;font-weight:600;color:var(--verde-escuro);margin:1rem 0 0.5rem;display:flex;align-items:center;gap:0.4rem;">⭐ Destaques · atualizado out/2026</h4>
+        
         <div class="curso-item">
           <a href="https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/reforma-tributaria-do-consumo/curso" target="_blank">
             <h4>Curso Reforma Tributária do Consumo (18 módulos)</h4>
-            <p style="font-size:0.85rem;color:var(--cinza);margin-top:0.25rem;">Capacitação oficial RFB + CFC.</p>
-            <div class="curso-meta"><span class="badge-inst">Receita Federal + CFC</span><span class="badge-gratis">Gratuito</span></div>
+            <p style="font-size:0.85rem;color:var(--cinza);margin-top:0.25rem;">Capacitação oficial RFB + CFC. Normas gerais, comércio exterior, obrigações, apuração assistida, Simples, Imposto Seletivo e aplicação prática.</p>
+            <div class="curso-meta"><span class="badge-inst">Receita Federal + CFC</span><span class="badge-gratis">Gratuito · Certificado</span></div>
+          </a>
+        </div>
+        <div class="curso-item">
+          <a href="https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/reforma-tributaria-do-consumo/curso/material-de-apoio/modulos-do-curso" target="_blank">
+            <h4>Material de apoio do curso RFB/CFC (PDFs por módulo)</h4>
+            <p style="font-size:0.85rem;color:var(--cinza);margin-top:0.25rem;">Slides e apostilas oficiais: PGDAS-A, Simples, economia digital, regimes diferenciados, saúde, serviços financeiros etc.</p>
+            <div class="curso-meta"><span class="badge-inst">Receita Federal</span><span class="badge-gratis">Gratuito · PDF</span></div>
           </a>
         </div>
         <div class="curso-item">
           <a href="https://www.youtube.com/playlist?list=PLw2ZKoI7RG_csmR4mhKQ840wwG_QEL4gn" target="_blank">
             <h4>Playlist oficial – Curso RFB/CFC no YouTube</h4>
-            <p style="font-size:0.85rem;color:var(--cinza);margin-top:0.25rem;">Todas as 18 aulas gravadas.</p>
+            <p style="font-size:0.85rem;color:var(--cinza);margin-top:0.25rem;">Todas as 18 aulas gravadas, disponíveis para consulta a qualquer momento.</p>
             <div class="curso-meta"><span class="badge-inst">CFC / RFB</span><span class="badge-gratis">Gratuito</span></div>
+          </a>
+        </div>
+        <div class="curso-item">
+          <a href="https://mbauspesalq.com/minicursos/reforma-tributaria-na-pratica-ibs-cbs-e-impactos-em-preco-caixa-e-operacao" target="_blank">
+            <h4>Reforma Tributária na Prática (USP/ESALQ)</h4>
+            <p style="font-size:0.85rem;color:var(--cinza);margin-top:0.25rem;">Minicurso com foco em preço, margem, caixa e operação. Aulas ao vivo previstas para março/2027.</p>
+            <div class="curso-meta"><span class="badge-inst">USP / ESALQ</span><span class="badge-gratis">Gratuito · Certificado</span></div>
+          </a>
+        </div>
+        <div class="curso-item">
+          <a href="https://agenciasebrae.com.br/economia-e-politica/capacitacao-do-sebrae-simplifica-a-reforma-tributaria-para-pequenos-negocios/" target="_blank">
+            <h4>Descomplique: Reforma Tributária (Sebrae)</h4>
+            <p style="font-size:0.85rem;color:var(--cinza);margin-top:0.25rem;">Capacitação gratuita para ME/EPP: diagnóstico tributário, formação de preços e cronograma de transição.</p>
+            <div class="curso-meta"><span class="badge-inst">Sebrae</span><span class="badge-gratis">Gratuito</span></div>
+          </a>
+        </div>
+        <div class="curso-item">
+          <a href="https://cloud.divulga.sebraesc.com.br/reforma-tributaria-360" target="_blank">
+            <h4>Reforma Tributária 360° — e-books e FAQ (Sebrae)</h4>
+            <p style="font-size:0.85rem;color:var(--cinza);margin-top:0.25rem;">E-book explicativo, FAQ com 67 perguntas e curso online para pequenos negócios.</p>
+            <div class="curso-meta"><span class="badge-inst">Sebrae</span><span class="badge-gratis">Gratuito</span></div>
+          </a>
+        </div>
+        <div class="curso-item">
+          <a href="https://reformatributaria.fiesp.com.br" target="_blank">
+            <h4>Observatório da Reforma Tributária – FIESP</h4>
+            <p style="font-size:0.85rem;color:var(--cinza);margin-top:0.25rem;">Vídeos e análises setoriais (indústria, combustíveis, têxtil) e acompanhamento da regulamentação.</p>
+            <div class="curso-meta"><span class="badge-inst">FIESP</span><span class="badge-gratis">Gratuito</span></div>
+          </a>
+        </div>
+        <div class="curso-item">
+          <a href="https://iob.com.br/materiais-gratuitos/" target="_blank">
+            <h4>Materiais IOB — e-books e simulador</h4>
+            <p style="font-size:0.85rem;color:var(--cinza);margin-top:0.25rem;">Mapa estratégico da reforma, e-book fiscal e simulador de cálculo para planejamento.</p>
+            <div class="curso-meta"><span class="badge-inst">IOB</span><span class="badge-gratis">Gratuito (cadastro)</span></div>
+          </a>
+        </div>
+        <div class="curso-item">
+          <a href="https://www.gov.br/fazenda/pt-br/acesso-a-informacao/acoes-e-programas/reforma-tributaria" target="_blank">
+            <h4>Portal Reforma Tributária – Ministério da Fazenda</h4>
+            <p style="font-size:0.85rem;color:var(--cinza);margin-top:0.25rem;">LC 214/2025, projetos de regulamentação e simulador de alíquota (Banco Mundial).</p>
+            <div class="curso-meta"><span class="badge-inst">Ministério da Fazenda</span><span class="badge-gratis">Oficial</span></div>
+          </a>
+        </div>
+
+        <h4 style="font-size:0.95rem;font-weight:600;color:var(--verde-escuro);margin:1.35rem 0 0.5rem;">⚖️ Direito tributário</h4>
+        <div class="curso-item">
+          <a href="https://direitosp.fgv.br/sites/default/files/cursos/arq-prog/2025-10/programa-2026-reforma-tributaria-fgv-law.pdf" target="_blank">
+            <h4>Curta duração em Reforma Tributária — FGV Direito SP</h4>
+            <p style="font-size:0.85rem;color:var(--cinza);margin-top:0.25rem;">Capacitação jurídica: fundamentos constitucionais (EC 132), organização dos tributos sobre o consumo, princípios e regras de transição. 32h (turmas 2026).</p>
+            <div class="curso-meta"><span class="badge-inst">FGV Direito SP</span><span>Pós-graduação lato sensu · pago</span></div>
+          </a>
+        </div>
+        <div class="curso-item">
+          <a href="https://www.migalhas.com.br/agenda/460874/fgv-direito-rio-abre-inscricoes-para-curso-sobre-reforma-tributaria" target="_blank">
+            <h4>Reforma Tributária Estratégica — FGV Direito Rio</h4>
+            <p style="font-size:0.85rem;color:var(--cinza);margin-top:0.25rem;">48h: princípios, governança interfederativa, split payment, CBS/IBS e aspectos polêmicos da reforma.</p>
+            <div class="curso-meta"><span class="badge-inst">FGV Direito Rio</span><span>Curta duração · pago</span></div>
+          </a>
+        </div>
+        <div class="curso-item">
+          <a href="https://portalservicos.usp.br/apolo/apoObterCurso?cod_curso=890300041&cod_edicao=25001&numseqofeedi=1" target="_blank">
+            <h4>Reforma Tributária para Julgadores — USP Direito RP</h4>
+            <p style="font-size:0.85rem;color:var(--cinza);margin-top:0.25rem;">Curso de atualização (EAD): esteios constitucionais, IBS/CBS, imunidades e competências tributárias. Voltado a julgadores e servidores.</p>
+            <div class="curso-meta"><span class="badge-inst">USP Faculdade de Direito RP</span><span class="badge-gratis">Gratuito</span></div>
+          </a>
+        </div>
+        <div class="curso-item">
+          <a href="https://mbauspesalq.com/minicursos/reforma-tributaria-na-pratica-ibs-cbs-e-impactos-em-preco-caixa-e-operacao" target="_blank">
+            <h4>Reforma Tributária na Prática — USP/ESALQ (visão jurídica e gerencial)</h4>
+            <p style="font-size:0.85rem;color:var(--cinza);margin-top:0.25rem;">Minicurso gratuito com professor da USP e ex-conselheiro do CARF. Fundamentos legais + impactos em preço, caixa e contratos.</p>
+            <div class="curso-meta"><span class="badge-inst">USP / ESALQ</span><span class="badge-gratis">Gratuito · Certificado</span></div>
+          </a>
+        </div>
+
+        <h4 style="font-size:0.95rem;font-weight:600;color:var(--verde-escuro);margin:1.35rem 0 0.5rem;">📒 Contabilidade</h4>
+        <div class="curso-item">
+          <a href="https://cfc.org.br/noticias/sistema-cfc-crcs-disponibiliza-plataforma-com-cursos-gratuitos-para-a-classe-contabil/" target="_blank">
+            <h4>Plataforma EduCont — CFC/CRCs</h4>
+            <p style="font-size:0.85rem;color:var(--cinza);margin-top:0.25rem;">Mais de 30 cursos on-line gratuitos para a classe contábil, incluindo módulos da Reforma Tributária do Consumo. Pontua no PEPC e emite certificado.</p>
+            <div class="curso-meta"><span class="badge-inst">CFC / CRCs</span><span class="badge-gratis">Gratuito · PEPC</span></div>
+          </a>
+        </div>
+        <div class="curso-item">
+          <a href="https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/reforma-tributaria-do-consumo/curso" target="_blank">
+            <h4>Curso RTC (RFB + CFC) — foco contábil e obrigações</h4>
+            <p style="font-size:0.85rem;color:var(--cinza);margin-top:0.25rem;">18 módulos oficiais: documentos fiscais, apuração assistida, compensação, Simples, regimes setoriais e aplicação prática. Essencial para a rotina contábil.</p>
+            <div class="curso-meta"><span class="badge-inst">Receita Federal + CFC</span><span class="badge-gratis">Gratuito · Certificado</span></div>
+          </a>
+        </div>
+        <div class="curso-item">
+          <a href="https://cfc.org.br/noticias/xxiii-seminario-internacional-facpcs-especialistas-discutem-os-impactos-do-ibs-e-da-cbs-nas-demonstracoes-financeiras/" target="_blank">
+            <h4>Impactos do IBS/CBS nas demonstrações financeiras (FACPCS)</h4>
+            <p style="font-size:0.85rem;color:var(--cinza);margin-top:0.25rem;">Painel técnico sobre reconhecimento, mensuração e evidenciação dos novos tributos na contabilidade societária.</p>
+            <div class="curso-meta"><span class="badge-inst">FACPCS / CFC</span><span class="badge-gratis">Gratuito</span></div>
+          </a>
+        </div>
+        <div class="curso-item">
+          <a href="https://www.contabeis.com.br/noticias/80456/cfc-libera-nova-aula-de-curso-sobre-contabilidade-imobiliaria/" target="_blank">
+            <h4>Qualificação Avançada em Contabilidade Imobiliária — CFC</h4>
+            <p style="font-size:0.85rem;color:var(--cinza);margin-top:0.25rem;">Sete módulos na EduCont (RET, patrimônio de afetação, Minha Casa Minha Vida etc.). Útil no cruzamento com regimes da reforma.</p>
+            <div class="curso-meta"><span class="badge-inst">CFC · EduCont</span><span class="badge-gratis">Gratuito · PEPC</span></div>
+          </a>
+        </div>
+
+        <h4 style="font-size:0.95rem;font-weight:600;color:var(--cinza);margin:1.5rem 0 0.5rem;display:flex;align-items:center;gap:0.4rem;padding-top:0.75rem;border-top:1px solid var(--borda);">📚 Acervo · materiais anteriores preservados</h4>
+        <p style="font-size:0.75rem;color:var(--cinza);margin-bottom:0.75rem;">Itens que permanecem úteis e não são removidos nas atualizações periódicas.</p>
+        <div class="curso-item">
+          <a href="https://www.youtube.com/playlist?list=PLHGhyJo8a3XmiSeiq-z2jR4zkqnNMUjdm" target="_blank">
+            <h4>Curso gratuito Reforma Tributária (playlist didática)</h4>
+            <p style="font-size:0.85rem;color:var(--cinza);margin-top:0.25rem;">Série com dezenas de aulas sobre LC 214/2025, IBS, CBS e impactos práticos.</p>
+            <div class="curso-meta"><span class="badge-inst">Contabilidade Facilitada</span><span class="badge-gratis">Gratuito</span></div>
+          </a>
+        </div>
+        <div class="curso-item">
+          <a href="https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/reforma-tributaria-do-consumo/curso/programacao" target="_blank">
+            <h4>Programação completa dos 18 módulos (RFB/CFC)</h4>
+            <p style="font-size:0.85rem;color:var(--cinza);margin-top:0.25rem;">Cronograma oficial com temas, datas e instrutores de cada módulo.</p>
+            <div class="curso-meta"><span class="badge-inst">Receita Federal</span><span class="badge-gratis">Oficial</span></div>
+          </a>
+        </div>
+        <div class="curso-item">
+          <a href="https://fenacon.org.br/reforma-tributaria/" target="_blank">
+            <h4>Painel FENACON – Reforma Tributária</h4>
+            <p style="font-size:0.85rem;color:var(--cinza);margin-top:0.25rem;">Notícias, orientações técnicas e cobertura diária para o setor contábil.</p>
+            <div class="curso-meta"><span class="badge-inst">FENACON</span><span class="badge-gratis">Gratuito</span></div>
+          </a>
+        </div>
+        <div class="curso-item">
+          <a href="https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-tributaria-do-consumo/orientacoes-2026" target="_blank">
+            <h4>Orientações da Reforma Tributária para 2026</h4>
+            <p style="font-size:0.85rem;color:var(--cinza);margin-top:0.25rem;">Documento oficial sobre obrigações acessórias e dispensa de recolhimento no ano-teste.</p>
+            <div class="curso-meta"><span class="badge-inst">Receita Federal</span><span class="badge-gratis">Oficial</span></div>
+          </a>
+        </div>
+        <div class="curso-item">
+          <a href="https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/reforma-tributaria-do-consumo/legislacao/principais-marcos-regulatorios/lei-complementar-no-214-de-16-de-janeiro-de-2025" target="_blank">
+            <h4>Lei Complementar 214/2025 (texto integral)</h4>
+            <p style="font-size:0.85rem;color:var(--cinza);margin-top:0.25rem;">Base legal da CBS, IBS, Imposto Seletivo e regras de transição.</p>
+            <div class="curso-meta"><span class="badge-inst">Planalto / RFB</span><span class="badge-gratis">Legislação</span></div>
           </a>
         </div>
       </div>
 
       <!-- Mídia -->
       <div class="tab-panel" id="tab-artigos">
+        <p style="font-size:0.8rem;color:var(--cinza);margin-bottom:1rem;">Análises, vídeos e podcasts de instituições e especialistas. Players embutidos abaixo.</p>
         <div class="video-grid">
           <div class="video-card">
-            <h4>🎧 Fenacon Conecta</h4>
+            <h4>🎧 Fenacon Conecta — Reforma Tributária e protagonismo contábil</h4>
             <div class="video-embed"><iframe src="https://www.youtube.com/embed/KElPK2L5z14" allowfullscreen loading="lazy"></iframe></div>
+            <div class="artigo-meta" style="margin-top:0.5rem;"><span class="badge-inst">Podcast · FENACON</span><span>Reynaldo Lima Jr. + Joaquim Bezerra (CFC)</span></div>
           </div>
           <div class="video-card">
-            <h4>▶️ Módulo 1 — Normas Gerais</h4>
+            <h4>▶️ Módulo 1 — Normas Gerais da Tributação do Consumo</h4>
             <div class="video-embed"><iframe src="https://www.youtube.com/embed/94Y7E74L96g" allowfullscreen loading="lazy"></iframe></div>
+            <div class="artigo-meta" style="margin-top:0.5rem;"><span class="badge-inst">Vídeo · RFB / CFC</span><span>Aula de abertura · ≈4h30</span></div>
           </div>
+        </div>
+        <div class="video-card" style="margin-bottom:1.25rem;">
+          <h4>▶️ Curso RFB + CFC — Playlist completa (18 módulos)</h4>
+          <div class="video-embed"><iframe src="https://www.youtube.com/embed/videoseries?list=PLw2ZKoI7RG_csmR4mhKQ840wwG_QEL4gn" allowfullscreen loading="lazy"></iframe></div>
+          <div class="artigo-meta" style="margin-top:0.5rem;"><span class="badge-inst">Playlist · RFB / CFC</span><span class="badge-gratis">Gratuito</span></div>
+        </div>
+        <div class="artigo-item">
+          <a href="https://fenacon.org.br/noticias/artigo-fenacon-reforma-tributaria-a-mudanca-comeca-na-lei-mas-acontece-nas-empresas/" target="_blank">
+            <h4>📄 A mudança começa na lei, mas acontece nas empresas</h4>
+            <p style="font-size:0.85rem;color:var(--cinza);margin-top:0.25rem;">Reflexão sobre como a reforma altera contratação, precificação, margens e processos — além da troca de siglas.</p>
+            <div class="artigo-meta"><span class="badge-inst">Artigo · FENACON</span><span>Maria Salete · Out/2026</span></div>
+          </a>
+        </div>
+        <div class="artigo-item">
+          <a href="https://cfc.org.br/noticias/durigan-diz-que-contador-sera-o-agente-de-conformidade-da-reforma-tributaria/" target="_blank">
+            <h4>📄 Contador será o agente de conformidade da reforma</h4>
+            <p style="font-size:0.85rem;color:var(--cinza);margin-top:0.25rem;">Ministro da Fazenda e Receita Federal destacam o papel do contador na implementação e no PNCT 2027.</p>
+            <div class="artigo-meta"><span class="badge-inst">Artigo · CFC</span><span>Out/2026</span></div>
+          </a>
+        </div>
+        <div class="artigo-item">
+          <a href="https://cfc.org.br/noticias/xxiii-seminario-internacional-facpcs-especialistas-discutem-os-impactos-do-ibs-e-da-cbs-nas-demonstracoes-financeiras/" target="_blank">
+            <h4>📄 Impactos do IBS e da CBS nas demonstrações financeiras</h4>
+            <p style="font-size:0.85rem;color:var(--cinza);margin-top:0.25rem;">Painel com CFC, IGET e Deloitte sobre reconhecimento, mensuração e evidenciação dos novos tributos.</p>
+            <div class="artigo-meta"><span class="badge-inst">Artigo · FACPCS / CFC</span><span>Out/2026</span></div>
+          </a>
+        </div>
+        <div class="artigo-item">
+          <a href="https://conjur.com.br/2026-out-26/a-reforma-tributaria-e-o-impacto-nas-concessoes/" target="_blank">
+            <h4>📄 A reforma tributária e o impacto nas concessões públicas</h4>
+            <p style="font-size:0.85rem;color:var(--cinza);margin-top:0.25rem;">Análise dos efeitos sobre contratos de infraestrutura, créditos e reequilíbrio econômico-financeiro.</p>
+            <div class="artigo-meta"><span class="badge-inst">Artigo · ConJur</span><span>José Andrés Lopes da Costa (FGV/IBDT) · Out/2026</span></div>
+          </a>
         </div>
       </div>
 
       <!-- Comentários -->
       <div class="tab-panel" id="tab-comentarios">
+        <p style="font-size:0.85rem;color:var(--cinza);margin-bottom:1rem;">Espaço interno para anotações e troca rápida do time. Os comentários ficam salvos neste navegador (localStorage).</p>
         <div class="comentarios-lista" id="listaComentarios">
           <div class="comentarios-vazio" id="comentariosVazio" style="text-align:center; color:var(--cinza); font-size:0.9rem; padding:1.5rem;">Nenhum comentário ainda.</div>
         </div>
         <form class="comentario-form" onsubmit="adicionarComentario(event)">
           <input type="text" id="comentarioAutor" placeholder="Seu nome" required maxlength="40" />
-          <textarea id="comentarioTexto" placeholder="Escreva sua observação..." required maxlength="500"></textarea>
+          <textarea id="comentarioTexto" placeholder="Escreva sua observação, dúvida ou alerta para o time..." required maxlength="500"></textarea>
           <button type="submit" class="btn-comentar">Publicar comentário</button>
         </form>
       </div>
