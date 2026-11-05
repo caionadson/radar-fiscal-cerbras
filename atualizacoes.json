@@ -1,5 +1,5 @@
 {
-  "gerado_em": "2026-11-05T05:53:19-03:00",
+  "gerado_em": "2026-11-05T07:20:37-03:00",
   "versao": "1.3",
   "revisao_radar": "05 nov/2026",
   "automacao": {
@@ -14,7 +14,7 @@
         "ok": true,
         "titulo_pagina": "Portal da Reforma Tributária - Notícias, artigos e estudos",
         "erro": null,
-        "verificado_em": "2026-11-05T05:53:12-03:00"
+        "verificado_em": "2026-11-05T07:20:29-03:00"
       },
       {
         "id": "rfb_curso_rtc",
@@ -23,7 +23,7 @@
         "ok": true,
         "titulo_pagina": "Curso Reforma Tributária do Consumo — Receita Federal",
         "erro": null,
-        "verificado_em": "2026-11-05T05:53:14-03:00"
+        "verificado_em": "2026-11-05T07:20:30-03:00"
       },
       {
         "id": "mf_portal",
@@ -32,7 +32,7 @@
         "ok": true,
         "titulo_pagina": "Reforma Tributária Regulamentação — Ministério da Fazenda",
         "erro": null,
-        "verificado_em": "2026-11-05T05:53:15-03:00"
+        "verificado_em": "2026-11-05T07:20:32-03:00"
       },
       {
         "id": "nfe_portal",
@@ -41,7 +41,7 @@
         "ok": true,
         "titulo_pagina": "Portal Nacional da Nota Fiscal Eletrônica",
         "erro": null,
-        "verificado_em": "2026-11-05T05:53:17-03:00"
+        "verificado_em": "2026-11-05T07:20:34-03:00"
       },
       {
         "id": "cfc",
@@ -50,7 +50,7 @@
         "ok": true,
         "titulo_pagina": "::Conselho Federal de Contabilidade:: |",
         "erro": null,
-        "verificado_em": "2026-11-05T05:53:19-03:00"
+        "verificado_em": "2026-11-05T07:20:37-03:00"
       }
     ],
     "rss": true,
@@ -59,40 +59,58 @@
     ]
   },
   "briefing": {
-    "titulo": "Briefing do dia — Fallback",
+    "titulo": "Briefing do dia — Resumo por IA",
     "bullets": [
-      "Atenção: Não foi possível gerar o resumo por IA hoje. Verifique as notícias abaixo.",
-      "Ano-teste em curso: CBS 0,9% + IBS 0,1% com destaque nas notas.",
-      "NTs críticas ativas: NT 2025.002, 2026.008 e tabela cClassTrib."
+      "A alíquota projetada de 11,3% para a CBS surpreendeu o mercado e deve pressionar preços, serviços e economia digital.",
+      "Receita Federal prorrogou a adesão à transação tributária até 30 de dezembro, e MP do Imposto Seletivo está prevista para quarta-feira.",
+      "Recomenda-se simular o impacto do IVA Dual no fluxo de caixa e avaliar passivos fiscais para adesão aos editais da RFB."
     ],
-    "acao_prioritaria": "Validar se NF-e/NFC-e/CT-e estão saindo com CST e cClassTrib corretos."
+    "acao_prioritaria": "Revisar a precificação considerando a CBS de 11,3% e mapear débitos elegíveis para a transação tributária da RFB até 30/12."
   },
   "alertas": [
     {
-      "tipo": "atencao",
-      "titulo": "Alerta Padrão",
-      "texto": "Verifique as fontes oficiais.",
-      "prazo": "Contínuo"
+      "tipo": "critico",
+      "titulo": "Alíquota da CBS fixada em 11,3%",
+      "texto": "A alíquota estimada de 11,3% para a CBS surpreendeu o setor produtivo e pressionará preços, impulsionando debate na Comissão do Senado.",
+      "prazo": "Em debate no Congresso"
     },
     {
-      "tipo": "critico",
-      "titulo": "Validação de Notas",
-      "texto": "NF-e e CT-e exigem destaque CBS/IBS.",
-      "prazo": "Já em vigor"
+      "tipo": "alto",
+      "titulo": "Prorrogação da Transação Tributária",
+      "texto": "Receita Federal estendeu o prazo final para adesão aos editais de transação tributária para regularização de débitos.",
+      "prazo": "30 de dezembro"
+    },
+    {
+      "tipo": "medio",
+      "titulo": "MP do Imposto Seletivo",
+      "texto": "Ministério da Fazenda sinaliza publicação da Medida Provisória do Imposto Seletivo nesta quarta-feira.",
+      "prazo": "Quarta-feira"
     }
   ],
   "prazos": [
     {
-      "quando": "Contínuo",
+      "quando": "30 de dezembro",
       "urgencia": "urgente",
-      "titulo": "Validação de Notas",
-      "detalhe": "CST, cClassTrib e CBS/IBS."
+      "titulo": "Adesão aos Editais de Transação Tributária da RFB",
+      "detalhe": "Analisar débitos contenciosos e protocolar pedido de adesão com descontos e parcelamentos especiais."
     },
     {
-      "quando": "15/12/2026",
-      "urgencia": "atencao",
-      "titulo": "Senado",
-      "detalhe": "Alíquota de referência da CBS."
+      "quando": "Quarta-feira",
+      "urgencia": "alta",
+      "titulo": "Publicação da MP do Imposto Seletivo",
+      "detalhe": "Monitorar o Diário Oficial para identificar produtos atingidos pelo novo tributo extrafiscal."
+    },
+    {
+      "quando": "A definir (Senado)",
+      "urgencia": "media",
+      "titulo": "Audiência Pública no Senado sobre CBS",
+      "detalhe": "Acompanhar a discussão na Comissão do Senado sobre as premissas do cálculo da CBS de 11,3%."
+    },
+    {
+      "quando": "Contínuo",
+      "urgencia": "alta",
+      "titulo": "Simulação de Impacto do IVA Dual",
+      "detalhe": "Modelar o impacto financeiro da alíquota total do IVA nos contratos vigentes e na precificação de serviços."
     }
   ],
   "novas_normas": [],
@@ -131,8 +149,7 @@
       "data": "03/11/2026",
       "titulo": "Receita prorroga prazo para adesão a editais de transação tributária até 30 de dezembro",
       "fonte": "Portal da Reforma Tributária (RSS)",
-      "url": "https://www.reformatributaria.com/economia-reforma-tributaria-impactos/receita-prorroga-prazo-para-adesao-a-editais-de-transacao-tributaria-ate-30-de-dezembro/",
-      "novo": true
+      "url": "https://www.reformatributaria.com/economia-reforma-tributaria-impactos/receita-prorroga-prazo-para-adesao-a-editais-de-transacao-tributaria-ate-30-de-dezembro/"
     },
     {
       "data": "02/11/2026",
