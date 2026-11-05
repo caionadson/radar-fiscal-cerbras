@@ -37,7 +37,6 @@
     body.dark-mode .material-card { background: #252525; }
     body.dark-mode .fonte { background: #252525; }
     
-    /* Correções de texto no Dark Mode */
     body.dark-mode .alerta-conteudo p { color: #D0D0D0; }
     body.dark-mode .nt-criticas { background: #2E2814; border-color: #4A4020; }
     body.dark-mode .nt-criticas ul { color: #D0D0D0; }
@@ -51,6 +50,11 @@
     body.dark-mode .norma-item strong { color: #FFFFFF; }
     body.dark-mode .norma-item span { color: #D0D0D0; }
     body.dark-mode .busca-input { background: #252525; color: #FFF; }
+    
+    /* Glossário dark mode */
+    body.dark-mode .glossario-item { background: #252525; border-left-color: #00A651; }
+    body.dark-mode .glossario-item h4 { color: #FFF; }
+    body.dark-mode .glossario-item p { color: #D0D0D0; }
 
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; background: var(--cinza-claro); color: var(--preto); line-height: 1.6; min-height: 100vh; transition: background 0.3s, color 0.3s; }
@@ -234,6 +238,12 @@
     .video-embed { position: relative; width: 100%; padding-bottom: 56.25%; height: 0; border-radius: 10px; overflow: hidden; background: #000; }
     .video-embed iframe { position: absolute; width: 100%; height: 100%; border: 0; }
 
+    /* Estilos do Glossário */
+    .glossario-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1rem; }
+    .glossario-item { background: var(--cinza-claro); border-left: 4px solid var(--verde-cerbras); border-radius: 8px; padding: 1rem; }
+    .glossario-item h4 { font-size: 0.95rem; color: var(--verde-escuro); margin-bottom: 0.35rem; display: flex; align-items: center; gap: 0.4rem; }
+    .glossario-item p { font-size: 0.85rem; color: var(--preto); line-height: 1.4; }
+
     @media print {
       header, .auto-refresh-info, .btn-atualizar, .btn-tema, .btn-imprimir, footer, .tabs-section, .chart-container, canvas, .comentario-form, .status-badge { display: none !important; }
       body { background: white !important; font-size: 11pt; color: #000; }
@@ -388,6 +398,7 @@
       <div class="tabs-nav">
         <button class="tab-btn active" data-tab="normas" onclick="trocarAba(this)">📜 Normas oficiais</button>
         <button class="tab-btn" data-tab="cursos" onclick="trocarAba(this)">🎓 Cursos e materiais</button>
+        <button class="tab-btn" data-tab="glossario" onclick="trocarAba(this)">📖 Glossário</button>
         <button class="tab-btn" data-tab="artigos" onclick="trocarAba(this)">📰 Mídia e análise</button>
         <button class="tab-btn" data-tab="comentarios" onclick="trocarAba(this)">💬 Comentários</button>
       </div>
@@ -409,7 +420,6 @@
         <h4 style="font-size:0.95rem;font-weight:600;color:var(--verde-escuro);margin:0.5rem 0 0.5rem;">⚖️ Legislação e atos (Fixo)</h4>
         
         <div class="curso-item">
-          <!-- Link direto para busca no DOU -->
           <a href="https://www.in.gov.br/consulta/-/buscar/dou?q=medida+provisoria+imposto+seletivo" target="_blank">
             <h4>Medida Provisória — Imposto Seletivo</h4>
             <p style="font-size:0.85rem;color:var(--cinza);margin-top:0.25rem;">Regulamenta o Imposto Seletivo e define regras de transição do IPI. Clique para acessar a busca oficial no DOU.</p>
@@ -625,6 +635,46 @@
         </div>
       </div>
 
+      <!-- NOVA ABA: GLOSSÁRIO -->
+      <div class="tab-panel" id="tab-glossario">
+        <p style="font-size:0.85rem;color:var(--cinza);margin-bottom:1.5rem;">Dicionário rápido com os termos mais importantes da Reforma Tributária. Ideal para alinhar o vocabulário do time e da gestão.</p>
+        
+        <div class="glossario-grid">
+          <div class="glossario-item">
+            <h4>🏛️ IVA Dual</h4>
+            <p>Modelo brasileiro de dois tributos sobre o consumo: a <strong>CBS</strong> (federal) e o <strong>IBS</strong> (estadual/municipal). Juntos, eles substituem PIS, Cofins, ICMS, ISS e IPI.</p>
+          </div>
+          <div class="glossario-item">
+            <h4>💸 Split Payment</h4>
+            <p>Mecanismo onde o imposto (CBS/IBS) é retido e pago automaticamente no momento da transação bancária (Pix, cartão, boleto). A empresa não acumula o imposto para pagar depois.</p>
+          </div>
+          <div class="glossario-item">
+            <h4>🏷️ cClassTrib</h4>
+            <p>Código de Classificação Tributária. É uma "etiqueta" que vai na nota fiscal. Ele diz ao sistema qual é o produto, se ele tem benefício fiscal e, principalmente, <strong>se gera direito a crédito</strong>.</p>
+          </div>
+          <div class="glossario-item">
+            <h4>💰 Crédito Financeiro</h4>
+            <p>A grande mudança para o Lucro Real. Na regra nova, a empresa se credita sobre quase tudo o que compra (desde que seja para a atividade), sem precisar provar o conceito restrito de "insumo" atual.</p>
+          </div>
+          <div class="glossario-item">
+            <h4>📤 Destaque "Por Fora"</h4>
+            <p>O imposto (CBS/IBS) não faz parte da sua própria base de cálculo. Se o produto custa R$ 100 e a alíquota é 10%, o total da nota é R$ 110 (e não R$ 100 com R$ 10 "dentro").</p>
+          </div>
+          <div class="glossario-item">
+            <h4>🚬 Imposto Seletivo (IS)</h4>
+            <p>O popular "imposto do pecado". Incide sobre produtos considerados prejudiciais à saúde ou ao meio ambiente (cigarros, bebidas alcoólicas, veículos poluentes). Não gera crédito.</p>
+          </div>
+          <div class="glossario-item">
+            <h4>🔄 Não-Cumulatividade</h4>
+            <p>O princípio de não cobrar imposto "em cascata". A empresa paga o imposto na venda, mas desconta o que já pagou na compra dos insumos (o crédito). A Reforma expande isso.</p>
+          </div>
+          <div class="glossario-item">
+            <h4>⏳ Ano-Teste (2026)</h4>
+            <p>Período de adaptação onde as notas já devem destacar CBS (0,9%) e IBS (0,1%), mas a empresa não precisa efetivamente pagar esses valores se cumprir as obrigações acessórias.</p>
+          </div>
+        </div>
+      </div>
+
       <div class="tab-panel" id="tab-artigos">
         <p style="font-size:0.8rem;color:var(--cinza);margin-bottom:1rem;">Análises, vídeos e podcasts de instituições e especialistas. Players embutidos abaixo.</p>
         <div class="video-grid">
@@ -721,6 +771,9 @@
         n.style.display = n.innerText.toLowerCase().includes(termo) ? 'flex' : 'none';
       });
       document.querySelectorAll('.norma-item').forEach(n => {
+        n.style.display = n.innerText.toLowerCase().includes(termo) ? 'block' : 'none';
+      });
+      document.querySelectorAll('.glossario-item').forEach(n => {
         n.style.display = n.innerText.toLowerCase().includes(termo) ? 'block' : 'none';
       });
     }
