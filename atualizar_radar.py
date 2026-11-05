@@ -16,13 +16,6 @@ PRAZOS_PADRAO = [{"quando": "Contínuo", "urgencia": "urgente", "titulo": "Valid
 NTS_CRITICAS = ["NT 2025.002", "NT 2026.008", "Tabela cClassTrib v1.71"]
 
 FONTES_NOTICIAS = [
-    # NOTÍCIA FICTÍCIA PARA TESTE DA IA HOJE
-    {
-        "data": "05/11/2026",
-        "titulo": "Receita Federal publica Nota Técnica 2026.999 com novas regras de cClassTrib",
-        "fonte": "Receita Federal (Teste)",
-        "url": "https://www.gov.br/receitafederal/",
-    },
     {
         "data": "02/11/2026",
         "titulo": "CBS de 11,3% surpreende empresas e pressiona preços, dizem especialistas",
@@ -31,14 +24,14 @@ FONTES_NOTICIAS = [
     }
 ]
 
-# ADICIONAMOS O FEED DA RECEITA E DO CFC AQUI
 RSS_FEEDS = [
     {"id": "portal_rt", "url": "https://www.reformatributaria.com/feed/", "fonte": "Portal da Reforma Tributária"},
     {"id": "rfb", "url": "https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/reforma-tributaria-do-consumo/ultimas-noticias/noticias/RSS", "fonte": "Receita Federal"},
     {"id": "cfc", "url": "https://cfc.org.br/feed/", "fonte": "CFC"}
 ]
 
-RSS_PALAVRAS_CHAVE = ["cbs", "ibs", "iva", "reforma", "tributár", "nota técnica", "nt 20", "nf-e", "cclastrib", "split payment", "lucro real", "senado", "tcu", "receita federal", "cfc"]
+# Adicionamos palavras como "mp", "medida provisória", "decreto", "projeto de lei"
+RSS_PALAVRAS_CHAVE = ["cbs", "ibs", "iva", "reforma", "tributár", "nota técnica", "nt 20", "nf-e", "cclastrib", "split payment", "lucro real", "senado", "tcu", "receita federal", "cfc", "mp", "medida provisória", "decreto", "projeto de lei", "imposto seletivo"]
 MAX_NOTICIAS = 12
 URLS_MONITORADAS = [{"id": "rfb", "url": "https://www.gov.br/receitafederal/", "label": "Receita Federal"}, {"id": "cfc", "url": "https://cfc.org.br", "label": "CFC"}]
 
@@ -58,6 +51,7 @@ def checar_fontes():
     return [{"id": i["id"], "label": i["label"], "url": i["url"], "ok": fetch_text(i["url"])[0], "verificado_em": agora_brt().isoformat()} for i in URLS_MONITORADAS]
 
 def _titulo_relevante(t): return any(k in (t or "").lower() for k in RSS_PALAVRAS_CHAVE)
+
 def _data_br(pub):
     if not pub: return agora_brt().strftime("%d/%m/%Y")
     try: return parsedate_to_datetime(pub).astimezone(BRT).strftime("%d/%m/%Y")
@@ -77,6 +71,15 @@ def buscar_rss():
         except: continue
     return coletadas
 
+def ordenar_noticias(noticias):
+    """Ordena as notícias da data mais recente para a mais antiga."""
+    def parse_data(n):
+        try:
+            return datetime.strptime(n["data"], "%d/%m/%Y")
+        except:
+            return datetime.min
+    return sorted(noticias, key=parse_data, reverse=True)
+
 def mesclar_noticias(rss_itens):
     out, vistos, urls_antigas = [], set(), set()
     if DEFAULT_JSON.exists():
@@ -84,21 +87,27 @@ def mesclar_noticias(rss_itens):
             for n in json.loads(DEFAULT_JSON.read_text(encoding="utf-8")).get("noticias", []):
                 if n.get("url"): urls_antigas.add(n["url"])
         except: pass
+    
+    # Mescla RSS e fixas
     for n in list(rss_itens) + list(FONTES_NOTICIAS):
         url = n.get("url", "").strip()
         if url and url not in vistos:
             vistos.add(url)
             if url not in urls_antigas: n["novo"] = True
             out.append(n)
-            if len(out) >= MAX_NOTICIAS: break
-    return out
+            
+    # Ordena e limita
+    out_ordenado = ordenar_noticias(out)
+    return out_ordenado[:MAX_NOTICIAS]
 
 def gerar_briefing_com_ia(noticias):
     api_key = os.environ.get("GEMINI_API_KEY")
     fallback = {"briefing": BRIEFING_PADRAO, "alertas": ALERTAS_PADRAO, "prazos": PRAZOS_PADRAO, "novas_normas": []}
     if not api_key: return fallback
 
-    noticias_info = "\n".join([f"- TÍTULO: {n.get('titulo', '')} | LINK: {n.get('url', '')}" for n in noticias[:8]])
+    # Aumentamos o limite de 8 para 15 notícias para a IA analisar
+    noticias_info = "\n".join([f"- TÍTULO: {n.get('titulo', '')} | DATA: {n.get('data', '')} | LINK: {n.get('url', '')}" for n in noticias[:15]])
+    
     prompt = f"""
     Analise estas notícias: \n{noticias_info}\n
     Gere um JSON estrito com:
@@ -108,7 +117,12 @@ def gerar_briefing_com_ia(noticias):
       "prazos": [ {{ "quando": "...", "urgencia": "urgente", "titulo": "...", "detalhe": "..." }} ],
       "novas_normas": [ {{ "titulo": "Nome da Norma", "descricao": "Resumo", "link": "URL", "instituicao": "Ex: RFB" }} ]
     }}
+    
+    REGRAS CRÍTICAS:
+    - Se qualquer notícia citar a publicação de uma nova Lei, Medida Provisória (MP), Decreto, Nota Técnica (NT), Instrução Normativa (IN) ou Ato, você DEVE adicioná-la no array 'novas_normas'.
+    - Se a notícia falar sobre a "MP do Imposto Seletivo", extraia o nome exato dela e o link.
     """
+    
     url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent?key={api_key}"
     payload = {"contents": [{"parts": [{"text": prompt}]}], "generationConfig": {"responseMimeType": "application/json"}}
     try:
@@ -124,7 +138,7 @@ def montar_payload(monitoramento, noticias):
     hoje = agora_brt()
     dados_ia = gerar_briefing_com_ia(noticias)
     return {
-        "gerado_em": hoje.isoformat(), "versao": "1.3", "revisao_radar": hoje.strftime("%d %b/%Y").lower(),
+        "gerado_em": hoje.isoformat(), "versao": "1.4", "revisao_radar": hoje.strftime("%d %b/%Y").lower(),
         "automacao": {"fontes_ok": sum(1 for m in monitoramento if m["ok"]), "fontes_total": len(monitoramento)},
         "briefing": dados_ia["briefing"], "alertas": dados_ia["alertas"], "prazos": dados_ia["prazos"],
         "novas_normas": dados_ia["novas_normas"], "noticias": noticias, "nts_criticas_lucro_real": NTS_CRITICAS,
@@ -136,7 +150,7 @@ def main():
     parser.add_argument("--rss", action="store_true")
     args = parser.parse_args()
     monitoramento = checar_fontes()
-    noticias = mesclar_noticias(buscar_rss()) if args.rss else FONTES_NOTICIAS
+    noticias = mesclar_noticias(buscar_rss()) if args.rss else ordenar_noticias(FONTES_NOTICIAS)
     args.json.write_text(json.dumps(montar_payload(monitoramento, noticias), ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print("Gravado com sucesso.")
 
