@@ -1,6 +1,6 @@
 {
-  "gerado_em": "2026-11-05T08:09:00.274123-03:00",
-  "versao": "1.4",
+  "gerado_em": "2026-11-05T08:40:17.061241-03:00",
+  "versao": "1.5",
   "revisao_radar": "05 nov/2026",
   "automacao": {
     "fontes_ok": 2,
@@ -35,8 +35,7 @@
       "data": "04/11/2026",
       "titulo": "URGENTE: Governo publica MP com alíquotas do Imposto Seletivo para 2027",
       "fonte": "Portal da Reforma Tributária",
-      "url": "https://www.reformatributaria.com/impostoseletivo/urgente-governo-publica-mp-do-imposto-seletivo-saiba-as-aliquotas/",
-      "novo": true
+      "url": "https://www.reformatributaria.com/impostoseletivo/urgente-governo-publica-mp-do-imposto-seletivo-saiba-as-aliquotas/"
     },
     {
       "data": "04/11/2026",
@@ -81,11 +80,17 @@
       "url": "https://cfc.org.br/noticias/resultado-definitivo-da-prova-objetiva-do-2o-eqt-de-2026-ja-esta-disponivel/"
     },
     {
+      "data": "04/11/2026",
+      "titulo": "Governo publica Medida Provisória regulamentando o Imposto Seletivo e regras de transição do IPI",
+      "fonte": "Ministério da Fazenda",
+      "url": "https://www.gov.br/fazenda/pt-br",
+      "novo": true
+    },
+    {
       "data": "03/11/2026",
       "titulo": "Fazenda agora diz que MP do Imposto Seletivo sai na 4ª feira",
       "fonte": "Portal da Reforma Tributária",
-      "url": "https://www.reformatributaria.com/impostoseletivo/fazenda-agora-diz-que-mp-do-imposto-seletivo-sai-na-4a-feira/",
-      "novo": true
+      "url": "https://www.reformatributaria.com/impostoseletivo/fazenda-agora-diz-que-mp-do-imposto-seletivo-sai-na-4a-feira/"
     },
     {
       "data": "03/11/2026",
