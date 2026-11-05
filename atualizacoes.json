@@ -1,5 +1,5 @@
 {
-  "gerado_em": "2026-11-05T07:51:00.054643-03:00",
+  "gerado_em": "2026-11-05T07:56:46.591347-03:00",
   "versao": "1.3",
   "revisao_radar": "05 nov/2026",
   "automacao": {
@@ -35,8 +35,7 @@
       "data": "04/11/2026",
       "titulo": "Justiça de SP concede liminar à ROIT para excluir IBS e CBS do cálculo do ISS a partir de 2027",
       "fonte": "Portal da Reforma Tributária",
-      "url": "https://www.reformatributaria.com/justica/justica-de-sp-concede-liminar-a-roit-para-excluir-ibs-e-cbs-do-calculo-do-iss-a-partir-de-2027/",
-      "novo": true
+      "url": "https://www.reformatributaria.com/justica/justica-de-sp-concede-liminar-a-roit-para-excluir-ibs-e-cbs-do-calculo-do-iss-a-partir-de-2027/"
     },
     {
       "data": "04/11/2026",
@@ -61,12 +60,6 @@
       "titulo": "Milei critica Brasil por ter expectativa de maior IVA do mundo",
       "fonte": "Portal da Reforma Tributária",
       "url": "https://www.reformatributaria.com/internacional/milei-critica-brasil-por-ter-expectativa-de-maior-iva-do-mundo/"
-    },
-    {
-      "data": "03/11/2026",
-      "titulo": "Receita prorroga prazo para adesão a editais de transação tributária até 30 de dezembro",
-      "fonte": "Portal da Reforma Tributária",
-      "url": "https://www.reformatributaria.com/economia-reforma-tributaria-impactos/receita-prorroga-prazo-para-adesao-a-editais-de-transacao-tributaria-ate-30-de-dezembro/"
     },
     {
       "data": "04/11/2026",
@@ -103,6 +96,13 @@
       "titulo": "Receita Federal publica Nota Técnica 2026.999 com novas regras de cClassTrib",
       "fonte": "Receita Federal (Teste)",
       "url": "https://www.gov.br/receitafederal/"
+    },
+    {
+      "data": "02/11/2026",
+      "titulo": "CBS de 11,3% surpreende empresas e pressiona preços, dizem especialistas",
+      "fonte": "Portal da Reforma Tributária",
+      "url": "https://www.reformatributaria.com/iva/aliquota-de-113-da-cbs-surpreende-empresas-e-pressiona-precos-dizem-especialistas/",
+      "novo": true
     }
   ],
   "nts_criticas_lucro_real": [
