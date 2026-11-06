@@ -1,5 +1,5 @@
 {
-  "gerado_em": "2026-11-06T07:56:16.634397-03:00",
+  "gerado_em": "2026-11-06T09:53:32.413816-03:00",
   "versao": "1.6",
   "revisao_radar": "06 nov/2026",
   "automacao": {
@@ -7,30 +7,47 @@
     "fontes_total": 2
   },
   "briefing": {
-    "titulo": "Briefing do dia — Fallback",
+    "titulo": "Briefing do dia — Foco em Risco e Ação",
     "bullets": [
-      "Atenção: Não foi possível gerar o resumo por IA hoje."
+      "RISCO: A edição da Medida Provisória do Imposto Seletivo e transição do IPI traz impacto direto sobre precificação, custos operacionais e margem de lucro de empresas no Lucro Real, com risco de recolhimento incorreto e perda de créditos.",
+      "AÇÃO: Auditar o cadastro de mercadorias (NCM), mapear os produtos sujeitos ao Imposto Seletivo e revisar imediatamente as parametrizações fiscais dos ERPs.",
+      "PRAZO: Definições regulatórias já vigentes com efeitos práticos diretos no planejamento tributário para 2027."
     ],
-    "acao_prioritaria": "Validar notas fiscais."
+    "acao_prioritaria": "Mapear a incidência do Imposto Seletivo no portfólio e adequar sistemas tributários às regras de transição do IPI para evitar penalidades e perdas de créditos operacionais."
   },
   "alertas": [
     {
       "tipo": "critico",
-      "titulo": "Validação de Notas",
-      "texto": "NF-e e CT-e exigem destaque CBS/IBS.",
+      "titulo": "Medida Provisória do Imposto Seletivo e Transição do IPI",
+      "texto": "A publicação da MP fixa alíquotas do Imposto Seletivo para 2027 e detalha a transição do IPI. O descumprimento ou a parametrização incorreta de ERPs pode gerar autuações fiscais graves, recolhimento indevido e prejuízo direto ao fluxo de caixa do Lucro Real.",
       "prazo": "Já em vigor"
     }
   ],
   "prazos": [
     {
-      "quando": "Contínuo",
+      "quando": "Imediato",
       "urgencia": "urgente",
-      "titulo": "Validação de Notas",
-      "detalhe": "CST, cClassTrib e CBS/IBS."
+      "titulo": "Adequação Operacional e Fiscal ao Imposto Seletivo",
+      "detalhe": "Revisar o enquadramento fiscal e a precificação dos produtos afetados pela nova MP do Imposto Seletivo para evitar inconsistências no EFD-ICMS/IPI e mitigar exposição fiscal."
     }
   ],
-  "novas_normas": [],
+  "novas_normas": [
+    {
+      "tipo": "MP",
+      "titulo": "Medida Provisória do Imposto Seletivo e Regras de Transição do IPI",
+      "descricao": "Regulamenta as alíquotas do Imposto Seletivo a vigorar em 2027 e estipula normas de transição para o IPI. Impacta a precificação, valoração de estoque e apuração do Lucro Real.",
+      "link": "https://www.in.gov.br/consulta/-/buscar/dou?q=medida+provisoria+imposto+seletivo",
+      "instituicao": "Governo Federal"
+    }
+  ],
   "noticias": [
+    {
+      "data": "06/11/2026",
+      "titulo": "Novo módulo de qualificação sobre Contabilidade Imobiliária e Construtoras é liberado pelo CFC",
+      "fonte": "CFC",
+      "url": "https://cfc.org.br/noticias/novo-modulo-de-qualificacao-sobre-contabilidade-imobiliaria-e-construtoras-e-liberado-pelo-cfc/",
+      "novo": true
+    },
     {
       "data": "05/11/2026",
       "titulo": "Reforma Tributária: Ibracon abre pesquisa para avaliar desafios da Auditoria Independente",
@@ -114,12 +131,6 @@
       "titulo": "Ibracon lança hotsite exclusivo sobre normas de auditoria revisadas pelo CFC",
       "fonte": "CFC",
       "url": "https://cfc.org.br/noticias/ibracon-lanca-hotsite-exclusivo-sobre-normas-de-auditoria-revisadas-pelo-cfc/"
-    },
-    {
-      "data": "03/11/2026",
-      "titulo": "Nova aula sobre Eleições 2026 é disponibilizada pelo CFC",
-      "fonte": "CFC",
-      "url": "https://cfc.org.br/noticias/nova-aula-sobre-eleicoes-2026-e-disponibilizada-pelo-cfc/"
     }
   ],
   "nts_criticas_lucro_real": [
