@@ -1,5 +1,5 @@
 {
-  "gerado_em": "2026-11-06T05:51:15.001609-03:00",
+  "gerado_em": "2026-11-06T07:56:16.634397-03:00",
   "versao": "1.6",
   "revisao_radar": "06 nov/2026",
   "automacao": {
@@ -7,51 +7,29 @@
     "fontes_total": 2
   },
   "briefing": {
-    "titulo": "Briefing do dia — Foco em Risco e Ação",
+    "titulo": "Briefing do dia — Fallback",
     "bullets": [
-      "RISCO: A publicação da Medida Provisória do Imposto Seletivo traz risco de elevação expressiva de custos em insumos e produtos a partir de 2027, além de incertezas na apuração de créditos no Lucro Real durante a transição do IPI.",
-      "AÇÃO: Mapear as NCMs da empresa e da cadeia de fornecedores para simular o impacto do Imposto Seletivo e avaliar tese judicial de exclusão do IBS/CBS da base do ISS/ICMS com base nas recentes liminares.",
-      "PRAZO: As regras entram em vigor em 2027, mas a readequação de ERPs, parametrização de cadastros e revisões de contratos de fornecimento precisam ser executadas no exercício de 2026."
+      "Atenção: Não foi possível gerar o resumo por IA hoje."
     ],
-    "acao_prioritaria": "Iniciar imediatamente o diagnóstico de impacto da MP do Imposto Seletivo nas operações do Lucro Real e reajustar a parametrização de créditos fiscais para a transição do IPI."
+    "acao_prioritaria": "Validar notas fiscais."
   },
   "alertas": [
     {
       "tipo": "critico",
-      "titulo": "Publicação da MP do Imposto Seletivo e Transição do IPI",
-      "texto": "O Governo publicou MP definindo alíquotas do Imposto Seletivo para 2027 e alterando a transição do IPI. Empresas no Lucro Real correm o risco de retenção/sobrecusto não creditável em insumos e erros de parametrização fiscal que geram multas e acréscimos moratórios se não adaptarem seus sistemas antecipadamente.",
-      "prazo": "Já em vigor (Efeitos operacionais para 2027)"
-    },
-    {
-      "tipo": "critico",
-      "titulo": "Precedente Judicial: Exclusão do IBS/CBS da Base do ISS",
-      "texto": "Liminar obtida em SP autoriza a exclusão do IBS e da CBS do cálculo do ISS a partir de 2027. A não inclusão da empresa em ações preventivas pode acarretar recolhimento indevido por cumulatividade velada na transição do sistema tributário.",
-      "prazo": "Imediato"
+      "titulo": "Validação de Notas",
+      "texto": "NF-e e CT-e exigem destaque CBS/IBS.",
+      "prazo": "Já em vigor"
     }
   ],
   "prazos": [
     {
-      "quando": "01/01/2027",
+      "quando": "Contínuo",
       "urgencia": "urgente",
-      "titulo": "Adequação dos Cadastros e ERP para Imposto Seletivo e Transição do IPI",
-      "detalhe": "Parametrizar os sistemas fiscais e contábeis de acordo com a nova MP do Imposto Seletivo para evitar acusações fiscais de recolhimento a menor ou glosa de créditos tributários no Lucro Real."
-    },
-    {
-      "quando": "Exercício 2026",
-      "urgencia": "urgente",
-      "titulo": "Ajuizamento de Medidas Judiciais Preventivas (IBS/CBS no ISS)",
-      "detalhe": "Ingressar com medidas judiciais para garantir a não inclusão do IBS/CBS nas bases de cálculo tributárias locais/estaduais antes do início da cobrança em 2027."
+      "titulo": "Validação de Notas",
+      "detalhe": "CST, cClassTrib e CBS/IBS."
     }
   ],
-  "novas_normas": [
-    {
-      "tipo": "MP",
-      "titulo": "Medida Provisória do Imposto Seletivo e Regras de Transição do IPI",
-      "descricao": "Regulamenta as alíquotas do Imposto Seletivo aplicáveis a partir de 2027 e estabelece as regras de transição e redução progressiva do IPI, impactando diretamente o custo de aquisição de insumos e a apuração de créditos do Lucro Real.",
-      "link": "https://www.in.gov.br/consulta/-/buscar/dou?q=medida+provisoria+imposto+seletivo",
-      "instituicao": "Governo Federal / Receita Federal do Brasil"
-    }
-  ],
+  "novas_normas": [],
   "noticias": [
     {
       "data": "05/11/2026",
@@ -87,29 +65,25 @@
       "data": "04/11/2026",
       "titulo": "CBS de 11,3%: a economia digital que ainda não entrou na conta",
       "fonte": "Portal da Reforma Tributária",
-      "url": "https://www.reformatributaria.com/opiniao/cbs-de-113-a-economia-digital-que-ainda-nao-entrou-na-conta/",
-      "novo": true
+      "url": "https://www.reformatributaria.com/opiniao/cbs-de-113-a-economia-digital-que-ainda-nao-entrou-na-conta/"
     },
     {
       "data": "04/11/2026",
       "titulo": "Comissão do Senado fará audiência pública sobre alíquota da CBS",
       "fonte": "Portal da Reforma Tributária",
-      "url": "https://www.reformatributaria.com/reforma-tributaria-congresso-nacional/comissao-do-senado-fara-audiencia-publica-sobre-aliquota-da-cbs/",
-      "novo": true
+      "url": "https://www.reformatributaria.com/reforma-tributaria-congresso-nacional/comissao-do-senado-fara-audiencia-publica-sobre-aliquota-da-cbs/"
     },
     {
       "data": "04/11/2026",
       "titulo": "“Fomos pegos de surpresa”, diz relator da alíquota da CBS",
       "fonte": "Portal da Reforma Tributária",
-      "url": "https://www.reformatributaria.com/iva/fomos-pegos-de-surpresa-diz-relator-da-aliquota-da-cbs/",
-      "novo": true
+      "url": "https://www.reformatributaria.com/iva/fomos-pegos-de-surpresa-diz-relator-da-aliquota-da-cbs/"
     },
     {
       "data": "04/11/2026",
       "titulo": "Milei critica Brasil por ter expectativa de maior IVA do mundo",
       "fonte": "Portal da Reforma Tributária",
-      "url": "https://www.reformatributaria.com/internacional/milei-critica-brasil-por-ter-expectativa-de-maior-iva-do-mundo/",
-      "novo": true
+      "url": "https://www.reformatributaria.com/internacional/milei-critica-brasil-por-ter-expectativa-de-maior-iva-do-mundo/"
     },
     {
       "data": "04/11/2026",
@@ -127,29 +101,25 @@
       "data": "04/11/2026",
       "titulo": "Governo publica Medida Provisória regulamentando o Imposto Seletivo e regras de transição do IPI",
       "fonte": "Ministério da Fazenda",
-      "url": "https://www.in.gov.br/consulta/-/buscar/dou?q=medida+provisoria+imposto+seletivo",
-      "novo": true
+      "url": "https://www.in.gov.br/consulta/-/buscar/dou?q=medida+provisoria+imposto+seletivo"
     },
     {
       "data": "03/11/2026",
       "titulo": "Fazenda agora diz que MP do Imposto Seletivo sai na 4ª feira",
       "fonte": "Portal da Reforma Tributária",
-      "url": "https://www.reformatributaria.com/impostoseletivo/fazenda-agora-diz-que-mp-do-imposto-seletivo-sai-na-4a-feira/",
-      "novo": true
+      "url": "https://www.reformatributaria.com/impostoseletivo/fazenda-agora-diz-que-mp-do-imposto-seletivo-sai-na-4a-feira/"
     },
     {
       "data": "03/11/2026",
       "titulo": "Ibracon lança hotsite exclusivo sobre normas de auditoria revisadas pelo CFC",
       "fonte": "CFC",
-      "url": "https://cfc.org.br/noticias/ibracon-lanca-hotsite-exclusivo-sobre-normas-de-auditoria-revisadas-pelo-cfc/",
-      "novo": true
+      "url": "https://cfc.org.br/noticias/ibracon-lanca-hotsite-exclusivo-sobre-normas-de-auditoria-revisadas-pelo-cfc/"
     },
     {
       "data": "03/11/2026",
       "titulo": "Nova aula sobre Eleições 2026 é disponibilizada pelo CFC",
       "fonte": "CFC",
-      "url": "https://cfc.org.br/noticias/nova-aula-sobre-eleicoes-2026-e-disponibilizada-pelo-cfc/",
-      "novo": true
+      "url": "https://cfc.org.br/noticias/nova-aula-sobre-eleicoes-2026-e-disponibilizada-pelo-cfc/"
     }
   ],
   "nts_criticas_lucro_real": [
