@@ -1,5 +1,5 @@
 {
-  "gerado_em": "2026-11-05T19:43:14.328849-03:00",
+  "gerado_em": "2026-11-05T21:54:09.726758-03:00",
   "versao": "1.6",
   "revisao_radar": "05 nov/2026",
   "automacao": {
@@ -7,29 +7,45 @@
     "fontes_total": 2
   },
   "briefing": {
-    "titulo": "Briefing do dia — Fallback",
+    "titulo": "Briefing do dia — Foco em Risco e Ação",
     "bullets": [
-      "Atenção: Não foi possível gerar o resumo por IA hoje."
+      "RISCO: A publicação da Medida Provisória do Imposto Seletivo e transição do IPI traz alto risco de distorção na margem de lucro, encarecimento da cadeia produtiva e perda de créditos operacionais no Lucro Real se não houver readequação imediata dos custos.",
+      "AÇÃO: A equipe fiscal e contábil deve mapear os produtos da empresa afetados pelo Imposto Seletivo, revisar os critérios de creditamento da transição do IPI e avaliar medida judicial para excluir o IBS/CBS da base do ISS.",
+      "PRAZO: Vigência e efeitos diretos na formação do preço e sistemas a partir de 2027, exigindo alteração operacional e parametrização no ERP ainda no exercício corrente."
     ],
-    "acao_prioritaria": "Validar notas fiscais."
+    "acao_prioritaria": "Iniciar imediatamente o mapeamento dos impactos da MP do Imposto Seletivo na cadeia de suprimentos e ajustar a parametrização do ERP para a transição dos créditos de IPI."
   },
   "alertas": [
     {
       "tipo": "critico",
-      "titulo": "Validação de Notas",
-      "texto": "NF-e e CT-e exigem destaque CBS/IBS.",
-      "prazo": "Já em vigor"
+      "titulo": "Publicação da MP do Imposto Seletivo e Regras de Transição do IPI",
+      "texto": "A MP fixa alíquotas para 2027 e altera a sistemática de créditos do IPI. O descumprimento ou erro na transição pode acarretar perda irremediável do direito de crédito acumulado de IPI, além de autuações por descumprimento de obrigações acessórias decorrentes do Imposto Seletivo.",
+      "prazo": "Já em vigor (Efeitos práticos a partir de 2027)"
+    },
+    {
+      "tipo": "critico",
+      "titulo": "Precedente do ISS: Exclusão de IBS e CBS da Base de Cálculo",
+      "texto": "Liminar concedida pela Justiça de SP determinou a exclusão de IBS e CBS do cálculo do ISS a partir de 2027. O não ajuizamento prévio de medida similar sujeita a empresa à tributação em duplicidade (bis in idem) e acarreta entraves para posterior ressarcimento.",
+      "prazo": "01/01/2027 (Ação jurídica preventiva recomendada de imediato)"
     }
   ],
   "prazos": [
     {
-      "quando": "Contínuo",
+      "quando": "01/01/2027",
       "urgencia": "urgente",
-      "titulo": "Validação de Notas",
-      "detalhe": "CST, cClassTrib e CBS/IBS."
+      "titulo": "Parametrização do ERP para o Imposto Seletivo e Regras do IPI",
+      "detalhe": "Adequar o sistema fiscal para aplicar as novas alíquotas do Imposto Seletivo e assegurar a correta apuração e retenção dos créditos remanescentes do IPI, evitando penalidades fiscais e perda de caixa."
     }
   ],
-  "novas_normas": [],
+  "novas_normas": [
+    {
+      "tipo": "MP",
+      "titulo": "Medida Provisória do Imposto Seletivo e Regras de Transição do IPI",
+      "descricao": "Regulamenta as alíquotas do Imposto Seletivo para vigência em 2027 e estabelece as regras de transição dos créditos de IPI no regime do Lucro Real, impactando diretamente o CMV/CPV e a margem operacional.",
+      "link": "https://www.in.gov.br/consulta/-/buscar/dou?q=medida+provisoria+imposto+seletivo",
+      "instituicao": "Governo Federal"
+    }
+  ],
   "noticias": [
     {
       "data": "05/11/2026",
