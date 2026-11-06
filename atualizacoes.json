@@ -1,5 +1,5 @@
 {
-  "gerado_em": "2026-11-06T09:53:32.413816-03:00",
+  "gerado_em": "2026-11-06T11:50:44.236195-03:00",
   "versao": "1.6",
   "revisao_radar": "06 nov/2026",
   "automacao": {
@@ -9,44 +9,56 @@
   "briefing": {
     "titulo": "Briefing do dia — Foco em Risco e Ação",
     "bullets": [
-      "RISCO: A edição da Medida Provisória do Imposto Seletivo e transição do IPI traz impacto direto sobre precificação, custos operacionais e margem de lucro de empresas no Lucro Real, com risco de recolhimento incorreto e perda de créditos.",
-      "AÇÃO: Auditar o cadastro de mercadorias (NCM), mapear os produtos sujeitos ao Imposto Seletivo e revisar imediatamente as parametrizações fiscais dos ERPs.",
-      "PRAZO: Definições regulatórias já vigentes com efeitos práticos diretos no planejamento tributário para 2027."
+      "RISCO: A publicação da MP do Imposto Seletivo (IS) e das regras de transição do IPI altera diretamente o custo dos produtos impactados, trazendo risco imediato de perda de margem, precificação incorreta e acúmulo de créditos indevidos no Lucro Real.",
+      "AÇÃO: Realizar o saneamento cadastral de NCMs sujeitas ao IS, reavaliar o fluxo de caixa para 2027 e avaliar a impetração de medidas judiciais para excluir o IBS/CBS das bases tributárias municipais e estaduais.",
+      "PRAZO: Alíquotas e regras de transição entram em vigor em 2027, exigindo reparametrização de ERPs e revisão do planejamento orçamentário de forma imediata (ainda em 2026)."
     ],
-    "acao_prioritaria": "Mapear a incidência do Imposto Seletivo no portfólio e adequar sistemas tributários às regras de transição do IPI para evitar penalidades e perdas de créditos operacionais."
+    "acao_prioritaria": "Auditar a cadeia de produtos para mapear a incidência do Imposto Seletivo e parametrizar o ERP para a transição dos créditos do IPI, IBS e CBS."
   },
   "alertas": [
     {
       "tipo": "critico",
-      "titulo": "Medida Provisória do Imposto Seletivo e Transição do IPI",
-      "texto": "A publicação da MP fixa alíquotas do Imposto Seletivo para 2027 e detalha a transição do IPI. O descumprimento ou a parametrização incorreta de ERPs pode gerar autuações fiscais graves, recolhimento indevido e prejuízo direto ao fluxo de caixa do Lucro Real.",
-      "prazo": "Já em vigor"
+      "titulo": "Impacto Imediato da MP do Imposto Seletivo no Lucro Real",
+      "texto": "A Medida Provisória fixou as alíquotas do Imposto Seletivo (IS) e a transição do IPI. Empresas tributadas pelo Lucro Real que não adequarem seus sistemas e custos até o final de 2026 terão distorções no aproveitamento de créditos e apuração de margem líquida, gerando desembolsos fiscais não previstos.",
+      "prazo": "Já em vigor (Adaptação para 2027)"
+    },
+    {
+      "tipo": "critico",
+      "titulo": "Litigiosidade na Transição: Exclusão de IBS/CBS do ISS",
+      "texto": "Decisão liminar concedida pela Justiça de SP autoriza a exclusão do IBS e da CBS da base do ISS a partir de 2027. O não ajuizamento de ações preventivas pode sujeitar a empresa ao recolhimento indevido com sobreposição de bases tributárias.",
+      "prazo": "Imediato"
     }
   ],
   "prazos": [
     {
-      "quando": "Imediato",
+      "quando": "04/11/2026",
       "urgencia": "urgente",
-      "titulo": "Adequação Operacional e Fiscal ao Imposto Seletivo",
-      "detalhe": "Revisar o enquadramento fiscal e a precificação dos produtos afetados pela nova MP do Imposto Seletivo para evitar inconsistências no EFD-ICMS/IPI e mitigar exposição fiscal."
+      "titulo": "Mapeamento das Alíquotas do IS e Transição do IPI",
+      "detalhe": "Identificar os produtos abrangidos pela nova MP do Imposto Seletivo e ajustar o sistema de apuração de créditos do Lucro Real para evitar pagamentos a maior em 2027."
     }
   ],
   "novas_normas": [
     {
       "tipo": "MP",
       "titulo": "Medida Provisória do Imposto Seletivo e Regras de Transição do IPI",
-      "descricao": "Regulamenta as alíquotas do Imposto Seletivo a vigorar em 2027 e estipula normas de transição para o IPI. Impacta a precificação, valoração de estoque e apuração do Lucro Real.",
+      "descricao": "Regulamenta as alíquotas incidentes do Imposto Seletivo (IS) a partir de 2027 e estabelece a sistemática de transição dos créditos e alíquotas do IPI, impactando a apuração do Lucro Real e a formação de preço dos setores atingidos.",
       "link": "https://www.in.gov.br/consulta/-/buscar/dou?q=medida+provisoria+imposto+seletivo",
-      "instituicao": "Governo Federal"
+      "instituicao": "Presidência da República / Ministério da Fazenda"
     }
   ],
   "noticias": [
     {
       "data": "06/11/2026",
+      "titulo": "Projeto do CFC fortalece a governança e promove melhorias na gestão do CRCAP",
+      "fonte": "CFC",
+      "url": "https://cfc.org.br/noticias/projeto-do-cfc-fortalece-a-governanca-e-promove-melhorias-na-gestao-do-crcap/",
+      "novo": true
+    },
+    {
+      "data": "06/11/2026",
       "titulo": "Novo módulo de qualificação sobre Contabilidade Imobiliária e Construtoras é liberado pelo CFC",
       "fonte": "CFC",
-      "url": "https://cfc.org.br/noticias/novo-modulo-de-qualificacao-sobre-contabilidade-imobiliaria-e-construtoras-e-liberado-pelo-cfc/",
-      "novo": true
+      "url": "https://cfc.org.br/noticias/novo-modulo-de-qualificacao-sobre-contabilidade-imobiliaria-e-construtoras-e-liberado-pelo-cfc/"
     },
     {
       "data": "05/11/2026",
@@ -125,12 +137,6 @@
       "titulo": "Fazenda agora diz que MP do Imposto Seletivo sai na 4ª feira",
       "fonte": "Portal da Reforma Tributária",
       "url": "https://www.reformatributaria.com/impostoseletivo/fazenda-agora-diz-que-mp-do-imposto-seletivo-sai-na-4a-feira/"
-    },
-    {
-      "data": "03/11/2026",
-      "titulo": "Ibracon lança hotsite exclusivo sobre normas de auditoria revisadas pelo CFC",
-      "fonte": "CFC",
-      "url": "https://cfc.org.br/noticias/ibracon-lanca-hotsite-exclusivo-sobre-normas-de-auditoria-revisadas-pelo-cfc/"
     }
   ],
   "nts_criticas_lucro_real": [
