@@ -1,5 +1,5 @@
 {
-  "gerado_em": "2026-11-06T13:46:56.882214-03:00",
+  "gerado_em": "2026-11-06T15:45:39.296746-03:00",
   "versao": "1.6",
   "revisao_radar": "06 nov/2026",
   "automacao": {
@@ -7,45 +7,29 @@
     "fontes_total": 2
   },
   "briefing": {
-    "titulo": "Briefing do dia — Foco em Risco e Ação",
+    "titulo": "Briefing do dia — Fallback",
     "bullets": [
-      "RISCO: A publicação da Medida Provisória do Imposto Seletivo para 2027 altera drasticamente a composição de custos e o planejamento de IPI, gerando risco severo de erro na formação de preços, perda de margem e passivos por recolhimento incorreto no Lucro Real.",
-      "AÇÃO: O time fiscal deve mapear imediatamente os NCMs da empresa impactados pelo Imposto Seletivo, reavaliar o aproveitamento de créditos e validar a viabilidade de ações judiciais para excluir o IBS/CBS das bases tributárias estaduais e municipais.",
-      "PRAZO: Adequação dos sistemas ERP e simulação dos impactos de caixa devem ser concluídos ainda no 4º trimestre de 2026 para vigência dos novos tributos em 2027."
+      "Atenção: Não foi possível gerar o resumo por IA hoje."
     ],
-    "acao_prioritaria": "Auditar as NCMs da empresa frente à nova MP do Imposto Seletivo e simular os impactos operacionais e financeiros no Lucro Real para a transição de 2027."
+    "acao_prioritaria": "Validar notas fiscais."
   },
   "alertas": [
     {
       "tipo": "critico",
-      "titulo": "Publicação da MP do Imposto Seletivo e Transição do IPI",
-      "texto": "A edição da Medida Provisória regulamentando as alíquotas do Imposto Seletivo e a transição do IPI gera impacto direto no custo de produção e comercialização. Empresas que não parametrizarem seus sistemas sofrerão autuações fiscais, glosa de créditos ou represamento de fluxo de caixa a partir de 2027.",
-      "prazo": "Já em vigor (Adequação operacional imediata)"
-    },
-    {
-      "tipo": "critico",
-      "titulo": "Exclusão do IBS/CBS da Base do ISS/ICMS",
-      "texto": "Com decisões judiciais recentes favoráveis excluindo tributos da Reforma da base municipal/estadual, a inércia da empresa em pleitear o mesmo direito pode resultar em pagamento em duplicidade e perda de competitividade frente a concorrentes liminados.",
-      "prazo": "Ação Preventiva para 2027"
+      "titulo": "Validação de Notas",
+      "texto": "NF-e e CT-e exigem destaque CBS/IBS.",
+      "prazo": "Já em vigor"
     }
   ],
   "prazos": [
     {
-      "quando": "Imediato",
+      "quando": "Contínuo",
       "urgencia": "urgente",
-      "titulo": "Parametrização do Imposto Seletivo e IPI no ERP",
-      "detalhe": "Mapear a MP publicada para alinhar alíquotas, regras de não cumulatividade e regras de transição tributária antes do encerramento do exercício de 2026."
+      "titulo": "Validação de Notas",
+      "detalhe": "CST, cClassTrib e CBS/IBS."
     }
   ],
-  "novas_normas": [
-    {
-      "tipo": "MP",
-      "titulo": "Medida Provisória regulamentando o Imposto Seletivo e regras de transição do IPI",
-      "descricao": "Define as alíquotas do Imposto Seletivo a vigorar em 2027 e estabelece as regras de transição e convivência com o IPI. Altera diretamente o custo industrial, a tributação sobre o consumo e a apuração do Lucro Real.",
-      "link": "https://www.in.gov.br/consulta/-/buscar/dou?q=medida+provisoria+imposto+seletivo",
-      "instituicao": "Governo Federal"
-    }
-  ],
+  "novas_normas": [],
   "noticias": [
     {
       "data": "06/11/2026",
