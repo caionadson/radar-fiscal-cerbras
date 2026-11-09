@@ -1,5 +1,5 @@
 {
-  "gerado_em": "2026-11-09T17:47:56.549604-03:00",
+  "gerado_em": "2026-11-09T19:40:29.578381-03:00",
   "versao": "1.6",
   "revisao_radar": "09 nov/2026",
   "automacao": {
@@ -31,6 +31,13 @@
   ],
   "novas_normas": [],
   "noticias": [
+    {
+      "data": "09/11/2026",
+      "titulo": "CFC, Tesouro Nacional e CRCCE realizam a Semana Contábil e Fiscal para Estados e Municípios em Fortaleza",
+      "fonte": "CFC",
+      "url": "https://cfc.org.br/noticias/cfc-tesouro-nacional-e-crcce-realizam-a-semana-contabil-e-fiscal-para-estados-e-municipios-em-fortaleza/",
+      "novo": true
+    },
     {
       "data": "09/11/2026",
       "titulo": "CFC, CPC e CVM abrem consulta pública sobre novas regras para informações financeiras",
@@ -102,12 +109,6 @@
       "titulo": "Vice-presidente do CFC assume presidência de comitê internacional de prevenção à lavagem de dinheiro",
       "fonte": "CFC",
       "url": "https://cfc.org.br/noticias/vice-presidente-do-cfc-assume-presidencia-de-comite-internacional-de-prevencao-a-lavagem-de-dinheiro/"
-    },
-    {
-      "data": "05/11/2026",
-      "titulo": "CFC e Tribunais de Contas propõem pacto fiscal à Presidência e governos estaduais",
-      "fonte": "CFC",
-      "url": "https://cfc.org.br/noticias/cfc-e-tribunais-de-contas-propoem-pacto-fiscal-a-presidencia-e-governos-estaduais/"
     },
     {
       "data": "04/11/2026",
