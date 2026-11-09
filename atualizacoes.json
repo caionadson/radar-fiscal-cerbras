@@ -1,5 +1,5 @@
 {
-  "gerado_em": "2026-11-09T06:01:59.998705-03:00",
+  "gerado_em": "2026-11-09T07:51:32.125152-03:00",
   "versao": "1.6",
   "revisao_radar": "09 nov/2026",
   "automacao": {
@@ -7,39 +7,29 @@
     "fontes_total": 2
   },
   "briefing": {
-    "titulo": "Briefing do dia — Foco em Risco e Ação",
+    "titulo": "Briefing do dia — Fallback",
     "bullets": [
-      "RISCO: A publicação de Medida Provisória definindo alíquotas do Imposto Seletivo e regras de transição do IPI exige reavaliação imediata de margem e precificação para 2027, sob pena de perda de competitividade e autuações fiscais por incorreção na classificação fiscal.",
-      "AÇÃO: Mapear imediatamente a Nomenclatura Comum do Mercosul (NCM) dos itens comercializados ou produzidos, simulando os impactos do Imposto Seletivo no fluxo de caixa e adaptando o sistema ERP para a transição dos impostos.",
-      "PRAZO: As diretrizes da MP foram publicadas em 04/11/2026 e impactam o planejamento tributário com efeitos operacionais e de adequação tecnológica obrigatórios antes do início da fase de transição em 2027."
+      "Atenção: Não foi possível gerar o resumo por IA hoje."
     ],
-    "acao_prioritaria": "Auditar o cadastro de produtos (NCM) e simular a nova carga tributária decorrente da MP do Imposto Seletivo e das regras de transição do IPI."
+    "acao_prioritaria": "Validar notas fiscais."
   },
   "alertas": [
     {
       "tipo": "critico",
-      "titulo": "Publicação da MP do Imposto Seletivo e Regras de Transição do IPI",
-      "texto": "O Governo Federal publicou Medida Provisória regulamentando o Imposto Seletivo e fixando as alíquotas para 2027, além de estabelecer a transição do IPI. Empresas do Lucro Real que não parametrizarem seus sistemas fiscais correm risco de tributação indevida, perda de créditos na transição e autuações por descumprimento de obrigações acessórias.",
-      "prazo": "Já em vigor (Adaptações para 2027)"
+      "titulo": "Validação de Notas",
+      "texto": "NF-e e CT-e exigem destaque CBS/IBS.",
+      "prazo": "Já em vigor"
     }
   ],
   "prazos": [
     {
-      "quando": "Imediato",
+      "quando": "Contínuo",
       "urgencia": "urgente",
-      "titulo": "Mapeamento do Imposto Seletivo nos Produtos",
-      "detalhe": "Revisar as NCMs afetadas pela nova MP do Imposto Seletivo para mensurar o impacto no custo das mercadorias e evitar falta de provisionamento de caixa."
+      "titulo": "Validação de Notas",
+      "detalhe": "CST, cClassTrib e CBS/IBS."
     }
   ],
-  "novas_normas": [
-    {
-      "tipo": "MP",
-      "titulo": "Medida Provisória do Imposto Seletivo e Regras de Transição do IPI",
-      "descricao": "Regulamenta as alíquotas incidentes do Imposto Seletivo a partir de 2027 e dita as regras de transição da cobrança e desoneração do IPI, impactando diretamente o custo dos produtos de empresas no regime do Lucro Real.",
-      "link": "https://www.in.gov.br/consulta/-/buscar/dou?q=medida+provisoria+imposto+seletivo",
-      "instituicao": "Governo Federal"
-    }
-  ],
+  "novas_normas": [],
   "noticias": [
     {
       "data": "06/11/2026",
@@ -52,6 +42,62 @@
       "titulo": "Novo módulo de qualificação sobre Contabilidade Imobiliária e Construtoras é liberado pelo CFC",
       "fonte": "CFC",
       "url": "https://cfc.org.br/noticias/novo-modulo-de-qualificacao-sobre-contabilidade-imobiliaria-e-construtoras-e-liberado-pelo-cfc/"
+    },
+    {
+      "data": "05/11/2026",
+      "titulo": "Live do Portal debaterá MP com alíquotas do Imposto Seletivo para 2027",
+      "fonte": "Portal da Reforma Tributária",
+      "url": "https://www.reformatributaria.com/impostoseletivo/live-do-portal-debatera-mp-com-aliquotas-do-imposto-seletivo-para-2027/",
+      "novo": true
+    },
+    {
+      "data": "05/11/2026",
+      "titulo": "Minuta de PEC que adia reforma não está protocolada e tem baixa chance de aprovação",
+      "fonte": "Portal da Reforma Tributária",
+      "url": "https://www.reformatributaria.com/reforma-tributaria-congresso-nacional/minuta-de-pec-que-adia-reforma-nao-esta-protocolada-e-tem-baixa-chance-de-aprovacao/",
+      "novo": true
+    },
+    {
+      "data": "05/11/2026",
+      "titulo": "Comitê Gestor do IBS forma equipe técnica para assessorar gestão de aplicações financeiras",
+      "fonte": "Portal da Reforma Tributária",
+      "url": "https://www.reformatributaria.com/comite-gestor-do-ibs-reforma-tributaria/comite-gestor-do-ibs-forma-equipe-tecnica-para-assessorar-gestao-de-aplicacoes-financeiras/",
+      "novo": true
+    },
+    {
+      "data": "05/11/2026",
+      "titulo": "CTe: pacote de schemas inclui novo campo para o Simples Nacional",
+      "fonte": "Portal da Reforma Tributária",
+      "url": "https://www.reformatributaria.com/documentos-fiscais/cte-pacote-de-schemas-inclui-novo-campo-para-o-simples-nacional/",
+      "novo": true
+    },
+    {
+      "data": "05/11/2026",
+      "titulo": "EFD-Contribuições seguirá ativa em 2027 para regime de caixa e créditos de transição da CBS",
+      "fonte": "Portal da Reforma Tributária",
+      "url": "https://www.reformatributaria.com/tecnologia/efd-contribuicoes-seguira-ativa-em-2027-para-regime-de-caixa-e-creditos-de-transicao-da-cbs/",
+      "novo": true
+    },
+    {
+      "data": "05/11/2026",
+      "titulo": "Piauí define índices de participação dos municípios na arrecadação do IBS em 2027",
+      "fonte": "Portal da Reforma Tributária",
+      "url": "https://www.reformatributaria.com/iva/piaui-define-indices-de-participacao-dos-municipios-na-arrecadacao-do-ibs-em-2027/",
+      "novo": true
+    },
+    {
+      "data": "05/11/2026",
+      "titulo": "Ministro da Fazenda descarta adiar CBS: “Previsão é começar em janeiro”",
+      "fonte": "Portal da Reforma Tributária",
+      "url": "https://www.reformatributaria.com/governo/ministro-da-fazenda-descarta-adiar-reforma-previsao-e-comecar-em-janeiro/",
+      "novo": true
+    },
+    {
+      "data": "05/11/2026",
+      "titulo": "Lula envia PEC para manter IPI nos produtos do Imposto Seletivo no início de 2027",
+      "fonte": "Portal da Reforma Tributária",
+      "url": "https://www.reformatributaria.com/impostoseletivo/lula-envia-pec-para-manter-ipi-nos-produtos-do-imposto-seletivo-no-inicio-de-2027/",
+      "novo": true
     },
     {
       "data": "05/11/2026",
@@ -82,54 +128,6 @@
       "titulo": "Justiça de SP concede liminar à ROIT para excluir IBS e CBS do cálculo do ISS a partir de 2027",
       "fonte": "Portal da Reforma Tributária",
       "url": "https://www.reformatributaria.com/justica/justica-de-sp-concede-liminar-a-roit-para-excluir-ibs-e-cbs-do-calculo-do-iss-a-partir-de-2027/"
-    },
-    {
-      "data": "04/11/2026",
-      "titulo": "CBS de 11,3%: a economia digital que ainda não entrou na conta",
-      "fonte": "Portal da Reforma Tributária",
-      "url": "https://www.reformatributaria.com/opiniao/cbs-de-113-a-economia-digital-que-ainda-nao-entrou-na-conta/"
-    },
-    {
-      "data": "04/11/2026",
-      "titulo": "Comissão do Senado fará audiência pública sobre alíquota da CBS",
-      "fonte": "Portal da Reforma Tributária",
-      "url": "https://www.reformatributaria.com/reforma-tributaria-congresso-nacional/comissao-do-senado-fara-audiencia-publica-sobre-aliquota-da-cbs/"
-    },
-    {
-      "data": "04/11/2026",
-      "titulo": "“Fomos pegos de surpresa”, diz relator da alíquota da CBS",
-      "fonte": "Portal da Reforma Tributária",
-      "url": "https://www.reformatributaria.com/iva/fomos-pegos-de-surpresa-diz-relator-da-aliquota-da-cbs/"
-    },
-    {
-      "data": "04/11/2026",
-      "titulo": "Milei critica Brasil por ter expectativa de maior IVA do mundo",
-      "fonte": "Portal da Reforma Tributária",
-      "url": "https://www.reformatributaria.com/internacional/milei-critica-brasil-por-ter-expectativa-de-maior-iva-do-mundo/"
-    },
-    {
-      "data": "04/11/2026",
-      "titulo": "CFC debate ensino contábil e inteligência artificial em seminário internacional",
-      "fonte": "CFC",
-      "url": "https://cfc.org.br/noticias/cfc-debate-ensino-contabil-e-inteligencia-artificial-em-seminario-internacional/"
-    },
-    {
-      "data": "04/11/2026",
-      "titulo": "Resultado definitivo da prova objetiva do 2º EQT de 2026 já está disponível",
-      "fonte": "CFC",
-      "url": "https://cfc.org.br/noticias/resultado-definitivo-da-prova-objetiva-do-2o-eqt-de-2026-ja-esta-disponivel/"
-    },
-    {
-      "data": "04/11/2026",
-      "titulo": "Governo publica Medida Provisória regulamentando o Imposto Seletivo e regras de transição do IPI",
-      "fonte": "Ministério da Fazenda",
-      "url": "https://www.in.gov.br/consulta/-/buscar/dou?q=medida+provisoria+imposto+seletivo"
-    },
-    {
-      "data": "03/11/2026",
-      "titulo": "Fazenda agora diz que MP do Imposto Seletivo sai na 4ª feira",
-      "fonte": "Portal da Reforma Tributária",
-      "url": "https://www.reformatributaria.com/impostoseletivo/fazenda-agora-diz-que-mp-do-imposto-seletivo-sai-na-4a-feira/"
     }
   ],
   "nts_criticas_lucro_real": [
