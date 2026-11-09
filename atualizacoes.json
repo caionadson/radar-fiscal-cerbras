@@ -1,5 +1,5 @@
 {
-  "gerado_em": "2026-11-09T13:59:16.168415-03:00",
+  "gerado_em": "2026-11-09T15:48:51.360928-03:00",
   "versao": "1.6",
   "revisao_radar": "09 nov/2026",
   "automacao": {
@@ -7,58 +7,35 @@
     "fontes_total": 2
   },
   "briefing": {
-    "titulo": "Briefing do dia — Foco em Risco e Ação",
+    "titulo": "Briefing do dia — Fallback",
     "bullets": [
-      "RISCO: Pressão severa no fluxo de caixa e margens operacionais decorrente da alíquota da CBS estimada em 11,3% e da publicação da MP do Imposto Seletivo, correndo risco de descolamento de preços e perda de créditos na transição do IPI.",
-      "AÇÃO: Revisar a matriz de precificação, mapear o impacto do Imposto Seletivo na cadeia de suprimentos e readequar a gestão do capital de giro aos novos prazos de creditamento do IBS/CBS.",
-      "PRAZO: As adequações contratuais, sistêmicas e de fluxo de caixa devem ocorrer imediatamente (novembro/2026) em razão da entrada em vigor das diretrizes de transição."
+      "Atenção: Não foi possível gerar o resumo por IA hoje."
     ],
-    "acao_prioritaria": "Reestruturar com urgência os modelos de precificação e planejamento de caixa frente à alíquota de 11,3% da CBS e às regras da MP do Imposto Seletivo."
+    "acao_prioritaria": "Validar notas fiscais."
   },
   "alertas": [
     {
       "tipo": "critico",
-      "titulo": "Alíquota de 11,3% da CBS e Regulamentação do Imposto Seletivo via MP",
-      "texto": "A consolidação da alíquota da CBS em 11,3% acima das projeções anteriores, somada à regulamentação do Imposto Seletivo e transição do IPI via Medida Provisória, traz risco imediato de estrangulamento da margem líquida e perda de liquidez se os custos não forem repactuados com a devida tomada de créditos fiscais no Lucro Real.",
+      "titulo": "Validação de Notas",
+      "texto": "NF-e e CT-e exigem destaque CBS/IBS.",
       "prazo": "Já em vigor"
-    },
-    {
-      "tipo": "alto",
-      "titulo": "Gargalo no Capital de Giro por Mudança na Dinâmica de Créditos",
-      "texto": "A transição para o modelo de não cumulatividade plena do IBS/CBS exige adequação nos prazos de pagamento a fornecedores. A falta de governança sobre a data de liquidação de notas pode paralisar o aproveitamento de créditos fiscais e gerar desbalanço financeiro.",
-      "prazo": "Novembro/2026"
     }
   ],
   "prazos": [
     {
-      "quando": "Imediato (Novembro/2026)",
+      "quando": "Contínuo",
       "urgencia": "urgente",
-      "titulo": "Auditoria de Impacto da MP do Imposto Seletivo e Transição do IPI",
-      "detalhe": "Mapear a NCM de todos os produtos comercializados e fabricados para identificar incidência do Imposto Seletivo e assegurar o corretoaproveitamento dos saldos credores de IPI durante a fase de transição."
-    },
-    {
-      "quando": "09/11/2026",
-      "urgencia": "alta",
-      "titulo": "Adequação Contábil e Consultas Públicas CFC/CPC/CVM",
-      "detalhe": "Revisar as minutas das consultas públicas do CFC, CPC e CVM sobre divulgações financeiras e normas de auditoria para adaptar as demonstrações contábeis das empresas do Lucro Real."
+      "titulo": "Validação de Notas",
+      "detalhe": "CST, cClassTrib e CBS/IBS."
     }
   ],
-  "novas_normas": [
-    {
-      "tipo": "MP",
-      "titulo": "Medida Provisória de Regulamentação do Imposto Seletivo e Transição do IPI",
-      "descricao": "Regulamenta as hipóteses de incidência e alíquotas do Imposto Seletivo (IS), além de definir as regras de transição para a redução e extinção progressiva do IPI, impactando diretamente os custos de produção e o creditamento no Lucro Real.",
-      "link": "https://www.in.gov.br/consulta/-/buscar/dou?q=medida+provisoria+imposto+seletivo",
-      "instituicao": "Governo Federal"
-    }
-  ],
+  "novas_normas": [],
   "noticias": [
     {
       "data": "09/11/2026",
       "titulo": "CFC, CPC e CVM abrem consulta pública sobre novas regras para informações financeiras",
       "fonte": "CFC",
-      "url": "https://cfc.org.br/noticias/cfc-cpc-e-cvm-abrem-consulta-publica-sobre-novas-regras-para-informacoes-financeiras/",
-      "novo": true
+      "url": "https://cfc.org.br/noticias/cfc-cpc-e-cvm-abrem-consulta-publica-sobre-novas-regras-para-informacoes-financeiras/"
     },
     {
       "data": "09/11/2026",
