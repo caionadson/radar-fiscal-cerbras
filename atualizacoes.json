@@ -1,5 +1,5 @@
 {
-  "gerado_em": "2026-11-09T07:51:32.125152-03:00",
+  "gerado_em": "2026-11-09T09:59:10.817835-03:00",
   "versao": "1.6",
   "revisao_radar": "09 nov/2026",
   "automacao": {
@@ -32,6 +32,55 @@
   "novas_normas": [],
   "noticias": [
     {
+      "data": "09/11/2026",
+      "titulo": "CFC abre audiência pública para revisão de quatro normas de auditoria",
+      "fonte": "CFC",
+      "url": "https://cfc.org.br/noticias/cfc-abre-audiencia-publica-para-revisao-de-quatro-normas-de-auditoria/",
+      "novo": true
+    },
+    {
+      "data": "08/11/2026",
+      "titulo": "Reforma tributária pode impulsionar infraestrutura nacional de dados, avalia executivo da IBM",
+      "fonte": "Portal da Reforma Tributária",
+      "url": "https://www.reformatributaria.com/tecnologia/reforma-tributaria-pode-impulsionar-infraestrutura-nacional-de-dados-avalia-executivo-da-ibm/",
+      "novo": true
+    },
+    {
+      "data": "07/11/2026",
+      "titulo": "Ontologia e reforma tributária",
+      "fonte": "Portal da Reforma Tributária",
+      "url": "https://www.reformatributaria.com/opiniao/ontologia-e-reforma-tributaria/",
+      "novo": true
+    },
+    {
+      "data": "07/11/2026",
+      "titulo": "A reforma prometeu simplificar; por enquanto, ela cobra organização.",
+      "fonte": "Portal da Reforma Tributária",
+      "url": "https://www.reformatributaria.com/opiniao/a-reforma-prometeu-simplificar-por-enquanto-ela-cobra-organizacao/",
+      "novo": true
+    },
+    {
+      "data": "06/11/2026",
+      "titulo": "O impacto invisível da reforma nos prazos de pagamento e no capital de giro",
+      "fonte": "Portal da Reforma Tributária",
+      "url": "https://www.reformatributaria.com/opiniao/o-impacto-invisivel-da-reforma-nos-prazos-de-pagamento-e-no-capital-de-giro/",
+      "novo": true
+    },
+    {
+      "data": "06/11/2026",
+      "titulo": "Adiamento: “golpe do medo”, fraude à Constituição ou incompreensão do sistema CBS/IBS?",
+      "fonte": "Portal da Reforma Tributária",
+      "url": "https://www.reformatributaria.com/opiniao/adiamento-golpe-do-medo-fraude-a-constituicao-ou-incompreensao-do-sistema-cbs-ibs/",
+      "novo": true
+    },
+    {
+      "data": "06/11/2026",
+      "titulo": "É preciso PEC para adiar a reforma tributária?",
+      "fonte": "Portal da Reforma Tributária",
+      "url": "https://www.reformatributaria.com/opiniao/e-preciso-pec-para-adiar-a-reforma-tributaria/",
+      "novo": true
+    },
+    {
       "data": "06/11/2026",
       "titulo": "Projeto do CFC fortalece a governança e promove melhorias na gestão do CRCAP",
       "fonte": "CFC",
@@ -42,62 +91,6 @@
       "titulo": "Novo módulo de qualificação sobre Contabilidade Imobiliária e Construtoras é liberado pelo CFC",
       "fonte": "CFC",
       "url": "https://cfc.org.br/noticias/novo-modulo-de-qualificacao-sobre-contabilidade-imobiliaria-e-construtoras-e-liberado-pelo-cfc/"
-    },
-    {
-      "data": "05/11/2026",
-      "titulo": "Live do Portal debaterá MP com alíquotas do Imposto Seletivo para 2027",
-      "fonte": "Portal da Reforma Tributária",
-      "url": "https://www.reformatributaria.com/impostoseletivo/live-do-portal-debatera-mp-com-aliquotas-do-imposto-seletivo-para-2027/",
-      "novo": true
-    },
-    {
-      "data": "05/11/2026",
-      "titulo": "Minuta de PEC que adia reforma não está protocolada e tem baixa chance de aprovação",
-      "fonte": "Portal da Reforma Tributária",
-      "url": "https://www.reformatributaria.com/reforma-tributaria-congresso-nacional/minuta-de-pec-que-adia-reforma-nao-esta-protocolada-e-tem-baixa-chance-de-aprovacao/",
-      "novo": true
-    },
-    {
-      "data": "05/11/2026",
-      "titulo": "Comitê Gestor do IBS forma equipe técnica para assessorar gestão de aplicações financeiras",
-      "fonte": "Portal da Reforma Tributária",
-      "url": "https://www.reformatributaria.com/comite-gestor-do-ibs-reforma-tributaria/comite-gestor-do-ibs-forma-equipe-tecnica-para-assessorar-gestao-de-aplicacoes-financeiras/",
-      "novo": true
-    },
-    {
-      "data": "05/11/2026",
-      "titulo": "CTe: pacote de schemas inclui novo campo para o Simples Nacional",
-      "fonte": "Portal da Reforma Tributária",
-      "url": "https://www.reformatributaria.com/documentos-fiscais/cte-pacote-de-schemas-inclui-novo-campo-para-o-simples-nacional/",
-      "novo": true
-    },
-    {
-      "data": "05/11/2026",
-      "titulo": "EFD-Contribuições seguirá ativa em 2027 para regime de caixa e créditos de transição da CBS",
-      "fonte": "Portal da Reforma Tributária",
-      "url": "https://www.reformatributaria.com/tecnologia/efd-contribuicoes-seguira-ativa-em-2027-para-regime-de-caixa-e-creditos-de-transicao-da-cbs/",
-      "novo": true
-    },
-    {
-      "data": "05/11/2026",
-      "titulo": "Piauí define índices de participação dos municípios na arrecadação do IBS em 2027",
-      "fonte": "Portal da Reforma Tributária",
-      "url": "https://www.reformatributaria.com/iva/piaui-define-indices-de-participacao-dos-municipios-na-arrecadacao-do-ibs-em-2027/",
-      "novo": true
-    },
-    {
-      "data": "05/11/2026",
-      "titulo": "Ministro da Fazenda descarta adiar CBS: “Previsão é começar em janeiro”",
-      "fonte": "Portal da Reforma Tributária",
-      "url": "https://www.reformatributaria.com/governo/ministro-da-fazenda-descarta-adiar-reforma-previsao-e-comecar-em-janeiro/",
-      "novo": true
-    },
-    {
-      "data": "05/11/2026",
-      "titulo": "Lula envia PEC para manter IPI nos produtos do Imposto Seletivo no início de 2027",
-      "fonte": "Portal da Reforma Tributária",
-      "url": "https://www.reformatributaria.com/impostoseletivo/lula-envia-pec-para-manter-ipi-nos-produtos-do-imposto-seletivo-no-inicio-de-2027/",
-      "novo": true
     },
     {
       "data": "05/11/2026",
@@ -119,15 +112,17 @@
     },
     {
       "data": "04/11/2026",
-      "titulo": "URGENTE: Governo publica MP com alíquotas do Imposto Seletivo para 2027",
-      "fonte": "Portal da Reforma Tributária",
-      "url": "https://www.reformatributaria.com/impostoseletivo/urgente-governo-publica-mp-do-imposto-seletivo-saiba-as-aliquotas/"
+      "titulo": "Governo publica Medida Provisória regulamentando o Imposto Seletivo e regras de transição do IPI",
+      "fonte": "Ministério da Fazenda",
+      "url": "https://www.in.gov.br/consulta/-/buscar/dou?q=medida+provisoria+imposto+seletivo",
+      "novo": true
     },
     {
-      "data": "04/11/2026",
-      "titulo": "Justiça de SP concede liminar à ROIT para excluir IBS e CBS do cálculo do ISS a partir de 2027",
+      "data": "02/11/2026",
+      "titulo": "CBS de 11,3% surpreende empresas e pressiona preços, dizem especialistas",
       "fonte": "Portal da Reforma Tributária",
-      "url": "https://www.reformatributaria.com/justica/justica-de-sp-concede-liminar-a-roit-para-excluir-ibs-e-cbs-do-calculo-do-iss-a-partir-de-2027/"
+      "url": "https://www.reformatributaria.com/iva/aliquota-de-113-da-cbs-surpreende-empresas-e-pressiona-precos-dizem-especialistas/",
+      "novo": true
     }
   ],
   "nts_criticas_lucro_real": [
