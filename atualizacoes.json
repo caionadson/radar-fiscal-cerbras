@@ -1,5 +1,5 @@
 {
-  "gerado_em": "2026-11-08T21:52:39.717288-03:00",
+  "gerado_em": "2026-11-08T23:49:22.821388-03:00",
   "versao": "1.6",
   "revisao_radar": "08 nov/2026",
   "automacao": {
@@ -9,35 +9,41 @@
   "briefing": {
     "titulo": "Briefing do dia — Foco em Risco e Ação",
     "bullets": [
-      "RISCO: A publicação da Medida Provisória regulamentando o Imposto Seletivo e a transição do IPI traz alíquotas para 2027 e altera o encargo tributário sobre insumos e produtos acabados, correndo o risco de margem negativa e desasjute de caixa no Lucro Real se não refletido na precificação.",
-      "AÇÃO: Identificar a NCM de todos os produtos e insumos da empresa afetados pelo Imposto Seletivo, ajustando o ERP tributário e os modelos de apuração de custos e créditos fiscais.",
-      "PRAZO: As regras da MP exigem readequação imediata dos sistemas fiscais e do planejamento financeiro com vistas à transição gradual para 2027."
+      "RISCO: Publicação da MP do Imposto Seletivo e regras de transição do IPI impacta a precificação e pode gerar autuações por erro de enquadramento e perda de créditos fiscais no Lucro Real.",
+      "AÇÃO: Mapear NCMs afetados, auditar cadastros de produtos no ERP e simular o impacto financeiro das alíquotas do Imposto Seletivo na margem de lucro e fluxo de caixa.",
+      "PRAZO: Medida Provisória com efeitos imediatos para planejamento e vigência das alíquotas regulamentadas para 2027."
     ],
-    "acao_prioritaria": "Mapear o impacto do Imposto Seletivo nas NCMs da empresa para adequar precificação e evitar perdas no fluxo de caixa do Lucro Real."
+    "acao_prioritaria": "Iniciar imediatamente a auditoria dos NCMs da empresa para avaliar o impacto do Imposto Seletivo e a transição do IPI nas operações do Lucro Real."
   },
   "alertas": [
     {
       "tipo": "critico",
-      "titulo": "Medida Provisória do Imposto Seletivo e Transição do IPI",
-      "texto": "A MP publicada altera pontualmente as alíquotas do Imposto Seletivo e estabelece regras para a transição do IPI. Empresas tributadas pelo Lucro Real que não adequarem seus cadastros fiscais (NCM) correm o risco de recolhimento indevido do tributo, perda de acúmulo de créditos ou autuações fiscais por desconformidade na apuração.",
+      "titulo": "Regulamentação do Imposto Seletivo e Transição do IPI via Medida Provisória",
+      "texto": "A publicação da MP definindo alíquotas do Imposto Seletivo e regras de transição do IPI exige adequação imediata das empresas do Lucro Real. A falta de revisão nos parâmetros fiscais do ERP e na precificação pode acarretar recolhimento incorreto, autuações fiscais e perda de margem operacional a partir de 2027.",
       "prazo": "Já em vigor"
+    },
+    {
+      "tipo": "medio",
+      "titulo": "Tese de Exclusão do IBS/CBS da Base do ISS (Liminar SP)",
+      "texto": "Decisão liminar concedida na Justiça de SP autoriza a exclusão do IBS e CBS da base de cálculo do ISS a partir de 2027. Empresas prestadoras de serviços sob o Lucro Real devem avaliar o ajuizamento de medidas judiciais preventivas para afastar a cumulatividade indevida.",
+      "prazo": "Planejamento 2026/2027"
     }
   ],
   "prazos": [
     {
-      "quando": "Imediato",
+      "quando": "Imediato (Novembro/2026)",
       "urgencia": "urgente",
-      "titulo": "Simulação de custos do Imposto Seletivo e IPI",
-      "detalhe": "Revisar as NCMs afetadas e recalcular a margem bruta de contribuição para evitar prejuízos operacionais na virada do exercício tributário."
+      "titulo": "Revisão e Mapeamento de NCMs perante a nova MP do Imposto Seletivo",
+      "detalhe": "Revisar a classificação fiscal dos produtos industrializados ou comercializados para identificar a incidência do Imposto Seletivo e readequar as regras de aproveitamento de créditos de IPI durante a fase de transição."
     }
   ],
   "novas_normas": [
     {
       "tipo": "MP",
-      "titulo": "Medida Provisória regulamentando o Imposto Seletivo e regras de transição do IPI",
-      "descricao": "Regulamenta as alíquotas aplicáveis ao Imposto Seletivo com vistas a 2027 e estabelece as regras de transição para o IPI, impactando a composição de custos de insumos e mercadorias e a recuperação de créditos no Lucro Real.",
+      "titulo": "Medida Provisória do Imposto Seletivo e Regras de Transição do IPI",
+      "descricao": "Regulamenta as alíquotas do Imposto Seletivo (IS) para 2027 e estabelece a disciplina jurídica e operacional para a transição dos créditos de IPI para os contribuintes do Lucro Real.",
       "link": "https://www.in.gov.br/consulta/-/buscar/dou?q=medida+provisoria+imposto+seletivo",
-      "instituicao": "Governo Federal"
+      "instituicao": "Presidência da República / Ministério da Fazenda"
     }
   ],
   "noticias": [
