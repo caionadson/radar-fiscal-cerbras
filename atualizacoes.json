@@ -1,5 +1,5 @@
 {
-  "gerado_em": "2026-11-10T09:54:42.276571-03:00",
+  "gerado_em": "2026-11-10T11:50:24.395924-03:00",
   "versao": "1.6",
   "revisao_radar": "10 nov/2026",
   "automacao": {
@@ -7,51 +7,29 @@
     "fontes_total": 2
   },
   "briefing": {
-    "titulo": "Briefing do dia — Foco em Risco e Ação",
+    "titulo": "Briefing do dia — Fallback",
     "bullets": [
-      "RISCO: A publicação da Medida Provisória do Imposto Seletivo e as regras de transição do IPI, aliadas à estimativa da CBS em 11,3%, trazem risco iminente de desequilíbrio no fluxo de caixa, encarecimento da cadeia de suprimentos e perda de créditos fiscais por falha de parametrização.",
-      "AÇÃO: Executar saneamento imediato do cadastro de NCMs/produtos e simular o impacto da CBS/IBS e do Imposto Seletivo nos prazos de pagamento e na apuração do Lucro Real.",
-      "PRAZO: Regras da MP do Imposto Seletivo e transição do IPI já demandam adequação operacional imediata (novembro/2026)."
+      "Atenção: Não foi possível gerar o resumo por IA hoje."
     ],
-    "acao_prioritaria": "Revisar a parametrização fiscal dos produtos afetados pelo Imposto Seletivo e transição do IPI para garantir a manutenção de créditos e prevenir autuações fiscais."
+    "acao_prioritaria": "Validar notas fiscais."
   },
   "alertas": [
     {
       "tipo": "critico",
-      "titulo": "Publicação da MP do Imposto Seletivo e Regras de Transição do IPI",
-      "texto": "A nova MP estabelece a incidência do Imposto Seletivo e redefine o aproveitamento de créditos na transição do IPI. A falta de adequação nos sistemas ERP pode gerar pagamento indevido de tributos, Glosa de créditos e multas por descumprimento de obrigações acessórias.",
+      "titulo": "Validação de Notas",
+      "texto": "NF-e e CT-e exigem destaque CBS/IBS.",
       "prazo": "Já em vigor"
-    },
-    {
-      "tipo": "critico",
-      "titulo": "Pressão no Capital de Giro com Alíquota da CBS a 11,3%",
-      "texto": "A alíquota estimada da CBS em 11,3% exige reorganização imediata dos prazos de pagamento e recebimento. O descasamento temporal no aproveitamento de créditos não cumulativos impactará diretamente a liquidez e o fluxo de caixa das empresas no Lucro Real.",
-      "prazo": "Imediato"
     }
   ],
   "prazos": [
     {
-      "quando": "04/11/2026",
+      "quando": "Contínuo",
       "urgencia": "urgente",
-      "titulo": "Adequação à MP do Imposto Seletivo e Transição do IPI",
-      "detalhe": "Mapear produtos sujeitos ao Imposto Seletivo e atualizar as regras de creditamento e escrituração no SPED para evitar penalidades e perda de créditos."
-    },
-    {
-      "quando": "09/11/2026",
-      "urgencia": "urgente",
-      "titulo": "Participação na Consulta Pública CFC/CPC/CVM",
-      "detalhe": "Avaliar os impactos das novas propostas de divulgação financeira e auditoria nas demonstrações contábeis e fiscais relativas ao encerramento do exercício."
+      "titulo": "Validação de Notas",
+      "detalhe": "CST, cClassTrib e CBS/IBS."
     }
   ],
-  "novas_normas": [
-    {
-      "tipo": "MP",
-      "titulo": "Medida Provisória regulamentando o Imposto Seletivo e regras de transição do IPI",
-      "descricao": "Regulamenta a cobrança do Imposto Seletivo (IS) e define a transição e faseamento do IPI. Impacta diretamente o Lucro Real na formação do custo de aquisição, valoração de estoque e apuração de não cumulatividade.",
-      "link": "https://www.in.gov.br/consulta/-/buscar/dou?q=medida+provisoria+imposto+seletivo",
-      "instituicao": "Governo Federal"
-    }
-  ],
+  "novas_normas": [],
   "noticias": [
     {
       "data": "09/11/2026",
