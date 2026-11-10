@@ -1,5 +1,5 @@
 {
-  "gerado_em": "2026-11-10T17:39:33.993263-03:00",
+  "gerado_em": "2026-11-10T19:36:51.832770-03:00",
   "versao": "1.6",
   "revisao_radar": "10 nov/2026",
   "automacao": {
@@ -7,45 +7,29 @@
     "fontes_total": 2
   },
   "briefing": {
-    "titulo": "Briefing do dia — Foco em Risco e Ação",
+    "titulo": "Briefing do dia — Fallback",
     "bullets": [
-      "RISCO: A publicação da Medida Provisória sobre o Imposto Seletivo/IPI e a estimativa da CBS em 11,3% trazem riscos imediatos ao fluxo de caixa, precificação e crédito fiscal no Lucro Real.",
-      "AÇÃO: O time tributário e contábil deve revisar urgentemente a parametrização do ERP para a transição do IPI/Imposto Seletivo e simular os impactos no capital de giro.",
-      "PRAZO: As regras da Medida Provisória possuem aplicação imediata, exigindo adequação cadastral e fiscal sem espaço para adiamentos."
+      "Atenção: Não foi possível gerar o resumo por IA hoje."
     ],
-    "acao_prioritaria": "Revisar imediatamente a parametrização fiscal do ERP para atender às novas regras do Imposto Seletivo e da transição do IPI trazidas pela Medida Provisória."
+    "acao_prioritaria": "Validar notas fiscais."
   },
   "alertas": [
     {
       "tipo": "critico",
-      "titulo": "Publicação de MP do Imposto Seletivo e Transição do IPI",
-      "texto": "A publicação da Medida Provisória cria novas diretrizes para o Imposto Seletivo e para a transição do IPI. A inobservância ou erro na parametrização de NCMs e alíquotas pode gerar recolhimento a menor, autuações fiscais com multa isolada e glosa de créditos no Lucro Real.",
+      "titulo": "Validação de Notas",
+      "texto": "NF-e e CT-e exigem destaque CBS/IBS.",
       "prazo": "Já em vigor"
-    },
-    {
-      "tipo": "critico",
-      "titulo": "Pressionamento de Capital de Giro e Preços com CBS a 11,3%",
-      "texto": "A indicação de uma CBS em 11,3% aumenta o volume de tributo retido/recolhido na cadeia, impactando a necessidade de capital de giro das empresas. A falta de revisão nos contratos e prazos de pagamento pode levar a crises de liquidez operacionais.",
-      "prazo": "Curto prazo"
     }
   ],
   "prazos": [
     {
-      "quando": "Já em vigor",
+      "quando": "Contínuo",
       "urgencia": "urgente",
-      "titulo": "Adequação dos Cadastros e ERP às Normas da MP do Imposto Seletivo/IPI",
-      "detalhe": "Mapear produtos sujeitos ao Imposto Seletivo e ajustar o sistema de apuração de impostos e obrigações acessórias para evitar descumprimento de prazos e penalidades da RFB."
+      "titulo": "Validação de Notas",
+      "detalhe": "CST, cClassTrib e CBS/IBS."
     }
   ],
-  "novas_normas": [
-    {
-      "tipo": "MP",
-      "titulo": "Medida Provisória regulamentando o Imposto Seletivo e regras de transição do IPI",
-      "descricao": "Regulamenta as diretrizes do Imposto Seletivo e disciplina a fase de transição das alíquotas e apuração do IPI no contexto da Reforma Tributária, alterando a precificação, tributação da indústria e o aproveitamento de créditos fiscais no Lucro Real.",
-      "link": "https://www.in.gov.br/consulta/-/buscar/dou?q=medida+provisoria+imposto+seletivo",
-      "instituicao": "Governo Federal"
-    }
-  ],
+  "novas_normas": [],
   "noticias": [
     {
       "data": "09/11/2026",
@@ -118,12 +102,6 @@
       "titulo": "Reforma Tributária: Ibracon abre pesquisa para avaliar desafios da Auditoria Independente",
       "fonte": "CFC",
       "url": "https://cfc.org.br/noticias/reforma-tributaria-ibracon-abre-pesquisa-para-avaliar-desafios-da-auditoria-independente/"
-    },
-    {
-      "data": "05/11/2026",
-      "titulo": "Vice-presidente do CFC assume presidência de comitê internacional de prevenção à lavagem de dinheiro",
-      "fonte": "CFC",
-      "url": "https://cfc.org.br/noticias/vice-presidente-do-cfc-assume-presidencia-de-comite-internacional-de-prevencao-a-lavagem-de-dinheiro/"
     },
     {
       "data": "04/11/2026",
