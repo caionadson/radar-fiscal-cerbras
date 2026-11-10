@@ -1,5 +1,5 @@
 {
-  "gerado_em": "2026-11-09T19:40:29.578381-03:00",
+  "gerado_em": "2026-11-09T21:51:38.208259-03:00",
   "versao": "1.6",
   "revisao_radar": "09 nov/2026",
   "automacao": {
@@ -7,36 +7,57 @@
     "fontes_total": 2
   },
   "briefing": {
-    "titulo": "Briefing do dia — Fallback",
+    "titulo": "Briefing do dia — Foco em Risco e Ação",
     "bullets": [
-      "Atenção: Não foi possível gerar o resumo por IA hoje."
+      "RISCO: A definição da alíquota da CBS em 11,3% e a regulamentação do Imposto Seletivo por MP pressionam a margem de lucro e o fluxo de caixa, com elevado risco de acúmulo de créditos desajustados e aumento de custos operacionais nas empresas enquadradas no Lucro Real.",
+      "AÇÃO: Reavaliar imediatamente o planejamento tributário, mapear os impactos da transição do IPI para o Imposto Seletivo, e revisar a parametrização do ERP para suportar as regras de apuração do dual IBS/CBS.",
+      "PRAZO: Medida Provisória do Imposto Seletivo e regras de transição já em vigor (04/11/2026), demandando adequação operacional urgente nos sistemas fiscais."
     ],
-    "acao_prioritaria": "Validar notas fiscais."
+    "acao_prioritaria": "Mapear o impacto da alíquota de 11,3% da CBS na precificação e auditar o cadastro de produtos para adequação imediata às novas regras do Imposto Seletivo e transição do IPI."
   },
   "alertas": [
     {
       "tipo": "critico",
-      "titulo": "Validação de Notas",
-      "texto": "NF-e e CT-e exigem destaque CBS/IBS.",
+      "titulo": "Pressionamento do Fluxo de Caixa por Alíquota da CBS e Imposto Seletivo",
+      "texto": "A alíquota estimada da CBS em 11,3% aliada à publicação da MP do Imposto Seletivo exige revisão imediata dos prazos de pagamento e do capital de giro. A falta de adequação no modelo de apuração do Lucro Real implicará em perda de eficiência de créditos e autuações por erro de enquadramento.",
       "prazo": "Já em vigor"
+    },
+    {
+      "tipo": "alto",
+      "titulo": "Consulta Pública CVM/CPC/CFC para Informações Financeiras",
+      "texto": "Revisões em normas contábeis e de divulgação financeira exigirão ajustes no reporte de contingências fiscais e nos demonstrativos financeiros das empresas do Lucro Real.",
+      "prazo": "09/11/2026"
     }
   ],
   "prazos": [
     {
-      "quando": "Contínuo",
+      "quando": "04/11/2026",
       "urgencia": "urgente",
-      "titulo": "Validação de Notas",
-      "detalhe": "CST, cClassTrib e CBS/IBS."
+      "titulo": "Adequação à MP do Imposto Seletivo e Transição do IPI",
+      "detalhe": "Adequar sistemas fiscais e cadastros de produtos às diretrizes fixadas pela Medida Provisória para evitar retenções indevidas e descumprimento de obrigações acessórias."
+    },
+    {
+      "quando": "09/11/2026",
+      "urgencia": "media",
+      "titulo": "Contribuição para Consultas e Audiências Públicas (CFC/CPC/CVM)",
+      "detalhe": "Avaliar os impactos nas demonstrações financeiras e na auditoria independente decorrentes das consultas públicas abertas pelo CFC/CPC/CVM."
     }
   ],
-  "novas_normas": [],
+  "novas_normas": [
+    {
+      "tipo": "MP",
+      "titulo": "Medida Provisória de Regulamentação do Imposto Seletivo e Transição do IPI",
+      "descricao": "Regulamenta a incidência do Imposto Seletivo (IS) e estabelece normas de transição para o IPI, impactando diretamente a apuração de tributos indiretos e o custo fiscal de empresas no Lucro Real.",
+      "link": "https://www.in.gov.br/consulta/-/buscar/dou?q=medida+provisoria+imposto+seletivo",
+      "instituicao": "Governo Federal"
+    }
+  ],
   "noticias": [
     {
       "data": "09/11/2026",
       "titulo": "CFC, Tesouro Nacional e CRCCE realizam a Semana Contábil e Fiscal para Estados e Municípios em Fortaleza",
       "fonte": "CFC",
-      "url": "https://cfc.org.br/noticias/cfc-tesouro-nacional-e-crcce-realizam-a-semana-contabil-e-fiscal-para-estados-e-municipios-em-fortaleza/",
-      "novo": true
+      "url": "https://cfc.org.br/noticias/cfc-tesouro-nacional-e-crcce-realizam-a-semana-contabil-e-fiscal-para-estados-e-municipios-em-fortaleza/"
     },
     {
       "data": "09/11/2026",
