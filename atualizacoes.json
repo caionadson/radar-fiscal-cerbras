@@ -1,5 +1,5 @@
 {
-  "gerado_em": "2026-11-10T01:47:35.873466-03:00",
+  "gerado_em": "2026-11-10T03:57:23.362882-03:00",
   "versao": "1.6",
   "revisao_radar": "10 nov/2026",
   "automacao": {
@@ -7,51 +7,29 @@
     "fontes_total": 2
   },
   "briefing": {
-    "titulo": "Briefing do dia — Foco em Risco e Ação",
+    "titulo": "Briefing do dia — Fallback",
     "bullets": [
-      "RISCO: A publicação da Medida Provisória sobre o Imposto Seletivo e transição do IPI, somada à alíquota projetada da CBS em 11,3%, impõe forte pressão sobre o fluxo de caixa, precificação de produtos e risco de glosa de créditos fiscais no Lucro Real.",
-      "AÇÃO: Mapear imediatamente o impacto do Imposto Seletivo nas operações fabris/comerciais, revisar a composição de preços e reestruturar os processos internos de apuração para atender às exigências de organização contábil e de prazos de pagamento.",
-      "PRAZO: Impacto imediato nas decisões de precificação para 2026/2027 e com vigência imediata das regras trazidas pela nova Medida Provisória."
+      "Atenção: Não foi possível gerar o resumo por IA hoje."
     ],
-    "acao_prioritaria": "Revisar com urgência a estrutura de custos e os procedimentos de apuração tributária frente à nova MP do Imposto Seletivo e à alíquota de 11,3% da CBS para evitar corrosão das margens de lucro."
+    "acao_prioritaria": "Validar notas fiscais."
   },
   "alertas": [
     {
       "tipo": "critico",
-      "titulo": "Regulamentação do Imposto Seletivo e Transição do IPI via MP",
-      "texto": "A publicação da Medida Provisória altera diretamente a tributação sobre produtos e as regras de transição do IPI. A falta de adequação imediata na parametrização do ERP e na apuração do Lucro Real pode gerar recolhimento indevido, multas por descumprimento de obrigações acessórias e acúmulo de créditos não passíveis de ressarcimento rápido.",
+      "titulo": "Validação de Notas",
+      "texto": "NF-e e CT-e exigem destaque CBS/IBS.",
       "prazo": "Já em vigor"
-    },
-    {
-      "tipo": "critico",
-      "titulo": "Pressionamento de Margens e Capital de Giro com CBS em 11,3%",
-      "texto": "A definição/estimativa da CBS em 11,3% exige recalcular o impacto no capital de giro e nos prazos de pagamento a fornecedores. O descasamento entre o recolhimento do tributo e o aproveitamento do crédito pode paralisar o caixa de empresas no Lucro Real se os processos de governança não forem adaptados.",
-      "prazo": "Imediato"
     }
   ],
   "prazos": [
     {
-      "quando": "04/11/2026",
+      "quando": "Contínuo",
       "urgencia": "urgente",
-      "titulo": "Adequação à MP do Imposto Seletivo e Transição do IPI",
-      "detalhe": "Auditores e equipe fiscal devem revisar a classificação fiscal das mercadorias afetadas pelo Imposto Seletivo para ajustar a parametrização de emissão de NF-e e evitar autos de infração."
-    },
-    {
-      "quando": "Imediato",
-      "urgencia": "urgente",
-      "titulo": "Revisão dos Prazos de Pagamento e Capital de Giro",
-      "detalhe": "Reavaliar contratos com fornecedores e política de crédito a clientes para mitigar os impactos financeiros das alíquotas de CBS/IBS nos prazos de compensação tributária."
+      "titulo": "Validação de Notas",
+      "detalhe": "CST, cClassTrib e CBS/IBS."
     }
   ],
-  "novas_normas": [
-    {
-      "tipo": "MP",
-      "titulo": "Medida Provisória do Imposto Seletivo e Transição do IPI",
-      "descricao": "Regulamenta a incidência e cobrança do Imposto Seletivo e estabelece o regramento de transição das alíquotas e créditos do IPI no âmbito da Reforma Tributária, impactando diretamente o custo fabril, parametrizações fiscais e apuração do Lucro Real.",
-      "link": "https://www.in.gov.br/consulta/-/buscar/dou?q=medida+provisoria+imposto+seletivo",
-      "instituicao": "Governo Federal"
-    }
-  ],
+  "novas_normas": [],
   "noticias": [
     {
       "data": "09/11/2026",
