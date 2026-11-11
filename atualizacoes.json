@@ -1,5 +1,5 @@
 {
-  "gerado_em": "2026-11-10T21:50:52.455878-03:00",
+  "gerado_em": "2026-11-10T23:44:05.052946-03:00",
   "versao": "1.6",
   "revisao_radar": "10 nov/2026",
   "automacao": {
@@ -7,29 +7,39 @@
     "fontes_total": 2
   },
   "briefing": {
-    "titulo": "Briefing do dia — Fallback",
+    "titulo": "Briefing do dia — Foco em Risco e Ação",
     "bullets": [
-      "Atenção: Não foi possível gerar o resumo por IA hoje."
+      "RISCO: Alíquota da CBS estimada em 11,3% aliada às novas regras do Imposto Seletivo pressiona o capital de giro e as margens do Lucro Real, com alto risco de retenção indevida de tributos e perda de rentabilidade.",
+      "AÇÃO: Revisar a matriz tributária do ERP, refazer simulações de precificação considerando a CBS em 11,3% e mapear os impactos da MP do Imposto Seletivo nas operações fabris e comerciais.",
+      "PRAZO: Efeitos imediatos decorrentes da Medida Provisória do Imposto Seletivo e da transição do IPI, exigindo adequação sistêmica até o próximo fechamento contábil."
     ],
-    "acao_prioritaria": "Validar notas fiscais."
+    "acao_prioritaria": "Auditar a parametrização do ERP para o Imposto Seletivo e recalcular as margens de contribuição frente ao impacto do CBS no caixa."
   },
   "alertas": [
     {
       "tipo": "critico",
-      "titulo": "Validação de Notas",
-      "texto": "NF-e e CT-e exigem destaque CBS/IBS.",
+      "titulo": "Publicação da MP do Imposto Seletivo e Regras de Transição do IPI",
+      "texto": "A edição da Medida Provisória altera as bases de cálculo e a incidência sobre produtos do Lucro Real. A não adequação rápida das regras operacionais gerará glosa de créditos fiscais de IPI na transição, descumprimento de obrigações acessórias e acúmulo de passivo fiscal.",
       "prazo": "Já em vigor"
     }
   ],
   "prazos": [
     {
-      "quando": "Contínuo",
+      "quando": "04/11/2026",
       "urgencia": "urgente",
-      "titulo": "Validação de Notas",
-      "detalhe": "CST, cClassTrib e CBS/IBS."
+      "titulo": "Adequação de ERP e Contratos à MP do Imposto Seletivo",
+      "detalhe": "Revisar as cláusulas contratuais de repasse tributário e alterar o cadastro fiscal de itens afetados pelo Imposto Seletivo e pela transição do IPI para evitar autuações e problemas no aproveitamento de créditos."
     }
   ],
-  "novas_normas": [],
+  "novas_normas": [
+    {
+      "tipo": "MP",
+      "titulo": "Medida Provisória regulamentando o Imposto Seletivo e regras de transição do IPI",
+      "descricao": "Regulamenta as hipóteses de incidência do Imposto Seletivo e estabelece diretrizes operacionais para a fase de transição do IPI, impactando diretamente o custo fabril, a precificação e o aproveitamento de créditos em empresas tributadas pelo Lucro Real.",
+      "link": "https://www.in.gov.br/consulta/-/buscar/dou?q=medida+provisoria+imposto+seletivo",
+      "instituicao": "Governo Federal"
+    }
+  ],
   "noticias": [
     {
       "data": "09/11/2026",
