@@ -1,7 +1,7 @@
 {
-  "gerado_em": "2026-11-10T23:44:05.052946-03:00",
+  "gerado_em": "2026-11-11T01:52:58.395808-03:00",
   "versao": "1.6",
-  "revisao_radar": "10 nov/2026",
+  "revisao_radar": "11 nov/2026",
   "automacao": {
     "fontes_ok": 2,
     "fontes_total": 2
@@ -9,17 +9,17 @@
   "briefing": {
     "titulo": "Briefing do dia — Foco em Risco e Ação",
     "bullets": [
-      "RISCO: Alíquota da CBS estimada em 11,3% aliada às novas regras do Imposto Seletivo pressiona o capital de giro e as margens do Lucro Real, com alto risco de retenção indevida de tributos e perda de rentabilidade.",
-      "AÇÃO: Revisar a matriz tributária do ERP, refazer simulações de precificação considerando a CBS em 11,3% e mapear os impactos da MP do Imposto Seletivo nas operações fabris e comerciais.",
-      "PRAZO: Efeitos imediatos decorrentes da Medida Provisória do Imposto Seletivo e da transição do IPI, exigindo adequação sistêmica até o próximo fechamento contábil."
+      "RISCO: A projeção da alíquota da CBS em 11,3% e a publicação da MP do Imposto Seletivo geram pressão imediata no fluxo de caixa e risco de descasamento no aproveitamento de créditos fiscais no Lucro Real.",
+      "AÇÃO: Reestruturar urgentemente os processos fiscais, parâmetros cadastrais de produtos (NCMs) e a gestão de contratos de fornecedores para mitigar perdas de créditos de IBS/CBS na transição.",
+      "PRAZO: Regras de transição do IPI e Imposto Seletivo exigem adequação imediata nos sistemas ERP a partir da publicação da Medida Provisória."
     ],
-    "acao_prioritaria": "Auditar a parametrização do ERP para o Imposto Seletivo e recalcular as margens de contribuição frente ao impacto do CBS no caixa."
+    "acao_prioritaria": "Revisar urgentemente os cadastros de itens e a precificação de vendas para absorver a CBS de 11,3% e as exigências da MP do Imposto Seletivo sem comprometer a margem de EBITDA."
   },
   "alertas": [
     {
       "tipo": "critico",
-      "titulo": "Publicação da MP do Imposto Seletivo e Regras de Transição do IPI",
-      "texto": "A edição da Medida Provisória altera as bases de cálculo e a incidência sobre produtos do Lucro Real. A não adequação rápida das regras operacionais gerará glosa de créditos fiscais de IPI na transição, descumprimento de obrigações acessórias e acúmulo de passivo fiscal.",
+      "titulo": "Pressão de Caixa e Impacto na CBS em 11,3% e Imposto Seletivo",
+      "texto": "A estimativa da CBS em 11,3% aliada às diretrizes da nova MP do Imposto Seletivo e regras do IPI impactará diretamente o capital de giro no Lucro Real. A falta de adequação nos prazos de pagamento a fornecedores e o descuidado na transição dos créditos vigentes podem resultar na glosa de créditos fiscais e penalidades operacionais.",
       "prazo": "Já em vigor"
     }
   ],
@@ -27,15 +27,15 @@
     {
       "quando": "04/11/2026",
       "urgencia": "urgente",
-      "titulo": "Adequação de ERP e Contratos à MP do Imposto Seletivo",
-      "detalhe": "Revisar as cláusulas contratuais de repasse tributário e alterar o cadastro fiscal de itens afetados pelo Imposto Seletivo e pela transição do IPI para evitar autuações e problemas no aproveitamento de créditos."
+      "titulo": "Adequação dos ERPs à MP do Imposto Seletivo e regras do IPI",
+      "detalhe": "Mapear produtos afetados pelo Imposto Seletivo e ajustar as regras de escrituração fiscal no Lucro Real para assegurar a correta fruição dos créditos de transição do IPI e evitar autos de infração."
     }
   ],
   "novas_normas": [
     {
       "tipo": "MP",
       "titulo": "Medida Provisória regulamentando o Imposto Seletivo e regras de transição do IPI",
-      "descricao": "Regulamenta as hipóteses de incidência do Imposto Seletivo e estabelece diretrizes operacionais para a fase de transição do IPI, impactando diretamente o custo fabril, a precificação e o aproveitamento de créditos em empresas tributadas pelo Lucro Real.",
+      "descricao": "Regulamenta as hipóteses de incidência do Imposto Seletivo e fixa os critérios de transição para compensação e aproveitamento de créditos do IPI, impactando diretamente o custo produtivo e o planejamento tributário das empresas no Lucro Real.",
       "link": "https://www.in.gov.br/consulta/-/buscar/dou?q=medida+provisoria+imposto+seletivo",
       "instituicao": "Governo Federal"
     }
