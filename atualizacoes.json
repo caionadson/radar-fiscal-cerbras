@@ -1,5 +1,5 @@
 {
-  "gerado_em": "2026-11-11T18:28:42.868543-03:00",
+  "gerado_em": "2026-11-11T19:45:52.428106-03:00",
   "versao": "1.6",
   "revisao_radar": "11 nov/2026",
   "automacao": {
@@ -7,36 +7,77 @@
     "fontes_total": 2
   },
   "briefing": {
-    "titulo": "Briefing do dia — Fallback",
+    "titulo": "Briefing do dia — Foco em Risco e Ação",
     "bullets": [
-      "Atenção: Não foi possível gerar o resumo por IA hoje."
+      "RISCO: Incorreções na classificação fiscal para o Imposto Seletivo e incertezas quanto à alíquota de 11,3% da CBS representam risco iminente de autuações, penalidades e estrangulamento do fluxo de caixa no Lucro Real.",
+      "AÇÃO: Executar saneamento imediato do cadastro de produtos/serviços (NCM/NBS) e revisar a regulamentação do adicional da CSLL sob consulta pública da RFB para mitigar exposição fiscal.",
+      "PRAZO: As adequações contábeis e de cadastro exigem ação imediata para o ciclo operacional vigente, enquanto contribuições às consultas públicas da RFB têm prazos curtos de encerramento."
     ],
-    "acao_prioritaria": "Validar notas fiscais."
+    "acao_prioritaria": "Iniciar auditoria interna no cadastro fiscal de mercadorias para o Imposto Seletivo e avaliar o impacto da nova consulta pública da CSLL no planejamento do Lucro Real."
   },
   "alertas": [
     {
       "tipo": "critico",
-      "titulo": "Validação de Notas",
-      "texto": "NF-e e CT-e exigem destaque CBS/IBS.",
-      "prazo": "Já em vigor"
+      "titulo": "Erros de Classificação Fiscal no Imposto Seletivo",
+      "texto": "Equívocos no enquadramento de mercadorias e serviços podem gerar sobrecarga tributária, glosa de créditos ou autuações fiscais severas na transição do modelo do Lucro Real.",
+      "prazo": "Já em vigor (Ação Improrrogável)"
+    },
+    {
+      "tipo": "critico",
+      "titulo": "Consulta Pública sobre Adicional da CSLL",
+      "texto": "A Receita Federal propôs alterações na normatização do adicional da CSLL. Empresas no Lucro Real que não acompanharem a regulamentação correm o risco de incorrer em recolhimentos indevidos ou desacordo normativo.",
+      "prazo": "Durante o período da Consulta Pública"
+    },
+    {
+      "tipo": "critico",
+      "titulo": "Impacto da Reforma Tributária no Capital de Giro",
+      "texto": "Mudanças no modelo de apuração do IBS/CBS e prazos de recolhimento podem exigir maior retenção de caixa financeiro para suportar os prazos de pagamento da cadeia de suprimentos.",
+      "prazo": "Planejamento Orçamentário Implantação"
     }
   ],
   "prazos": [
     {
-      "quando": "Contínuo",
+      "quando": "Novembro/2026",
       "urgencia": "urgente",
-      "titulo": "Validação de Notas",
-      "detalhe": "CST, cClassTrib e CBS/IBS."
+      "titulo": "Revisão e Manifestação na Consulta Pública do Adicional da CSLL",
+      "detalhe": "Analisar minuta de alteração promovida pela RFB sobre o adicional da CSLL para envio de contribuições e adequação da provisão de tributos do Lucro Real."
+    },
+    {
+      "quando": "Novembro/2026",
+      "urgencia": "urgente",
+      "titulo": "Adequação de NCM/NBS ao Imposto Seletivo",
+      "detalhe": "Realizar o saneamento de dados cadastrais de estoques e faturamento para prevenir glosas de crédito e multas por classificação inadequada."
     }
   ],
-  "novas_normas": [],
+  "novas_normas": [
+    {
+      "tipo": "IN",
+      "titulo": "Consulta Pública sobre Mudanças na Regulamentação do Adicional da CSLL",
+      "descricao": "Abertura de consulta pública pela RFB com propostas de alteração na regulamentação do adicional da CSLL, afetando diretamente a base de cálculo e recolhimento das empresas do Lucro Real.",
+      "link": "https://www.reformatributaria.com/economia-reforma-tributaria-impactos/receita-federal-abre-consulta-publica-sobre-mudancas-na-regulamentacao-do-adicional-da-csll/",
+      "instituicao": "Receita Federal do Brasil"
+    },
+    {
+      "tipo": "Ato",
+      "titulo": "Consulta Pública CFC, CPC e CVM sobre Informações Financeiras",
+      "descricao": "Minuta de norma que estabelece novas diretrizes para a prestação e transparência de informações financeiras corporativas.",
+      "link": "https://cfc.org.br/noticias/cfc-cpc-e-cvm-abrem-consulta-publica-sobre-novas-regras-para-informacoes-financeiras/",
+      "instituicao": "CFC / CVM / CPC"
+    },
+    {
+      "tipo": "Ato",
+      "titulo": "Audiência Pública para Revisão de Normas de Auditoria",
+      "descricao": "Revisão de quatro normas técnicas de auditoria promovida pelo CFC, que impacta a validação das demonstrações contábeis e fiscais das grandes empresas.",
+      "link": "https://cfc.org.br/noticias/cfc-abre-audiencia-publica-para-revisao-de-quatro-normas-de-auditoria/",
+      "instituicao": "Conselho Federal de Contabilidade"
+    }
+  ],
   "noticias": [
     {
       "data": "11/11/2026",
       "titulo": "Parlamentares e representante do Tesouro Nacional recebem homenagem pelos 80 anos do Sistema CFC/CRCs",
       "fonte": "CFC",
-      "url": "https://cfc.org.br/noticias/parlamentares-e-representante-do-tesouro-nacional-recebem-homenagem-pelos-80-anos-do-sistema-cfc-crcs/",
-      "novo": true
+      "url": "https://cfc.org.br/noticias/parlamentares-e-representante-do-tesouro-nacional-recebem-homenagem-pelos-80-anos-do-sistema-cfc-crcs/"
     },
     {
       "data": "11/11/2026",
@@ -49,6 +90,34 @@
       "titulo": "CFC e Fenacon entregam à Receita nove propostas para a reforma tributária",
       "fonte": "CFC",
       "url": "https://cfc.org.br/noticias/cfc-e-fenacon-entregam-a-receita-nove-propostas-para-a-reforma-tributaria/"
+    },
+    {
+      "data": "09/11/2026",
+      "titulo": "Receita Estadual do RS lança apuração assistida do Simples Nacional",
+      "fonte": "Portal da Reforma Tributária",
+      "url": "https://www.reformatributaria.com/documentos-fiscais/receita-estadual-do-rs-lanca-apuracao-assistida-do-simples-nacional/",
+      "novo": true
+    },
+    {
+      "data": "09/11/2026",
+      "titulo": "Senadores avaliam com cautela cálculo de 11,3% para a CBS",
+      "fonte": "Portal da Reforma Tributária",
+      "url": "https://www.reformatributaria.com/reforma-tributaria-congresso-nacional/senadores-avaliam-com-cautela-calculo-de-113-para-a-cbs/",
+      "novo": true
+    },
+    {
+      "data": "09/11/2026",
+      "titulo": "Imposto Seletivo: erros de classificação podem gerar prejuízos a empresas, diz especialista",
+      "fonte": "Portal da Reforma Tributária",
+      "url": "https://www.reformatributaria.com/impostoseletivo/imposto-seletivo-erros-de-classificacao-podem-gerar-prejuizos-a-empresas-diz-especialista/",
+      "novo": true
+    },
+    {
+      "data": "09/11/2026",
+      "titulo": "Receita Federal abre consulta pública sobre mudanças na regulamentação do adicional da CSLL",
+      "fonte": "Portal da Reforma Tributária",
+      "url": "https://www.reformatributaria.com/economia-reforma-tributaria-impactos/receita-federal-abre-consulta-publica-sobre-mudancas-na-regulamentacao-do-adicional-da-csll/",
+      "novo": true
     },
     {
       "data": "09/11/2026",
@@ -94,36 +163,9 @@
     },
     {
       "data": "06/11/2026",
-      "titulo": "Adiamento: “golpe do medo”, fraude à Constituição ou incompreensão do sistema CBS/IBS?",
-      "fonte": "Portal da Reforma Tributária",
-      "url": "https://www.reformatributaria.com/opiniao/adiamento-golpe-do-medo-fraude-a-constituicao-ou-incompreensao-do-sistema-cbs-ibs/",
-      "novo": true
-    },
-    {
-      "data": "06/11/2026",
-      "titulo": "É preciso PEC para adiar a reforma tributária?",
-      "fonte": "Portal da Reforma Tributária",
-      "url": "https://www.reformatributaria.com/opiniao/e-preciso-pec-para-adiar-a-reforma-tributaria/",
-      "novo": true
-    },
-    {
-      "data": "06/11/2026",
       "titulo": "Projeto do CFC fortalece a governança e promove melhorias na gestão do CRCAP",
       "fonte": "CFC",
       "url": "https://cfc.org.br/noticias/projeto-do-cfc-fortalece-a-governanca-e-promove-melhorias-na-gestao-do-crcap/"
-    },
-    {
-      "data": "04/11/2026",
-      "titulo": "Governo publica Medida Provisória regulamentando o Imposto Seletivo e regras de transição do IPI",
-      "fonte": "Ministério da Fazenda",
-      "url": "https://www.in.gov.br/consulta/-/buscar/dou?q=medida+provisoria+imposto+seletivo"
-    },
-    {
-      "data": "02/11/2026",
-      "titulo": "CBS de 11,3% surpreende empresas e pressiona preços, dizem especialistas",
-      "fonte": "Portal da Reforma Tributária",
-      "url": "https://www.reformatributaria.com/iva/aliquota-de-113-da-cbs-surpreende-empresas-e-pressiona-precos-dizem-especialistas/",
-      "novo": true
     }
   ],
   "nts_criticas_lucro_real": [
