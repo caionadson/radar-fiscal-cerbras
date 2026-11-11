@@ -1,5 +1,5 @@
 {
-  "gerado_em": "2026-11-11T11:48:54.845463-03:00",
+  "gerado_em": "2026-11-11T13:50:19.057412-03:00",
   "versao": "1.6",
   "revisao_radar": "11 nov/2026",
   "automacao": {
@@ -7,35 +7,146 @@
     "fontes_total": 2
   },
   "briefing": {
-    "titulo": "Briefing do dia — Fallback",
+    "titulo": "Briefing do dia — Foco em Risco e Ação",
     "bullets": [
-      "Atenção: Não foi possível gerar o resumo por IA hoje."
+      "RISCO: Riscos de autuação e multas no início da transição da CBS em 2027 caso haja omissão de informações nos documentos fiscais, além do impacto imediato no planejamento de caixa com a redefinição de prazos de recolhimento e alteração de alíquotas de importação.",
+      "AÇÃO: Auditoria preventiva nos sistemas de emissão de documentos fiscais para garantir preenchimento completo sem omissão de dados (assegurando o critério de boa-fé frente à RFB) e revisão do planejamento de TI/ERPs com base na versão 2.0 do Regulamento do IBS/CBS.",
+      "PRAZO: Publicação da Versão 2.0 do Regulamento IBS/CBS prevista para esta semana; adequação dos documentos fiscais para o início da CBS em 2027."
     ],
-    "acao_prioritaria": "Validar notas fiscais."
+    "acao_prioritaria": "Revisar imediatamente as rotinas de parametrização fiscal e emissão de notas para garantir conformidade e transparência plena, resguardando a empresa de autuações e multas no início da vigência da CBS."
   },
   "alertas": [
     {
       "tipo": "critico",
-      "titulo": "Validação de Notas",
-      "texto": "NF-e e CT-e exigem destaque CBS/IBS.",
-      "prazo": "Já em vigor"
+      "titulo": "Flexibilização de multas da CBS em 2027 exige comprovação de boa-fé e ausência de omissão",
+      "texto": "A Receita Federal anunciou que isentará de penalidades contribuintes que cometerem erros involuntários no início da CBS em 2027, desde que declarados de boa-fé e sem omissão de dados. A omissão deliberada ou falhas de parametrização não sanadas sujeitarão a empresa a multas e perdas de créditos.",
+      "prazo": "2027"
+    },
+    {
+      "tipo": "critico",
+      "titulo": "Novos prazos para emissão e exigência de documentos fiscais com CBS",
+      "texto": "Receita Federal e Comitê Gestor definiram novo cronograma exigindo adaptação dos sistemas para emissão de documentos fiscais contendo destaque e apuração da CBS/IBS. A não adequação impedirá o aproveitamento regular de créditos acumulados.",
+      "prazo": "Já em vigor (Adequação imediata de ERPs)"
+    },
+    {
+      "tipo": "critico",
+      "titulo": "Proposta de adiamento do recolhimento da CBS para o 2º mês subsequente à competência",
+      "texto": "Governo negocia com o Congresso o deslocamento do prazo definitivo de recolhimento da CBS para o segundo mês após o fato gerador, o que exigirá reajuste na projeção de capital de giro e fluxo de caixa de empresas no Lucro Real.",
+      "prazo": "Em aprovação no Congresso"
     }
   ],
   "prazos": [
     {
-      "quando": "Contínuo",
+      "quando": "Esta semana (Novembro/2026)",
       "urgencia": "urgente",
-      "titulo": "Validação de Notas",
-      "detalhe": "CST, cClassTrib e CBS/IBS."
+      "titulo": "Publicação da Versão 2.0 do Regulamento do IBS/CBS",
+      "detalhe": "Time fiscal deve analisar a minuta para identificar alterações em regimes específicos, tomada de crédito e obrigações acessórias do Lucro Real."
+    },
+    {
+      "quando": "Novembro/2027",
+      "urgencia": "alta",
+      "titulo": "Majoração da alíquota de importação de pneus de passeio para 30%",
+      "detalhe": "Empresas com operação de importação de pneus de passeio devem revisar a planilha de custos de aquisição e impacto no crédito de PIS/Cofins e futura CBS."
     }
   ],
-  "novas_normas": [],
+  "novas_normas": [
+    {
+      "tipo": "Ato",
+      "titulo": "Versão 2.0 do Regulamento do IBS/CBS",
+      "descricao": "Atualização das diretrizes operacionais e regulamentares da cobrança e apuração do IBS e da CBS, com impacto direto na parametrização de sistemas contábeis e fiscais das empresas no Lucro Real.",
+      "link": "https://www.reformatributaria.com/iva/versao-2-0-do-regulamento-de-ibs-cbs-deve-sair-esta-semana-diz-receita/",
+      "instituicao": "RFB / Comitê Gestor do IBS"
+    },
+    {
+      "tipo": "Ato",
+      "titulo": "Cronograma de Exigência de Documentos Fiscais com CBS",
+      "descricao": "Definição de novos prazos e obrigatoriedades para a emissão de notas fiscais eletrônicas com os campos específicos da CBS e IBS durante o período de transição.",
+      "link": "https://www.reformatributaria.com/documentos-fiscais/receita-e-comite-gestor-dao-novos-prazos-para-exigencia-de-documentos-fiscais-com-cbs-leia-cronograma/",
+      "instituicao": "RFB / Comitê Gestor do IBS"
+    },
+    {
+      "tipo": "Ato",
+      "titulo": "Consultas Públicas CFC/CPC/CVM sobre Informações Financeiras e Auditoria",
+      "descricao": "Abertura de audiências públicas pelo CFC, CPC e CVM para revisão de normas de auditoria e prestação de informações financeiras, afetando a governança de companhias abertas e auditadas.",
+      "link": "https://cfc.org.br/noticias/cfc-cpc-e-cvm-abrem-consulta-publica-sobre-novas-regras-para-informacoes-financeiras/",
+      "instituicao": "CFC / CVM / CPC"
+    }
+  ],
   "noticias": [
+    {
+      "data": "11/11/2026",
+      "titulo": "Receita: quem agir “de boa-fé” e não omitir dados ficará sem multas da CBS em 2027",
+      "fonte": "Portal da Reforma Tributária",
+      "url": "https://www.reformatributaria.com/iva/receita-quem-agir-de-boa-fe-e-nao-omitir-dados-ficara-sem-multas-da-cbs-em-2027/",
+      "novo": true
+    },
+    {
+      "data": "11/11/2026",
+      "titulo": "Governo quer adiar pagamento definitivo da CBS para o 2º mês após a competência; Congresso precisa aprovar",
+      "fonte": "Portal da Reforma Tributária",
+      "url": "https://www.reformatributaria.com/governo/governo-quer-adiar-pagamento-definitivo-da-cbs-para-o-2o-mes-apos-a-competencia-congresso-precisa-aprovar/",
+      "novo": true
+    },
+    {
+      "data": "11/11/2026",
+      "titulo": "GOL, Mercado Livre e EMASFI têm novos profissionais nas áreas tributária e fiscal",
+      "fonte": "Portal da Reforma Tributária",
+      "url": "https://www.reformatributaria.com/como-anda-o-mercado/gol-mercado-livre-e-emasfi-tem-novos-profissionais-nas-areas-tributaria-e-fiscal/",
+      "novo": true
+    },
+    {
+      "data": "11/11/2026",
+      "titulo": "RAD e apuração assistida: CFC sugere à Receita 9 propostas para a transição da reforma",
+      "fonte": "Portal da Reforma Tributária",
+      "url": "https://www.reformatributaria.com/iva/rad-e-apuracao-assistida-cfc-sugere-a-receita-9-propostas-para-a-transicao-da-reforma/",
+      "novo": true
+    },
+    {
+      "data": "11/11/2026",
+      "titulo": "Receita e Comitê Gestor dão novos prazos para exigência de documentos fiscais com CBS; leia cronograma",
+      "fonte": "Portal da Reforma Tributária",
+      "url": "https://www.reformatributaria.com/documentos-fiscais/receita-e-comite-gestor-dao-novos-prazos-para-exigencia-de-documentos-fiscais-com-cbs-leia-cronograma/",
+      "novo": true
+    },
+    {
+      "data": "11/11/2026",
+      "titulo": "Versão 2.0 do regulamento de IBS/CBS deve sair esta semana, diz Receita",
+      "fonte": "Portal da Reforma Tributária",
+      "url": "https://www.reformatributaria.com/iva/versao-2-0-do-regulamento-de-ibs-cbs-deve-sair-esta-semana-diz-receita/",
+      "novo": true
+    },
+    {
+      "data": "11/11/2026",
+      "titulo": "Adiar a vigência plena da CBS e do IBS é mais que uma necessidade: é o bom senso comprovado em processos e sistemas",
+      "fonte": "Portal da Reforma Tributária",
+      "url": "https://www.reformatributaria.com/opiniao/adiar-a-vigencia-plena-da-cbs-e-do-ibs-e-mais-que-uma-necessidade-e-o-bom-senso-comprovado-em-processos-e-sistemas/",
+      "novo": true
+    },
     {
       "data": "11/11/2026",
       "titulo": "CFC e Fenacon entregam à Receita nove propostas para a reforma tributária",
       "fonte": "CFC",
-      "url": "https://cfc.org.br/noticias/cfc-e-fenacon-entregam-a-receita-nove-propostas-para-a-reforma-tributaria/",
+      "url": "https://cfc.org.br/noticias/cfc-e-fenacon-entregam-a-receita-nove-propostas-para-a-reforma-tributaria/"
+    },
+    {
+      "data": "10/11/2026",
+      "titulo": "Receita deve anunciar na 4ª feira flexibilização das multas da CBS em 2027",
+      "fonte": "Portal da Reforma Tributária",
+      "url": "https://www.reformatributaria.com/reforma-tributaria-brasil/receita-deve-anunciar-na-4a-feira-flexibilizacao-das-multas-da-cbs-em-2027/",
+      "novo": true
+    },
+    {
+      "data": "10/11/2026",
+      "titulo": "Deputados pedem que Fazenda facilite acesso a créditos de IBS/CBS pelo Simples Nacional",
+      "fonte": "Portal da Reforma Tributária",
+      "url": "https://www.reformatributaria.com/reforma-tributaria-congresso-nacional/deputados-pedem-que-fazenda-facilite-acesso-a-creditos-de-ibs-cbs-pelo-simples-nacional/",
+      "novo": true
+    },
+    {
+      "data": "10/11/2026",
+      "titulo": "Pneus de passeio importados terão imposto de 30% até novembro de 2027",
+      "fonte": "Portal da Reforma Tributária",
+      "url": "https://www.reformatributaria.com/economia-reforma-tributaria-impactos/pneus-de-passeio-importados-terao-imposto-de-30-ate-novembro-de-2027/",
       "novo": true
     },
     {
@@ -57,64 +168,10 @@
       "url": "https://cfc.org.br/noticias/cfc-abre-audiencia-publica-para-revisao-de-quatro-normas-de-auditoria/"
     },
     {
-      "data": "08/11/2026",
-      "titulo": "Reforma tributária pode impulsionar infraestrutura nacional de dados, avalia executivo da IBM",
-      "fonte": "Portal da Reforma Tributária",
-      "url": "https://www.reformatributaria.com/tecnologia/reforma-tributaria-pode-impulsionar-infraestrutura-nacional-de-dados-avalia-executivo-da-ibm/"
-    },
-    {
-      "data": "07/11/2026",
-      "titulo": "Ontologia e reforma tributária",
-      "fonte": "Portal da Reforma Tributária",
-      "url": "https://www.reformatributaria.com/opiniao/ontologia-e-reforma-tributaria/"
-    },
-    {
-      "data": "07/11/2026",
-      "titulo": "A reforma prometeu simplificar; por enquanto, ela cobra organização.",
-      "fonte": "Portal da Reforma Tributária",
-      "url": "https://www.reformatributaria.com/opiniao/a-reforma-prometeu-simplificar-por-enquanto-ela-cobra-organizacao/"
-    },
-    {
-      "data": "06/11/2026",
-      "titulo": "O impacto invisível da reforma nos prazos de pagamento e no capital de giro",
-      "fonte": "Portal da Reforma Tributária",
-      "url": "https://www.reformatributaria.com/opiniao/o-impacto-invisivel-da-reforma-nos-prazos-de-pagamento-e-no-capital-de-giro/"
-    },
-    {
-      "data": "06/11/2026",
-      "titulo": "Adiamento: “golpe do medo”, fraude à Constituição ou incompreensão do sistema CBS/IBS?",
-      "fonte": "Portal da Reforma Tributária",
-      "url": "https://www.reformatributaria.com/opiniao/adiamento-golpe-do-medo-fraude-a-constituicao-ou-incompreensao-do-sistema-cbs-ibs/"
-    },
-    {
-      "data": "06/11/2026",
-      "titulo": "É preciso PEC para adiar a reforma tributária?",
-      "fonte": "Portal da Reforma Tributária",
-      "url": "https://www.reformatributaria.com/opiniao/e-preciso-pec-para-adiar-a-reforma-tributaria/"
-    },
-    {
       "data": "06/11/2026",
       "titulo": "Projeto do CFC fortalece a governança e promove melhorias na gestão do CRCAP",
       "fonte": "CFC",
       "url": "https://cfc.org.br/noticias/projeto-do-cfc-fortalece-a-governanca-e-promove-melhorias-na-gestao-do-crcap/"
-    },
-    {
-      "data": "06/11/2026",
-      "titulo": "Novo módulo de qualificação sobre Contabilidade Imobiliária e Construtoras é liberado pelo CFC",
-      "fonte": "CFC",
-      "url": "https://cfc.org.br/noticias/novo-modulo-de-qualificacao-sobre-contabilidade-imobiliaria-e-construtoras-e-liberado-pelo-cfc/"
-    },
-    {
-      "data": "04/11/2026",
-      "titulo": "Governo publica Medida Provisória regulamentando o Imposto Seletivo e regras de transição do IPI",
-      "fonte": "Ministério da Fazenda",
-      "url": "https://www.in.gov.br/consulta/-/buscar/dou?q=medida+provisoria+imposto+seletivo"
-    },
-    {
-      "data": "02/11/2026",
-      "titulo": "CBS de 11,3% surpreende empresas e pressiona preços, dizem especialistas",
-      "fonte": "Portal da Reforma Tributária",
-      "url": "https://www.reformatributaria.com/iva/aliquota-de-113-da-cbs-surpreende-empresas-e-pressiona-precos-dizem-especialistas/"
     }
   ],
   "nts_criticas_lucro_real": [
