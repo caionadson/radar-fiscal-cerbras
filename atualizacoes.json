@@ -1,5 +1,5 @@
 {
-  "gerado_em": "2026-11-11T04:00:25.833479-03:00",
+  "gerado_em": "2026-11-11T05:51:16.416848-03:00",
   "versao": "1.6",
   "revisao_radar": "11 nov/2026",
   "automacao": {
@@ -9,38 +9,99 @@
   "briefing": {
     "titulo": "Briefing do dia — Foco em Risco e Ação",
     "bullets": [
-      "RISCO: A confirmação da alíquota da CBS em 11,3% aliada à nova MP do Imposto Seletivo pressiona custos operacionais, elevando o risco de erosão da margem de lucro e estresse no capital de giro do Lucro Real.",
-      "AÇÃO: Realizar auditoria nos cadastros de produtos (NCMs), revisar políticas de prazos com fornecedores e reavaliar a formação de preços frente à nova estrutura tributária.",
-      "PRAZO: As regras relativas à MP do Imposto Seletivo e transição do IPI exigem providências operacionais imediatas (novembro/2026)."
+      "RISCO: Erros na classificação fiscal (NCM) para o Imposto Seletivo e desalinhamento nos testes das APIs da CBS e IBS podem gerar autos de infração, retenção indevida de tributos e perda de créditos fiscais no Lucro Real.",
+      "AÇÃO: Promover saneamento imediato do cadastro de materiais/serviços e parametrizar o ERP para efetuar testes no ambiente de homologação do SVRS e da API da CBS.",
+      "PRAZO: Fase de homologação e consultas públicas abertas em novembro de 2026 com impacto direto na transição operacional e fiscal para 2027."
     ],
-    "acao_prioritaria": "Revisar urgentemente o planejamento de fluxo de caixa e a parametrização fiscal do ERP para absorver os impactos da CBS a 11,3% e da MP do Imposto Seletivo."
+    "acao_prioritaria": "Auditar o cadastro de NCMs frente às regras do Imposto Seletivo e iniciar os testes de integração do ERP com a API de apuração da CBS."
   },
   "alertas": [
     {
       "tipo": "critico",
-      "titulo": "Pressão no Capital de Giro e Mudança nas Regras de IPI/Imposto Seletivo",
-      "texto": "A alíquota de 11,3% da CBS aliada às regras de transição do IPI e incidência do Imposto Seletivo exigem adequação imediata na formação de preços e na apuração de créditos. Falhas na transição e no gerenciamento dos prazos de pagamento resultarão em descalçamento de caixa e perda potencial de créditos fiscais.",
+      "titulo": "Erros de Classificação Fiscal no Imposto Seletivo",
+      "texto": "Falhas no enquadramento fiscal de produtos sujeitos ao Imposto Seletivo podem acarretar autuações por descumprimento de obrigação acessória, recolhimento incorreto do tributo e impedimento de aproveitamento de créditos de IBS/CBS na cadeia de suprimentos.",
       "prazo": "Já em vigor"
+    },
+    {
+      "tipo": "critico",
+      "titulo": "Alterações na Regulamentação do Adicional da CSLL",
+      "texto": "A abertura de consulta pública pela RFB sobre o adicional da CSLL sinaliza mudanças na carga tributária efetiva e na apuração do imposto sobre o lucro, exigindo revisão das projeções fiscais das empresas do Lucro Real.",
+      "prazo": "Período de Consulta Pública"
     }
   ],
   "prazos": [
     {
-      "quando": "04/11/2026",
+      "quando": "09/11/2026",
       "urgencia": "urgente",
-      "titulo": "Adequação Operacional à MP do Imposto Seletivo e Transição do IPI",
-      "detalhe": "Adequar os sistemas tributários e operacionais às novas diretrizes publicadas via Medida Provisória, garantindo o correto enquadramento e a manutenção de créditos no Lucro Real."
+      "titulo": "Simulação de Regras de IBS e CBS no Ambiente SVRS",
+      "detalhe": "Configurar e rodar testes de homologação nos sistemas contábeis para simular os impactos operacionais e de caixa das regras do IVA Dual previstas para 2027."
+    },
+    {
+      "quando": "09/11/2026",
+      "urgencia": "urgente",
+      "titulo": "Adequação dos Módulos Fiscais à API da CBS",
+      "detalhe": "Atualizar os webservices e módulos de escrita fiscal do ERP conforme a nova versão da API liberada pela Receita Federal para evitar inconsistências na apuração assistida."
     }
   ],
   "novas_normas": [
     {
-      "tipo": "MP",
-      "titulo": "Medida Provisória regulamentando o Imposto Seletivo e regras de transição do IPI",
-      "descricao": "Regulamenta as diretrizes do Imposto Seletivo e estabelece o regime transitório para o IPI. Impacta diretamente o custo dos produtos, aproveitamento de créditos fiscais e precificação em empresas optantes pelo Lucro Real.",
-      "link": "https://www.in.gov.br/consulta/-/buscar/dou?q=medida+provisoria+imposto+seletivo",
-      "instituicao": "Governo Federal"
+      "tipo": "Ato",
+      "titulo": "Consulta Pública sobre Regulamentação do Adicional da CSLL",
+      "descricao": "Proposta de alteração na norma que regulamenta o adicional da CSLL, impactando o cálculo tributário e o planejamento fiscal de PJ optantes pelo Lucro Real.",
+      "link": "https://www.reformatributaria.com/economia-reforma-tributaria-impactos/receita-federal-abre-consulta-publica-sobre-mudancas-na-regulamentacao-do-adicional-da-csll/",
+      "instituicao": "Receita Federal do Brasil"
+    },
+    {
+      "tipo": "NT",
+      "titulo": "Nova Versão da API de Apuração da CBS e Especificações do Ambiente de Homologação SVRS",
+      "descricao": "Disponibilização de documentação técnica para integração e simulação dos cálculos assistidos da CBS e do IBS nos documentos fiscais eletrônicos.",
+      "link": "https://www.reformatributaria.com/iva/receita-libera-nova-versao-da-api-de-apuracao-da-cbs/",
+      "instituicao": "RFB / SVRS"
     }
   ],
   "noticias": [
+    {
+      "data": "09/11/2026",
+      "titulo": "Receita libera nova versão da API de apuração da CBS",
+      "fonte": "Portal da Reforma Tributária",
+      "url": "https://www.reformatributaria.com/iva/receita-libera-nova-versao-da-api-de-apuracao-da-cbs/",
+      "novo": true
+    },
+    {
+      "data": "09/11/2026",
+      "titulo": "Ambiente de homologação da SVRS permitirá simular regras de IBS e CBS previstas para 2027",
+      "fonte": "Portal da Reforma Tributária",
+      "url": "https://www.reformatributaria.com/documentos-fiscais/ambiente-de-homologacao-da-svrs-permitira-simular-regras-de-ibs-e-cbs-previstas-para-2027/",
+      "novo": true
+    },
+    {
+      "data": "09/11/2026",
+      "titulo": "Receita Estadual do RS lança apuração assistida do Simples Nacional",
+      "fonte": "Portal da Reforma Tributária",
+      "url": "https://www.reformatributaria.com/documentos-fiscais/receita-estadual-do-rs-lanca-apuracao-assistida-do-simples-nacional/",
+      "novo": true
+    },
+    {
+      "data": "09/11/2026",
+      "titulo": "Senadores avaliam com cautela cálculo de 11,3% para a CBS",
+      "fonte": "Portal da Reforma Tributária",
+      "url": "https://www.reformatributaria.com/reforma-tributaria-congresso-nacional/senadores-avaliam-com-cautela-calculo-de-113-para-a-cbs/",
+      "novo": true
+    },
+    {
+      "data": "09/11/2026",
+      "titulo": "Imposto Seletivo: erros de classificação podem gerar prejuízos a empresas, diz especialista",
+      "fonte": "Portal da Reforma Tributária",
+      "url": "https://www.reformatributaria.com/impostoseletivo/imposto-seletivo-erros-de-classificacao-podem-gerar-prejuizos-a-empresas-diz-especialista/",
+      "novo": true
+    },
+    {
+      "data": "09/11/2026",
+      "titulo": "Receita Federal abre consulta pública sobre mudanças na regulamentação do adicional da CSLL",
+      "fonte": "Portal da Reforma Tributária",
+      "url": "https://www.reformatributaria.com/economia-reforma-tributaria-impactos/receita-federal-abre-consulta-publica-sobre-mudancas-na-regulamentacao-do-adicional-da-csll/",
+      "novo": true
+    },
     {
       "data": "09/11/2026",
       "titulo": "CFC, Tesouro Nacional e CRCCE realizam a Semana Contábil e Fiscal para Estados e Municípios em Fortaleza",
@@ -79,24 +140,6 @@
     },
     {
       "data": "06/11/2026",
-      "titulo": "O impacto invisível da reforma nos prazos de pagamento e no capital de giro",
-      "fonte": "Portal da Reforma Tributária",
-      "url": "https://www.reformatributaria.com/opiniao/o-impacto-invisivel-da-reforma-nos-prazos-de-pagamento-e-no-capital-de-giro/"
-    },
-    {
-      "data": "06/11/2026",
-      "titulo": "Adiamento: “golpe do medo”, fraude à Constituição ou incompreensão do sistema CBS/IBS?",
-      "fonte": "Portal da Reforma Tributária",
-      "url": "https://www.reformatributaria.com/opiniao/adiamento-golpe-do-medo-fraude-a-constituicao-ou-incompreensao-do-sistema-cbs-ibs/"
-    },
-    {
-      "data": "06/11/2026",
-      "titulo": "É preciso PEC para adiar a reforma tributária?",
-      "fonte": "Portal da Reforma Tributária",
-      "url": "https://www.reformatributaria.com/opiniao/e-preciso-pec-para-adiar-a-reforma-tributaria/"
-    },
-    {
-      "data": "06/11/2026",
       "titulo": "Projeto do CFC fortalece a governança e promove melhorias na gestão do CRCAP",
       "fonte": "CFC",
       "url": "https://cfc.org.br/noticias/projeto-do-cfc-fortalece-a-governanca-e-promove-melhorias-na-gestao-do-crcap/"
@@ -112,18 +155,6 @@
       "titulo": "Reforma Tributária: Ibracon abre pesquisa para avaliar desafios da Auditoria Independente",
       "fonte": "CFC",
       "url": "https://cfc.org.br/noticias/reforma-tributaria-ibracon-abre-pesquisa-para-avaliar-desafios-da-auditoria-independente/"
-    },
-    {
-      "data": "04/11/2026",
-      "titulo": "Governo publica Medida Provisória regulamentando o Imposto Seletivo e regras de transição do IPI",
-      "fonte": "Ministério da Fazenda",
-      "url": "https://www.in.gov.br/consulta/-/buscar/dou?q=medida+provisoria+imposto+seletivo"
-    },
-    {
-      "data": "02/11/2026",
-      "titulo": "CBS de 11,3% surpreende empresas e pressiona preços, dizem especialistas",
-      "fonte": "Portal da Reforma Tributária",
-      "url": "https://www.reformatributaria.com/iva/aliquota-de-113-da-cbs-surpreende-empresas-e-pressiona-precos-dizem-especialistas/"
     }
   ],
   "nts_criticas_lucro_real": [
