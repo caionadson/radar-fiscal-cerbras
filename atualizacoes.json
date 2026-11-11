@@ -1,5 +1,5 @@
 {
-  "gerado_em": "2026-11-11T07:54:29.265515-03:00",
+  "gerado_em": "2026-11-11T09:56:43.349169-03:00",
   "versao": "1.6",
   "revisao_radar": "11 nov/2026",
   "automacao": {
@@ -7,39 +7,29 @@
     "fontes_total": 2
   },
   "briefing": {
-    "titulo": "Briefing do dia — Foco em Risco e Ação",
+    "titulo": "Briefing do dia — Fallback",
     "bullets": [
-      "A fixação da alíquota da CBS em 11,3% somada à publicação da MP do Imposto Seletivo gera risco severo de compressão de margem bruta, desequilíbrio no capital de giro e glosa de créditos tributários no Lucro Real.",
-      "A equipe tributária e financeira deve revisar imediatamente a estrutura de precificação, ajustar parâmetros de apuração no ERP e reavaliar prazos contratuais de pagamento com fornecedores.",
-      "Efeitos imediatos a partir da publicação da MP em 04/11/2026, com necessidade de adequação dos processos operacionais até o encerramento do período de apuração atual."
+      "Atenção: Não foi possível gerar o resumo por IA hoje."
     ],
-    "acao_prioritaria": "Reconfigurar a parametrização do ERP e refazer o planejamento tributário para absorver a CBS de 11,3% e a incidência do Imposto Seletivo sem perda de caixa."
+    "acao_prioritaria": "Validar notas fiscais."
   },
   "alertas": [
     {
       "tipo": "critico",
-      "titulo": "Majoração Efetiva de Carga com CBS a 11,3% e Imposto Seletivo",
-      "texto": "A CBS em 11,3% acima do esperado e a nova regulamentação do Imposto Seletivo afetam diretamente o fluxo de caixa. A ausência de ajuste imediato na precificação e na apuração de créditos do Lucro Real resultará em perdas operacionais irreversíveis e risco de penalidades fiscais por descumprimento de obrigações acessórias.",
+      "titulo": "Validação de Notas",
+      "texto": "NF-e e CT-e exigem destaque CBS/IBS.",
       "prazo": "Já em vigor"
     }
   ],
   "prazos": [
     {
-      "quando": "04/11/2026",
+      "quando": "Contínuo",
       "urgencia": "urgente",
-      "titulo": "Adequação à Medida Provisória do Imposto Seletivo e IPI",
-      "detalhe": "Implementar imediatamente as novas regras de transição do IPI e enquadramento do Imposto Seletivo no cadastro de produtos para evitar recolhimentos incorretos e multas fiscais."
+      "titulo": "Validação de Notas",
+      "detalhe": "CST, cClassTrib e CBS/IBS."
     }
   ],
-  "novas_normas": [
-    {
-      "tipo": "MP",
-      "titulo": "Medida Provisória regulamentando o Imposto Seletivo e regras de transição do IPI",
-      "descricao": "Estipula as regras operacionais, fato gerador e transição do IPI para o Imposto Seletivo, impactando diretamente o custo produtivo, o repasse de preços e a tomada de créditos no Lucro Real.",
-      "link": "https://www.in.gov.br/consulta/-/buscar/dou?q=medida+provisoria+imposto+seletivo",
-      "instituicao": "Governo Federal"
-    }
-  ],
+  "novas_normas": [],
   "noticias": [
     {
       "data": "09/11/2026",
@@ -81,22 +71,19 @@
       "data": "06/11/2026",
       "titulo": "O impacto invisível da reforma nos prazos de pagamento e no capital de giro",
       "fonte": "Portal da Reforma Tributária",
-      "url": "https://www.reformatributaria.com/opiniao/o-impacto-invisivel-da-reforma-nos-prazos-de-pagamento-e-no-capital-de-giro/",
-      "novo": true
+      "url": "https://www.reformatributaria.com/opiniao/o-impacto-invisivel-da-reforma-nos-prazos-de-pagamento-e-no-capital-de-giro/"
     },
     {
       "data": "06/11/2026",
       "titulo": "Adiamento: “golpe do medo”, fraude à Constituição ou incompreensão do sistema CBS/IBS?",
       "fonte": "Portal da Reforma Tributária",
-      "url": "https://www.reformatributaria.com/opiniao/adiamento-golpe-do-medo-fraude-a-constituicao-ou-incompreensao-do-sistema-cbs-ibs/",
-      "novo": true
+      "url": "https://www.reformatributaria.com/opiniao/adiamento-golpe-do-medo-fraude-a-constituicao-ou-incompreensao-do-sistema-cbs-ibs/"
     },
     {
       "data": "06/11/2026",
       "titulo": "É preciso PEC para adiar a reforma tributária?",
       "fonte": "Portal da Reforma Tributária",
-      "url": "https://www.reformatributaria.com/opiniao/e-preciso-pec-para-adiar-a-reforma-tributaria/",
-      "novo": true
+      "url": "https://www.reformatributaria.com/opiniao/e-preciso-pec-para-adiar-a-reforma-tributaria/"
     },
     {
       "data": "06/11/2026",
@@ -120,15 +107,13 @@
       "data": "04/11/2026",
       "titulo": "Governo publica Medida Provisória regulamentando o Imposto Seletivo e regras de transição do IPI",
       "fonte": "Ministério da Fazenda",
-      "url": "https://www.in.gov.br/consulta/-/buscar/dou?q=medida+provisoria+imposto+seletivo",
-      "novo": true
+      "url": "https://www.in.gov.br/consulta/-/buscar/dou?q=medida+provisoria+imposto+seletivo"
     },
     {
       "data": "02/11/2026",
       "titulo": "CBS de 11,3% surpreende empresas e pressiona preços, dizem especialistas",
       "fonte": "Portal da Reforma Tributária",
-      "url": "https://www.reformatributaria.com/iva/aliquota-de-113-da-cbs-surpreende-empresas-e-pressiona-precos-dizem-especialistas/",
-      "novo": true
+      "url": "https://www.reformatributaria.com/iva/aliquota-de-113-da-cbs-surpreende-empresas-e-pressiona-precos-dizem-especialistas/"
     }
   ],
   "nts_criticas_lucro_real": [
