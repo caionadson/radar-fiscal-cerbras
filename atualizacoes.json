@@ -1,5 +1,5 @@
 {
-  "gerado_em": "2026-11-11T09:56:43.349169-03:00",
+  "gerado_em": "2026-11-11T11:48:54.845463-03:00",
   "versao": "1.6",
   "revisao_radar": "11 nov/2026",
   "automacao": {
@@ -31,6 +31,13 @@
   ],
   "novas_normas": [],
   "noticias": [
+    {
+      "data": "11/11/2026",
+      "titulo": "CFC e Fenacon entregam à Receita nove propostas para a reforma tributária",
+      "fonte": "CFC",
+      "url": "https://cfc.org.br/noticias/cfc-e-fenacon-entregam-a-receita-nove-propostas-para-a-reforma-tributaria/",
+      "novo": true
+    },
     {
       "data": "09/11/2026",
       "titulo": "CFC, Tesouro Nacional e CRCCE realizam a Semana Contábil e Fiscal para Estados e Municípios em Fortaleza",
@@ -96,12 +103,6 @@
       "titulo": "Novo módulo de qualificação sobre Contabilidade Imobiliária e Construtoras é liberado pelo CFC",
       "fonte": "CFC",
       "url": "https://cfc.org.br/noticias/novo-modulo-de-qualificacao-sobre-contabilidade-imobiliaria-e-construtoras-e-liberado-pelo-cfc/"
-    },
-    {
-      "data": "05/11/2026",
-      "titulo": "Reforma Tributária: Ibracon abre pesquisa para avaliar desafios da Auditoria Independente",
-      "fonte": "CFC",
-      "url": "https://cfc.org.br/noticias/reforma-tributaria-ibracon-abre-pesquisa-para-avaliar-desafios-da-auditoria-independente/"
     },
     {
       "data": "04/11/2026",
