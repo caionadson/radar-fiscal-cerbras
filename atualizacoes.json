@@ -1,5 +1,5 @@
 {
-  "gerado_em": "2026-11-12T17:44:06.140785-03:00",
+  "gerado_em": "2026-11-12T19:41:24.129301-03:00",
   "versao": "1.6",
   "revisao_radar": "12 nov/2026",
   "automacao": {
@@ -51,9 +51,10 @@
     },
     {
       "data": "12/11/2026",
-      "titulo": "CFC e Receita Federal instalam sala de situação um dia após anúncio de Joaquim Bezerra",
+      "titulo": "CFC, Fenacon e Receita Federal instalam sala de situação um dia após anúncio de Joaquim Bezerra",
       "fonte": "CFC",
-      "url": "https://cfc.org.br/noticias/cfc-e-receita-federal-instalam-sala-de-situacao-um-dia-apos-anuncio-de-joaquim-bezerra/"
+      "url": "https://cfc.org.br/noticias/cfc-fenacon-e-receita-federal-instalam-sala-de-situacao-um-dia-apos-anuncio-de-joaquim-bezerra/",
+      "novo": true
     },
     {
       "data": "11/11/2026",
@@ -72,34 +73,6 @@
       "titulo": "CFC e Fenacon entregam à Receita nove propostas para a reforma tributária",
       "fonte": "CFC",
       "url": "https://cfc.org.br/noticias/cfc-e-fenacon-entregam-a-receita-nove-propostas-para-a-reforma-tributaria/"
-    },
-    {
-      "data": "09/11/2026",
-      "titulo": "Receita Estadual do RS lança apuração assistida do Simples Nacional",
-      "fonte": "Portal da Reforma Tributária",
-      "url": "https://www.reformatributaria.com/documentos-fiscais/receita-estadual-do-rs-lanca-apuracao-assistida-do-simples-nacional/",
-      "novo": true
-    },
-    {
-      "data": "09/11/2026",
-      "titulo": "Senadores avaliam com cautela cálculo de 11,3% para a CBS",
-      "fonte": "Portal da Reforma Tributária",
-      "url": "https://www.reformatributaria.com/reforma-tributaria-congresso-nacional/senadores-avaliam-com-cautela-calculo-de-113-para-a-cbs/",
-      "novo": true
-    },
-    {
-      "data": "09/11/2026",
-      "titulo": "Imposto Seletivo: erros de classificação podem gerar prejuízos a empresas, diz especialista",
-      "fonte": "Portal da Reforma Tributária",
-      "url": "https://www.reformatributaria.com/impostoseletivo/imposto-seletivo-erros-de-classificacao-podem-gerar-prejuizos-a-empresas-diz-especialista/",
-      "novo": true
-    },
-    {
-      "data": "09/11/2026",
-      "titulo": "Receita Federal abre consulta pública sobre mudanças na regulamentação do adicional da CSLL",
-      "fonte": "Portal da Reforma Tributária",
-      "url": "https://www.reformatributaria.com/economia-reforma-tributaria-impactos/receita-federal-abre-consulta-publica-sobre-mudancas-na-regulamentacao-do-adicional-da-csll/",
-      "novo": true
     },
     {
       "data": "08/11/2026",
@@ -124,6 +97,34 @@
       "titulo": "O impacto invisível da reforma nos prazos de pagamento e no capital de giro",
       "fonte": "Portal da Reforma Tributária",
       "url": "https://www.reformatributaria.com/opiniao/o-impacto-invisivel-da-reforma-nos-prazos-de-pagamento-e-no-capital-de-giro/"
+    },
+    {
+      "data": "06/11/2026",
+      "titulo": "Adiamento: “golpe do medo”, fraude à Constituição ou incompreensão do sistema CBS/IBS?",
+      "fonte": "Portal da Reforma Tributária",
+      "url": "https://www.reformatributaria.com/opiniao/adiamento-golpe-do-medo-fraude-a-constituicao-ou-incompreensao-do-sistema-cbs-ibs/",
+      "novo": true
+    },
+    {
+      "data": "06/11/2026",
+      "titulo": "É preciso PEC para adiar a reforma tributária?",
+      "fonte": "Portal da Reforma Tributária",
+      "url": "https://www.reformatributaria.com/opiniao/e-preciso-pec-para-adiar-a-reforma-tributaria/",
+      "novo": true
+    },
+    {
+      "data": "04/11/2026",
+      "titulo": "Governo publica Medida Provisória regulamentando o Imposto Seletivo e regras de transição do IPI",
+      "fonte": "Ministério da Fazenda",
+      "url": "https://www.in.gov.br/consulta/-/buscar/dou?q=medida+provisoria+imposto+seletivo",
+      "novo": true
+    },
+    {
+      "data": "02/11/2026",
+      "titulo": "CBS de 11,3% surpreende empresas e pressiona preços, dizem especialistas",
+      "fonte": "Portal da Reforma Tributária",
+      "url": "https://www.reformatributaria.com/iva/aliquota-de-113-da-cbs-surpreende-empresas-e-pressiona-precos-dizem-especialistas/",
+      "novo": true
     }
   ],
   "nts_criticas_lucro_real": [
