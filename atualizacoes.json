@@ -1,5 +1,5 @@
 {
-  "gerado_em": "2026-11-12T11:50:21.151951-03:00",
+  "gerado_em": "2026-11-12T13:56:41.188948-03:00",
   "versao": "1.6",
   "revisao_radar": "12 nov/2026",
   "automacao": {
@@ -7,36 +7,58 @@
     "fontes_total": 2
   },
   "briefing": {
-    "titulo": "Briefing do dia — Fallback",
+    "titulo": "Briefing do dia — Foco em Risco e Ação",
     "bullets": [
-      "Atenção: Não foi possível gerar o resumo por IA hoje."
+      "RISCO: Forte impacto na liquidez e no fluxo de caixa decorrente da alíquota da CBS fixada em 11,3% e do início do alinhamento regulatório do Imposto Seletivo sobre produtos e insumos no Lucro Real.",
+      "AÇÃO: Reavaliar a precificação, auditar cadastros fiscais no ERP e mapear os prazos de pagamento de fornecedores para equalizar a retenção/aproveitamento de créditos de CBS e IBS.",
+      "PRAZO: Adequações operacionais imediatas em razão da publicação de Medida Provisória regulamentadora e preparação para o modelo transitório de tributação."
     ],
-    "acao_prioritaria": "Validar notas fiscais."
+    "acao_prioritaria": "Revisar com urgência a estrutura de custos e os parâmetros fiscais de apuração do IPI/Imposto Seletivo perante as novas regras publicadas via Medida Provisória."
   },
   "alertas": [
     {
       "tipo": "critico",
-      "titulo": "Validação de Notas",
-      "texto": "NF-e e CT-e exigem destaque CBS/IBS.",
+      "titulo": "Regulamentação do Imposto Seletivo e Transição do IPI por MP",
+      "texto": "A nova Medida Provisória traz diretrizes operacionais para o Imposto Seletivo e altera a sistemática do IPI. A falta de parametrização fiscal imediata causará apuração incorreta de créditos e potenciais autuações por descumprimento de obrigações acessórias.",
       "prazo": "Já em vigor"
+    },
+    {
+      "tipo": "critico",
+      "titulo": "Pressão no Capital de Giro e Precificação (CBS em 11,3%)",
+      "texto": "A alíquota de 11,3% da CBS exige desembolso de caixa substancial antes do ressarcimento dos créditos fiscais. Empresas no Lucro Real precisam renegociar prazos com fornecedores para evitar descompasso financeiro severo.",
+      "prazo": "Planejamento Imediato"
     }
   ],
   "prazos": [
     {
-      "quando": "Contínuo",
+      "quando": "04/11/2026",
       "urgencia": "urgente",
-      "titulo": "Validação de Notas",
-      "detalhe": "CST, cClassTrib e CBS/IBS."
+      "titulo": "Atualização das regras de IPI e Imposto Seletivo",
+      "detalhe": "Adequar cadastros de NCM e regras de creditamento no ERP em conformidade com a Medida Provisória recém-publicada para evitar penalidades e perda de créditos fiscais."
     }
   ],
-  "novas_normas": [],
+  "novas_normas": [
+    {
+      "tipo": "MP",
+      "titulo": "Medida Provisória regulamentando o Imposto Seletivo e regras de transição do IPI",
+      "descricao": "Dispõe sobre a incidência, apuração e transição do IPI para o Imposto Seletivo, afetando a precificação de insumos, bens finais e o direito ao aproveitamento de créditos fiscais pelas empresas tributadas pelo Lucro Real.",
+      "link": "https://www.in.gov.br/consulta/-/buscar/dou?q=medida+provisoria+imposto+seletivo",
+      "instituicao": "Governo Federal"
+    }
+  ],
   "noticias": [
+    {
+      "data": "12/11/2026",
+      "titulo": "CFC Mulher ganha novo reforço",
+      "fonte": "CFC",
+      "url": "https://cfc.org.br/noticias/cfc-mulher-ganha-novo-reforco/",
+      "novo": true
+    },
     {
       "data": "12/11/2026",
       "titulo": "Penúltimo módulo da capacitação em Contabilidade Imobiliária é liberado pelo CFC",
       "fonte": "CFC",
-      "url": "https://cfc.org.br/noticias/penultimo-modulo-da-capacitacao-em-contabilidade-imobiliaria-e-liberado-pelo-cfc/",
-      "novo": true
+      "url": "https://cfc.org.br/noticias/penultimo-modulo-da-capacitacao-em-contabilidade-imobiliaria-e-liberado-pelo-cfc/"
     },
     {
       "data": "11/11/2026",
@@ -67,12 +89,6 @@
       "titulo": "CFC, CPC e CVM abrem consulta pública sobre novas regras para informações financeiras",
       "fonte": "CFC",
       "url": "https://cfc.org.br/noticias/cfc-cpc-e-cvm-abrem-consulta-publica-sobre-novas-regras-para-informacoes-financeiras/"
-    },
-    {
-      "data": "09/11/2026",
-      "titulo": "CFC abre audiência pública para revisão de quatro normas de auditoria",
-      "fonte": "CFC",
-      "url": "https://cfc.org.br/noticias/cfc-abre-audiencia-publica-para-revisao-de-quatro-normas-de-auditoria/"
     },
     {
       "data": "08/11/2026",
