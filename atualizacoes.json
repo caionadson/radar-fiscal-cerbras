@@ -1,5 +1,5 @@
 {
-  "gerado_em": "2026-11-12T09:58:43.834569-03:00",
+  "gerado_em": "2026-11-12T11:50:21.151951-03:00",
   "versao": "1.6",
   "revisao_radar": "12 nov/2026",
   "automacao": {
@@ -7,46 +7,37 @@
     "fontes_total": 2
   },
   "briefing": {
-    "titulo": "Briefing do dia — Foco em Risco e Ação",
+    "titulo": "Briefing do dia — Fallback",
     "bullets": [
-      "RISCO: Pressão severa no fluxo de caixa e no capital de giro impulsionada pela alíquota preliminar da CBS (11,3%) combinada à publicação da MP do Imposto Seletivo e regras de transição do IPI, gerando Risco de descalço financeiro e perda de rentabilidade.",
-      "AÇÃO: Reavaliar imediatamente os termos de prazos de pagamento contratual, alinhar o departamento de TI/Sistemas com a governança de dados fiscais e revisar o enquadramento dos produtos sujeitos ao Imposto Seletivo e à transição do IPI.",
-      "PRAZO: Medida Provisória do Imposto Seletivo com efeitos imediatos desde a publicação (04/11/2026); consultas públicas contábeis do CFC/CVM com prazos vigentes em novembro/2026."
+      "Atenção: Não foi possível gerar o resumo por IA hoje."
     ],
-    "acao_prioritaria": "Auditar a infraestrutura de dados fiscais e simular o impacto financeiro da alíquota de 11,3% da CBS no capital de giro das operações sob o regime do Lucro Real."
+    "acao_prioritaria": "Validar notas fiscais."
   },
   "alertas": [
     {
       "tipo": "critico",
-      "titulo": "Regulamentação do Imposto Seletivo e Transição do IPI via MP",
-      "texto": "A edição de Medida Provisória alterando as regras do Imposto Seletivo e transição do IPI exige reavaliação imediata da estrutura de custos e dos créditos tributários. Falhas no enquadramento ou no alinhamento fiscal podem gerar autuações por descumprimento de obrigações acessórias e acúmulo de créditos indevidos.",
+      "titulo": "Validação de Notas",
+      "texto": "NF-e e CT-e exigem destaque CBS/IBS.",
       "prazo": "Já em vigor"
-    },
-    {
-      "tipo": "critico",
-      "titulo": "Pressão Financeira pela Alíquota da CBS em 11,3% e Capital de Giro",
-      "texto": "A confirmação da alíquota da CBS em patamares elevados exige ajustes operacionais imediatos nos prazos de pagamento e faturamento. A ausência de liquidez e o descompasso no aproveitamento de créditos IBS/CBS afetará o fluxo de caixa do Lucro Real.",
-      "prazo": "Imediato"
     }
   ],
   "prazos": [
     {
-      "quando": "09/11/2026",
+      "quando": "Contínuo",
       "urgencia": "urgente",
-      "titulo": "Consultas Públicas CFC, CPC e CVM - Informações Financeiras e Auditoria",
-      "detalhe": "Participar das consultas públicas e preparar o departamento contábil/fiscal para as alterações nas normas de auditoria e prestação de informações financeiras."
+      "titulo": "Validação de Notas",
+      "detalhe": "CST, cClassTrib e CBS/IBS."
     }
   ],
-  "novas_normas": [
-    {
-      "tipo": "MP",
-      "titulo": "Medida Provisória regulamentando o Imposto Seletivo e regras de transição do IPI",
-      "descricao": "Regulamenta o Imposto Seletivo e define as regras para a transição do IPI. Impacta diretamente o planejamento tributário, a tributação de produtos específicos e o aproveitamento de créditos para empresas tributadas pelo Lucro Real.",
-      "link": "https://www.in.gov.br/consulta/-/buscar/dou?q=medida+provisoria+imposto+seletivo",
-      "instituicao": "Governo Federal"
-    }
-  ],
+  "novas_normas": [],
   "noticias": [
+    {
+      "data": "12/11/2026",
+      "titulo": "Penúltimo módulo da capacitação em Contabilidade Imobiliária é liberado pelo CFC",
+      "fonte": "CFC",
+      "url": "https://cfc.org.br/noticias/penultimo-modulo-da-capacitacao-em-contabilidade-imobiliaria-e-liberado-pelo-cfc/",
+      "novo": true
+    },
     {
       "data": "11/11/2026",
       "titulo": "Parlamentares e representante do Tesouro Nacional recebem homenagem pelos 80 anos do Sistema CFC/CRCs",
@@ -118,12 +109,6 @@
       "titulo": "É preciso PEC para adiar a reforma tributária?",
       "fonte": "Portal da Reforma Tributária",
       "url": "https://www.reformatributaria.com/opiniao/e-preciso-pec-para-adiar-a-reforma-tributaria/"
-    },
-    {
-      "data": "06/11/2026",
-      "titulo": "Projeto do CFC fortalece a governança e promove melhorias na gestão do CRCAP",
-      "fonte": "CFC",
-      "url": "https://cfc.org.br/noticias/projeto-do-cfc-fortalece-a-governanca-e-promove-melhorias-na-gestao-do-crcap/"
     },
     {
       "data": "04/11/2026",
