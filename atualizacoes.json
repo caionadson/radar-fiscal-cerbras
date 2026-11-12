@@ -1,5 +1,5 @@
 {
-  "gerado_em": "2026-11-11T21:58:53.438341-03:00",
+  "gerado_em": "2026-11-11T23:45:37.737511-03:00",
   "versao": "1.6",
   "revisao_radar": "11 nov/2026",
   "automacao": {
@@ -9,17 +9,23 @@
   "briefing": {
     "titulo": "Briefing do dia — Foco em Risco e Ação",
     "bullets": [
-      "RISCO: A publicação da MP do Imposto Seletivo/IPI aliada à projeção da CBS em 11,3% traz risco iminente de compressão de margens, descompasso no capital de giro e perdas por acúmulo e glosa de créditos na transição tributária.",
-      "AÇÃO: Executar auditoria diagnóstica na cadeia de suprimentos, reavaliar a precificação de venda e parametrizar o ERP para a transição dos créditos acumulados do IPI para a CBS/IBS.",
-      "PRAZO: Impactos diretos na formação de preços e apuração do Lucro Real já em vigor com a publicação da Medida Provisória e ciclo orçamentário atual."
+      "RISCO: A alíquota surpreendente da CBS fixada em 11,3% e a publicação da MP do Imposto Seletivo trazem forte pressão de caixa, risco de perda de margem de lucro e necessidade de revisão imediata do creditamento fiscal no Lucro Real.",
+      "AÇÃO: Executar o mapeamento urgente da cadeia de suprimentos, simular os impactos da CBS/IBS nos contratos vigentes e adequar as parametrizações do ERP às diretrizes da nova MP do Imposto Seletivo e IPI.",
+      "PRAZO: Impacto imediato no fluxo de caixa e no planejamento orçamentário, exigindo revisões contratuais e parametrizações operacionais ainda no mês vigente."
     ],
-    "acao_prioritaria": "Revisar imediatamente a matriz de precificação e parametrização fiscal dos ERPs para absorver a CBS de 11,3% e as novas regras do Imposto Seletivo/IPI."
+    "acao_prioritaria": "Recalcular a margem operacional de todos os produtos e serviços considerando a CBS de 11,3% e auditar o enquadramento ao Imposto Seletivo para impedir erosão de caixa."
   },
   "alertas": [
     {
       "tipo": "critico",
-      "titulo": "Impacto da CBS a 11,3% e Regulamentação do Imposto Seletivo no Capital de Giro",
-      "texto": "A alíquota estimada da CBS em 11,3% aliada às novas diretrizes da MP do Imposto Seletivo pressiona o fluxo de caixa das empresas enquadradas no Lucro Real. A falta de adequação nos prazos de pagamento de fornecedores e no diferimento de créditos acarretará perda imediata de rentabilidade e risco de glosa fiscal de créditos na transição do IPI.",
+      "titulo": "CBS em 11,3% e Impacto Severo no Capital de Giro",
+      "texto": "A indicação da CBS em 11,3% supera as previsões anteriores e pressiona o capital de giro. Empresas no Lucro Real que não renegociarem prazos de pagamento e precificação sofrerão com estrangulamento financeiro e perda instantânea de rentabilidade.",
+      "prazo": "Já em vigor"
+    },
+    {
+      "tipo": "critico",
+      "titulo": "Regulamentação do Imposto Seletivo e Transição do IPI via MP",
+      "texto": "A publicação de MP disciplinando o Imposto Seletivo e a transição do IPI exige adequação imediata dos cadastros de produtos (NCMs) e regras de acreditamento. A inobservância acarretará recolhimento indevido ou autuações por descumprimento de obrigações acessórias.",
       "prazo": "Já em vigor"
     }
   ],
@@ -27,15 +33,21 @@
     {
       "quando": "Imediato",
       "urgencia": "urgente",
-      "titulo": "Adequação dos ERPs e Matriz de Créditos de IPI/CBS",
-      "detalhe": "Revisar as regras de transição de créditos do IPI e parametrização da CBS/IBS nos sistemas contábeis e fiscais para evitar autuações por apuração indevida e garantir a manutenção do fluxo de caixa."
+      "titulo": "Revisão de Precificação e Fluxo de Caixa pelo Impacto da CBS",
+      "detalhe": "Simular os impactos do tributo em 11,3% nas vendas e na tomada de créditos para evitar descasamento no fluxo de caixa operacional."
+    },
+    {
+      "quando": "04/11/2026",
+      "urgencia": "urgente",
+      "titulo": "Adequação Paramétrica da MP do Imposto Seletivo e IPI",
+      "detalhe": "Atualizar os parâmetros fiscais e cadastros de produtos no ERP conforme as regras de transição publicadas no Diário Oficial da União."
     }
   ],
   "novas_normas": [
     {
       "tipo": "MP",
-      "titulo": "Medida Provisória sobre Imposto Seletivo e Regras de Transição do IPI",
-      "descricao": "Regulamenta a incidência do Imposto Seletivo e fixa os critérios de transição do IPI. No Lucro Real, afeta diretamente o custo dos insumos, o aproveitamento de créditos fiscais na cadeia produtiva e o planejamento orçamentário das empresas.",
+      "titulo": "Medida Provisória regulamentando o Imposto Seletivo e regras de transição do IPI",
+      "descricao": "Regulamenta o Imposto Seletivo (IS) e estabelece diretrizes para a fase de transição das alíquotas do IPI, impactando diretamente o custo fabril, a precificação e o planejamento de créditos fiscais de empresas industriais e comerciais tributadas pelo Lucro Real.",
       "link": "https://www.in.gov.br/consulta/-/buscar/dou?q=medida+provisoria+imposto+seletivo",
       "instituicao": "Governo Federal"
     }
@@ -105,15 +117,13 @@
       "data": "06/11/2026",
       "titulo": "Adiamento: “golpe do medo”, fraude à Constituição ou incompreensão do sistema CBS/IBS?",
       "fonte": "Portal da Reforma Tributária",
-      "url": "https://www.reformatributaria.com/opiniao/adiamento-golpe-do-medo-fraude-a-constituicao-ou-incompreensao-do-sistema-cbs-ibs/",
-      "novo": true
+      "url": "https://www.reformatributaria.com/opiniao/adiamento-golpe-do-medo-fraude-a-constituicao-ou-incompreensao-do-sistema-cbs-ibs/"
     },
     {
       "data": "06/11/2026",
       "titulo": "É preciso PEC para adiar a reforma tributária?",
       "fonte": "Portal da Reforma Tributária",
-      "url": "https://www.reformatributaria.com/opiniao/e-preciso-pec-para-adiar-a-reforma-tributaria/",
-      "novo": true
+      "url": "https://www.reformatributaria.com/opiniao/e-preciso-pec-para-adiar-a-reforma-tributaria/"
     },
     {
       "data": "06/11/2026",
@@ -125,15 +135,13 @@
       "data": "04/11/2026",
       "titulo": "Governo publica Medida Provisória regulamentando o Imposto Seletivo e regras de transição do IPI",
       "fonte": "Ministério da Fazenda",
-      "url": "https://www.in.gov.br/consulta/-/buscar/dou?q=medida+provisoria+imposto+seletivo",
-      "novo": true
+      "url": "https://www.in.gov.br/consulta/-/buscar/dou?q=medida+provisoria+imposto+seletivo"
     },
     {
       "data": "02/11/2026",
       "titulo": "CBS de 11,3% surpreende empresas e pressiona preços, dizem especialistas",
       "fonte": "Portal da Reforma Tributária",
-      "url": "https://www.reformatributaria.com/iva/aliquota-de-113-da-cbs-surpreende-empresas-e-pressiona-precos-dizem-especialistas/",
-      "novo": true
+      "url": "https://www.reformatributaria.com/iva/aliquota-de-113-da-cbs-surpreende-empresas-e-pressiona-precos-dizem-especialistas/"
     }
   ],
   "nts_criticas_lucro_real": [
