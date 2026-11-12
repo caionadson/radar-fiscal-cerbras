@@ -1,5 +1,5 @@
 {
-  "gerado_em": "2026-11-12T13:56:41.188948-03:00",
+  "gerado_em": "2026-11-12T15:48:29.387782-03:00",
   "versao": "1.6",
   "revisao_radar": "12 nov/2026",
   "automacao": {
@@ -9,39 +9,33 @@
   "briefing": {
     "titulo": "Briefing do dia — Foco em Risco e Ação",
     "bullets": [
-      "RISCO: Forte impacto na liquidez e no fluxo de caixa decorrente da alíquota da CBS fixada em 11,3% e do início do alinhamento regulatório do Imposto Seletivo sobre produtos e insumos no Lucro Real.",
-      "AÇÃO: Reavaliar a precificação, auditar cadastros fiscais no ERP e mapear os prazos de pagamento de fornecedores para equalizar a retenção/aproveitamento de créditos de CBS e IBS.",
-      "PRAZO: Adequações operacionais imediatas em razão da publicação de Medida Provisória regulamentadora e preparação para o modelo transitório de tributação."
+      "RISCO: Pressão severa no fluxo de caixa e risco de erosão de margem bruta devido à fixação da alíquota da CBS em 11,3% e aos novos impactos regulatórios da MP do Imposto Seletivo/IPI.",
+      "AÇÃO: Executar auditoria paramétrica de ERPs, revisar contratos de longo prazo e recalcular a precificação de vendas para absorver o impacto da CBS e a transição das regras de IPI.",
+      "PRAZO: Efeitos operacionais e normativos imediatos decorrentes da publicação da Medida Provisória do Imposto Seletivo e exigências da transição do IBS/CBS."
     ],
-    "acao_prioritaria": "Revisar com urgência a estrutura de custos e os parâmetros fiscais de apuração do IPI/Imposto Seletivo perante as novas regras publicadas via Medida Provisória."
+    "acao_prioritaria": "Adequar a estrutura de precificação à CBS de 11,3% e mapear as parametrizações fiscais dos produtos afetados pela nova MP do Imposto Seletivo."
   },
   "alertas": [
     {
       "tipo": "critico",
-      "titulo": "Regulamentação do Imposto Seletivo e Transição do IPI por MP",
-      "texto": "A nova Medida Provisória traz diretrizes operacionais para o Imposto Seletivo e altera a sistemática do IPI. A falta de parametrização fiscal imediata causará apuração incorreta de créditos e potenciais autuações por descumprimento de obrigações acessórias.",
+      "titulo": "Impacto da CBS (11,3%) e Regulamentação do Imposto Seletivo no Capital de Giro",
+      "texto": "A alíquota de 11,3% da CBS e a publicação da MP regulamentando o Imposto Seletivo e a transição do IPI demandam reorganização financeira imediata. Empresas no Lucro Real sem controle rigoroso sobre o acúmulo e ressarcimento de créditos fiscais enfrentarão estrangulamento de capital de giro e risco de autuação por incorreção na emissão de documentos fiscais.",
       "prazo": "Já em vigor"
-    },
-    {
-      "tipo": "critico",
-      "titulo": "Pressão no Capital de Giro e Precificação (CBS em 11,3%)",
-      "texto": "A alíquota de 11,3% da CBS exige desembolso de caixa substancial antes do ressarcimento dos créditos fiscais. Empresas no Lucro Real precisam renegociar prazos com fornecedores para evitar descompasso financeiro severo.",
-      "prazo": "Planejamento Imediato"
     }
   ],
   "prazos": [
     {
-      "quando": "04/11/2026",
+      "quando": "Imediato",
       "urgencia": "urgente",
-      "titulo": "Atualização das regras de IPI e Imposto Seletivo",
-      "detalhe": "Adequar cadastros de NCM e regras de creditamento no ERP em conformidade com a Medida Provisória recém-publicada para evitar penalidades e perda de créditos fiscais."
+      "titulo": "Revisão Cadastral e Parametrização Fiscal (MP do Imposto Seletivo e IPI)",
+      "detalhe": "Atualizar o cadastro de itens e sistemas de faturamento às regras da Medida Provisória publicada para evitar a perda de créditos e pagamentos indevidos."
     }
   ],
   "novas_normas": [
     {
       "tipo": "MP",
-      "titulo": "Medida Provisória regulamentando o Imposto Seletivo e regras de transição do IPI",
-      "descricao": "Dispõe sobre a incidência, apuração e transição do IPI para o Imposto Seletivo, afetando a precificação de insumos, bens finais e o direito ao aproveitamento de créditos fiscais pelas empresas tributadas pelo Lucro Real.",
+      "titulo": "Medida Provisória sobre Imposto Seletivo e Transição do IPI",
+      "descricao": "Regulamenta a incidência do Imposto Seletivo (IS) e estabelece as regras de transição para a redução/substituição do IPI. Afeta diretamente o custo fabril, a precificação e o aproveitamento de créditos fiscais na apuração do Lucro Real.",
       "link": "https://www.in.gov.br/consulta/-/buscar/dou?q=medida+provisoria+imposto+seletivo",
       "instituicao": "Governo Federal"
     }
@@ -49,16 +43,29 @@
   "noticias": [
     {
       "data": "12/11/2026",
+      "titulo": "CFC fortalece diálogo com Justiça e Segurança Pública no combate ao crime organizado",
+      "fonte": "CFC",
+      "url": "https://cfc.org.br/noticias/cfc-fortalece-dialogo-com-justica-e-seguranca-publica-no-combate-ao-crime-organizado/",
+      "novo": true
+    },
+    {
+      "data": "12/11/2026",
       "titulo": "CFC Mulher ganha novo reforço",
       "fonte": "CFC",
-      "url": "https://cfc.org.br/noticias/cfc-mulher-ganha-novo-reforco/",
-      "novo": true
+      "url": "https://cfc.org.br/noticias/cfc-mulher-ganha-novo-reforco/"
     },
     {
       "data": "12/11/2026",
       "titulo": "Penúltimo módulo da capacitação em Contabilidade Imobiliária é liberado pelo CFC",
       "fonte": "CFC",
       "url": "https://cfc.org.br/noticias/penultimo-modulo-da-capacitacao-em-contabilidade-imobiliaria-e-liberado-pelo-cfc/"
+    },
+    {
+      "data": "12/11/2026",
+      "titulo": "CFC e Receita Federal instalam sala de situação um dia após anúncio de Joaquim Bezerra",
+      "fonte": "CFC",
+      "url": "https://cfc.org.br/noticias/cfc-e-receita-federal-instalam-sala-de-situacao-um-dia-apos-anuncio-de-joaquim-bezerra/",
+      "novo": true
     },
     {
       "data": "11/11/2026",
@@ -77,18 +84,6 @@
       "titulo": "CFC e Fenacon entregam à Receita nove propostas para a reforma tributária",
       "fonte": "CFC",
       "url": "https://cfc.org.br/noticias/cfc-e-fenacon-entregam-a-receita-nove-propostas-para-a-reforma-tributaria/"
-    },
-    {
-      "data": "09/11/2026",
-      "titulo": "CFC, Tesouro Nacional e CRCCE realizam a Semana Contábil e Fiscal para Estados e Municípios em Fortaleza",
-      "fonte": "CFC",
-      "url": "https://cfc.org.br/noticias/cfc-tesouro-nacional-e-crcce-realizam-a-semana-contabil-e-fiscal-para-estados-e-municipios-em-fortaleza/"
-    },
-    {
-      "data": "09/11/2026",
-      "titulo": "CFC, CPC e CVM abrem consulta pública sobre novas regras para informações financeiras",
-      "fonte": "CFC",
-      "url": "https://cfc.org.br/noticias/cfc-cpc-e-cvm-abrem-consulta-publica-sobre-novas-regras-para-informacoes-financeiras/"
     },
     {
       "data": "08/11/2026",
