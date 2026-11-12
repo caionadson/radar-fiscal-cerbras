@@ -1,5 +1,5 @@
 {
-  "gerado_em": "2026-11-12T15:48:29.387782-03:00",
+  "gerado_em": "2026-11-12T17:44:06.140785-03:00",
   "versao": "1.6",
   "revisao_radar": "12 nov/2026",
   "automacao": {
@@ -7,46 +7,35 @@
     "fontes_total": 2
   },
   "briefing": {
-    "titulo": "Briefing do dia — Foco em Risco e Ação",
+    "titulo": "Briefing do dia — Fallback",
     "bullets": [
-      "RISCO: Pressão severa no fluxo de caixa e risco de erosão de margem bruta devido à fixação da alíquota da CBS em 11,3% e aos novos impactos regulatórios da MP do Imposto Seletivo/IPI.",
-      "AÇÃO: Executar auditoria paramétrica de ERPs, revisar contratos de longo prazo e recalcular a precificação de vendas para absorver o impacto da CBS e a transição das regras de IPI.",
-      "PRAZO: Efeitos operacionais e normativos imediatos decorrentes da publicação da Medida Provisória do Imposto Seletivo e exigências da transição do IBS/CBS."
+      "Atenção: Não foi possível gerar o resumo por IA hoje."
     ],
-    "acao_prioritaria": "Adequar a estrutura de precificação à CBS de 11,3% e mapear as parametrizações fiscais dos produtos afetados pela nova MP do Imposto Seletivo."
+    "acao_prioritaria": "Validar notas fiscais."
   },
   "alertas": [
     {
       "tipo": "critico",
-      "titulo": "Impacto da CBS (11,3%) e Regulamentação do Imposto Seletivo no Capital de Giro",
-      "texto": "A alíquota de 11,3% da CBS e a publicação da MP regulamentando o Imposto Seletivo e a transição do IPI demandam reorganização financeira imediata. Empresas no Lucro Real sem controle rigoroso sobre o acúmulo e ressarcimento de créditos fiscais enfrentarão estrangulamento de capital de giro e risco de autuação por incorreção na emissão de documentos fiscais.",
+      "titulo": "Validação de Notas",
+      "texto": "NF-e e CT-e exigem destaque CBS/IBS.",
       "prazo": "Já em vigor"
     }
   ],
   "prazos": [
     {
-      "quando": "Imediato",
+      "quando": "Contínuo",
       "urgencia": "urgente",
-      "titulo": "Revisão Cadastral e Parametrização Fiscal (MP do Imposto Seletivo e IPI)",
-      "detalhe": "Atualizar o cadastro de itens e sistemas de faturamento às regras da Medida Provisória publicada para evitar a perda de créditos e pagamentos indevidos."
+      "titulo": "Validação de Notas",
+      "detalhe": "CST, cClassTrib e CBS/IBS."
     }
   ],
-  "novas_normas": [
-    {
-      "tipo": "MP",
-      "titulo": "Medida Provisória sobre Imposto Seletivo e Transição do IPI",
-      "descricao": "Regulamenta a incidência do Imposto Seletivo (IS) e estabelece as regras de transição para a redução/substituição do IPI. Afeta diretamente o custo fabril, a precificação e o aproveitamento de créditos fiscais na apuração do Lucro Real.",
-      "link": "https://www.in.gov.br/consulta/-/buscar/dou?q=medida+provisoria+imposto+seletivo",
-      "instituicao": "Governo Federal"
-    }
-  ],
+  "novas_normas": [],
   "noticias": [
     {
       "data": "12/11/2026",
       "titulo": "CFC fortalece diálogo com Justiça e Segurança Pública no combate ao crime organizado",
       "fonte": "CFC",
-      "url": "https://cfc.org.br/noticias/cfc-fortalece-dialogo-com-justica-e-seguranca-publica-no-combate-ao-crime-organizado/",
-      "novo": true
+      "url": "https://cfc.org.br/noticias/cfc-fortalece-dialogo-com-justica-e-seguranca-publica-no-combate-ao-crime-organizado/"
     },
     {
       "data": "12/11/2026",
@@ -64,8 +53,7 @@
       "data": "12/11/2026",
       "titulo": "CFC e Receita Federal instalam sala de situação um dia após anúncio de Joaquim Bezerra",
       "fonte": "CFC",
-      "url": "https://cfc.org.br/noticias/cfc-e-receita-federal-instalam-sala-de-situacao-um-dia-apos-anuncio-de-joaquim-bezerra/",
-      "novo": true
+      "url": "https://cfc.org.br/noticias/cfc-e-receita-federal-instalam-sala-de-situacao-um-dia-apos-anuncio-de-joaquim-bezerra/"
     },
     {
       "data": "11/11/2026",
@@ -84,6 +72,34 @@
       "titulo": "CFC e Fenacon entregam à Receita nove propostas para a reforma tributária",
       "fonte": "CFC",
       "url": "https://cfc.org.br/noticias/cfc-e-fenacon-entregam-a-receita-nove-propostas-para-a-reforma-tributaria/"
+    },
+    {
+      "data": "09/11/2026",
+      "titulo": "Receita Estadual do RS lança apuração assistida do Simples Nacional",
+      "fonte": "Portal da Reforma Tributária",
+      "url": "https://www.reformatributaria.com/documentos-fiscais/receita-estadual-do-rs-lanca-apuracao-assistida-do-simples-nacional/",
+      "novo": true
+    },
+    {
+      "data": "09/11/2026",
+      "titulo": "Senadores avaliam com cautela cálculo de 11,3% para a CBS",
+      "fonte": "Portal da Reforma Tributária",
+      "url": "https://www.reformatributaria.com/reforma-tributaria-congresso-nacional/senadores-avaliam-com-cautela-calculo-de-113-para-a-cbs/",
+      "novo": true
+    },
+    {
+      "data": "09/11/2026",
+      "titulo": "Imposto Seletivo: erros de classificação podem gerar prejuízos a empresas, diz especialista",
+      "fonte": "Portal da Reforma Tributária",
+      "url": "https://www.reformatributaria.com/impostoseletivo/imposto-seletivo-erros-de-classificacao-podem-gerar-prejuizos-a-empresas-diz-especialista/",
+      "novo": true
+    },
+    {
+      "data": "09/11/2026",
+      "titulo": "Receita Federal abre consulta pública sobre mudanças na regulamentação do adicional da CSLL",
+      "fonte": "Portal da Reforma Tributária",
+      "url": "https://www.reformatributaria.com/economia-reforma-tributaria-impactos/receita-federal-abre-consulta-publica-sobre-mudancas-na-regulamentacao-do-adicional-da-csll/",
+      "novo": true
     },
     {
       "data": "08/11/2026",
@@ -108,30 +124,6 @@
       "titulo": "O impacto invisível da reforma nos prazos de pagamento e no capital de giro",
       "fonte": "Portal da Reforma Tributária",
       "url": "https://www.reformatributaria.com/opiniao/o-impacto-invisivel-da-reforma-nos-prazos-de-pagamento-e-no-capital-de-giro/"
-    },
-    {
-      "data": "06/11/2026",
-      "titulo": "Adiamento: “golpe do medo”, fraude à Constituição ou incompreensão do sistema CBS/IBS?",
-      "fonte": "Portal da Reforma Tributária",
-      "url": "https://www.reformatributaria.com/opiniao/adiamento-golpe-do-medo-fraude-a-constituicao-ou-incompreensao-do-sistema-cbs-ibs/"
-    },
-    {
-      "data": "06/11/2026",
-      "titulo": "É preciso PEC para adiar a reforma tributária?",
-      "fonte": "Portal da Reforma Tributária",
-      "url": "https://www.reformatributaria.com/opiniao/e-preciso-pec-para-adiar-a-reforma-tributaria/"
-    },
-    {
-      "data": "04/11/2026",
-      "titulo": "Governo publica Medida Provisória regulamentando o Imposto Seletivo e regras de transição do IPI",
-      "fonte": "Ministério da Fazenda",
-      "url": "https://www.in.gov.br/consulta/-/buscar/dou?q=medida+provisoria+imposto+seletivo"
-    },
-    {
-      "data": "02/11/2026",
-      "titulo": "CBS de 11,3% surpreende empresas e pressiona preços, dizem especialistas",
-      "fonte": "Portal da Reforma Tributária",
-      "url": "https://www.reformatributaria.com/iva/aliquota-de-113-da-cbs-surpreende-empresas-e-pressiona-precos-dizem-especialistas/"
     }
   ],
   "nts_criticas_lucro_real": [
