@@ -1,5 +1,5 @@
 {
-  "gerado_em": "2026-11-13T17:48:13.457776-03:00",
+  "gerado_em": "2026-11-13T19:39:28.254788-03:00",
   "versao": "1.6",
   "revisao_radar": "13 nov/2026",
   "automacao": {
@@ -7,58 +7,42 @@
     "fontes_total": 2
   },
   "briefing": {
-    "titulo": "Briefing do dia — Foco em Risco e Ação",
+    "titulo": "Briefing do dia — Fallback",
     "bullets": [
-      "RISCO: A definição da alíquota da CBS em 11,3% e a regulamentação do Imposto Seletivo/IPI trazem forte pressão de caixa, risco de acúmulo de créditos de difícil ressarcimento e descompasso no capital de giro.",
-      "AÇÃO: O time fiscal e financeiro deve revisar urgentemente a precificação de contratos, a parametrização do ERP para retenções/créditos e renegotiar prazos com fornecedores para mitigar o impacto no fluxo de caixa.",
-      "PRAZO: As regras trazidas pela Medida Provisória têm aplicação imediata e exigem adequação dos sistemas e governança fiscal antes do início do período de transição da Reforma."
+      "Atenção: Não foi possível gerar o resumo por IA hoje."
     ],
-    "acao_prioritaria": "Revisar imediatamente a precificação e a parametrização fiscal do ERP frente à MP do Imposto Seletivo/IPI e à alíquota de 11,3% da CBS para conter o estrangulamento do capital de giro."
+    "acao_prioritaria": "Validar notas fiscais."
   },
   "alertas": [
     {
       "tipo": "critico",
-      "titulo": "Impacto Severo no Capital de Giro e CBS de 11,3%",
-      "texto": "A alíquota estimada da CBS de 11,3% impõe um desembolso inicial significativamente maior nas operações. Sem a devida renegociação de prazos de pagamento e o mapeamento rigoroso do aproveitamento de créditos não cumulativos de IBS/CBS no Lucro Real, a empresa enfrentará erosão do fluxo de caixa e perdas por saldo credor acumulado sem liquidez.",
+      "titulo": "Validação de Notas",
+      "texto": "NF-e e CT-e exigem destaque CBS/IBS.",
       "prazo": "Já em vigor"
-    },
-    {
-      "tipo": "critico",
-      "titulo": "Regulamentação do Imposto Seletivo e Transição do IPI",
-      "texto": "A publicação da Medida Provisória alterando regras de IPI e aplicando o Imposto Seletivo gera risco imediato de autuação por classificação fiscal inadequada ou recolhimento incorreto. É indispensável auditar o cadastro de produtos e a cadeia tributária aplicável às saídas e entradas industrializadas.",
-      "prazo": "Imediato"
     }
   ],
   "prazos": [
     {
-      "quando": "Imediato",
+      "quando": "Contínuo",
       "urgencia": "urgente",
-      "titulo": "Adequação dos Cadastros do ERP à MP do Imposto Seletivo/IPI",
-      "detalhe": "Auditar a codificação fiscal dos produtos afetados pela nova Medida Provisória para evitar recolhimento indevido ou multas por descumprimento de obrigações acessórias."
-    },
-    {
-      "quando": "Curto Prazo (Próximo Fechamento)",
-      "urgencia": "urgente",
-      "titulo": "Revisão dos Prazos de Pagamento e Formação de Preço",
-      "detalhe": "Simular o impacto da CBS (11,3%) sobre a margem líquida do Lucro Real e reajustar prazos contratuais de pagamento/recebimento para proteger a liquidez do caixa."
+      "titulo": "Validação de Notas",
+      "detalhe": "CST, cClassTrib e CBS/IBS."
     }
   ],
-  "novas_normas": [
-    {
-      "tipo": "MP",
-      "titulo": "Medida Provisória sobre Imposto Seletivo e Transição do IPI",
-      "descricao": "Regulamenta a incidência do Imposto Seletivo e estabelece as diretrizes de transição para a redução/substituição do IPI. Afeta diretamente o custo das mercadorias, o creditamento no Lucro Real e exige adequação nos ERPs.",
-      "link": "https://www.in.gov.br/consulta/-/buscar/dou?q=medida+provisoria+imposto+seletivo",
-      "instituicao": "Governo Federal"
-    }
-  ],
+  "novas_normas": [],
   "noticias": [
+    {
+      "data": "13/11/2026",
+      "titulo": "CFC e Conselhos Regionais se posicionam contra aumento da carga tributária e restrições à compensação de tributos",
+      "fonte": "CFC",
+      "url": "https://cfc.org.br/noticias/cfc-e-conselhos-regionais-se-posicionam-contra-aumento-da-carga-tributaria-e-restricoes-a-compensacao-de-tributos/",
+      "novo": true
+    },
     {
       "data": "13/11/2026",
       "titulo": "Último módulo do curso sobre Contabilidade Eleitoral e Partidária é disponibilizado pelo CFC",
       "fonte": "CFC",
-      "url": "https://cfc.org.br/noticias/ultimo-modulo-do-curso-sobre-contabilidade-eleitoral-e-partidaria-e-disponibilizado-pelo-cfc/",
-      "novo": true
+      "url": "https://cfc.org.br/noticias/ultimo-modulo-do-curso-sobre-contabilidade-eleitoral-e-partidaria-e-disponibilizado-pelo-cfc/"
     },
     {
       "data": "12/11/2026",
@@ -89,12 +73,6 @@
       "titulo": "Parlamentares e representante do Tesouro Nacional recebem homenagem pelos 80 anos do Sistema CFC/CRCs",
       "fonte": "CFC",
       "url": "https://cfc.org.br/noticias/parlamentares-e-representante-do-tesouro-nacional-recebem-homenagem-pelos-80-anos-do-sistema-cfc-crcs/"
-    },
-    {
-      "data": "11/11/2026",
-      "titulo": "CFC propõe medidas para garantir segurança aos profissionais da contabilidade na transição da reforma tributária",
-      "fonte": "CFC",
-      "url": "https://cfc.org.br/noticias/cfc-propoe-medidas-para-garantir-seguranca-aos-profissionais-da-contabilidade-na-transicao-da-reforma-tributaria/"
     },
     {
       "data": "08/11/2026",
