@@ -1,5 +1,5 @@
 {
-  "gerado_em": "2026-11-13T15:45:04.453067-03:00",
+  "gerado_em": "2026-11-13T17:48:13.457776-03:00",
   "versao": "1.6",
   "revisao_radar": "13 nov/2026",
   "automacao": {
@@ -9,50 +9,57 @@
   "briefing": {
     "titulo": "Briefing do dia — Foco em Risco e Ação",
     "bullets": [
-      "RISCO: A definição da alíquota da CBS em 11,3% e a publicação da MP do Imposto Seletivo e transição do IPI trazem risco direto de corrosão de margem de lucro, aumento imediato da carga sobre consumo e acúmulo ilíquido de créditos fiscais que afetam o capital de giro.",
-      "AÇÃO: Realizar simulações de impacto financeiro no fluxo de caixa no Lucro Real, reavaliar o modelo de precificação de produtos/serviços e adequar os sistemas ERP à governança de dados exigida pelas novas regras de transição.",
-      "PRAZO: Regras de transição do IPI e Imposto Seletivo (MP de 04/11/2026) já requerem adequação operacional imediata para o ciclo fiscal vigente."
+      "RISCO: A definição da alíquota da CBS em 11,3% e a regulamentação do Imposto Seletivo/IPI trazem forte pressão de caixa, risco de acúmulo de créditos de difícil ressarcimento e descompasso no capital de giro.",
+      "AÇÃO: O time fiscal e financeiro deve revisar urgentemente a precificação de contratos, a parametrização do ERP para retenções/créditos e renegotiar prazos com fornecedores para mitigar o impacto no fluxo de caixa.",
+      "PRAZO: As regras trazidas pela Medida Provisória têm aplicação imediata e exigem adequação dos sistemas e governança fiscal antes do início do período de transição da Reforma."
     ],
-    "acao_prioritaria": "Revisar com urgência a estrutura de custos e precificação frente à CBS de 11,3% e adequar as rotinas operacionais às regras de transição da MP do Imposto Seletivo."
+    "acao_prioritaria": "Revisar imediatamente a precificação e a parametrização fiscal do ERP frente à MP do Imposto Seletivo/IPI e à alíquota de 11,3% da CBS para conter o estrangulamento do capital de giro."
   },
   "alertas": [
     {
       "tipo": "critico",
-      "titulo": "Alíquota da CBS em 11,3% e Impacto Severo no Capital de Giro",
-      "texto": "A confirmação da alíquota da CBS em 11,3% supera as projeções de muitas empresas no Lucro Real, pressionando preços e exigindo maior rigor no controle de créditos. O descasamento entre o recolhimento na fonte e a compensação efetiva de créditos pode estressar a liquidez operacional se não houver reprogramação financeira.",
-      "prazo": "Imediato"
+      "titulo": "Impacto Severo no Capital de Giro e CBS de 11,3%",
+      "texto": "A alíquota estimada da CBS de 11,3% impõe um desembolso inicial significativamente maior nas operações. Sem a devida renegociação de prazos de pagamento e o mapeamento rigoroso do aproveitamento de créditos não cumulativos de IBS/CBS no Lucro Real, a empresa enfrentará erosão do fluxo de caixa e perdas por saldo credor acumulado sem liquidez.",
+      "prazo": "Já em vigor"
     },
     {
-      "tipo": "alto",
-      "titulo": "Transição IPI e Regulação do Imposto Seletivo",
-      "texto": "A edição de Medida Provisória alterando regras do IPI e Imposto Seletivo exige auditoria rápida das classificações fiscais (NCM) e recálculo da carga tributária encadeada para evitar passivos ou recolhimento a menor.",
-      "prazo": "Já em vigor"
+      "tipo": "critico",
+      "titulo": "Regulamentação do Imposto Seletivo e Transição do IPI",
+      "texto": "A publicação da Medida Provisória alterando regras de IPI e aplicando o Imposto Seletivo gera risco imediato de autuação por classificação fiscal inadequada ou recolhimento incorreto. É indispensável auditar o cadastro de produtos e a cadeia tributária aplicável às saídas e entradas industrializadas.",
+      "prazo": "Imediato"
     }
   ],
   "prazos": [
     {
       "quando": "Imediato",
       "urgencia": "urgente",
-      "titulo": "Adequação dos ERPs e Governança de Dados da Reforma",
-      "detalhe": "Adequar a infraestrutura de dados fiscais e parametrização cadastral de produtos para conformidade com a MP do Imposto Seletivo e regras da CBS/IBS."
+      "titulo": "Adequação dos Cadastros do ERP à MP do Imposto Seletivo/IPI",
+      "detalhe": "Auditar a codificação fiscal dos produtos afetados pela nova Medida Provisória para evitar recolhimento indevido ou multas por descumprimento de obrigações acessórias."
     },
     {
-      "quando": "30 dias",
-      "urgencia": "alta",
-      "titulo": "Revisão dos Prazos de Pagamento e Capital de Giro",
-      "detalhe": "Reavaliar contratos comerciais e condições de pagamento com fornecedores para mitigar os impactos financeiros da transição tributária no caixa."
+      "quando": "Curto Prazo (Próximo Fechamento)",
+      "urgencia": "urgente",
+      "titulo": "Revisão dos Prazos de Pagamento e Formação de Preço",
+      "detalhe": "Simular o impacto da CBS (11,3%) sobre a margem líquida do Lucro Real e reajustar prazos contratuais de pagamento/recebimento para proteger a liquidez do caixa."
     }
   ],
   "novas_normas": [
     {
       "tipo": "MP",
-      "titulo": "Medida Provisória sobre Imposto Seletivo e Regras de Transição do IPI",
-      "descricao": "Regulamenta a incidência e apuração do Imposto Seletivo e fixa as diretrizes de transição para as alíquotas e aproveitamento de créditos do IPI no âmbito da Reforma Tributária, impactando o planejamento tributário de indústrias e equiparadas no Lucro Real.",
+      "titulo": "Medida Provisória sobre Imposto Seletivo e Transição do IPI",
+      "descricao": "Regulamenta a incidência do Imposto Seletivo e estabelece as diretrizes de transição para a redução/substituição do IPI. Afeta diretamente o custo das mercadorias, o creditamento no Lucro Real e exige adequação nos ERPs.",
       "link": "https://www.in.gov.br/consulta/-/buscar/dou?q=medida+provisoria+imposto+seletivo",
       "instituicao": "Governo Federal"
     }
   ],
   "noticias": [
+    {
+      "data": "13/11/2026",
+      "titulo": "Último módulo do curso sobre Contabilidade Eleitoral e Partidária é disponibilizado pelo CFC",
+      "fonte": "CFC",
+      "url": "https://cfc.org.br/noticias/ultimo-modulo-do-curso-sobre-contabilidade-eleitoral-e-partidaria-e-disponibilizado-pelo-cfc/",
+      "novo": true
+    },
     {
       "data": "12/11/2026",
       "titulo": "CFC fortalece diálogo com Justiça e Segurança Pública no combate ao crime organizado",
@@ -88,12 +95,6 @@
       "titulo": "CFC propõe medidas para garantir segurança aos profissionais da contabilidade na transição da reforma tributária",
       "fonte": "CFC",
       "url": "https://cfc.org.br/noticias/cfc-propoe-medidas-para-garantir-seguranca-aos-profissionais-da-contabilidade-na-transicao-da-reforma-tributaria/"
-    },
-    {
-      "data": "11/11/2026",
-      "titulo": "CFC e Fenacon entregam à Receita nove propostas para a reforma tributária",
-      "fonte": "CFC",
-      "url": "https://cfc.org.br/noticias/cfc-e-fenacon-entregam-a-receita-nove-propostas-para-a-reforma-tributaria/"
     },
     {
       "data": "08/11/2026",
