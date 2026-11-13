@@ -1,5 +1,5 @@
 {
-  "gerado_em": "2026-11-13T04:02:33.086740-03:00",
+  "gerado_em": "2026-11-13T05:51:59.990378-03:00",
   "versao": "1.6",
   "revisao_radar": "13 nov/2026",
   "automacao": {
@@ -7,29 +7,51 @@
     "fontes_total": 2
   },
   "briefing": {
-    "titulo": "Briefing do dia — Fallback",
+    "titulo": "Briefing do dia — Foco em Risco e Ação",
     "bullets": [
-      "Atenção: Não foi possível gerar o resumo por IA hoje."
+      "RISCO: A alíquota de 11,3% da CBS e a regulamentação do Imposto Seletivo/IPI pressionam as margens de lucro e exigem maior capital de giro, com risco imediato de acúmulo de créditos não compensados e perda de rentabilidade no Lucro Real.",
+      "AÇÃO: Reavaliar a parametrização fiscal dos sistemas (ERP), revisar contratos de fornecimento para alinhar prazos de pagamento ao fluxo de créditos de CBS/IBS e simular o impacto tributário na formação de preços.",
+      "PRAZO: As regras da Medida Provisória e a adequação operacional exigem ação imediata para o ciclo fiscal em curso e preparação para o período de transição."
     ],
-    "acao_prioritaria": "Validar notas fiscais."
+    "acao_prioritaria": "Auditar a cadeia de suprimentos e readequar a precificação considerando a alíquota da CBS e a regulamentação do Imposto Seletivo para evitar estrangulamento do caixa."
   },
   "alertas": [
     {
       "tipo": "critico",
-      "titulo": "Validação de Notas",
-      "texto": "NF-e e CT-e exigem destaque CBS/IBS.",
+      "titulo": "Impacto no Capital de Giro e CBS de 11,3%",
+      "texto": "A alíquota de 11,3% da CBS eleva a necessidade de liquidez imediata. A falta de alinhamento nos prazos de pagamento e aproveitamento de créditos pode gerar retenção indevida de caixa e perda de eficiência financeira no Lucro Real.",
+      "prazo": "Já em vigor"
+    },
+    {
+      "tipo": "critico",
+      "titulo": "Regulamentação do Imposto Seletivo e Transição do IPI",
+      "texto": "A publicação de MP para o Imposto Seletivo e IPI exige conformidade imediata na classificação fiscal de produtos. Erros no enquadramento geram riscos de autuação fiscal e incorreta apuração de créditos.",
       "prazo": "Já em vigor"
     }
   ],
   "prazos": [
     {
-      "quando": "Contínuo",
+      "quando": "Imediato",
       "urgencia": "urgente",
-      "titulo": "Validação de Notas",
-      "detalhe": "CST, cClassTrib e CBS/IBS."
+      "titulo": "Adequação Paramétrica e Tributária do ERP",
+      "detalhe": "Atualizar os cadastros de itens e regras fiscais no ERP para refletir as novas diretrizes da MP do Imposto Seletivo/IPI e evitar penalidades por descumprimento de obrigações acessórias."
+    },
+    {
+      "quando": "30 dias",
+      "urgencia": "urgente",
+      "titulo": "Revisão dos Prazos Comerciais e Contratos",
+      "detalhe": "Renegociar prazos de pagamento com clientes e fornecedores para mitigar o impacto invisível da reforma no fluxo de caixa decorrente da apuração do IBS/CBS."
     }
   ],
-  "novas_normas": [],
+  "novas_normas": [
+    {
+      "tipo": "MP",
+      "titulo": "Medida Provisória regulamentando o Imposto Seletivo e regras de transição do IPI",
+      "descricao": "Estabelece as regras operacionais do Imposto Seletivo e define a transição tributária para o IPI, impactando a precificação, o fluxo de caixa e a apuração de créditos no Lucro Real.",
+      "link": "https://www.in.gov.br/consulta/-/buscar/dou?q=medida+provisoria+imposto+seletivo",
+      "instituicao": "Governo Federal"
+    }
+  ],
   "noticias": [
     {
       "data": "12/11/2026",
