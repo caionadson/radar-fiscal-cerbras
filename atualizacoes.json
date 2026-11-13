@@ -1,5 +1,5 @@
 {
-  "gerado_em": "2026-11-13T13:48:28.434276-03:00",
+  "gerado_em": "2026-11-13T15:45:04.453067-03:00",
   "versao": "1.6",
   "revisao_radar": "13 nov/2026",
   "automacao": {
@@ -7,29 +7,51 @@
     "fontes_total": 2
   },
   "briefing": {
-    "titulo": "Briefing do dia — Fallback",
+    "titulo": "Briefing do dia — Foco em Risco e Ação",
     "bullets": [
-      "Atenção: Não foi possível gerar o resumo por IA hoje."
+      "RISCO: A definição da alíquota da CBS em 11,3% e a publicação da MP do Imposto Seletivo e transição do IPI trazem risco direto de corrosão de margem de lucro, aumento imediato da carga sobre consumo e acúmulo ilíquido de créditos fiscais que afetam o capital de giro.",
+      "AÇÃO: Realizar simulações de impacto financeiro no fluxo de caixa no Lucro Real, reavaliar o modelo de precificação de produtos/serviços e adequar os sistemas ERP à governança de dados exigida pelas novas regras de transição.",
+      "PRAZO: Regras de transição do IPI e Imposto Seletivo (MP de 04/11/2026) já requerem adequação operacional imediata para o ciclo fiscal vigente."
     ],
-    "acao_prioritaria": "Validar notas fiscais."
+    "acao_prioritaria": "Revisar com urgência a estrutura de custos e precificação frente à CBS de 11,3% e adequar as rotinas operacionais às regras de transição da MP do Imposto Seletivo."
   },
   "alertas": [
     {
       "tipo": "critico",
-      "titulo": "Validação de Notas",
-      "texto": "NF-e e CT-e exigem destaque CBS/IBS.",
+      "titulo": "Alíquota da CBS em 11,3% e Impacto Severo no Capital de Giro",
+      "texto": "A confirmação da alíquota da CBS em 11,3% supera as projeções de muitas empresas no Lucro Real, pressionando preços e exigindo maior rigor no controle de créditos. O descasamento entre o recolhimento na fonte e a compensação efetiva de créditos pode estressar a liquidez operacional se não houver reprogramação financeira.",
+      "prazo": "Imediato"
+    },
+    {
+      "tipo": "alto",
+      "titulo": "Transição IPI e Regulação do Imposto Seletivo",
+      "texto": "A edição de Medida Provisória alterando regras do IPI e Imposto Seletivo exige auditoria rápida das classificações fiscais (NCM) e recálculo da carga tributária encadeada para evitar passivos ou recolhimento a menor.",
       "prazo": "Já em vigor"
     }
   ],
   "prazos": [
     {
-      "quando": "Contínuo",
+      "quando": "Imediato",
       "urgencia": "urgente",
-      "titulo": "Validação de Notas",
-      "detalhe": "CST, cClassTrib e CBS/IBS."
+      "titulo": "Adequação dos ERPs e Governança de Dados da Reforma",
+      "detalhe": "Adequar a infraestrutura de dados fiscais e parametrização cadastral de produtos para conformidade com a MP do Imposto Seletivo e regras da CBS/IBS."
+    },
+    {
+      "quando": "30 dias",
+      "urgencia": "alta",
+      "titulo": "Revisão dos Prazos de Pagamento e Capital de Giro",
+      "detalhe": "Reavaliar contratos comerciais e condições de pagamento com fornecedores para mitigar os impactos financeiros da transição tributária no caixa."
     }
   ],
-  "novas_normas": [],
+  "novas_normas": [
+    {
+      "tipo": "MP",
+      "titulo": "Medida Provisória sobre Imposto Seletivo e Regras de Transição do IPI",
+      "descricao": "Regulamenta a incidência e apuração do Imposto Seletivo e fixa as diretrizes de transição para as alíquotas e aproveitamento de créditos do IPI no âmbito da Reforma Tributária, impactando o planejamento tributário de indústrias e equiparadas no Lucro Real.",
+      "link": "https://www.in.gov.br/consulta/-/buscar/dou?q=medida+provisoria+imposto+seletivo",
+      "instituicao": "Governo Federal"
+    }
+  ],
   "noticias": [
     {
       "data": "12/11/2026",
