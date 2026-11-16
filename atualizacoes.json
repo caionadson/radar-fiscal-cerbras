@@ -1,57 +1,35 @@
 {
-  "gerado_em": "2026-11-15T23:50:59.951967-03:00",
+  "gerado_em": "2026-11-16T02:28:08.355785-03:00",
   "versao": "1.6",
-  "revisao_radar": "15 nov/2026",
+  "revisao_radar": "16 nov/2026",
   "automacao": {
     "fontes_ok": 2,
     "fontes_total": 2
   },
   "briefing": {
-    "titulo": "Briefing do dia — Foco em Risco e Ação",
+    "titulo": "Briefing do dia — Fallback",
     "bullets": [
-      "RISCO: A alíquota surpreendente de 11,3% para a CBS e as restrições à compensação tributária geram iminente pressão no capital de giro e risco de perda/repartição tardia de créditos no Lucro Real.",
-      "AÇÃO: Reavaliar a precificação de vendas, renegociar prazos de pagamento com fornecedores e readequar a parametrização do ERP para a transição do IPI e incidência do Imposto Seletivo.",
-      "PRAZO: Impactos diretos na formação de caixa para o planejamento de 2027, com efeitos operacionais e de enquadramento vigentes a partir das publicações normativas deste mês."
+      "Atenção: Não foi possível gerar o resumo por IA hoje."
     ],
-    "acao_prioritaria": "Mapear a cadeia de suprimentos e readequar o ERP às regras de transição do IPI/Imposto Seletivo para evitar glosa de créditos e desbalanceamento no fluxo de caixa."
+    "acao_prioritaria": "Validar notas fiscais."
   },
   "alertas": [
     {
       "tipo": "critico",
-      "titulo": "Pressão no Caixa e Restrição de Compensação Tributária",
-      "texto": "O posicionamento conjunto das entidades contábeis (CFC/CRCs) contra restrições à compensação e o anúncio de alíquota da CBS em 11,3% elevam drasticamente o risco de retenção indesejada de saldo credor e compressão da margem líquida em empresas no Lucro Real.",
+      "titulo": "Validação de Notas",
+      "texto": "NF-e e CT-e exigem destaque CBS/IBS.",
       "prazo": "Já em vigor"
-    },
-    {
-      "tipo": "critico",
-      "titulo": "Adequação Imediata ao Imposto Seletivo e Regras de Transição do IPI",
-      "texto": "A publicação da Medida Provisória exige revisão imediata da Nomenclatura Comum do Mercosul (NCM) das mercadorias vendidas e adquiridas para evitar pagamento indevido ou impedimento no aproveitamento de créditos de IPI durante a transição.",
-      "prazo": "04/11/2026"
     }
   ],
   "prazos": [
     {
-      "quando": "Imediato",
+      "quando": "Contínuo",
       "urgencia": "urgente",
-      "titulo": "Revisão de Parametrização Fiscal do ERP (IPI / Imposto Seletivo)",
-      "detalhe": "Atualizar as regras tributárias internas de entrada e saída conforme as diretrizes da Medida Provisória publicada para impedir autuações fiscais e perda de créditos."
-    },
-    {
-      "quando": "30/11/2026",
-      "urgencia": "urgente",
-      "titulo": "Simulação de Impacto Financeiro da CBS (11,3%) no Fluxo de Caixa",
-      "detalhe": "Realizar o recalculo da necessidade de capital de giro e revisar os contratos com prazos longos de pagamento para suportar a transição do IVA dual."
+      "titulo": "Validação de Notas",
+      "detalhe": "CST, cClassTrib e CBS/IBS."
     }
   ],
-  "novas_normas": [
-    {
-      "tipo": "MP",
-      "titulo": "Medida Provisória regulamentando o Imposto Seletivo e regras de transição do IPI",
-      "descricao": "Regulamenta as hipóteses de incidência do Imposto Seletivo e fixa os critérios formais para oaproveitamento de créditos e extinção gradual do IPI na transição para o novo sistema tributário, com impacto direto na apuração de tributos e estornos de crédito de empresas no Lucro Real.",
-      "link": "https://www.in.gov.br/consulta/-/buscar/dou?q=medida+provisoria+imposto+seletivo",
-      "instituicao": "Governo Federal"
-    }
-  ],
+  "novas_normas": [],
   "noticias": [
     {
       "data": "13/11/2026",
