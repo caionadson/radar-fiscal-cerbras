@@ -1,5 +1,5 @@
 {
-  "gerado_em": "2026-11-16T17:45:38.796141-03:00",
+  "gerado_em": "2026-11-16T19:43:05.378741-03:00",
   "versao": "1.6",
   "revisao_radar": "16 nov/2026",
   "automacao": {
@@ -7,29 +7,51 @@
     "fontes_total": 2
   },
   "briefing": {
-    "titulo": "Briefing do dia — Fallback",
+    "titulo": "Briefing do dia — Foco em Risco e Ação",
     "bullets": [
-      "Atenção: Não foi possível gerar o resumo por IA hoje."
+      "RISCO: Alíquota estimada da CBS em 11,3%, aliada à MP do Imposto Seletivo e tentativas de limitação na compensação de tributos, ameaça comprimir margens do Lucro Real e gerar descasamento severo no fluxo de caixa.",
+      "AÇÃO: Auditar imediatamente cadastros de NCM/itens sujeitos ao Imposto Seletivo e IPI, recalcular precificação considerando CBS a 11,3% e renegociar prazos de pagamento com fornecedores para proteger o capital de giro.",
+      "PRAZO: Adequações dos sistemas contratuais e parametrização fiscal exigidas com efeitos imediatos da nova Medida Provisória e preparativos operacionais contínuos."
     ],
-    "acao_prioritaria": "Validar notas fiscais."
+    "acao_prioritaria": "Adequar a parametrização fiscal à nova MP do Imposto Seletivo e recalcular o impacto da CBS de 11,3% na formação de preços do Lucro Real."
   },
   "alertas": [
     {
       "tipo": "critico",
-      "titulo": "Validação de Notas",
-      "texto": "NF-e e CT-e exigem destaque CBS/IBS.",
+      "titulo": "Publicação de MP do Imposto Seletivo e Transição do IPI",
+      "texto": "A regulamentação do Imposto Seletivo e a alteração nas regras do IPI impactam diretamente a apuração de débitos/créditos de indústrias e importadores. A não adequação rápida de ERPs e tabelas tributárias acarretará autuações fiscais, retenção de mercadorias e glosa de créditos.",
       "prazo": "Já em vigor"
+    },
+    {
+      "tipo": "critico",
+      "titulo": "Impacto no Caixa: CBS a 11,3% e Restrições à Compensação Tributária",
+      "texto": "A alíquota da CBS em 11,3% aliada às movimentações políticas para restringir a compensação de tributos federais pressiona o capital de giro. Empresas no Lucro Real que dependem do ressarcimento rápido de créditos correm risco elevado de iliquidez.",
+      "prazo": "Imediato"
     }
   ],
   "prazos": [
     {
-      "quando": "Contínuo",
+      "quando": "04/11/2026",
       "urgencia": "urgente",
-      "titulo": "Validação de Notas",
-      "detalhe": "CST, cClassTrib e CBS/IBS."
+      "titulo": "Compliance da MP do Imposto Seletivo e Transição do IPI",
+      "detalhe": "Reclassificar itens no sistema e ajustar regras de emissão de NF-e para evitar autuações por descumprimento de obrigação acessória ou erro de alíquota."
+    },
+    {
+      "quando": "13/11/2026",
+      "urgencia": "urgente",
+      "titulo": "Mapeamento de Riscos na Compensação de Tributos Federais",
+      "detalhe": "Mapear o estoque de créditos federais acumulados no Lucro Real e acelerar pedidos de restituição/ressarcimento antes de eventuais travas operacionais."
     }
   ],
-  "novas_normas": [],
+  "novas_normas": [
+    {
+      "tipo": "MP",
+      "titulo": "Medida Provisória sobre Imposto Seletivo e Regras de Transição do IPI",
+      "descricao": "Regulamenta as diretrizes do Imposto Seletivo e estabelece o regramento para a fase de transição do IPI, afetando diretamente a carga tributária setorial, o direito ao crédito e os processos de emissão fiscal das empresas.",
+      "link": "https://www.in.gov.br/consulta/-/buscar/dou?q=medida+provisoria+imposto+seletivo",
+      "instituicao": "Governo Federal"
+    }
+  ],
   "noticias": [
     {
       "data": "16/11/2026",
@@ -95,15 +117,13 @@
       "data": "06/11/2026",
       "titulo": "Adiamento: “golpe do medo”, fraude à Constituição ou incompreensão do sistema CBS/IBS?",
       "fonte": "Portal da Reforma Tributária",
-      "url": "https://www.reformatributaria.com/opiniao/adiamento-golpe-do-medo-fraude-a-constituicao-ou-incompreensao-do-sistema-cbs-ibs/",
-      "novo": true
+      "url": "https://www.reformatributaria.com/opiniao/adiamento-golpe-do-medo-fraude-a-constituicao-ou-incompreensao-do-sistema-cbs-ibs/"
     },
     {
       "data": "06/11/2026",
       "titulo": "É preciso PEC para adiar a reforma tributária?",
       "fonte": "Portal da Reforma Tributária",
-      "url": "https://www.reformatributaria.com/opiniao/e-preciso-pec-para-adiar-a-reforma-tributaria/",
-      "novo": true
+      "url": "https://www.reformatributaria.com/opiniao/e-preciso-pec-para-adiar-a-reforma-tributaria/"
     },
     {
       "data": "04/11/2026",
@@ -115,8 +135,7 @@
       "data": "02/11/2026",
       "titulo": "CBS de 11,3% surpreende empresas e pressiona preços, dizem especialistas",
       "fonte": "Portal da Reforma Tributária",
-      "url": "https://www.reformatributaria.com/iva/aliquota-de-113-da-cbs-surpreende-empresas-e-pressiona-precos-dizem-especialistas/",
-      "novo": true
+      "url": "https://www.reformatributaria.com/iva/aliquota-de-113-da-cbs-surpreende-empresas-e-pressiona-precos-dizem-especialistas/"
     }
   ],
   "nts_criticas_lucro_real": [
