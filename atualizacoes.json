@@ -1,5 +1,5 @@
 {
-  "gerado_em": "2026-11-16T02:28:08.355785-03:00",
+  "gerado_em": "2026-11-16T05:31:22.313509-03:00",
   "versao": "1.6",
   "revisao_radar": "16 nov/2026",
   "automacao": {
@@ -7,29 +7,45 @@
     "fontes_total": 2
   },
   "briefing": {
-    "titulo": "Briefing do dia — Fallback",
+    "titulo": "Briefing do dia — Foco em Risco e Ação",
     "bullets": [
-      "Atenção: Não foi possível gerar o resumo por IA hoje."
+      "RISCO: Pressão crítica no capital de giro e risco de perda de caixa decorrentes da alíquota da CBS em 11,3%, aliada a potenciais restrições operacionais na compensação de tributos e novas exigências do Imposto Seletivo.",
+      "AÇÃO: Auditagem urgente dos sistemas ERP/fiscais, revisão da política de preços/margens e reavaliação dos prazos de pagamento a fornecedores para mitigar o impacto no fluxo de caixa no regime do Lucro Real.",
+      "PRAZO: Impactos com vigência imediata devido à publicação da Medida Provisória do Imposto Seletivo/IPI e necessidade de preparação para o ciclo de transição fiscal."
     ],
-    "acao_prioritaria": "Validar notas fiscais."
+    "acao_prioritaria": "Revisar imediatamente o planejamento tributário e o fluxo de caixa projetado, adequando os ERPs às diretrizes da nova MP do Imposto Seletivo e às regras de acúmulo/compensação de créditos de CBS/IBS."
   },
   "alertas": [
     {
       "tipo": "critico",
-      "titulo": "Validação de Notas",
-      "texto": "NF-e e CT-e exigem destaque CBS/IBS.",
+      "titulo": "Alíquota da CBS em 11,3% e Descalassamento de Capital de Giro",
+      "texto": "A alíquota de 11,3% para a CBS impactará fortemente o fluxo de caixa do Lucro Real. Sem a devida adequação dos prazos médios de pagamento e recebimento, haverá descasamento financeiro e perda de rentabilidade, além de risco de glosa caso os créditos não sejam apurados estritamente conforme a não cumulatividade plena.",
       "prazo": "Já em vigor"
+    },
+    {
+      "tipo": "critico",
+      "titulo": "Restrições à Compensação de Tributos e Posicionamento do CFC",
+      "texto": "O avanço de medidas que restringem a compensação de tributos federais coloca em risco a liquidez de empresas do Lucro Real que utilizam saldo credor para quitação de débitos operacionais, podendo gerar acúmulo indevido de créditos de difícil ressarcimento.",
+      "prazo": "Imediato"
     }
   ],
   "prazos": [
     {
-      "quando": "Contínuo",
+      "quando": "04/11/2026",
       "urgencia": "urgente",
-      "titulo": "Validação de Notas",
-      "detalhe": "CST, cClassTrib e CBS/IBS."
+      "titulo": "Adequação à MP do Imposto Seletivo e Transição do IPI",
+      "detalhe": "Mapear produtos impactados pelo Imposto Seletivo e ajustar as regras de creditamento e substituição do IPI nos sistemas fiscais para evitar autuações e recolhimentos incorretos."
     }
   ],
-  "novas_normas": [],
+  "novas_normas": [
+    {
+      "tipo": "MP",
+      "titulo": "Medida Provisória regulamentando o Imposto Seletivo e regras de transição do IPI",
+      "descricao": "Regulamenta os fatos geradores, bases de cálculo e alíquotas do Imposto Seletivo, além de definir os critérios de transição do IPI. Afeta diretamente o custo de aquisição de insumos, a precificação de produtos e a manutenção de saldos credores no Lucro Real.",
+      "link": "https://www.in.gov.br/consulta/-/buscar/dou?q=medida+provisoria+imposto+seletivo",
+      "instituicao": "Governo Federal"
+    }
+  ],
   "noticias": [
     {
       "data": "13/11/2026",
