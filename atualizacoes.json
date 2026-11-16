@@ -1,42 +1,51 @@
 {
-  "gerado_em": "2026-11-13T19:39:28.254788-03:00",
+  "gerado_em": "2026-11-15T22:08:41.922021-03:00",
   "versao": "1.6",
-  "revisao_radar": "13 nov/2026",
+  "revisao_radar": "15 nov/2026",
   "automacao": {
     "fontes_ok": 2,
     "fontes_total": 2
   },
   "briefing": {
-    "titulo": "Briefing do dia — Fallback",
+    "titulo": "Briefing do dia — Foco em Risco e Ação",
     "bullets": [
-      "Atenção: Não foi possível gerar o resumo por IA hoje."
+      "RISCO: Pressão severa no fluxo de caixa e no capital de giro devido à alíquota da CBS estimada em 11,3%, aliada a restrições à compensação de tributos federais e criação do Imposto Seletivo.",
+      "AÇÃO: Reavaliar imediatamente o ERP e os parâmetros de escrituração fiscal para as regras de transição do IPI e Imposto Seletivo, renegociando prazos com fornecedores.",
+      "PRAZO: Impacto operacional e financeiro com efeitos imediatos após a publicação da Medida Provisória regulamentadora."
     ],
-    "acao_prioritaria": "Validar notas fiscais."
+    "acao_prioritaria": "Simular o impacto do Imposto Seletivo e da alíquota de 11,3% da CBS no capital de giro e revisar as rotinas de compensação tributária sob o regime de Lucro Real."
   },
   "alertas": [
     {
       "tipo": "critico",
-      "titulo": "Validação de Notas",
-      "texto": "NF-e e CT-e exigem destaque CBS/IBS.",
+      "titulo": "Regulamentação do Imposto Seletivo, Transição do IPI e Alíquota da CBS em 11,3%",
+      "texto": "A publicação da MP do Imposto Seletivo e as definições da CBS exigem pronta revisão da formação de preços e parametrização fiscal. A inércia resultará em perda de créditos fiscais de IBS/CBS, acréscimos moratórios por recolhimento incorreto e descolamento do capital de giro.",
       "prazo": "Já em vigor"
     }
   ],
   "prazos": [
     {
-      "quando": "Contínuo",
+      "quando": "Imediato",
       "urgencia": "urgente",
-      "titulo": "Validação de Notas",
-      "detalhe": "CST, cClassTrib e CBS/IBS."
+      "titulo": "Adaptação de Sistemas e Parametrização para a Transição Tributária",
+      "detalhe": "Adequar cadastros de produtos, regras de emissão de NF-e e controle de créditos acumulados de IPI/CBS para evitar autuações fiscais e perda de navegabilidade de créditos."
     }
   ],
-  "novas_normas": [],
+  "novas_normas": [
+    {
+      "tipo": "MP",
+      "titulo": "Medida Provisória sobre Imposto Seletivo e Transição do IPI",
+      "descricao": "Regulamenta as alíquotas e fatos geradores do Imposto Seletivo, além de estabelecer a sistemática de transição do IPI, afetando a tomada de créditos e a precificação de empresas submetidas ao Lucro Real.",
+      "link": "https://www.in.gov.br/consulta/-/buscar/dou?q=medida+provisoria+imposto+seletivo",
+      "instituicao": "Governo Federal"
+    }
+  ],
   "noticias": [
     {
       "data": "13/11/2026",
       "titulo": "CFC e Conselhos Regionais se posicionam contra aumento da carga tributária e restrições à compensação de tributos",
       "fonte": "CFC",
-      "url": "https://cfc.org.br/noticias/cfc-e-conselhos-regionais-se-posicionam-contra-aumento-da-carga-tributaria-e-restricoes-a-compensacao-de-tributos/",
-      "novo": true
+      "url": "https://cfc.org.br/noticias/cfc-e-conselhos-regionais-se-posicionam-contra-aumento-da-carga-tributaria-e-restricoes-a-compensacao-de-tributos/"
     },
     {
       "data": "13/11/2026",
@@ -67,12 +76,6 @@
       "titulo": "CFC, Fenacon e Receita Federal instalam sala de situação um dia após anúncio de Joaquim Bezerra",
       "fonte": "CFC",
       "url": "https://cfc.org.br/noticias/cfc-fenacon-e-receita-federal-instalam-sala-de-situacao-um-dia-apos-anuncio-de-joaquim-bezerra/"
-    },
-    {
-      "data": "11/11/2026",
-      "titulo": "Parlamentares e representante do Tesouro Nacional recebem homenagem pelos 80 anos do Sistema CFC/CRCs",
-      "fonte": "CFC",
-      "url": "https://cfc.org.br/noticias/parlamentares-e-representante-do-tesouro-nacional-recebem-homenagem-pelos-80-anos-do-sistema-cfc-crcs/"
     },
     {
       "data": "08/11/2026",
