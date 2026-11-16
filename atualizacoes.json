@@ -1,5 +1,5 @@
 {
-  "gerado_em": "2026-11-16T05:31:22.313509-03:00",
+  "gerado_em": "2026-11-16T08:14:09.247818-03:00",
   "versao": "1.6",
   "revisao_radar": "16 nov/2026",
   "automacao": {
@@ -9,41 +9,48 @@
   "briefing": {
     "titulo": "Briefing do dia — Foco em Risco e Ação",
     "bullets": [
-      "RISCO: Pressão crítica no capital de giro e risco de perda de caixa decorrentes da alíquota da CBS em 11,3%, aliada a potenciais restrições operacionais na compensação de tributos e novas exigências do Imposto Seletivo.",
-      "AÇÃO: Auditagem urgente dos sistemas ERP/fiscais, revisão da política de preços/margens e reavaliação dos prazos de pagamento a fornecedores para mitigar o impacto no fluxo de caixa no regime do Lucro Real.",
-      "PRAZO: Impactos com vigência imediata devido à publicação da Medida Provisória do Imposto Seletivo/IPI e necessidade de preparação para o ciclo de transição fiscal."
+      "RISCO: Erros na classificação fiscal tributária para o Imposto Seletivo e atrasos na integração das APIs da CBS geram alto risco de autuação, glosa de créditos e impacto severo no fluxo de caixa.",
+      "AÇÃO: Realizar auditoria imediata no NCM/cadastro de produtos do ERP, iniciar os testes no ambiente de homologação da SVRS/CBS e analisar a consulta pública da RFB sobre o adicional da CSLL.",
+      "PRAZO: Adaptação técnica e simulações do ambiente de homologação para regras de IBS/CBS vigentes já a partir das fases de testes até a transição oficial."
     ],
-    "acao_prioritaria": "Revisar imediatamente o planejamento tributário e o fluxo de caixa projetado, adequando os ERPs às diretrizes da nova MP do Imposto Seletivo e às regras de acúmulo/compensação de créditos de CBS/IBS."
+    "acao_prioritaria": "Revisar a parametrização do ERP para a nova API da CBS e auditar a classificação fiscal dos produtos para evitar autuações do Imposto Seletivo e perda de tributos recuperáveis no Lucro Real."
   },
   "alertas": [
     {
       "tipo": "critico",
-      "titulo": "Alíquota da CBS em 11,3% e Descalassamento de Capital de Giro",
-      "texto": "A alíquota de 11,3% para a CBS impactará fortemente o fluxo de caixa do Lucro Real. Sem a devida adequação dos prazos médios de pagamento e recebimento, haverá descasamento financeiro e perda de rentabilidade, além de risco de glosa caso os créditos não sejam apurados estritamente conforme a não cumulatividade plena.",
+      "titulo": "Incorreção na Classificação do Imposto Seletivo e Restrição de Créditos",
+      "texto": "Falhas na classificação fiscal dos produtos perante as regras do Imposto Seletivo expõem a empresa a pesadas multas por descumprimento de obrigação acessória e recolhimento a menor. Além disso, restrições à compensação tributária e atualizações de APIs exigem alinhamento urgente entre fiscal e TI para evitar perda de créditos de IBS/CBS.",
       "prazo": "Já em vigor"
-    },
-    {
-      "tipo": "critico",
-      "titulo": "Restrições à Compensação de Tributos e Posicionamento do CFC",
-      "texto": "O avanço de medidas que restringem a compensação de tributos federais coloca em risco a liquidez de empresas do Lucro Real que utilizam saldo credor para quitação de débitos operacionais, podendo gerar acúmulo indevido de créditos de difícil ressarcimento.",
-      "prazo": "Imediato"
     }
   ],
   "prazos": [
     {
-      "quando": "04/11/2026",
+      "quando": "09/11/2026",
       "urgencia": "urgente",
-      "titulo": "Adequação à MP do Imposto Seletivo e Transição do IPI",
-      "detalhe": "Mapear produtos impactados pelo Imposto Seletivo e ajustar as regras de creditamento e substituição do IPI nos sistemas fiscais para evitar autuações e recolhimentos incorretos."
+      "titulo": "Adequação dos Sistemas à Nova API da CBS e Homologação SVRS",
+      "detalhe": "Atualizar a integração dos sistemas da empresa com a nova API de apuração da CBS da RFB e realizar simulações no ambiente SVRS para homologar os cálculos do IBS/CBS."
+    },
+    {
+      "quando": "09/11/2026",
+      "urgencia": "urgente",
+      "titulo": "Análise da Consulta Pública do Adicional da CSLL",
+      "detalhe": "Enviar contribuições e avaliar os impactos diretos da proposta da RFB na alíquota e apuração da CSLL para contribuintes sujeitos ao Lucro Real."
     }
   ],
   "novas_normas": [
     {
-      "tipo": "MP",
-      "titulo": "Medida Provisória regulamentando o Imposto Seletivo e regras de transição do IPI",
-      "descricao": "Regulamenta os fatos geradores, bases de cálculo e alíquotas do Imposto Seletivo, além de definir os critérios de transição do IPI. Afeta diretamente o custo de aquisição de insumos, a precificação de produtos e a manutenção de saldos credores no Lucro Real.",
-      "link": "https://www.in.gov.br/consulta/-/buscar/dou?q=medida+provisoria+imposto+seletivo",
-      "instituicao": "Governo Federal"
+      "tipo": "IN",
+      "titulo": "Consulta Pública sobre Mudanças na Regulamentação do Adicional da CSLL",
+      "descricao": "Receita Federal abre consulta pública referente às alterações normativas na apuração do adicional da CSLL, impactando a carga tributária direta das empresas sob o regime do Lucro Real.",
+      "link": "https://www.reformatributaria.com/economia-reforma-tributaria-impactos/receita-federal-abre-consulta-publica-sobre-mudancas-na-regulamentacao-do-adicional-da-csll/",
+      "instituicao": "RFB"
+    },
+    {
+      "tipo": "NT",
+      "titulo": "Nova Versão da API de Apuração da CBS",
+      "descricao": "Disponibilização de atualização técnica da API da CBS pela Receita Federal, exigindo adequação de software para homologação da escrituração e cálculo dos tributos do IVA federal.",
+      "link": "https://www.reformatributaria.com/iva/receita-libera-nova-versao-da-api-de-apuracao-da-cbs/",
+      "instituicao": "RFB"
     }
   ],
   "noticias": [
@@ -84,6 +91,48 @@
       "url": "https://cfc.org.br/noticias/cfc-fenacon-e-receita-federal-instalam-sala-de-situacao-um-dia-apos-anuncio-de-joaquim-bezerra/"
     },
     {
+      "data": "09/11/2026",
+      "titulo": "Receita libera nova versão da API de apuração da CBS",
+      "fonte": "Portal da Reforma Tributária",
+      "url": "https://www.reformatributaria.com/iva/receita-libera-nova-versao-da-api-de-apuracao-da-cbs/",
+      "novo": true
+    },
+    {
+      "data": "09/11/2026",
+      "titulo": "Ambiente de homologação da SVRS permitirá simular regras de IBS e CBS previstas para 2027",
+      "fonte": "Portal da Reforma Tributária",
+      "url": "https://www.reformatributaria.com/documentos-fiscais/ambiente-de-homologacao-da-svrs-permitira-simular-regras-de-ibs-e-cbs-previstas-para-2027/",
+      "novo": true
+    },
+    {
+      "data": "09/11/2026",
+      "titulo": "Receita Estadual do RS lança apuração assistida do Simples Nacional",
+      "fonte": "Portal da Reforma Tributária",
+      "url": "https://www.reformatributaria.com/documentos-fiscais/receita-estadual-do-rs-lanca-apuracao-assistida-do-simples-nacional/",
+      "novo": true
+    },
+    {
+      "data": "09/11/2026",
+      "titulo": "Senadores avaliam com cautela cálculo de 11,3% para a CBS",
+      "fonte": "Portal da Reforma Tributária",
+      "url": "https://www.reformatributaria.com/reforma-tributaria-congresso-nacional/senadores-avaliam-com-cautela-calculo-de-113-para-a-cbs/",
+      "novo": true
+    },
+    {
+      "data": "09/11/2026",
+      "titulo": "Imposto Seletivo: erros de classificação podem gerar prejuízos a empresas, diz especialista",
+      "fonte": "Portal da Reforma Tributária",
+      "url": "https://www.reformatributaria.com/impostoseletivo/imposto-seletivo-erros-de-classificacao-podem-gerar-prejuizos-a-empresas-diz-especialista/",
+      "novo": true
+    },
+    {
+      "data": "09/11/2026",
+      "titulo": "Receita Federal abre consulta pública sobre mudanças na regulamentação do adicional da CSLL",
+      "fonte": "Portal da Reforma Tributária",
+      "url": "https://www.reformatributaria.com/economia-reforma-tributaria-impactos/receita-federal-abre-consulta-publica-sobre-mudancas-na-regulamentacao-do-adicional-da-csll/",
+      "novo": true
+    },
+    {
       "data": "08/11/2026",
       "titulo": "Reforma tributária pode impulsionar infraestrutura nacional de dados, avalia executivo da IBM",
       "fonte": "Portal da Reforma Tributária",
@@ -100,36 +149,6 @@
       "titulo": "A reforma prometeu simplificar; por enquanto, ela cobra organização.",
       "fonte": "Portal da Reforma Tributária",
       "url": "https://www.reformatributaria.com/opiniao/a-reforma-prometeu-simplificar-por-enquanto-ela-cobra-organizacao/"
-    },
-    {
-      "data": "06/11/2026",
-      "titulo": "O impacto invisível da reforma nos prazos de pagamento e no capital de giro",
-      "fonte": "Portal da Reforma Tributária",
-      "url": "https://www.reformatributaria.com/opiniao/o-impacto-invisivel-da-reforma-nos-prazos-de-pagamento-e-no-capital-de-giro/"
-    },
-    {
-      "data": "06/11/2026",
-      "titulo": "Adiamento: “golpe do medo”, fraude à Constituição ou incompreensão do sistema CBS/IBS?",
-      "fonte": "Portal da Reforma Tributária",
-      "url": "https://www.reformatributaria.com/opiniao/adiamento-golpe-do-medo-fraude-a-constituicao-ou-incompreensao-do-sistema-cbs-ibs/"
-    },
-    {
-      "data": "06/11/2026",
-      "titulo": "É preciso PEC para adiar a reforma tributária?",
-      "fonte": "Portal da Reforma Tributária",
-      "url": "https://www.reformatributaria.com/opiniao/e-preciso-pec-para-adiar-a-reforma-tributaria/"
-    },
-    {
-      "data": "04/11/2026",
-      "titulo": "Governo publica Medida Provisória regulamentando o Imposto Seletivo e regras de transição do IPI",
-      "fonte": "Ministério da Fazenda",
-      "url": "https://www.in.gov.br/consulta/-/buscar/dou?q=medida+provisoria+imposto+seletivo"
-    },
-    {
-      "data": "02/11/2026",
-      "titulo": "CBS de 11,3% surpreende empresas e pressiona preços, dizem especialistas",
-      "fonte": "Portal da Reforma Tributária",
-      "url": "https://www.reformatributaria.com/iva/aliquota-de-113-da-cbs-surpreende-empresas-e-pressiona-precos-dizem-especialistas/"
     }
   ],
   "nts_criticas_lucro_real": [
