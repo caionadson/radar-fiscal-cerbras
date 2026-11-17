@@ -1,5 +1,5 @@
 {
-  "gerado_em": "2026-11-17T07:56:46.613966-03:00",
+  "gerado_em": "2026-11-17T09:56:11.508557-03:00",
   "versao": "1.6",
   "revisao_radar": "17 nov/2026",
   "automacao": {
@@ -32,6 +32,13 @@
   "novas_normas": [],
   "noticias": [
     {
+      "data": "17/11/2026",
+      "titulo": "Ibracon debate impactos da Reforma Tributária na auditoria independente",
+      "fonte": "CFC",
+      "url": "https://cfc.org.br/noticias/ibracon-debate-impactos-da-reforma-tributaria-na-auditoria-independente/",
+      "novo": true
+    },
+    {
       "data": "16/11/2026",
       "titulo": "Sistema CFC/CRCs orienta profissionais da contabilidade sobre regularização de pendências financeiras",
       "fonte": "CFC",
@@ -60,12 +67,6 @@
       "titulo": "CFC Mulher ganha novo reforço",
       "fonte": "CFC",
       "url": "https://cfc.org.br/noticias/cfc-mulher-ganha-novo-reforco/"
-    },
-    {
-      "data": "12/11/2026",
-      "titulo": "Penúltimo módulo da capacitação em Contabilidade Imobiliária é liberado pelo CFC",
-      "fonte": "CFC",
-      "url": "https://cfc.org.br/noticias/penultimo-modulo-da-capacitacao-em-contabilidade-imobiliaria-e-liberado-pelo-cfc/"
     },
     {
       "data": "08/11/2026",
