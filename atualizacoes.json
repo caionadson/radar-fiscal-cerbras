@@ -1,5 +1,5 @@
 {
-  "gerado_em": "2026-11-17T15:53:36.608204-03:00",
+  "gerado_em": "2026-11-17T17:48:06.374855-03:00",
   "versao": "1.6",
   "revisao_radar": "17 nov/2026",
   "automacao": {
@@ -33,65 +33,16 @@
   "noticias": [
     {
       "data": "17/11/2026",
+      "titulo": "Plataforma Crescimento Sustentável apoia pequenos negócios e amplia oportunidades para contadores",
+      "fonte": "CFC",
+      "url": "https://cfc.org.br/noticias/plataforma-crescimento-sustentavel-apoia-pequenos-negocios-e-amplia-oportunidades-para-contadores/",
+      "novo": true
+    },
+    {
+      "data": "17/11/2026",
       "titulo": "Ibracon debate impactos da Reforma Tributária na auditoria independente",
       "fonte": "CFC",
       "url": "https://cfc.org.br/noticias/ibracon-debate-impactos-da-reforma-tributaria-na-auditoria-independente/"
-    },
-    {
-      "data": "16/11/2026",
-      "titulo": "Receita não quer iniciar discussões sobre questões setoriais durante transição da reforma, diz auditor",
-      "fonte": "Portal da Reforma Tributária",
-      "url": "https://www.reformatributaria.com/iva/fisco-nao-quer-abrir-discussoes-setoriais-da-reforma-durante-a-transicao-diz-auditor-da-receita/",
-      "novo": true
-    },
-    {
-      "data": "16/11/2026",
-      "titulo": "Pedidos “indeferidos” do Simples Nacional para 2027 ainda podem ser analisados",
-      "fonte": "Portal da Reforma Tributária",
-      "url": "https://www.reformatributaria.com/governo/pedidos-indeferidos-do-simples-nacional-para-2027-ainda-podem-ser-analisados/",
-      "novo": true
-    },
-    {
-      "data": "16/11/2026",
-      "titulo": "Receita Federal atualiza programa gerador do DAS para adequar sistema do Simples Nacional à reforma tributária",
-      "fonte": "Portal da Reforma Tributária",
-      "url": "https://www.reformatributaria.com/tecnologia/receita-federal-atualiza-programa-gerador-do-das-para-adequar-sistema-do-simples-nacional-a-reforma-tributaria/",
-      "novo": true
-    },
-    {
-      "data": "16/11/2026",
-      "titulo": "Ministro da Fazenda e secretário da Receita vão ao Senado na 3ª feira para falar sobre a CBS",
-      "fonte": "Portal da Reforma Tributária",
-      "url": "https://www.reformatributaria.com/reforma-tributaria-congresso-nacional/ministro-da-fazenda-e-secretario-da-receita-vao-ao-senado-na-3a-feira-para-falar-sobre-a-cbs/",
-      "novo": true
-    },
-    {
-      "data": "16/11/2026",
-      "titulo": "Como ficam créditos e caixa no Drawback e no RECOF com a reforma? Webinar gratuito responde nesta 3ª feira",
-      "fonte": "Portal da Reforma Tributária",
-      "url": "https://www.reformatributaria.com/cursos-reforma-tributaria/como-ficam-creditos-e-caixa-no-drawback-e-no-recof-com-a-reforma-webinar-gratuito-responde-nesta-3a-feira/",
-      "novo": true
-    },
-    {
-      "data": "16/11/2026",
-      "titulo": "Senado está prestes a permitir que o governo trave créditos de PIS e Cofins",
-      "fonte": "Portal da Reforma Tributária",
-      "url": "https://www.reformatributaria.com/opiniao/senado-governo-trave-creditos-pis-cofins/",
-      "novo": true
-    },
-    {
-      "data": "16/11/2026",
-      "titulo": "Entenda como participar do Programa de Indicação do Portal da Reforma Tributária",
-      "fonte": "Portal da Reforma Tributária",
-      "url": "https://www.reformatributaria.com/institucional-portal-reforma-tributaria/entenda-como-participar-do-programa-de-indicacao-do-portal-da-reforma-tributaria/",
-      "novo": true
-    },
-    {
-      "data": "16/11/2026",
-      "titulo": "A reforma tributária está se tornando realidade. É hora de deixar o ceticismo de lado",
-      "fonte": "Portal da Reforma Tributária",
-      "url": "https://www.reformatributaria.com/opiniao/reforma-tributaria-realidade-ceticismo/",
-      "novo": true
     },
     {
       "data": "16/11/2026",
@@ -124,10 +75,58 @@
       "url": "https://cfc.org.br/noticias/cfc-mulher-ganha-novo-reforco/"
     },
     {
+      "data": "08/11/2026",
+      "titulo": "Reforma tributária pode impulsionar infraestrutura nacional de dados, avalia executivo da IBM",
+      "fonte": "Portal da Reforma Tributária",
+      "url": "https://www.reformatributaria.com/tecnologia/reforma-tributaria-pode-impulsionar-infraestrutura-nacional-de-dados-avalia-executivo-da-ibm/",
+      "novo": true
+    },
+    {
+      "data": "07/11/2026",
+      "titulo": "Ontologia e reforma tributária",
+      "fonte": "Portal da Reforma Tributária",
+      "url": "https://www.reformatributaria.com/opiniao/ontologia-e-reforma-tributaria/",
+      "novo": true
+    },
+    {
+      "data": "07/11/2026",
+      "titulo": "A reforma prometeu simplificar; por enquanto, ela cobra organização.",
+      "fonte": "Portal da Reforma Tributária",
+      "url": "https://www.reformatributaria.com/opiniao/a-reforma-prometeu-simplificar-por-enquanto-ela-cobra-organizacao/",
+      "novo": true
+    },
+    {
+      "data": "06/11/2026",
+      "titulo": "O impacto invisível da reforma nos prazos de pagamento e no capital de giro",
+      "fonte": "Portal da Reforma Tributária",
+      "url": "https://www.reformatributaria.com/opiniao/o-impacto-invisivel-da-reforma-nos-prazos-de-pagamento-e-no-capital-de-giro/",
+      "novo": true
+    },
+    {
+      "data": "06/11/2026",
+      "titulo": "Adiamento: “golpe do medo”, fraude à Constituição ou incompreensão do sistema CBS/IBS?",
+      "fonte": "Portal da Reforma Tributária",
+      "url": "https://www.reformatributaria.com/opiniao/adiamento-golpe-do-medo-fraude-a-constituicao-ou-incompreensao-do-sistema-cbs-ibs/",
+      "novo": true
+    },
+    {
+      "data": "06/11/2026",
+      "titulo": "É preciso PEC para adiar a reforma tributária?",
+      "fonte": "Portal da Reforma Tributária",
+      "url": "https://www.reformatributaria.com/opiniao/e-preciso-pec-para-adiar-a-reforma-tributaria/",
+      "novo": true
+    },
+    {
       "data": "04/11/2026",
       "titulo": "Governo publica Medida Provisória regulamentando o Imposto Seletivo e regras de transição do IPI",
       "fonte": "Ministério da Fazenda",
-      "url": "https://www.in.gov.br/consulta/-/buscar/dou?q=medida+provisoria+imposto+seletivo",
+      "url": "https://www.in.gov.br/consulta/-/buscar/dou?q=medida+provisoria+imposto+seletivo"
+    },
+    {
+      "data": "02/11/2026",
+      "titulo": "CBS de 11,3% surpreende empresas e pressiona preços, dizem especialistas",
+      "fonte": "Portal da Reforma Tributária",
+      "url": "https://www.reformatributaria.com/iva/aliquota-de-113-da-cbs-surpreende-empresas-e-pressiona-precos-dizem-especialistas/",
       "novo": true
     }
   ],
