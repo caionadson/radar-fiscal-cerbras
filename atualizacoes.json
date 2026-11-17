@@ -1,5 +1,5 @@
 {
-  "gerado_em": "2026-11-16T21:54:48.535745-03:00",
+  "gerado_em": "2026-11-16T23:49:00.248395-03:00",
   "versao": "1.6",
   "revisao_radar": "16 nov/2026",
   "automacao": {
@@ -9,23 +9,23 @@
   "briefing": {
     "titulo": "Briefing do dia — Foco em Risco e Ação",
     "bullets": [
-      "RISCO: Erros na omissão de dados no início da CBS em 2027 poderão excluir a empresa da anistia de multas concedida pela Receita Federal às empresas que agirem estritamente de boa-fé.",
-      "AÇÃO: Auditores e times fiscais devem validar a higienização do cadastro de produtos e dados fiscais antes da emissão da versão 2.0 do regulamento do IBS/CBS para garantir o correto creditamento e compliance.",
-      "PRAZO: As regras de transição e isenção de multas passam a vigorar a partir de 2027, mas a regulamentação técnica (versão 2.0) e novos prazos para documentos fiscais têm definição imediata nesta semana."
+      "RISCO: A Receita Federal flexibilizará multas da CBS em 2027 apenas para contribuintes que demonstrarem boa-fé e não omitirem dados; dolo ou falta de conformidade acarretarão autuações imediatas e perda de créditos.",
+      "AÇÃO: O time fiscal deve auditar a qualidade dos dados mestres e parametrizar os sistemas legados conforme a Versão 2.0 do Regulamento IBS/CBS e o novo cronograma de documentos fiscais.",
+      "PRAZO: As adaptações operacionais de leiaute iniciam imediatamente, com foco no cronograma de documentos fiscais para a fase de testes e início da vigência em 2027."
     ],
-    "acao_prioritaria": "Revisar imediatamente o compliance de dados cadastrais e fiscais do ERP para assegurar a comprovação de boa-fé e evitar penalidades no início da vigência da CBS/IBS."
+    "acao_prioritaria": "Revisar rigorosamente as parametrizações do ERP e os cadastros fiscais para garantir a total transparência de dados, assegurando o enquadramento no critério de boa-fé da Receita Federal."
   },
   "alertas": [
     {
       "tipo": "critico",
-      "titulo": "Flexibilização de multas da CBS em 2027 exige comprovação de boa-fé",
-      "texto": "A Receita Federal perdoará multas da CBS em 2027 apenas para contribuintes que demonstrarem boa-fé e não omitirem dados. Inconsistências operacionais tomadas como omissão intencional gerarão autuações imediatas e perda de crédito fiscal.",
+      "titulo": "Exigência de Boa-Fé para Isenção de Multas da CBS em 2027",
+      "texto": "A RFB perdoará multas relativas à CBS em 2027 exclusivamente para operações sem omissão de informações. Inconsistências cadastrais ou erros interpretados como má-fé gerarão multas severas e retenção de créditos tributários no Lucro Real.",
       "prazo": "Janeiro de 2027"
     },
     {
       "tipo": "alto",
-      "titulo": "Restrições à compensação tributária e impacto no caixa",
-      "texto": "O posicionamento de entidades contábeis acende alerta sobre propostas governamentais que visam restringir a compensação de tributos federais e aumentar a carga efetiva das empresas no Lucro Real, exigindo planejamento preventivo de liquidez.",
+      "titulo": "Mobilização contra Restrições à Compensação de Tributos",
+      "texto": "Possíveis novas limitações à compensação de créditos federais e aumento de carga fiscal estão sob forte oposição das entidades contábeis. A empresa deve monitorar seu fluxo de caixa e acúmulo de créditos de PIS/Cofins.",
       "prazo": "Já em vigor"
     }
   ],
@@ -33,30 +33,30 @@
     {
       "quando": "Novembro de 2026",
       "urgencia": "urgente",
-      "titulo": "Publicação da Versão 2.0 do Regulamento IBS/CBS",
-      "detalhe": "Adequação dos sistemas de TI e processos tributários às regras atualizadas publicadas pela Receita Federal para evitar inconsistências."
+      "titulo": "Adequação à Versão 2.0 do Regulamento IBS/CBS",
+      "detalhe": "Atualização das regras de TI e compliance fiscal para atender às diretrizes atualizadas publicadas pela Receita Federal e pelo Comitê Gestor."
     },
     {
-      "quando": "2027",
-      "urgencia": "urgente",
-      "titulo": "Início da vigência com tolerância fiscal mitigada",
-      "detalhe": "Garantir total transparência nas declarações da CBS para se enquadrar na regra de não aplicabilidade de multas por boa-fé."
+      "quando": "Janeiro de 2027",
+      "urgencia": "alta",
+      "titulo": "Cronograma de Emissão de Documentos Fiscais com CBS",
+      "detalhe": "Início da obrigatoriedade de preenchimento dos campos da CBS nos documentos fiscais eletrônicos (NF-e, CT-e, NFS-e)."
     }
   ],
   "novas_normas": [
     {
-      "tipo": "Ato",
+      "tipo": "IN",
       "titulo": "Regulamento do IBS/CBS - Versão 2.0",
-      "descricao": "Atualização das diretrizes técnicas e operacionais da CBS e do IBS, impactando diretamente os processos de apuração e documentação fiscal do Lucro Real.",
+      "descricao": "Publicação com as regras atualizadas para operacionalização do IVA Dual, apuração assistida e transição dos tributos federais, estaduais e municipais.",
       "link": "https://www.reformatributaria.com/iva/versao-2-0-do-regulamento-de-ibs-cbs-deve-sair-esta-semana-diz-receita/",
-      "instituicao": "RFB / Comitê Gestor do IBS"
+      "instituicao": "RFB / Comitê Gestor"
     },
     {
-      "tipo": "IN",
-      "titulo": "Cronograma de Documentos Fiscais com CBS",
-      "descricao": "Estabelecimento de novos prazos e exigências para inclusão dos campos da CBS nos documentos fiscais eletrônicos durante a transição.",
+      "tipo": "Ato",
+      "titulo": "Cronograma de Exigência de Documentos Fiscais com CBS",
+      "descricao": "Norma conjunta estabelecendo os novos prazos e obrigatoriedades para adequação dos sistemas emissores de notas fiscais com campos da CBS.",
       "link": "https://www.reformatributaria.com/documentos-fiscais/receita-e-comite-gestor-dao-novos-prazos-para-exigencia-de-documentos-fiscais-com-cbs-leia-cronograma/",
-      "instituicao": "Receita Federal do Brasil / Comitê Gestor"
+      "instituicao": "RFB / Comitê Gestor"
     }
   ],
   "noticias": [
@@ -100,64 +100,55 @@
       "data": "11/11/2026",
       "titulo": "Receita: quem agir “de boa-fé” e não omitir dados ficará sem multas da CBS em 2027",
       "fonte": "Portal da Reforma Tributária",
-      "url": "https://www.reformatributaria.com/iva/receita-quem-agir-de-boa-fe-e-nao-omitir-dados-ficara-sem-multas-da-cbs-em-2027/",
-      "novo": true
+      "url": "https://www.reformatributaria.com/iva/receita-quem-agir-de-boa-fe-e-nao-omitir-dados-ficara-sem-multas-da-cbs-em-2027/"
     },
     {
       "data": "11/11/2026",
       "titulo": "Governo quer adiar pagamento definitivo da CBS para o 2º mês após a competência; Congresso precisa aprovar",
       "fonte": "Portal da Reforma Tributária",
-      "url": "https://www.reformatributaria.com/governo/governo-quer-adiar-pagamento-definitivo-da-cbs-para-o-2o-mes-apos-a-competencia-congresso-precisa-aprovar/",
-      "novo": true
+      "url": "https://www.reformatributaria.com/governo/governo-quer-adiar-pagamento-definitivo-da-cbs-para-o-2o-mes-apos-a-competencia-congresso-precisa-aprovar/"
     },
     {
       "data": "11/11/2026",
       "titulo": "GOL, Mercado Livre e EMASFI têm novos profissionais nas áreas tributária e fiscal",
       "fonte": "Portal da Reforma Tributária",
-      "url": "https://www.reformatributaria.com/como-anda-o-mercado/gol-mercado-livre-e-emasfi-tem-novos-profissionais-nas-areas-tributaria-e-fiscal/",
-      "novo": true
+      "url": "https://www.reformatributaria.com/como-anda-o-mercado/gol-mercado-livre-e-emasfi-tem-novos-profissionais-nas-areas-tributaria-e-fiscal/"
     },
     {
       "data": "11/11/2026",
       "titulo": "RAD e apuração assistida: CFC sugere à Receita 9 propostas para a transição da reforma",
       "fonte": "Portal da Reforma Tributária",
-      "url": "https://www.reformatributaria.com/iva/rad-e-apuracao-assistida-cfc-sugere-a-receita-9-propostas-para-a-transicao-da-reforma/",
-      "novo": true
+      "url": "https://www.reformatributaria.com/iva/rad-e-apuracao-assistida-cfc-sugere-a-receita-9-propostas-para-a-transicao-da-reforma/"
     },
     {
       "data": "11/11/2026",
       "titulo": "Receita e Comitê Gestor dão novos prazos para exigência de documentos fiscais com CBS; leia cronograma",
       "fonte": "Portal da Reforma Tributária",
-      "url": "https://www.reformatributaria.com/documentos-fiscais/receita-e-comite-gestor-dao-novos-prazos-para-exigencia-de-documentos-fiscais-com-cbs-leia-cronograma/",
-      "novo": true
+      "url": "https://www.reformatributaria.com/documentos-fiscais/receita-e-comite-gestor-dao-novos-prazos-para-exigencia-de-documentos-fiscais-com-cbs-leia-cronograma/"
     },
     {
       "data": "11/11/2026",
       "titulo": "Versão 2.0 do regulamento de IBS/CBS deve sair esta semana, diz Receita",
       "fonte": "Portal da Reforma Tributária",
-      "url": "https://www.reformatributaria.com/iva/versao-2-0-do-regulamento-de-ibs-cbs-deve-sair-esta-semana-diz-receita/",
-      "novo": true
+      "url": "https://www.reformatributaria.com/iva/versao-2-0-do-regulamento-de-ibs-cbs-deve-sair-esta-semana-diz-receita/"
     },
     {
       "data": "11/11/2026",
       "titulo": "Adiar a vigência plena da CBS e do IBS é mais que uma necessidade: é o bom senso comprovado em processos e sistemas",
       "fonte": "Portal da Reforma Tributária",
-      "url": "https://www.reformatributaria.com/opiniao/adiar-a-vigencia-plena-da-cbs-e-do-ibs-e-mais-que-uma-necessidade-e-o-bom-senso-comprovado-em-processos-e-sistemas/",
-      "novo": true
+      "url": "https://www.reformatributaria.com/opiniao/adiar-a-vigencia-plena-da-cbs-e-do-ibs-e-mais-que-uma-necessidade-e-o-bom-senso-comprovado-em-processos-e-sistemas/"
     },
     {
       "data": "10/11/2026",
       "titulo": "Receita deve anunciar na 4ª feira flexibilização das multas da CBS em 2027",
       "fonte": "Portal da Reforma Tributária",
-      "url": "https://www.reformatributaria.com/reforma-tributaria-brasil/receita-deve-anunciar-na-4a-feira-flexibilizacao-das-multas-da-cbs-em-2027/",
-      "novo": true
+      "url": "https://www.reformatributaria.com/reforma-tributaria-brasil/receita-deve-anunciar-na-4a-feira-flexibilizacao-das-multas-da-cbs-em-2027/"
     },
     {
       "data": "10/11/2026",
       "titulo": "Deputados pedem que Fazenda facilite acesso a créditos de IBS/CBS pelo Simples Nacional",
       "fonte": "Portal da Reforma Tributária",
-      "url": "https://www.reformatributaria.com/reforma-tributaria-congresso-nacional/deputados-pedem-que-fazenda-facilite-acesso-a-creditos-de-ibs-cbs-pelo-simples-nacional/",
-      "novo": true
+      "url": "https://www.reformatributaria.com/reforma-tributaria-congresso-nacional/deputados-pedem-que-fazenda-facilite-acesso-a-creditos-de-ibs-cbs-pelo-simples-nacional/"
     }
   ],
   "nts_criticas_lucro_real": [
