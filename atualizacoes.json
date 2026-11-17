@@ -1,5 +1,5 @@
 {
-  "gerado_em": "2026-11-17T13:56:50.146918-03:00",
+  "gerado_em": "2026-11-17T15:53:36.608204-03:00",
   "versao": "1.6",
   "revisao_radar": "17 nov/2026",
   "automacao": {
@@ -39,6 +39,62 @@
     },
     {
       "data": "16/11/2026",
+      "titulo": "Receita não quer iniciar discussões sobre questões setoriais durante transição da reforma, diz auditor",
+      "fonte": "Portal da Reforma Tributária",
+      "url": "https://www.reformatributaria.com/iva/fisco-nao-quer-abrir-discussoes-setoriais-da-reforma-durante-a-transicao-diz-auditor-da-receita/",
+      "novo": true
+    },
+    {
+      "data": "16/11/2026",
+      "titulo": "Pedidos “indeferidos” do Simples Nacional para 2027 ainda podem ser analisados",
+      "fonte": "Portal da Reforma Tributária",
+      "url": "https://www.reformatributaria.com/governo/pedidos-indeferidos-do-simples-nacional-para-2027-ainda-podem-ser-analisados/",
+      "novo": true
+    },
+    {
+      "data": "16/11/2026",
+      "titulo": "Receita Federal atualiza programa gerador do DAS para adequar sistema do Simples Nacional à reforma tributária",
+      "fonte": "Portal da Reforma Tributária",
+      "url": "https://www.reformatributaria.com/tecnologia/receita-federal-atualiza-programa-gerador-do-das-para-adequar-sistema-do-simples-nacional-a-reforma-tributaria/",
+      "novo": true
+    },
+    {
+      "data": "16/11/2026",
+      "titulo": "Ministro da Fazenda e secretário da Receita vão ao Senado na 3ª feira para falar sobre a CBS",
+      "fonte": "Portal da Reforma Tributária",
+      "url": "https://www.reformatributaria.com/reforma-tributaria-congresso-nacional/ministro-da-fazenda-e-secretario-da-receita-vao-ao-senado-na-3a-feira-para-falar-sobre-a-cbs/",
+      "novo": true
+    },
+    {
+      "data": "16/11/2026",
+      "titulo": "Como ficam créditos e caixa no Drawback e no RECOF com a reforma? Webinar gratuito responde nesta 3ª feira",
+      "fonte": "Portal da Reforma Tributária",
+      "url": "https://www.reformatributaria.com/cursos-reforma-tributaria/como-ficam-creditos-e-caixa-no-drawback-e-no-recof-com-a-reforma-webinar-gratuito-responde-nesta-3a-feira/",
+      "novo": true
+    },
+    {
+      "data": "16/11/2026",
+      "titulo": "Senado está prestes a permitir que o governo trave créditos de PIS e Cofins",
+      "fonte": "Portal da Reforma Tributária",
+      "url": "https://www.reformatributaria.com/opiniao/senado-governo-trave-creditos-pis-cofins/",
+      "novo": true
+    },
+    {
+      "data": "16/11/2026",
+      "titulo": "Entenda como participar do Programa de Indicação do Portal da Reforma Tributária",
+      "fonte": "Portal da Reforma Tributária",
+      "url": "https://www.reformatributaria.com/institucional-portal-reforma-tributaria/entenda-como-participar-do-programa-de-indicacao-do-portal-da-reforma-tributaria/",
+      "novo": true
+    },
+    {
+      "data": "16/11/2026",
+      "titulo": "A reforma tributária está se tornando realidade. É hora de deixar o ceticismo de lado",
+      "fonte": "Portal da Reforma Tributária",
+      "url": "https://www.reformatributaria.com/opiniao/reforma-tributaria-realidade-ceticismo/",
+      "novo": true
+    },
+    {
+      "data": "16/11/2026",
       "titulo": "Sistema CFC/CRCs orienta profissionais da contabilidade sobre regularização de pendências financeiras",
       "fonte": "CFC",
       "url": "https://cfc.org.br/noticias/sistema-cfc-crcs-orienta-profissionais-da-contabilidade-sobre-regularizacao-de-pendencias-financeiras/"
@@ -68,66 +124,10 @@
       "url": "https://cfc.org.br/noticias/cfc-mulher-ganha-novo-reforco/"
     },
     {
-      "data": "11/11/2026",
-      "titulo": "Receita: quem agir “de boa-fé” e não omitir dados ficará sem multas da CBS em 2027",
-      "fonte": "Portal da Reforma Tributária",
-      "url": "https://www.reformatributaria.com/iva/receita-quem-agir-de-boa-fe-e-nao-omitir-dados-ficara-sem-multas-da-cbs-em-2027/",
-      "novo": true
-    },
-    {
-      "data": "11/11/2026",
-      "titulo": "Governo quer adiar pagamento definitivo da CBS para o 2º mês após a competência; Congresso precisa aprovar",
-      "fonte": "Portal da Reforma Tributária",
-      "url": "https://www.reformatributaria.com/governo/governo-quer-adiar-pagamento-definitivo-da-cbs-para-o-2o-mes-apos-a-competencia-congresso-precisa-aprovar/",
-      "novo": true
-    },
-    {
-      "data": "11/11/2026",
-      "titulo": "GOL, Mercado Livre e EMASFI têm novos profissionais nas áreas tributária e fiscal",
-      "fonte": "Portal da Reforma Tributária",
-      "url": "https://www.reformatributaria.com/como-anda-o-mercado/gol-mercado-livre-e-emasfi-tem-novos-profissionais-nas-areas-tributaria-e-fiscal/",
-      "novo": true
-    },
-    {
-      "data": "11/11/2026",
-      "titulo": "RAD e apuração assistida: CFC sugere à Receita 9 propostas para a transição da reforma",
-      "fonte": "Portal da Reforma Tributária",
-      "url": "https://www.reformatributaria.com/iva/rad-e-apuracao-assistida-cfc-sugere-a-receita-9-propostas-para-a-transicao-da-reforma/",
-      "novo": true
-    },
-    {
-      "data": "11/11/2026",
-      "titulo": "Receita e Comitê Gestor dão novos prazos para exigência de documentos fiscais com CBS; leia cronograma",
-      "fonte": "Portal da Reforma Tributária",
-      "url": "https://www.reformatributaria.com/documentos-fiscais/receita-e-comite-gestor-dao-novos-prazos-para-exigencia-de-documentos-fiscais-com-cbs-leia-cronograma/",
-      "novo": true
-    },
-    {
-      "data": "11/11/2026",
-      "titulo": "Versão 2.0 do regulamento de IBS/CBS deve sair esta semana, diz Receita",
-      "fonte": "Portal da Reforma Tributária",
-      "url": "https://www.reformatributaria.com/iva/versao-2-0-do-regulamento-de-ibs-cbs-deve-sair-esta-semana-diz-receita/",
-      "novo": true
-    },
-    {
-      "data": "11/11/2026",
-      "titulo": "Adiar a vigência plena da CBS e do IBS é mais que uma necessidade: é o bom senso comprovado em processos e sistemas",
-      "fonte": "Portal da Reforma Tributária",
-      "url": "https://www.reformatributaria.com/opiniao/adiar-a-vigencia-plena-da-cbs-e-do-ibs-e-mais-que-uma-necessidade-e-o-bom-senso-comprovado-em-processos-e-sistemas/",
-      "novo": true
-    },
-    {
-      "data": "10/11/2026",
-      "titulo": "Receita deve anunciar na 4ª feira flexibilização das multas da CBS em 2027",
-      "fonte": "Portal da Reforma Tributária",
-      "url": "https://www.reformatributaria.com/reforma-tributaria-brasil/receita-deve-anunciar-na-4a-feira-flexibilizacao-das-multas-da-cbs-em-2027/",
-      "novo": true
-    },
-    {
-      "data": "10/11/2026",
-      "titulo": "Deputados pedem que Fazenda facilite acesso a créditos de IBS/CBS pelo Simples Nacional",
-      "fonte": "Portal da Reforma Tributária",
-      "url": "https://www.reformatributaria.com/reforma-tributaria-congresso-nacional/deputados-pedem-que-fazenda-facilite-acesso-a-creditos-de-ibs-cbs-pelo-simples-nacional/",
+      "data": "04/11/2026",
+      "titulo": "Governo publica Medida Provisória regulamentando o Imposto Seletivo e regras de transição do IPI",
+      "fonte": "Ministério da Fazenda",
+      "url": "https://www.in.gov.br/consulta/-/buscar/dou?q=medida+provisoria+imposto+seletivo",
       "novo": true
     }
   ],
