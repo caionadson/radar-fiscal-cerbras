@@ -1,7 +1,7 @@
 {
-  "gerado_em": "2026-11-16T23:49:00.248395-03:00",
+  "gerado_em": "2026-11-17T01:53:58.592300-03:00",
   "versao": "1.6",
-  "revisao_radar": "16 nov/2026",
+  "revisao_radar": "17 nov/2026",
   "automacao": {
     "fontes_ok": 2,
     "fontes_total": 2
@@ -9,54 +9,54 @@
   "briefing": {
     "titulo": "Briefing do dia — Foco em Risco e Ação",
     "bullets": [
-      "RISCO: A Receita Federal flexibilizará multas da CBS em 2027 apenas para contribuintes que demonstrarem boa-fé e não omitirem dados; dolo ou falta de conformidade acarretarão autuações imediatas e perda de créditos.",
-      "AÇÃO: O time fiscal deve auditar a qualidade dos dados mestres e parametrizar os sistemas legados conforme a Versão 2.0 do Regulamento IBS/CBS e o novo cronograma de documentos fiscais.",
-      "PRAZO: As adaptações operacionais de leiaute iniciam imediatamente, com foco no cronograma de documentos fiscais para a fase de testes e início da vigência em 2027."
+      "RESUMO DE RISCO: A incorreção na classificação fiscal para o Imposto Seletivo e possíveis travas na compensação de tributos federais expõem a empresa no Lucro Real a pesadas multas, perda de créditos e estrangulamento do fluxo de caixa.",
+      "RESUMO DE AÇÃO: Revalidar rigorosamente as NCMs do cadastro de mercadorias, submeter contribuições à Consulta Pública do Adicional da CSLL e iniciar a integração com a nova API da CBS no ambiente de homologação da SVRS.",
+      "RESUMO DE PRAZO: A homologação técnica dos sistemas para simular IBS/CBS (2027) exige início imediato dos testes pelas equipes de TI e Tax."
     ],
-    "acao_prioritaria": "Revisar rigorosamente as parametrizações do ERP e os cadastros fiscais para garantir a total transparência de dados, assegurando o enquadramento no critério de boa-fé da Receita Federal."
+    "acao_prioritaria": "Auditar o cadastro fiscal de NCMs sujeitas ao Imposto Seletivo e homologar a API da CBS no ERP antes das simulações operacionais de 2027."
   },
   "alertas": [
     {
       "tipo": "critico",
-      "titulo": "Exigência de Boa-Fé para Isenção de Multas da CBS em 2027",
-      "texto": "A RFB perdoará multas relativas à CBS em 2027 exclusivamente para operações sem omissão de informações. Inconsistências cadastrais ou erros interpretados como má-fé gerarão multas severas e retenção de créditos tributários no Lucro Real.",
-      "prazo": "Janeiro de 2027"
+      "titulo": "Risco de Multas e Ineficiência Fiscal por Erro no Imposto Seletivo",
+      "texto": "Falhas no enquadramento de mercadorias sob o Imposto Seletivo acarretam autuações por recolhimento a menor, glosa de créditos tributários e inconsistências nas obrigações acessórias do IBS/CBS, afetando a margem operacional das empresas do Lucro Real.",
+      "prazo": "Já em vigor"
     },
     {
-      "tipo": "alto",
-      "titulo": "Mobilização contra Restrições à Compensação de Tributos",
-      "texto": "Possíveis novas limitações à compensação de créditos federais e aumento de carga fiscal estão sob forte oposição das entidades contábeis. A empresa deve monitorar seu fluxo de caixa e acúmulo de créditos de PIS/Cofins.",
-      "prazo": "Já em vigor"
+      "tipo": "critico",
+      "titulo": "Ameaça ao Caixa: Restrições à Compensação de Tributos",
+      "texto": "A mobilização contra travas na compensação de tributos sinaliza o risco de limitação do aproveitamento de créditos fiscais acumulados, o que exigirá desembolso imediato de caixa para quitação de débitos federais.",
+      "prazo": "Imediato"
     }
   ],
   "prazos": [
     {
-      "quando": "Novembro de 2026",
+      "quando": "09/11/2026",
       "urgencia": "urgente",
-      "titulo": "Adequação à Versão 2.0 do Regulamento IBS/CBS",
-      "detalhe": "Atualização das regras de TI e compliance fiscal para atender às diretrizes atualizadas publicadas pela Receita Federal e pelo Comitê Gestor."
+      "titulo": "Ambiente de Testes SVRS e API da CBS",
+      "detalhe": "Configurar e executar simulações de apuração do IBS e CBS no ambiente de homologação disponibilizado para evitar inconsistências nos sistemas em 2027."
     },
     {
-      "quando": "Janeiro de 2027",
-      "urgencia": "alta",
-      "titulo": "Cronograma de Emissão de Documentos Fiscais com CBS",
-      "detalhe": "Início da obrigatoriedade de preenchimento dos campos da CBS nos documentos fiscais eletrônicos (NF-e, CT-e, NFS-e)."
+      "quando": "Acompanhamento Continuo",
+      "urgencia": "urgente",
+      "titulo": "Participação na Consulta Pública do Adicional da CSLL",
+      "detalhe": "Analisar as propostas da Receita Federal sobre o Adicional da CSLL e enviar contribuições para defender a tese de apuração adequada ao Lucro Real."
     }
   ],
   "novas_normas": [
     {
-      "tipo": "IN",
-      "titulo": "Regulamento do IBS/CBS - Versão 2.0",
-      "descricao": "Publicação com as regras atualizadas para operacionalização do IVA Dual, apuração assistida e transição dos tributos federais, estaduais e municipais.",
-      "link": "https://www.reformatributaria.com/iva/versao-2-0-do-regulamento-de-ibs-cbs-deve-sair-esta-semana-diz-receita/",
-      "instituicao": "RFB / Comitê Gestor"
+      "tipo": "Ato",
+      "titulo": "Consulta Pública sobre o Adicional da CSLL",
+      "descricao": "Abertura de consulta pública pela RFB para alterar a regulamentação do Adicional da CSLL, impactando diretamente o planejamento tributário e o cálculo do IRPJ/CSLL das empresas sob o Lucro Real.",
+      "link": "https://www.reformatributaria.com/economia-reforma-tributaria-impactos/receita-federal-abre-consulta-publica-sobre-mudancas-na-regulamentacao-do-adicional-da-csll/",
+      "instituicao": "Receita Federal do Brasil"
     },
     {
-      "tipo": "Ato",
-      "titulo": "Cronograma de Exigência de Documentos Fiscais com CBS",
-      "descricao": "Norma conjunta estabelecendo os novos prazos e obrigatoriedades para adequação dos sistemas emissores de notas fiscais com campos da CBS.",
-      "link": "https://www.reformatributaria.com/documentos-fiscais/receita-e-comite-gestor-dao-novos-prazos-para-exigencia-de-documentos-fiscais-com-cbs-leia-cronograma/",
-      "instituicao": "RFB / Comitê Gestor"
+      "tipo": "NT",
+      "titulo": "Atualização da API de Apuração da CBS e Homologação da SVRS",
+      "descricao": "Publicação das especificações técnicas e liberação de nova versão da API de apuração da CBS, além do ambiente de homologação para testes do IBS e CBS.",
+      "link": "https://www.reformatributaria.com/iva/receita-libera-nova-versao-da-api-de-apuracao-da-cbs/",
+      "instituicao": "Receita Federal do Brasil / SVRS"
     }
   ],
   "noticias": [
@@ -97,58 +97,67 @@
       "url": "https://cfc.org.br/noticias/penultimo-modulo-da-capacitacao-em-contabilidade-imobiliaria-e-liberado-pelo-cfc/"
     },
     {
-      "data": "11/11/2026",
-      "titulo": "Receita: quem agir “de boa-fé” e não omitir dados ficará sem multas da CBS em 2027",
+      "data": "09/11/2026",
+      "titulo": "Receita libera nova versão da API de apuração da CBS",
       "fonte": "Portal da Reforma Tributária",
-      "url": "https://www.reformatributaria.com/iva/receita-quem-agir-de-boa-fe-e-nao-omitir-dados-ficara-sem-multas-da-cbs-em-2027/"
+      "url": "https://www.reformatributaria.com/iva/receita-libera-nova-versao-da-api-de-apuracao-da-cbs/",
+      "novo": true
     },
     {
-      "data": "11/11/2026",
-      "titulo": "Governo quer adiar pagamento definitivo da CBS para o 2º mês após a competência; Congresso precisa aprovar",
+      "data": "09/11/2026",
+      "titulo": "Ambiente de homologação da SVRS permitirá simular regras de IBS e CBS previstas para 2027",
       "fonte": "Portal da Reforma Tributária",
-      "url": "https://www.reformatributaria.com/governo/governo-quer-adiar-pagamento-definitivo-da-cbs-para-o-2o-mes-apos-a-competencia-congresso-precisa-aprovar/"
+      "url": "https://www.reformatributaria.com/documentos-fiscais/ambiente-de-homologacao-da-svrs-permitira-simular-regras-de-ibs-e-cbs-previstas-para-2027/",
+      "novo": true
     },
     {
-      "data": "11/11/2026",
-      "titulo": "GOL, Mercado Livre e EMASFI têm novos profissionais nas áreas tributária e fiscal",
+      "data": "09/11/2026",
+      "titulo": "Receita Estadual do RS lança apuração assistida do Simples Nacional",
       "fonte": "Portal da Reforma Tributária",
-      "url": "https://www.reformatributaria.com/como-anda-o-mercado/gol-mercado-livre-e-emasfi-tem-novos-profissionais-nas-areas-tributaria-e-fiscal/"
+      "url": "https://www.reformatributaria.com/documentos-fiscais/receita-estadual-do-rs-lanca-apuracao-assistida-do-simples-nacional/",
+      "novo": true
     },
     {
-      "data": "11/11/2026",
-      "titulo": "RAD e apuração assistida: CFC sugere à Receita 9 propostas para a transição da reforma",
+      "data": "09/11/2026",
+      "titulo": "Senadores avaliam com cautela cálculo de 11,3% para a CBS",
       "fonte": "Portal da Reforma Tributária",
-      "url": "https://www.reformatributaria.com/iva/rad-e-apuracao-assistida-cfc-sugere-a-receita-9-propostas-para-a-transicao-da-reforma/"
+      "url": "https://www.reformatributaria.com/reforma-tributaria-congresso-nacional/senadores-avaliam-com-cautela-calculo-de-113-para-a-cbs/",
+      "novo": true
     },
     {
-      "data": "11/11/2026",
-      "titulo": "Receita e Comitê Gestor dão novos prazos para exigência de documentos fiscais com CBS; leia cronograma",
+      "data": "09/11/2026",
+      "titulo": "Imposto Seletivo: erros de classificação podem gerar prejuízos a empresas, diz especialista",
       "fonte": "Portal da Reforma Tributária",
-      "url": "https://www.reformatributaria.com/documentos-fiscais/receita-e-comite-gestor-dao-novos-prazos-para-exigencia-de-documentos-fiscais-com-cbs-leia-cronograma/"
+      "url": "https://www.reformatributaria.com/impostoseletivo/imposto-seletivo-erros-de-classificacao-podem-gerar-prejuizos-a-empresas-diz-especialista/",
+      "novo": true
     },
     {
-      "data": "11/11/2026",
-      "titulo": "Versão 2.0 do regulamento de IBS/CBS deve sair esta semana, diz Receita",
+      "data": "09/11/2026",
+      "titulo": "Receita Federal abre consulta pública sobre mudanças na regulamentação do adicional da CSLL",
       "fonte": "Portal da Reforma Tributária",
-      "url": "https://www.reformatributaria.com/iva/versao-2-0-do-regulamento-de-ibs-cbs-deve-sair-esta-semana-diz-receita/"
+      "url": "https://www.reformatributaria.com/economia-reforma-tributaria-impactos/receita-federal-abre-consulta-publica-sobre-mudancas-na-regulamentacao-do-adicional-da-csll/",
+      "novo": true
     },
     {
-      "data": "11/11/2026",
-      "titulo": "Adiar a vigência plena da CBS e do IBS é mais que uma necessidade: é o bom senso comprovado em processos e sistemas",
+      "data": "08/11/2026",
+      "titulo": "Reforma tributária pode impulsionar infraestrutura nacional de dados, avalia executivo da IBM",
       "fonte": "Portal da Reforma Tributária",
-      "url": "https://www.reformatributaria.com/opiniao/adiar-a-vigencia-plena-da-cbs-e-do-ibs-e-mais-que-uma-necessidade-e-o-bom-senso-comprovado-em-processos-e-sistemas/"
+      "url": "https://www.reformatributaria.com/tecnologia/reforma-tributaria-pode-impulsionar-infraestrutura-nacional-de-dados-avalia-executivo-da-ibm/",
+      "novo": true
     },
     {
-      "data": "10/11/2026",
-      "titulo": "Receita deve anunciar na 4ª feira flexibilização das multas da CBS em 2027",
+      "data": "07/11/2026",
+      "titulo": "Ontologia e reforma tributária",
       "fonte": "Portal da Reforma Tributária",
-      "url": "https://www.reformatributaria.com/reforma-tributaria-brasil/receita-deve-anunciar-na-4a-feira-flexibilizacao-das-multas-da-cbs-em-2027/"
+      "url": "https://www.reformatributaria.com/opiniao/ontologia-e-reforma-tributaria/",
+      "novo": true
     },
     {
-      "data": "10/11/2026",
-      "titulo": "Deputados pedem que Fazenda facilite acesso a créditos de IBS/CBS pelo Simples Nacional",
+      "data": "07/11/2026",
+      "titulo": "A reforma prometeu simplificar; por enquanto, ela cobra organização.",
       "fonte": "Portal da Reforma Tributária",
-      "url": "https://www.reformatributaria.com/reforma-tributaria-congresso-nacional/deputados-pedem-que-fazenda-facilite-acesso-a-creditos-de-ibs-cbs-pelo-simples-nacional/"
+      "url": "https://www.reformatributaria.com/opiniao/a-reforma-prometeu-simplificar-por-enquanto-ela-cobra-organizacao/",
+      "novo": true
     }
   ],
   "nts_criticas_lucro_real": [
