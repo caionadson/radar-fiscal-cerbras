@@ -1,5 +1,5 @@
 {
-  "gerado_em": "2026-11-18T11:49:05.714818-03:00",
+  "gerado_em": "2026-11-18T13:58:16.894993-03:00",
   "versao": "1.6",
   "revisao_radar": "18 nov/2026",
   "automacao": {
@@ -32,6 +32,13 @@
   "novas_normas": [],
   "noticias": [
     {
+      "data": "18/11/2026",
+      "titulo": "Capacitações da Plataforma EduCont do Sistema CFC/CRCs geram mais de 70 pontos para o PEPC",
+      "fonte": "CFC",
+      "url": "https://cfc.org.br/noticias/capacitacoes-da-plataforma-educont-do-sistema-cfc-crcs-geram-mais-de-70-pontos-para-o-pepc/",
+      "novo": true
+    },
+    {
       "data": "17/11/2026",
       "titulo": "Plataforma Crescimento Sustentável apoia pequenos negócios e amplia oportunidades para contadores",
       "fonte": "CFC",
@@ -54,18 +61,6 @@
       "titulo": "CFC e Conselhos Regionais se posicionam contra aumento da carga tributária e restrições à compensação de tributos",
       "fonte": "CFC",
       "url": "https://cfc.org.br/noticias/cfc-e-conselhos-regionais-se-posicionam-contra-aumento-da-carga-tributaria-e-restricoes-a-compensacao-de-tributos/"
-    },
-    {
-      "data": "13/11/2026",
-      "titulo": "Último módulo do curso sobre Contabilidade Eleitoral e Partidária é disponibilizado pelo CFC",
-      "fonte": "CFC",
-      "url": "https://cfc.org.br/noticias/ultimo-modulo-do-curso-sobre-contabilidade-eleitoral-e-partidaria-e-disponibilizado-pelo-cfc/"
-    },
-    {
-      "data": "12/11/2026",
-      "titulo": "CFC fortalece diálogo com Justiça e Segurança Pública no combate ao crime organizado",
-      "fonte": "CFC",
-      "url": "https://cfc.org.br/noticias/cfc-fortalece-dialogo-com-justica-e-seguranca-publica-no-combate-ao-crime-organizado/"
     },
     {
       "data": "08/11/2026",
