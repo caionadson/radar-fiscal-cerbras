@@ -1,5 +1,5 @@
 {
-  "gerado_em": "2026-11-18T17:50:44.151409-03:00",
+  "gerado_em": "2026-11-18T19:48:06.567454-03:00",
   "versao": "1.6",
   "revisao_radar": "18 nov/2026",
   "automacao": {
@@ -33,6 +33,20 @@
   "noticias": [
     {
       "data": "18/11/2026",
+      "titulo": "No Senado, CFC defende transparência no cálculo da alíquota da CBS",
+      "fonte": "CFC",
+      "url": "https://cfc.org.br/noticias/no-senado-cfc-defende-transparencia-no-calculo-da-aliquota-da-cbs/",
+      "novo": true
+    },
+    {
+      "data": "18/11/2026",
+      "titulo": "CFC, Fenacon, Receita Federal e Sebrae anunciam apoio direto a contadores e lançam canal para esclarecer dúvidas",
+      "fonte": "CFC",
+      "url": "https://cfc.org.br/noticias/cfc-fenacon-receita-federal-e-sebrae-anunciam-apoio-direto-a-contadores-e-lancam-canal-para-esclarecer-duvidas/",
+      "novo": true
+    },
+    {
+      "data": "18/11/2026",
       "titulo": "CFC fortalece diálogo com Embaixada do Brasil na Coreia do Sul e amplia perspectivas de cooperação internacional",
       "fonte": "CFC",
       "url": "https://cfc.org.br/noticias/cfc-fortalece-dialogo-com-embaixada-do-brasil-na-coreia-do-sul-e-amplia-perspectivas-de-cooperacao-internacional/"
@@ -60,12 +74,6 @@
       "titulo": "Sistema CFC/CRCs orienta profissionais da contabilidade sobre regularização de pendências financeiras",
       "fonte": "CFC",
       "url": "https://cfc.org.br/noticias/sistema-cfc-crcs-orienta-profissionais-da-contabilidade-sobre-regularizacao-de-pendencias-financeiras/"
-    },
-    {
-      "data": "13/11/2026",
-      "titulo": "CFC e Conselhos Regionais se posicionam contra aumento da carga tributária e restrições à compensação de tributos",
-      "fonte": "CFC",
-      "url": "https://cfc.org.br/noticias/cfc-e-conselhos-regionais-se-posicionam-contra-aumento-da-carga-tributaria-e-restricoes-a-compensacao-de-tributos/"
     },
     {
       "data": "08/11/2026",
