@@ -1,5 +1,5 @@
 {
-  "gerado_em": "2026-11-18T13:58:16.894993-03:00",
+  "gerado_em": "2026-11-18T15:49:44.531147-03:00",
   "versao": "1.6",
   "revisao_radar": "18 nov/2026",
   "automacao": {
@@ -33,10 +33,16 @@
   "noticias": [
     {
       "data": "18/11/2026",
+      "titulo": "CFC fortalece diálogo com Embaixada do Brasil na Coreia do Sul e amplia perspectivas de cooperação internacional",
+      "fonte": "CFC",
+      "url": "https://cfc.org.br/noticias/cfc-fortalece-dialogo-com-embaixada-do-brasil-na-coreia-do-sul-e-amplia-perspectivas-de-cooperacao-internacional/",
+      "novo": true
+    },
+    {
+      "data": "18/11/2026",
       "titulo": "Capacitações da Plataforma EduCont do Sistema CFC/CRCs geram mais de 70 pontos para o PEPC",
       "fonte": "CFC",
-      "url": "https://cfc.org.br/noticias/capacitacoes-da-plataforma-educont-do-sistema-cfc-crcs-geram-mais-de-70-pontos-para-o-pepc/",
-      "novo": true
+      "url": "https://cfc.org.br/noticias/capacitacoes-da-plataforma-educont-do-sistema-cfc-crcs-geram-mais-de-70-pontos-para-o-pepc/"
     },
     {
       "data": "17/11/2026",
