@@ -1,5 +1,5 @@
 {
-  "gerado_em": "2026-11-19T11:48:26.658847-03:00",
+  "gerado_em": "2026-11-19T13:59:09.077158-03:00",
   "versao": "1.6",
   "revisao_radar": "19 nov/2026",
   "automacao": {
@@ -7,36 +7,51 @@
     "fontes_total": 2
   },
   "briefing": {
-    "titulo": "Briefing do dia — Fallback",
+    "titulo": "Briefing do dia — Foco em Risco e Ação",
     "bullets": [
-      "Atenção: Não foi possível gerar o resumo por IA hoje."
+      "RISCO: A publicação da nova Medida Provisória referente ao Imposto Seletivo e às regras de transição do IPI expõe a empresa ao risco de perda de créditos fiscais e descalibragem do fluxo de caixa durante a fase transicional.",
+      "AÇÃO: Mapear a cadeia de suprimentos e reconfigurar a parametrização do ERP para acolher o Imposto Seletivo, além de utilizar o novo canal conjunto da Receita Federal/CFC para sanar inconsistências de enquadramento.",
+      "PRAZO: As diretrizes da MP possuem eficácia imediata, exigindo adequação tática das apurações do Lucro Real no mês corrente."
     ],
-    "acao_prioritaria": "Validar notas fiscais."
+    "acao_prioritaria": "Revisar a matriz tributária de produtos sujeitos ao Imposto Seletivo e auditar os saldos credores de IPI para evitar glosas fiscais e impactos no capital de giro."
   },
   "alertas": [
     {
       "tipo": "critico",
-      "titulo": "Validação de Notas",
-      "texto": "NF-e e CT-e exigem destaque CBS/IBS.",
+      "titulo": "Regulamentação do Imposto Seletivo e Regras de Transição do IPI",
+      "texto": "A publicação da MP trazendo as diretrizes do Imposto Seletivo e transição do IPI exige revisão imediata da precificação e do aproveitamento de créditos no Lucro Real. A falta de adequação aos novos critérios de não cumulatividade acarretará perda de créditos tributários e risco de autuação fiscal por descumprimento de obrigação acessória.",
       "prazo": "Já em vigor"
+    },
+    {
+      "tipo": "critico",
+      "titulo": "Gestão de Prazos de Pagamento e Capital de Giro no Sistema IBS/CBS",
+      "texto": "A transição para o modelo de apuração da CBS/IBS impacta a liquidez e os prazos operacionais. Empresas que não readequarem suas políticas de contas a pagar e a receber correm o risco de descalçamento de caixa devido ao recolhimento do tributo antes do recebimento das vendas.",
+      "prazo": "Imediato"
     }
   ],
   "prazos": [
     {
-      "quando": "Contínuo",
+      "quando": "04/11/2026",
       "urgencia": "urgente",
-      "titulo": "Validação de Notas",
-      "detalhe": "CST, cClassTrib e CBS/IBS."
+      "titulo": "Adequação dos Saldos de IPI e Enquadramento no Imposto Seletivo",
+      "detalhe": "Realizar levantamento patrimonial dos estoques e insumos com IPI para aplicação correta da regra de transição estabelecida pela nova MP e evitar o estorno indevido de créditos."
     }
   ],
-  "novas_normas": [],
+  "novas_normas": [
+    {
+      "tipo": "MP",
+      "titulo": "Medida Provisória do Imposto Seletivo e Transição do IPI",
+      "descricao": "Regulamenta as hipóteses de incidência e alíquotas do Imposto Seletivo, bem como estabelece as regras de transição do IPI e a sistemática de aproveitamento de créditos para empresas enquadradas no Lucro Real.",
+      "link": "https://www.in.gov.br/consulta/-/buscar/dou?q=medida+provisoria+imposto+seletivo",
+      "instituicao": "Governo Federal / Receita Federal do Brasil"
+    }
+  ],
   "noticias": [
     {
       "data": "19/11/2026",
       "titulo": "Classe contábil ganha novo canal para esclarecer dúvidas sobre a Reforma Tributária",
       "fonte": "CFC",
-      "url": "https://cfc.org.br/noticias/novo-canal-de-atendimento-orienta-profissionais-da-contabilidade-sobre-a-reforma-tributaria/",
-      "novo": true
+      "url": "https://cfc.org.br/noticias/novo-canal-de-atendimento-orienta-profissionais-da-contabilidade-sobre-a-reforma-tributaria/"
     },
     {
       "data": "18/11/2026",
