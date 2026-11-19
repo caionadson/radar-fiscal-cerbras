@@ -1,5 +1,5 @@
 {
-  "gerado_em": "2026-11-19T15:54:38.364141-03:00",
+  "gerado_em": "2026-11-19T17:49:03.767747-03:00",
   "versao": "1.6",
   "revisao_radar": "19 nov/2026",
   "automacao": {
@@ -7,56 +7,88 @@
     "fontes_total": 2
   },
   "briefing": {
-    "titulo": "Briefing do dia — Fallback",
+    "titulo": "Briefing do dia — Foco em Risco e Ação",
     "bullets": [
-      "Atenção: Não foi possível gerar o resumo por IA hoje."
+      "RISCO: Alto risco de litígio e divergência interpretativa entre IBS e CBS alertado pelo TCU, além de potencial perda de créditos e glosas fiscais por falhas de parametrização no destaque dos tributos na NFSe e documentos fiscais.",
+      "AÇÃO: Homologar com urgência as novas funcionalidades do ERP para NFSe, testar o sistema de apuração assistida liberado pela RFB nesta semana e auditar a transição dos benefícios estaduais de ICMS publicados via CONFAZ.",
+      "PRAZO: Ações imediatas nesta semana de novembro/2026 para apuração assistida e adequação operacional mandatória visando o ano-calendário de 2027."
     ],
-    "acao_prioritaria": "Validar notas fiscais."
+    "acao_prioritaria": "Parametrizar imediatamente os sistemas de emissão de NFSe para o correto destaque de IBS/CBS e submeter a operação aos testes da apuração assistida da RFB para evitar glosa de créditos no Lucro Real."
   },
   "alertas": [
     {
       "tipo": "critico",
-      "titulo": "Validação de Notas",
-      "texto": "NF-e e CT-e exigem destaque CBS/IBS.",
+      "titulo": "Risco Judicial IBS vs. CBS e Glosa de Crédito",
+      "texto": "O TCU alertou para o risco real de assimetria e litígios entre o IBS (estaduais/municipais) e a CBS (federal). Empresas do Lucro Real que não parametrizarem corretamente a apuração e o destaque em NFSe correm o risco de perder créditos fiscais e sofrer autuações fiscais por inconsistência.",
       "prazo": "Já em vigor"
+    },
+    {
+      "tipo": "critico",
+      "titulo": "Abertura da Apuração Assistida pela Receita Federal",
+      "texto": "A liberação do sistema de apuração assistida exige validação imediata da consistência dos dados fiscais da empresa frente às bases do fisco para evitar divergentes de malha e penalidades operacionais.",
+      "prazo": "Nesta semana (Novembro/2026)"
     }
   ],
   "prazos": [
     {
-      "quando": "Contínuo",
+      "quando": "Novembro/2026",
       "urgencia": "urgente",
-      "titulo": "Validação de Notas",
-      "detalhe": "CST, cClassTrib e CBS/IBS."
+      "titulo": "Testes na Apuração Assistida da Receita Federal",
+      "detalhe": "Submeter os arquivos e documentos fiscais no novo sistema de apuração assistida liberado pela RFB para auditar cruzamentos e inconsistências antes da entrada em vigor das regras."
+    },
+    {
+      "quando": "01/01/2027",
+      "urgencia": "urgente",
+      "titulo": "Adequação dos Sistemas Fiscais (NFSe e ERP)",
+      "detalhe": "Concluir a homologação das novas funcionalidades de emissão de NFSe e destaque de IBS/CBS para assegurar a não-cumulatividade plena."
     }
   ],
-  "novas_normas": [],
+  "novas_normas": [
+    {
+      "tipo": "Ato",
+      "titulo": "Convênios CONFAZ - Adaptação dos Benefícios de ICMS à Reforma Tributária",
+      "descricao": "Publicação de convênios promovendo a transição e adaptação dos incentivos regionais de ICMS frente ao novo modelo tributário, impactando a apuração de incentivos fiscais e o planejamento tributário no Lucro Real.",
+      "link": "https://www.reformatributaria.com/economia-reforma-tributaria-impactos/confaz-publica-convenios-que-adaptam-beneficios-de-icms-a-reforma-tributaria/",
+      "instituicao": "CONFAZ"
+    }
+  ],
   "noticias": [
     {
       "data": "19/11/2026",
       "titulo": "Flexibilizações da reforma abrem espaço para mais litígios, diz vice do TCU",
       "fonte": "Portal da Reforma Tributária",
-      "url": "https://www.reformatributaria.com/justica/flexibilizacoes-da-reforma-abrem-espaco-para-mais-litigios-diz-vice-do-tcu/",
-      "novo": true
+      "url": "https://www.reformatributaria.com/justica/flexibilizacoes-da-reforma-abrem-espaco-para-mais-litigios-diz-vice-do-tcu/"
     },
     {
       "data": "19/11/2026",
       "titulo": "NFSe tem rodada de homologações de novas funcionalidades para adequação à reforma tributária",
       "fonte": "Portal da Reforma Tributária",
-      "url": "https://www.reformatributaria.com/documentos-fiscais/nfse-tem-rodada-de-homologacoes-de-novas-funcionalidades-para-adequacao-a-reforma-tributaria/",
-      "novo": true
+      "url": "https://www.reformatributaria.com/documentos-fiscais/nfse-tem-rodada-de-homologacoes-de-novas-funcionalidades-para-adequacao-a-reforma-tributaria/"
     },
     {
       "data": "19/11/2026",
       "titulo": "Receita recebe 1,09 milhão de solicitações pelo Simples Híbrido, mas 30 mil pediram cancelamento",
       "fonte": "Portal da Reforma Tributária",
-      "url": "https://www.reformatributaria.com/iva/receita-recebe-109-milhao-de-solicitacoes-pelo-simples-hibrido-mas-30-000-pediram-cancelamento/",
-      "novo": true
+      "url": "https://www.reformatributaria.com/iva/receita-recebe-109-milhao-de-solicitacoes-pelo-simples-hibrido-mas-30-000-pediram-cancelamento/"
     },
     {
       "data": "19/11/2026",
       "titulo": "Reforma Tributária: Senior promove webinar com todas as informações para empresas entrarem seguras em 2027",
       "fonte": "Portal da Reforma Tributária",
-      "url": "https://www.reformatributaria.com/conteudo-patrocinado/senior-webinar-reforma-tributaria-2027/",
+      "url": "https://www.reformatributaria.com/conteudo-patrocinado/senior-webinar-reforma-tributaria-2027/"
+    },
+    {
+      "data": "19/11/2026",
+      "titulo": "Especialistas debatem perspectivas para 2027 em etapa da Reforma Tributária pelo Brasil no Rio Grande do Sul",
+      "fonte": "CFC",
+      "url": "https://cfc.org.br/noticias/especialistas-debatem-perspectivas-para-2027-em-etapa-da-reforma-tributaria-pelo-brasil-no-rio-grande-do-sul/",
+      "novo": true
+    },
+    {
+      "data": "19/11/2026",
+      "titulo": "Receita Federal, CGIBS e CFC vão orientar mais de 25 mil profissionais da contabilidade sobre destaque de CBS/IBS em documentos fiscais",
+      "fonte": "CFC",
+      "url": "https://cfc.org.br/noticias/receita-federal-cgibs-e-cfc-vao-orientar-mais-de-25-mil-profissionais-da-contabilidade-sobre-destaque-de-cbs-ibs-em-documentos-fiscais/",
       "novo": true
     },
     {
@@ -69,36 +101,31 @@
       "data": "18/11/2026",
       "titulo": "Sistema de apuração assistida será aberto a todas as empresas nesta semana, diz Receita",
       "fonte": "Portal da Reforma Tributária",
-      "url": "https://www.reformatributaria.com/tecnologia/sistema-de-apuracao-assistida-sera-aberto-a-todas-as-empresas-nesta-semana-diz-receita/",
-      "novo": true
+      "url": "https://www.reformatributaria.com/tecnologia/sistema-de-apuracao-assistida-sera-aberto-a-todas-as-empresas-nesta-semana-diz-receita/"
     },
     {
       "data": "18/11/2026",
       "titulo": "Há risco real de divergência judicial entre IBS e CBS, diz vice do TCU",
       "fonte": "Portal da Reforma Tributária",
-      "url": "https://www.reformatributaria.com/justica/ha-risco-real-de-divergencia-judicial-entre-ibs-e-cbs-diz-vice-do-tcu/",
-      "novo": true
+      "url": "https://www.reformatributaria.com/justica/ha-risco-real-de-divergencia-judicial-entre-ibs-e-cbs-diz-vice-do-tcu/"
     },
     {
       "data": "18/11/2026",
       "titulo": "Confaz publica convênios que adaptam benefícios de ICMS à reforma tributária",
       "fonte": "Portal da Reforma Tributária",
-      "url": "https://www.reformatributaria.com/economia-reforma-tributaria-impactos/confaz-publica-convenios-que-adaptam-beneficios-de-icms-a-reforma-tributaria/",
-      "novo": true
+      "url": "https://www.reformatributaria.com/economia-reforma-tributaria-impactos/confaz-publica-convenios-que-adaptam-beneficios-de-icms-a-reforma-tributaria/"
     },
     {
       "data": "18/11/2026",
       "titulo": "Relator sinaliza hiato de conformidade como fator decisivo para Senado fixar CBS",
       "fonte": "Portal da Reforma Tributária",
-      "url": "https://www.reformatributaria.com/iva/relator-sinaliza-hiato-de-conformidade-como-fator-decisivo-para-senado-fixar-cbs/",
-      "novo": true
+      "url": "https://www.reformatributaria.com/iva/relator-sinaliza-hiato-de-conformidade-como-fator-decisivo-para-senado-fixar-cbs/"
     },
     {
       "data": "18/11/2026",
       "titulo": "Calculadora de tributos: Receita libera códigos de 3 ferramentas da reforma tributária no GitHub",
       "fonte": "Portal da Reforma Tributária",
-      "url": "https://www.reformatributaria.com/iva/calculadora-de-tributos-receita-libera-codigos-de-3-ferramentas-da-reforma-tributaria-no-github/",
-      "novo": true
+      "url": "https://www.reformatributaria.com/iva/calculadora-de-tributos-receita-libera-codigos-de-3-ferramentas-da-reforma-tributaria-no-github/"
     },
     {
       "data": "18/11/2026",
@@ -117,18 +144,6 @@
       "titulo": "CFC fortalece diálogo com Embaixada do Brasil na Coreia do Sul e amplia perspectivas de cooperação internacional",
       "fonte": "CFC",
       "url": "https://cfc.org.br/noticias/cfc-fortalece-dialogo-com-embaixada-do-brasil-na-coreia-do-sul-e-amplia-perspectivas-de-cooperacao-internacional/"
-    },
-    {
-      "data": "18/11/2026",
-      "titulo": "Capacitações da Plataforma EduCont do Sistema CFC/CRCs geram mais de 70 pontos para o PEPC",
-      "fonte": "CFC",
-      "url": "https://cfc.org.br/noticias/capacitacoes-da-plataforma-educont-do-sistema-cfc-crcs-geram-mais-de-70-pontos-para-o-pepc/"
-    },
-    {
-      "data": "17/11/2026",
-      "titulo": "Plataforma Crescimento Sustentável apoia pequenos negócios e amplia oportunidades para contadores",
-      "fonte": "CFC",
-      "url": "https://cfc.org.br/noticias/plataforma-crescimento-sustentavel-apoia-pequenos-negocios-e-amplia-oportunidades-para-contadores/"
     }
   ],
   "nts_criticas_lucro_real": [
