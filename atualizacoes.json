@@ -1,85 +1,53 @@
 {
-  "gerado_em": "2026-11-19T23:47:57.647333-03:00",
+  "gerado_em": "2026-11-20T01:55:28.717703-03:00",
   "versao": "1.6",
-  "revisao_radar": "19 nov/2026",
+  "revisao_radar": "20 nov/2026",
   "automacao": {
     "fontes_ok": 2,
     "fontes_total": 2
   },
   "briefing": {
-    "titulo": "Briefing do dia — Foco em Risco e Ação",
+    "titulo": "Briefing do dia — Fallback",
     "bullets": [
-      "RISCO: A abertura da Apuração Assistida e as mudanças no destaque de IBS/CBS na NFS-e expõem empresas do Lucro Real a glosas de créditos fiscais e autuações se os ERPs não estiverem homologados, somando-se aos alertas do TCU sobre divergências judiciais entre as regras do IBS e da CBS.",
-      "AÇÃO: Mapear as operações com produtores rurais/transportadores (afetadas pela dispensa do CNPJ técnico até 2028), submeter o ERP à rodada de testes do sistema de Apuração Assistida da Receita Federal nesta semana e revisar os parâmetros do destaque de CBS/IBS.",
-      "PRAZO: Liberação do sistema de Apuração Assistida para 100% das empresas nesta semana (novembro/2026) e dispensa de CNPJ técnico vigente até 2028."
+      "Atenção: Não foi possível gerar o resumo por IA hoje."
     ],
-    "acao_prioritaria": "Iniciar imediatamente os testes de validação no sistema de Apuração Assistida da Receita Federal e auditar as regras de destaque de IBS/CBS no ERP para evitar perda de créditos fiscais e inconsistências na NFS-e."
+    "acao_prioritaria": "Validar notas fiscais."
   },
   "alertas": [
     {
       "tipo": "critico",
-      "titulo": "Abertura da Apuração Assistida e Destaque de IBS/CBS",
-      "texto": "A liberação do sistema de Apuração Assistida pela Receita Federal a todas as empresas nesta semana exige auditoria imediata nos ERPs. Falhas no destaque do IBS e CBS nos documentos fiscais (como na NFS-e) resultarão em inconsistências na apuração automatizada do Fisco, impedindo o aproveitamento adequado de créditos e gerando risco de autuação.",
-      "prazo": "Nesta semana (Novembro/2026)"
-    },
-    {
-      "tipo": "critico",
-      "titulo": "Risco de Divergência Jurídica e Contencioso IBS vs. CBS",
-      "texto": "Alertas do vice-presidente do TCU apontam para insegurança jurídica provocada por flexibilizações e desalinhamentos de interpretação entre o Comitê Gestor do IBS (estados/municípios) e a Receita Federal (CBS). Empresas de Lucro Real correm o risco de bitributação ou exigência de pagamentos em duplicidade em operações mistas.",
+      "titulo": "Validação de Notas",
+      "texto": "NF-e e CT-e exigem destaque CBS/IBS.",
       "prazo": "Já em vigor"
     }
   ],
   "prazos": [
     {
-      "quando": "18/11/2026 - 22/11/2026",
+      "quando": "Contínuo",
       "urgencia": "urgente",
-      "titulo": "Homologação na Apuração Assistida da Receita Federal",
-      "detalhe": "Testar os ambientes de apuração assistida disponibilizados pela RFB para garantir que os créditos de CBS/IBS da empresa sejam reconhecidos corretamente sem inconsistências cadastrais."
-    },
-    {
-      "quando": "Até 31/12/2027",
-      "urgencia": "media",
-      "titulo": "Vigência da Dispensa de CNPJ Técnico",
-      "detalhe": "Adequar os sistemas de compras e recepção de notas para a dispensa de CNPJ técnico aplicável a produtores rurais e transportadores não contribuintes até 2028."
+      "titulo": "Validação de Notas",
+      "detalhe": "CST, cClassTrib e CBS/IBS."
     }
   ],
-  "novas_normas": [
-    {
-      "tipo": "Ato",
-      "titulo": "Dispensa de CNPJ Técnico para Produtores Rurais e Transportadores Não Contribuintes",
-      "descricao": "Receita Federal e Comitê Gestor do IBS dispensam a exigência de CNPJ técnico para produtores rurais e transportadores não contribuintes até 2028, desonerando o cumprimento de obrigações acessórias específicas na fase de transição.",
-      "link": "https://www.reformatributaria.com/iva/receita-e-comite-gestor-dispensam-cnpj-tecnicos-para-produtores-rurais-e-transportadores-nao-contribuintes-de-ibs-cbs-ate-2028/",
-      "instituicao": "RFB / CGIBS"
-    },
-    {
-      "tipo": "NT",
-      "titulo": "Homologação de Novas Funcionalidades na NFS-e para CBS/IBS",
-      "descricao": "Disponibilização de rodada de homologação e especificações técnicas de novas funcionalidades na NFS-e de padrão nacional para viabilizar o destaque e apuração dos novos tributos.",
-      "link": "https://www.reformatributaria.com/documentos-fiscais/nfse-tem-rodada-de-homologacoes-de-novas-funcionalidades-para-adequacao-a-reforma-tributaria/",
-      "instituicao": "Receita Federal / Comitê Gestor da NFS-e"
-    }
-  ],
+  "novas_normas": [],
   "noticias": [
     {
       "data": "19/11/2026",
       "titulo": "Receita Federal e Comitê Gestor do IBS e CFC vão orientar 25 mil contadores sobre destaque de CBS/IBS",
       "fonte": "Portal da Reforma Tributária",
-      "url": "https://www.reformatributaria.com/documentos-fiscais/receita-federal-e-comite-gestor-do-ibs-e-cfc-vao-orientar-25-mil-contadores-sobre-destaque-de-cbs-ibs/",
-      "novo": true
+      "url": "https://www.reformatributaria.com/documentos-fiscais/receita-federal-e-comite-gestor-do-ibs-e-cfc-vao-orientar-25-mil-contadores-sobre-destaque-de-cbs-ibs/"
     },
     {
       "data": "19/11/2026",
       "titulo": "Serpro recebe prêmio na China por plataforma da reforma tributária",
       "fonte": "Portal da Reforma Tributária",
-      "url": "https://www.reformatributaria.com/tecnologia/serpro-recebe-premio-na-china-por-plataforma-da-reforma-tributaria/",
-      "novo": true
+      "url": "https://www.reformatributaria.com/tecnologia/serpro-recebe-premio-na-china-por-plataforma-da-reforma-tributaria/"
     },
     {
       "data": "19/11/2026",
       "titulo": "Receita e Comitê Gestor dispensam “CNPJ técnicos” para produtores rurais e transportadores não contribuintes de IBS/CBS até 2028",
       "fonte": "Portal da Reforma Tributária",
-      "url": "https://www.reformatributaria.com/iva/receita-e-comite-gestor-dispensam-cnpj-tecnicos-para-produtores-rurais-e-transportadores-nao-contribuintes-de-ibs-cbs-ate-2028/",
-      "novo": true
+      "url": "https://www.reformatributaria.com/iva/receita-e-comite-gestor-dispensam-cnpj-tecnicos-para-produtores-rurais-e-transportadores-nao-contribuintes-de-ibs-cbs-ate-2028/"
     },
     {
       "data": "19/11/2026",
