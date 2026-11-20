@@ -1,5 +1,5 @@
 {
-  "gerado_em": "2026-11-20T07:56:04.493814-03:00",
+  "gerado_em": "2026-11-20T09:59:32.939599-03:00",
   "versao": "1.6",
   "revisao_radar": "20 nov/2026",
   "automacao": {
@@ -7,29 +7,51 @@
     "fontes_total": 2
   },
   "briefing": {
-    "titulo": "Briefing do dia — Fallback",
+    "titulo": "Briefing do dia — Foco em Risco e Ação",
     "bullets": [
-      "Atenção: Não foi possível gerar o resumo por IA hoje."
+      "RISCO: A parametrização incorreta no destaque de IBS/CBS nos documentos fiscais e divergências entre as regras federais e subnacionais podem gerar glosa de créditos fiscais e autuações com impacto imediato no caixa do Lucro Real.",
+      "AÇÃO: Mapear e adaptar os ERPs para as novas homologações da NFS-e/NF-e e realizar testes práticos no sistema de Apuração Assistida disponibilizado pela Receita Federal.",
+      "PRAZO: Testes na Apuração Assistida iniciam nesta semana; adequação dos documentos fiscais e regras de transição devem estar homologadas para o início da operação em 2027."
     ],
-    "acao_prioritaria": "Validar notas fiscais."
+    "acao_prioritaria": "Acessar a apuração assistida da RFB nesta semana e homologar os sistemas de NFS-e/NF-e para garantir o correto destaque de IBS/CBS e evitar perda de créditos."
   },
   "alertas": [
     {
       "tipo": "critico",
-      "titulo": "Validação de Notas",
-      "texto": "NF-e e CT-e exigem destaque CBS/IBS.",
-      "prazo": "Já em vigor"
+      "titulo": "Falhas no Destaque de IBS/CBS e Risco de Glosa de Créditos",
+      "texto": "A emissão de documentos fiscais sem a parametrização adequada do destaque de IBS e CBS impedirá o aproveitamento de créditos fiscais pelos adquirentes sujeitos ao Lucro Real, resultando em sobrecusto tributário e passivos fiscais.",
+      "prazo": "Imediato"
+    },
+    {
+      "tipo": "atencao",
+      "titulo": "Risco de Divergência Judicial entre IBS e CBS",
+      "texto": "Alertas do TCU apontam para insegurança jurídica decorrente de flexibilizações normativas e interpretações conflitantes entre os Fiscos (Federal e Comitê Gestor). Recomenda-se rigor na governança fiscal para sustentar os critérios de creditamento.",
+      "prazo": "Vigência 2027"
     }
   ],
   "prazos": [
     {
-      "quando": "Contínuo",
+      "quando": "Nesta semana (Novembro/2026)",
       "urgencia": "urgente",
-      "titulo": "Validação de Notas",
-      "detalhe": "CST, cClassTrib e CBS/IBS."
+      "titulo": "Liberação do Sistema de Apuração Assistida",
+      "detalhe": "Realizar testes operacionais no sistema assistido liberado pela Receita Federal para validar a conciliação dos tributos antes da obrigatoriedade."
+    },
+    {
+      "quando": "Até 2028",
+      "urgencia": "medio",
+      "titulo": "Regra de Transição: Dispensa de CNPJ Técnico",
+      "detalhe": "Ajustar os cadastros de fornecedores para a dispensa temporária de CNPJ técnico para produtores rurais e transportadores não contribuintes diretos de IBS/CBS."
     }
   ],
-  "novas_normas": [],
+  "novas_normas": [
+    {
+      "tipo": "Ato",
+      "titulo": "Dispensa de CNPJ Técnico para Produtores Rurais e Transportadores não contribuintes até 2028",
+      "descricao": "Ato conjunto da Receita Federal e do Comitê Gestor do IBS que dispensa o cadastro técnico para operações com produtores rurais e transportadores não contribuintes, simplificando a emissão e a tomagem de serviços no período de transição.",
+      "link": "https://www.reformatributaria.com/iva/receita-e-comite-gestor-dispensam-cnpj-tecnicos-para-produtores-rurais-e-transportadores-nao-contribuintes-de-ibs-cbs-ate-2028/",
+      "instituicao": "Receita Federal / Comitê Gestor do IBS"
+    }
+  ],
   "noticias": [
     {
       "data": "19/11/2026",
