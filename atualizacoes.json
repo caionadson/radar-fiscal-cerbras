@@ -1,5 +1,5 @@
 {
-  "gerado_em": "2026-11-20T09:59:32.939599-03:00",
+  "gerado_em": "2026-11-20T11:51:07.542300-03:00",
   "versao": "1.6",
   "revisao_radar": "20 nov/2026",
   "automacao": {
@@ -9,50 +9,71 @@
   "briefing": {
     "titulo": "Briefing do dia — Foco em Risco e Ação",
     "bullets": [
-      "RISCO: A parametrização incorreta no destaque de IBS/CBS nos documentos fiscais e divergências entre as regras federais e subnacionais podem gerar glosa de créditos fiscais e autuações com impacto imediato no caixa do Lucro Real.",
-      "AÇÃO: Mapear e adaptar os ERPs para as novas homologações da NFS-e/NF-e e realizar testes práticos no sistema de Apuração Assistida disponibilizado pela Receita Federal.",
-      "PRAZO: Testes na Apuração Assistida iniciam nesta semana; adequação dos documentos fiscais e regras de transição devem estar homologadas para o início da operação em 2027."
+      "RISCO: A imprecisão na parametrização dos ERPs e o desconhecimento sobre o destaque de IBS/CBS acarretarão glosa de créditos acumulados no Lucro Real, penalidades por descumprimento de obrigações acessórias e retencões indevidas no caixa a partir de 2027.",
+      "AÇÃO: Submeter os sistemas de emissão de notas (NF-e/NFS-e) aos testes de homologação vigentes e capacitar imediatamente a equipe contábil/fiscal utilizando os novos canais disponibilizados pela RFB/CFC.",
+      "PRAZO: As adequações operacionais nos sistemas legados e cadastros devem ser concluídas até o final de 2026, com regras de dispensa transitória estendidas até 2028."
     ],
-    "acao_prioritaria": "Acessar a apuração assistida da RFB nesta semana e homologar os sistemas de NFS-e/NF-e para garantir o correto destaque de IBS/CBS e evitar perda de créditos."
+    "acao_prioritaria": "Auditar e homologar urgentemente as parametrizações fiscais de ERP (NF-e/NFS-e) para o correto destaque do IBS/CBS, prevenindo a perda de créditos tributários pelos adquirentes e multas fiscais."
   },
   "alertas": [
     {
       "tipo": "critico",
-      "titulo": "Falhas no Destaque de IBS/CBS e Risco de Glosa de Créditos",
-      "texto": "A emissão de documentos fiscais sem a parametrização adequada do destaque de IBS e CBS impedirá o aproveitamento de créditos fiscais pelos adquirentes sujeitos ao Lucro Real, resultando em sobrecusto tributário e passivos fiscais.",
-      "prazo": "Imediato"
+      "titulo": "Inadequação dos ERPs para a Transição de 2027 e Risco de Perda de Créditos",
+      "texto": "Empresas do Lucro Real que não adequarem seus sistemas para destacar corretamente o IBS/CBS nos documentos fiscais colocarão seus clientes em risco de perda de crédito, gerando contestações comerciais, exigência de notas substitutivas e exposição a autos de infração pela emissão incorreta.",
+      "prazo": "01/01/2027"
     },
     {
-      "tipo": "atencao",
-      "titulo": "Risco de Divergência Judicial entre IBS e CBS",
-      "texto": "Alertas do TCU apontam para insegurança jurídica decorrente de flexibilizações normativas e interpretações conflitantes entre os Fiscos (Federal e Comitê Gestor). Recomenda-se rigor na governança fiscal para sustentar os critérios de creditamento.",
-      "prazo": "Vigência 2027"
+      "tipo": "critico",
+      "titulo": "Litigiosidade decorrente das Flexibilizações da Reforma Tributária",
+      "texto": "A proliferação de regimes específicos e flexibilizações aprovadas aumenta a complexidade na determinação das alíquotas e do creditamento, exigindo parecer técnico prévio do setor tributário para evitar passivos fiscais e futuras autuações.",
+      "prazo": "Já em vigor"
     }
   ],
   "prazos": [
     {
-      "quando": "Nesta semana (Novembro/2026)",
+      "quando": "31/12/2026",
       "urgencia": "urgente",
-      "titulo": "Liberação do Sistema de Apuração Assistida",
-      "detalhe": "Realizar testes operacionais no sistema assistido liberado pela Receita Federal para validar a conciliação dos tributos antes da obrigatoriedade."
+      "titulo": "Homologação de Sistemas para Destaque de IBS/CBS na NFS-e e NF-e",
+      "detalhe": "Concluir a fase de testes e homologação das novas funcionalidades de documentos fiscais para garantir o destaque adequado do IBS e da CBS no início do período de transição."
     },
     {
-      "quando": "Até 2028",
+      "quando": "31/12/2028",
       "urgencia": "medio",
-      "titulo": "Regra de Transição: Dispensa de CNPJ Técnico",
-      "detalhe": "Ajustar os cadastros de fornecedores para a dispensa temporária de CNPJ técnico para produtores rurais e transportadores não contribuintes diretos de IBS/CBS."
+      "titulo": "Adaptação Cadastral para Produtores Rurais e Transportadores",
+      "detalhe": "Adequar os processos de compras e tomadas de serviços considerando a dispensa temporária do CNPJ técnico para não contribuintes, evitando paralisação no fluxo de suprimentos."
     }
   ],
   "novas_normas": [
     {
       "tipo": "Ato",
-      "titulo": "Dispensa de CNPJ Técnico para Produtores Rurais e Transportadores não contribuintes até 2028",
-      "descricao": "Ato conjunto da Receita Federal e do Comitê Gestor do IBS que dispensa o cadastro técnico para operações com produtores rurais e transportadores não contribuintes, simplificando a emissão e a tomagem de serviços no período de transição.",
+      "titulo": "Dispensa de CNPJ Técnico para Produtores Rurais e Transportadores Não Contribuintes",
+      "descricao": "Medida conjunta da Receita Federal e do Comitê Gestor do IBS que dispensa até 2028 a exigência de CNPJ técnico para produtores rurais e transportadores não contribuintes do IBS/CBS, desonerando a cadeia de suprimentos e simplificando a emissão de documentos.",
       "link": "https://www.reformatributaria.com/iva/receita-e-comite-gestor-dispensam-cnpj-tecnicos-para-produtores-rurais-e-transportadores-nao-contribuintes-de-ibs-cbs-ate-2028/",
       "instituicao": "Receita Federal / Comitê Gestor do IBS"
+    },
+    {
+      "tipo": "NT",
+      "titulo": "Atualização das Especificações Técnicas da NFS-e para a Reforma Tributária",
+      "descricao": "Abertura da rodada de homologação de funcionalidades no ambiente da NFS-e para adequação aos campos de apuração e destaque do IBS/CBS.",
+      "link": "https://www.reformatributaria.com/documentos-fiscais/nfse-tem-rodada-de-homologacoes-de-novas-funcionalidades-para-adequacao-a-reforma-tributaria/",
+      "instituicao": "Receita Federal / Comitê Gestor da NFS-e"
     }
   ],
   "noticias": [
+    {
+      "data": "20/11/2026",
+      "titulo": "Reforma Tributária: o consumidor também precisa entrar na conversa",
+      "fonte": "Portal da Reforma Tributária",
+      "url": "https://www.reformatributaria.com/opiniao/reforma-tributaria-o-consumidor-tambem-precisa-entrar-nessa-conversa/",
+      "novo": true
+    },
+    {
+      "data": "20/11/2026",
+      "titulo": "Reforma Tributária 2027: o custo de uma área tributária que não está pronta",
+      "fonte": "Portal da Reforma Tributária",
+      "url": "https://www.reformatributaria.com/opiniao/reforma-tributaria-2027-o-custo-de-uma-area-tributaria-que-nao-esta-pronta/",
+      "novo": true
+    },
     {
       "data": "19/11/2026",
       "titulo": "Receita Federal e Comitê Gestor do IBS e CFC vão orientar 25 mil contadores sobre destaque de CBS/IBS",
@@ -91,12 +112,6 @@
     },
     {
       "data": "19/11/2026",
-      "titulo": "Reforma Tributária: Senior promove webinar com todas as informações para empresas entrarem seguras em 2027",
-      "fonte": "Portal da Reforma Tributária",
-      "url": "https://www.reformatributaria.com/conteudo-patrocinado/senior-webinar-reforma-tributaria-2027/"
-    },
-    {
-      "data": "19/11/2026",
       "titulo": "Especialistas debatem perspectivas para 2027 em etapa da Reforma Tributária pelo Brasil no Rio Grande do Sul",
       "fonte": "CFC",
       "url": "https://cfc.org.br/noticias/especialistas-debatem-perspectivas-para-2027-em-etapa-da-reforma-tributaria-pelo-brasil-no-rio-grande-do-sul/"
@@ -115,18 +130,6 @@
     },
     {
       "data": "18/11/2026",
-      "titulo": "Sistema de apuração assistida será aberto a todas as empresas nesta semana, diz Receita",
-      "fonte": "Portal da Reforma Tributária",
-      "url": "https://www.reformatributaria.com/tecnologia/sistema-de-apuracao-assistida-sera-aberto-a-todas-as-empresas-nesta-semana-diz-receita/"
-    },
-    {
-      "data": "18/11/2026",
-      "titulo": "Há risco real de divergência judicial entre IBS e CBS, diz vice do TCU",
-      "fonte": "Portal da Reforma Tributária",
-      "url": "https://www.reformatributaria.com/justica/ha-risco-real-de-divergencia-judicial-entre-ibs-e-cbs-diz-vice-do-tcu/"
-    },
-    {
-      "data": "18/11/2026",
       "titulo": "No Senado, CFC defende transparência no cálculo da alíquota da CBS",
       "fonte": "CFC",
       "url": "https://cfc.org.br/noticias/no-senado-cfc-defende-transparencia-no-calculo-da-aliquota-da-cbs/"
@@ -142,6 +145,13 @@
       "titulo": "CFC fortalece diálogo com Embaixada do Brasil na Coreia do Sul e amplia perspectivas de cooperação internacional",
       "fonte": "CFC",
       "url": "https://cfc.org.br/noticias/cfc-fortalece-dialogo-com-embaixada-do-brasil-na-coreia-do-sul-e-amplia-perspectivas-de-cooperacao-internacional/"
+    },
+    {
+      "data": "18/11/2026",
+      "titulo": "Capacitações da Plataforma EduCont do Sistema CFC/CRCs geram mais de 70 pontos para o PEPC",
+      "fonte": "CFC",
+      "url": "https://cfc.org.br/noticias/capacitacoes-da-plataforma-educont-do-sistema-cfc-crcs-geram-mais-de-70-pontos-para-o-pepc/",
+      "novo": true
     }
   ],
   "nts_criticas_lucro_real": [
