@@ -1,5 +1,5 @@
 {
-  "gerado_em": "2026-11-20T13:54:40.629408-03:00",
+  "gerado_em": "2026-11-20T15:53:57.601728-03:00",
   "versao": "1.6",
   "revisao_radar": "20 nov/2026",
   "automacao": {
@@ -7,58 +7,29 @@
     "fontes_total": 2
   },
   "briefing": {
-    "titulo": "Briefing do dia — Foco em Risco e Ação",
+    "titulo": "Briefing do dia — Fallback",
     "bullets": [
-      "RISCO: Erros no destaque do IBS/CBS em NFS-e e falhas na integração com o sistema de Apuração Assistida podem ocasionar a glosa de créditos tributários para empresas do Lucro Real e autuações por descumprimento de obrigações acessórias.",
-      "AÇÃO: Homologar urgentemente as novas funcionalidades da NFS-e e testar a plataforma de Apuração Assistida liberada pela Receita Federal para parametrizar corretamente os ERPs antes da vigência obrigatória.",
-      "PRAZO: Liberação do ambiente de Apuração Assistida para todas as empresas na presente semana de novembro de 2026, com regras de transição específicas até 2028."
+      "Atenção: Não foi possível gerar o resumo por IA hoje."
     ],
-    "acao_prioritaria": "Iniciar imediatamente os testes de emissão de NFS-e e validação no sistema de Apuração Assistida da RFB para garantir a apropriação correta de créditos de CBS e IBS."
+    "acao_prioritaria": "Validar notas fiscais."
   },
   "alertas": [
     {
       "tipo": "critico",
-      "titulo": "Abertura da Apuração Assistida e Destaque de IBS/CBS em Documentos Fiscais",
-      "texto": "A liberação do sistema de apuração assistida pela Receita Federal e a nova sistemática de destaque de CBS/IBS exigem conformidade imediata na parametrização fiscal. A emissão incorreta de notas fiscais impedirá o aproveitamento de créditos pelos clientes no Lucro Real, gerando contencioso comercial e sanções fiscais.",
-      "prazo": "Nesta semana"
-    },
-    {
-      "tipo": "alto",
-      "titulo": "Risco de Divergência Judicial e Litígios entre IBS e CBS",
-      "texto": "Flexibilizações regulatórias e assimetria na interpretação entre o Comitê Gestor do IBS e a Receita Federal (CBS) podem aumentar a insegurança jurídica e gerar autuações por diferenças na apuração e recolhimento dos tributos.",
+      "titulo": "Validação de Notas",
+      "texto": "NF-e e CT-e exigem destaque CBS/IBS.",
       "prazo": "Já em vigor"
     }
   ],
   "prazos": [
     {
-      "quando": "Novembro/2026 (Nesta semana)",
+      "quando": "Contínuo",
       "urgencia": "urgente",
-      "titulo": "Acesso ao Sistema de Apuração Assistida",
-      "detalhe": "Testar a plataforma da Receita Federal aberta a todas as empresas para auditar os dados apurados e parametrizar o envio de obrigações."
-    },
-    {
-      "quando": "Até 2028",
-      "urgencia": "medio",
-      "titulo": "Regra Transitória de CNPJ Técnico",
-      "detalhe": "Produtores rurais e transportadores não contribuintes de IBS/CBS ficam dispensados da exigência de CNPJ técnico, devendo adiantar a adequação dos cadastros de fornecedores no ERP."
+      "titulo": "Validação de Notas",
+      "detalhe": "CST, cClassTrib e CBS/IBS."
     }
   ],
-  "novas_normas": [
-    {
-      "tipo": "Ato",
-      "titulo": "Dispensa de CNPJ Técnico para Produtores Rurais e Transportadores Não Contribuintes",
-      "descricao": "Estabelece a dispensa temporária até 2028 do registro de CNPJ técnico para operações com produtores rurais e transportadores não contribuintes do IBS/CBS, simplificando o cumprimento de obrigações acessórias no período de transição.",
-      "link": "https://www.reformatributaria.com/iva/receita-e-comite-gestor-dispensam-cnpj-tecnicos-para-produtores-rurais-e-transportadores-nao-contribuintes-de-ibs-cbs-ate-2028/",
-      "instituicao": "RFB / CGIBS"
-    },
-    {
-      "tipo": "NT",
-      "titulo": "Homologação de Novas Funcionalidades da NFS-e para a Reforma Tributária",
-      "descricao": "Abertura da rodada de homologação e testes de novas funcionalidades no ambiente nacional da NFS-e para suportar os campos de destaque e apuração do IBS e da CBS.",
-      "link": "https://www.reformatributaria.com/documentos-fiscais/nfse-tem-rodada-de-homologacoes-de-novas-funcionalidades-para-adequacao-a-reforma-tributaria/",
-      "instituicao": "Receita Federal"
-    }
-  ],
+  "novas_normas": [],
   "noticias": [
     {
       "data": "19/11/2026",
@@ -100,8 +71,7 @@
       "data": "19/11/2026",
       "titulo": "Reforma Tributária: Senior promove webinar com todas as informações para empresas entrarem seguras em 2027",
       "fonte": "Portal da Reforma Tributária",
-      "url": "https://www.reformatributaria.com/conteudo-patrocinado/senior-webinar-reforma-tributaria-2027/",
-      "novo": true
+      "url": "https://www.reformatributaria.com/conteudo-patrocinado/senior-webinar-reforma-tributaria-2027/"
     },
     {
       "data": "19/11/2026",
@@ -125,15 +95,13 @@
       "data": "18/11/2026",
       "titulo": "Sistema de apuração assistida será aberto a todas as empresas nesta semana, diz Receita",
       "fonte": "Portal da Reforma Tributária",
-      "url": "https://www.reformatributaria.com/tecnologia/sistema-de-apuracao-assistida-sera-aberto-a-todas-as-empresas-nesta-semana-diz-receita/",
-      "novo": true
+      "url": "https://www.reformatributaria.com/tecnologia/sistema-de-apuracao-assistida-sera-aberto-a-todas-as-empresas-nesta-semana-diz-receita/"
     },
     {
       "data": "18/11/2026",
       "titulo": "Há risco real de divergência judicial entre IBS e CBS, diz vice do TCU",
       "fonte": "Portal da Reforma Tributária",
-      "url": "https://www.reformatributaria.com/justica/ha-risco-real-de-divergencia-judicial-entre-ibs-e-cbs-diz-vice-do-tcu/",
-      "novo": true
+      "url": "https://www.reformatributaria.com/justica/ha-risco-real-de-divergencia-judicial-entre-ibs-e-cbs-diz-vice-do-tcu/"
     },
     {
       "data": "18/11/2026",
