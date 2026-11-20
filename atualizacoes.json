@@ -1,5 +1,5 @@
 {
-  "gerado_em": "2026-11-19T19:44:59.658856-03:00",
+  "gerado_em": "2026-11-19T21:55:10.545688-03:00",
   "versao": "1.6",
   "revisao_radar": "19 nov/2026",
   "automacao": {
@@ -9,45 +9,45 @@
   "briefing": {
     "titulo": "Briefing do dia — Foco em Risco e Ação",
     "bullets": [
-      "RISCO: A falta de parametrização no destaque da CBS/IBS em documentos fiscais e incompatibilidades com a apuração assistida da Receita Federal podem acarretar glosa sistemática de créditos fiscais de Lucro Real e autuações materiais.",
-      "AÇÃO: Auditoria imediata na integração dos sistemas ERPs com as novas regras de NFSe/NFe, utilizando os códigos e calculadoras disponibilizados pela Receita Federal no GitHub para alinhar o cálculo de impostos.",
-      "PRAZO: Abertura do sistema de apuração assistida ocorre nesta semana de novembro de 2026, exigindo validação urgente antes do início das operações de 2027."
+      "RISCO: Erros na parametrização do destaque de CBS/IBS na NFSe e divergências na apuração assistida podem causar a perda de créditos fiscais valiosos e acionar autuações por desconformidade.",
+      "AÇÃO: Submeter a estrutura de TI aos testes da apuração assistida da Receita Federal e utilizar os algoritmos liberados no GitHub para homologar o correto destaque de IBS/CBS na NFSe.",
+      "PRAZO: Abertura do sistema de apuração assistida para todas as empresas ocorre nesta semana (novembro de 2026), com virada operacional total prevista para 2027."
     ],
-    "acao_prioritaria": "Homologar a parametrização do destaque da CBS/IBS nos documentos fiscais e auditá-la no sistema de apuração assistida da Receita Federal para barrar glosa de créditos e inconsistências cadastrais."
+    "acao_prioritaria": "Auditar imediatamente os parâmetros de TI para emissão de NFSe e testar o sistema de apuração assistida da Receita Federal nesta semana para garantir a manutenibilidade dos créditos de IBS e CBS."
   },
   "alertas": [
     {
       "tipo": "critico",
-      "titulo": "Liberada a Apuração Assistida e Risco de Malha Fiscais",
-      "texto": "A liberação da apuração assistida para todas as empresas exigirá que os dados apurados pelo Fisco coincidam 100% com o ERP corporativo. Qualquer divergência no destaque de CBS/IBS ou na classificação do Lucro Real implicará travamento de certidões (CND) e retenção de créditos.",
-      "prazo": "Nesta semana (Novembro/2026)"
+      "titulo": "Risco de Glosa de Créditos por Falha no Destaque de CBS/IBS na NFSe",
+      "texto": "A falta de homologação e ajuste dos sistemas de NFSe para o destaque adequado dos novos tributos impede o creditamento regular das operações no Lucro Real, gerando acúmulo indesejado de tributos no fluxo de caixa e exposição a multas acessórias.",
+      "prazo": "Já em vigor"
     },
     {
       "tipo": "critico",
-      "titulo": "Incerteza Jurídica e Risco de Glosa no Dual IVA (IBS/CBS)",
-      "texto": "Alertas do TCU indicam risco elevado de divergência de entendimento entre estados (IBS) e União (CBS). Procedimentos de apropriação de créditos que não sigam estritamente as regras de ambos os entes resultarão em contencioso e perda financeira direta no caixa da empresa.",
-      "prazo": "Já em vigor"
+      "titulo": "Alteração de Benefícios de ICMS e Impacto na Apuração do Lucro Real",
+      "texto": "A publicação de convênios pelo CONFAZ adaptando incentivos de ICMS exige revisão imediata das subvenções registradas na apuração do Lucro Real para evitar descaracterização fiscal e autuações.",
+      "prazo": "Imediato"
     }
   ],
   "prazos": [
     {
       "quando": "Nesta semana (Novembro/2026)",
       "urgencia": "urgente",
-      "titulo": "Testes no Sistema de Apuração Assistida da RFB",
-      "detalhe": "Acessar o novo sistema assistido da Receita Federal para validar se os batimentos automatizados de tributos conferem com as memórias de cálculo do Lucro Real."
+      "titulo": "Acesso ao Sistema de Apuração Assistida da Receita Federal",
+      "detalhe": "Efetuar testes de validação no sistema assistido liberado pela RFB a todas as empresas para identificar discrepâncias entre notas emitidas e apuração de tributos."
     },
     {
-      "quando": "Imediato",
+      "quando": "31/12/2026",
       "urgencia": "urgente",
-      "titulo": "Homologação dos Layouts de NFSe para Destaque de CBS/IBS",
-      "detalhe": "Concluir os testes de homologação dos novos campos de emissão de NFSe para assegurar que tomadores e prestadores consigam apropriar e transferir os créditos sem impedimentos legais."
+      "titulo": "Homologação de Ferramentas de Calculadora Tributária (GitHub/RFB)",
+      "detalhe": "Implementar e validar o código das ferramentas disponibilizadas pela Receita nos ERPs internos antes do início do ano-calendário de 2027."
     }
   ],
   "novas_normas": [
     {
       "tipo": "Ato",
-      "titulo": "Convênios CONFAZ - Adaptação dos Benefícios de ICMS",
-      "descricao": "Publicação de convênios pelo CONFAZ adaptando as regras e a transição dos incentivos fiscais estaduais de ICMS frente à chegada do IBS e CBS, exigindo reavaliação dos impactos no Lucro Real.",
+      "titulo": "Convênios CONFAZ - Adaptação dos Benefícios Fiscais de ICMS à Reforma Tributária",
+      "descricao": "Publicação de convênios que alteram e adaptam a aplicação de benefícios fiscais estaduais de ICMS ao novo modelo do IVA Dual, impactando diretamente o planejamento fiscal de empresas no Lucro Real.",
       "link": "https://www.reformatributaria.com/economia-reforma-tributaria-impactos/confaz-publica-convenios-que-adaptam-beneficios-de-icms-a-reforma-tributaria/",
       "instituicao": "CONFAZ"
     }
