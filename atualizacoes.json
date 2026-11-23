@@ -1,79 +1,72 @@
 {
-  "gerado_em": "2026-11-23T04:24:36.651487-03:00",
+  "gerado_em": "2026-11-23T06:18:16.598149-03:00",
   "versao": "1.6",
   "revisao_radar": "23 nov/2026",
   "automacao": {
-    "fontes_ok": 2,
+    "fontes_ok": 1,
     "fontes_total": 2
   },
   "briefing": {
     "titulo": "Briefing do dia — Foco em Risco e Ação",
     "bullets": [
-      "RISCO: A falta de parametrização dos ERPs e do preparo técnico para o destaque de CBS/IBS nos documentos fiscais pode resultar em rejeição de notas, perda de créditos pelos clientes e risco de autuações por descumprimento de obrigações acessórias.",
-      "AÇÃO: Inscrever a equipe fiscal nos treinamentos do CFC/RFB, parametrizar os sistemas fiscais para o destaque dos novos tributos e analisar o impacto direto da MP do Imposto Seletivo nas operações de Lucro Real.",
-      "PRAZO: Adequações operacionais urgentes para os treinamentos vigentes e transição dos sistemas com foco na virada fiscal de 2027 e regras transitórias da MP do Imposto Seletivo."
+      "RISCO: Divergências de apuração entre os sistemas ERP internos e a Apuração Assistida do Fisco, aliadas a interpretações conflitantes entre IBS e CBS alertadas pelo TCU, podem causar glosa de créditos fiscais e autuações no Lucro Real.",
+      "AÇÃO: Auditores e equipe fiscal devem validar o destaque de IBS/CBS nos ERPs e testar a conciliação na plataforma de Apuração Assistida da Receita Federal liberada esta semana.",
+      "PRAZO: Liberação imediata da Apuração Assistida a 100% das empresas nesta semana de novembro/2026, com dispensa pontual de CNPJ técnico para insumos rurais/transportes valendo até 2028."
     ],
-    "acao_prioritaria": "Mapear imediatamente os sistemas de emissão de DF-e para integração das regras de destaque do IBS/CBS e capacitar a equipe contábil através do novo canal conjunto RFB/CFC/Sebrae."
+    "acao_prioritaria": "Testar e conciliar imediatamente os dados fiscais do ERP no novo sistema de Apuração Assistida da Receita Federal para evitar assimetrias e perda de créditos da CBS/IBS."
   },
   "alertas": [
     {
       "tipo": "critico",
-      "titulo": "Despreparo de TI e Gestão Fiscal para Destaque de CBS/IBS",
-      "texto": "Empresas do Lucro Real que não prepararem seus sistemas para o correto destaque de CBS/IBS enfrentarão entraves na geração de créditos tributários para seus clientes, o que gera risco imediato de perda de mercado, incorreção no recolhimento do imposto e penalidades fiscais graves.",
-      "prazo": "Já em vigor"
+      "titulo": "Glosa de Créditos por Incompatibilidade na Apuração Assistida",
+      "texto": "A abertura da Apuração Assistida exige que todo documento fiscal tenha o destaque correto de CBS/IBS. Erros de parametrização no ERP impedirão o creditamento adequado no Lucro Real e gerarão inconsistências automáticas no sistema do Fisco.",
+      "prazo": "Nesta semana"
     },
     {
       "tipo": "atencao",
-      "titulo": "Risco de Litígio devido a Exceções e Flexibilizações",
-      "texto": "Flexibilizações recentes da reforma podem gerar interpretações ambíguas e insegurança jurídica, aumentando o risco de contencioso administrativo e judicial em relação ao aproveitamento de créditos fiscais e regimes especiais.",
-      "prazo": "2027"
+      "titulo": "Risco de Divergência Jurisprudencial entre IBS (Estados/Municípios) e CBS (União)",
+      "texto": "O alerta emitido pelo TCU aponta que interpretações divergentes entre os fiscos subnacionais e a RFB podem gerar autuações duplicadas e contencioso tributário sobre o aproveitamento de créditos.",
+      "prazo": "Já em vigor"
     }
   ],
   "prazos": [
     {
-      "quando": "01/01/2027",
+      "quando": "18/11/2026",
       "urgencia": "urgente",
-      "titulo": "Implementação do Destaque de CBS/IBS e Fim de Transição de TI",
-      "detalhe": "Adequar obrigatoriamente os ERPs para a correta emissão dos documentos fiscais com os novos campos de IBS/CBS a fim de evitar autuações e impedimento na emissão de NF-e."
+      "titulo": "Homologação do Sistema de Apuração Assistida",
+      "detalhe": "Acessar a plataforma nacional da Receita Federal aberta esta semana para auditar os cálculos pré-preenchidos de CBS frente ao ERP da empresa."
     },
     {
-      "quando": "31/12/2028",
-      "urgencia": "medio",
-      "titulo": "Fim da Dispensa de CNPJ Técnico para Produtores Rurais e Transportadores",
-      "detalhe": "Adequar o cadastro de fornecedores não contribuintes do IBS/CBS até o encerramento do prazo de dispensa do CNPJ técnico."
+      "quando": "31/12/2027",
+      "urgencia": "atencao",
+      "titulo": "Adequação de Cadastros de Fornecedores Rurais e Transportadores",
+      "detalhe": "Parametrizar compras de não contribuintes isentos de CNPJ técnico até 2028 para garantir a tomada correta de créditos sem retenção indevida."
     }
   ],
   "novas_normas": [
     {
-      "tipo": "MP",
-      "titulo": "Medida Provisória regulamentando o Imposto Seletivo e regras de transição do IPI",
-      "descricao": "Regulamenta a incidência do Imposto Seletivo (IS) e estabelece diretrizes para a transição do IPI, afetando diretamente custos fabris, precificação e apuração no regime de Lucro Real.",
-      "link": "https://www.in.gov.br/consulta/-/buscar/dou?q=medida+provisoria+imposto+seletivo",
-      "instituicao": "Governo Federal"
+      "tipo": "Ato",
+      "titulo": "Dispensa de CNPJ Técnico para Produtores Rurais e Transportadores Não Contribuintes de IBS/CBS",
+      "descricao": "Regulamentação da RFB e Comitê Gestor que dispensa a exigência de CNPJ técnico para operações com transportadores autônomos e produtores rurais não contribuintes até 2028, viabilizando o fluxo de créditos para tomadores no Lucro Real.",
+      "link": "https://www.reformatributaria.com/iva/receita-e-comite-gestor-dispensam-cnpj-tecnicos-para-produtores-rurais-e-transportadores-nao-contribuintes-de-ibs-cbs-ate-2028/",
+      "instituicao": "Receita Federal / CGIBS"
+    },
+    {
+      "tipo": "NT",
+      "titulo": "Homologação de Novas Funcionalidades da NFS-e para a Reforma Tributária",
+      "descricao": "Publicação das especificações técnicas necessárias para adaptação dos leiautes da Nota Fiscal de Serviços eletrônica quanto ao destaque e retenção de IBS e CBS.",
+      "link": "https://www.reformatributaria.com/documentos-fiscais/nfse-tem-rodada-de-homologacoes-de-novas-funcionalidades-para-adequacao-a-reforma-tributaria/",
+      "instituicao": "Receita Federal"
+    },
+    {
+      "tipo": "Ato",
+      "titulo": "Abertura do Sistema de Apuração Assistida da CBS/IBS",
+      "descricao": "Liberação do ambiente operacional da Receita Federal para que todas as empresas realizem a apuração assistida e testes de conciliação fiscal.",
+      "link": "https://www.reformatributaria.com/tecnologia/sistema-de-apuracao-assistida-sera-aberto-a-todas-as-empresas-nesta-semana-diz-receita/",
+      "instituicao": "Receita Federal"
     }
   ],
   "noticias": [
-    {
-      "data": "20/11/2026",
-      "titulo": "Flexibilizações da reforma são bem vistas por especialistas, mas ainda há ressalvas",
-      "fonte": "Portal da Reforma Tributária",
-      "url": "https://www.reformatributaria.com/governo/flexibilizacoes-da-reforma-sao-bem-vistas-por-especialistas-mas-ainda-ha-ressalvas/",
-      "novo": true
-    },
-    {
-      "data": "20/11/2026",
-      "titulo": "Reforma Tributária: o consumidor também precisa entrar na conversa",
-      "fonte": "Portal da Reforma Tributária",
-      "url": "https://www.reformatributaria.com/opiniao/reforma-tributaria-o-consumidor-tambem-precisa-entrar-nessa-conversa/",
-      "novo": true
-    },
-    {
-      "data": "20/11/2026",
-      "titulo": "Reforma Tributária 2027: o custo de uma área tributária que não está pronta",
-      "fonte": "Portal da Reforma Tributária",
-      "url": "https://www.reformatributaria.com/opiniao/reforma-tributaria-2027-o-custo-de-uma-area-tributaria-que-nao-esta-pronta/",
-      "novo": true
-    },
     {
       "data": "19/11/2026",
       "titulo": "Receita Federal e Comitê Gestor do IBS e CFC vão orientar 25 mil contadores sobre destaque de CBS/IBS",
@@ -100,6 +93,27 @@
     },
     {
       "data": "19/11/2026",
+      "titulo": "NFSe tem rodada de homologações de novas funcionalidades para adequação à reforma tributária",
+      "fonte": "Portal da Reforma Tributária",
+      "url": "https://www.reformatributaria.com/documentos-fiscais/nfse-tem-rodada-de-homologacoes-de-novas-funcionalidades-para-adequacao-a-reforma-tributaria/",
+      "novo": true
+    },
+    {
+      "data": "19/11/2026",
+      "titulo": "Receita recebe 1,09 milhão de solicitações pelo Simples Híbrido, mas 30 mil pediram cancelamento",
+      "fonte": "Portal da Reforma Tributária",
+      "url": "https://www.reformatributaria.com/iva/receita-recebe-109-milhao-de-solicitacoes-pelo-simples-hibrido-mas-30-000-pediram-cancelamento/",
+      "novo": true
+    },
+    {
+      "data": "19/11/2026",
+      "titulo": "Reforma Tributária: Senior promove webinar com todas as informações para empresas entrarem seguras em 2027",
+      "fonte": "Portal da Reforma Tributária",
+      "url": "https://www.reformatributaria.com/conteudo-patrocinado/senior-webinar-reforma-tributaria-2027/",
+      "novo": true
+    },
+    {
+      "data": "19/11/2026",
       "titulo": "Especialistas debatem perspectivas para 2027 em etapa da Reforma Tributária pelo Brasil no Rio Grande do Sul",
       "fonte": "CFC",
       "url": "https://cfc.org.br/noticias/especialistas-debatem-perspectivas-para-2027-em-etapa-da-reforma-tributaria-pelo-brasil-no-rio-grande-do-sul/"
@@ -118,6 +132,20 @@
     },
     {
       "data": "18/11/2026",
+      "titulo": "Sistema de apuração assistida será aberto a todas as empresas nesta semana, diz Receita",
+      "fonte": "Portal da Reforma Tributária",
+      "url": "https://www.reformatributaria.com/tecnologia/sistema-de-apuracao-assistida-sera-aberto-a-todas-as-empresas-nesta-semana-diz-receita/",
+      "novo": true
+    },
+    {
+      "data": "18/11/2026",
+      "titulo": "Há risco real de divergência judicial entre IBS e CBS, diz vice do TCU",
+      "fonte": "Portal da Reforma Tributária",
+      "url": "https://www.reformatributaria.com/justica/ha-risco-real-de-divergencia-judicial-entre-ibs-e-cbs-diz-vice-do-tcu/",
+      "novo": true
+    },
+    {
+      "data": "18/11/2026",
       "titulo": "No Senado, CFC defende transparência no cálculo da alíquota da CBS",
       "fonte": "CFC",
       "url": "https://cfc.org.br/noticias/no-senado-cfc-defende-transparencia-no-calculo-da-aliquota-da-cbs/"
@@ -133,20 +161,6 @@
       "titulo": "CFC fortalece diálogo com Embaixada do Brasil na Coreia do Sul e amplia perspectivas de cooperação internacional",
       "fonte": "CFC",
       "url": "https://cfc.org.br/noticias/cfc-fortalece-dialogo-com-embaixada-do-brasil-na-coreia-do-sul-e-amplia-perspectivas-de-cooperacao-internacional/"
-    },
-    {
-      "data": "18/11/2026",
-      "titulo": "Capacitações da Plataforma EduCont do Sistema CFC/CRCs geram mais de 70 pontos para o PEPC",
-      "fonte": "CFC",
-      "url": "https://cfc.org.br/noticias/capacitacoes-da-plataforma-educont-do-sistema-cfc-crcs-geram-mais-de-70-pontos-para-o-pepc/",
-      "novo": true
-    },
-    {
-      "data": "04/11/2026",
-      "titulo": "Governo publica Medida Provisória regulamentando o Imposto Seletivo e regras de transição do IPI",
-      "fonte": "Ministério da Fazenda",
-      "url": "https://www.in.gov.br/consulta/-/buscar/dou?q=medida+provisoria+imposto+seletivo",
-      "novo": true
     }
   ],
   "nts_criticas_lucro_real": [
