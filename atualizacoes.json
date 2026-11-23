@@ -1,64 +1,35 @@
 {
-  "gerado_em": "2026-11-23T08:01:45.767367-03:00",
+  "gerado_em": "2026-11-23T10:08:16.576603-03:00",
   "versao": "1.6",
   "revisao_radar": "23 nov/2026",
   "automacao": {
-    "fontes_ok": 2,
+    "fontes_ok": 1,
     "fontes_total": 2
   },
   "briefing": {
-    "titulo": "Briefing do dia — Foco em Risco e Ação",
+    "titulo": "Briefing do dia — Fallback",
     "bullets": [
-      "RISCO: Inconsistências operacionais no destaque de IBS/CBS em documentos fiscais e alertas do TCU sobre litígios decorrentes de divergências de interpretação entre RFB e CGIBS podem resultar em glosa de créditos fiscais e passivos no Lucro Real.",
-      "AÇÃO: Acessar a nova Apuração Assistida da RFB para validar os leiautes internos de parametrização e homologar as atualizações da NFSe junto aos fornecedores de software de gestão.",
-      "PRAZO: Abertura do sistema de apuração assistida ocorre nesta semana; a dispensa de CNPJ técnico para transportadores/produtores rurais estende-se até 2028."
+      "Atenção: Não foi possível gerar o resumo por IA hoje."
     ],
-    "acao_prioritaria": "Homologar imediatamente os novos padrões da NFSe e efetuar testes operacionais no sistema de Apuração Assistida da Receita Federal para resguardar o direito ao crédito de IBS/CBS."
+    "acao_prioritaria": "Validar notas fiscais."
   },
   "alertas": [
     {
       "tipo": "critico",
-      "titulo": "Risco Elevado de Litígio e Divergência na Apuração IBS vs. CBS",
-      "texto": "O TCU sinalizou forte risco de insegurança jurídica devido a divergências de interpretação entre CBS (Federal) e IBS (Estadual/Municipal), além de flexibilizações normativas. A falta de padronização na emissão pode invalidar o creditamento integral no Lucro Real.",
+      "titulo": "Validação de Notas",
+      "texto": "NF-e e CT-e exigem destaque CBS/IBS.",
       "prazo": "Já em vigor"
-    },
-    {
-      "tipo": "critico",
-      "titulo": "Obrigatoriedade de Adequação do Destaque de IBS/CBS nas NFSe",
-      "texto": "A homologação das novas funcionalidades da NFSe exige que o sistema de faturamento da empresa esteja apto a destacar CBS/IBS corretamente. Falhas na emissão impedirão o aproveitamento do crédito pelo tomador do serviço.",
-      "prazo": "Imediato"
     }
   ],
   "prazos": [
     {
-      "quando": "Nesta semana (Novembro/2026)",
+      "quando": "Contínuo",
       "urgencia": "urgente",
-      "titulo": "Liberado Acesso à Apuração Assistida pela Receita Federal",
-      "detalhe": "Efetuar testes nos sistemas corporativos utilizando o ambiente de apuração assistida para identificar assimetrias de alíquotas e erros de validação antes do início dos recolhimentos operacionais."
-    },
-    {
-      "quando": "Até 31/12/2028",
-      "urgencia": "moderada",
-      "titulo": "Dispensa de CNPJ Técnico para Não Contribuintes do IBS/CBS",
-      "detalhe": "Ajustar regras do ERP de compras para considerar a dispensa de CNPJ técnico para produtores rurais e transportadores não contribuintes, evitando bloqueio indevido de notas de entrada."
+      "titulo": "Validação de Notas",
+      "detalhe": "CST, cClassTrib e CBS/IBS."
     }
   ],
-  "novas_normas": [
-    {
-      "tipo": "Ato",
-      "titulo": "Dispensa de CNPJ técnico para produtores rurais e transportadores não contribuintes de IBS/CBS até 2028",
-      "descricao": "Deliberação da Receita Federal e Comitê Gestor que dispensa a obrigatoriedade de CNPJ técnico para emissores não contribuintes do IBS/CBS, desonerando a adequação cadastral dessas categorias até 2028.",
-      "link": "https://www.reformatributaria.com/iva/receita-e-comite-gestor-dispensam-cnpj-tecnicos-para-produtores-rurais-e-transportadores-nao-contribuintes-de-ibs-cbs-ate-2028/",
-      "instituicao": "Receita Federal / CGIBS"
-    },
-    {
-      "tipo": "NT",
-      "titulo": "Rodada de homologações das novas funcionalidades da NFSe para a Reforma Tributária",
-      "descricao": "Especificações técnicas e rodadas de testes para homologação de novos campos de validação e destaque de CBS/IBS no sistema da Nota Fiscal de Serviços eletrônica.",
-      "link": "https://www.reformatributaria.com/documentos-fiscais/nfse-tem-rodada-de-homologacoes-de-novas-funcionalidades-para-adequacao-a-reforma-tributaria/",
-      "instituicao": "Receita Federal / Comitê Gestor da NFSe"
-    }
-  ],
+  "novas_normas": [],
   "noticias": [
     {
       "data": "19/11/2026",
