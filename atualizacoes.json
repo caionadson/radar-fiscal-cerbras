@@ -1,7 +1,7 @@
 {
-  "gerado_em": "2026-11-22T23:53:24.951897-03:00",
+  "gerado_em": "2026-11-23T02:12:42.148257-03:00",
   "versao": "1.6",
-  "revisao_radar": "22 nov/2026",
+  "revisao_radar": "23 nov/2026",
   "automacao": {
     "fontes_ok": 1,
     "fontes_total": 2
@@ -9,54 +9,54 @@
   "briefing": {
     "titulo": "Briefing do dia — Foco em Risco e Ação",
     "bullets": [
-      "RISCO: O avanço na liberação da apuração assistida e o destaque incorreto de CBS/IBS nos documentos fiscais podem levar à glosa de créditos tributários no Lucro Real, além de expor a empresa ao risco de litígios por divergências entre as regras da CBS (federal) e do IBS (subnacional).",
-      "AÇÃO: Homologar os sistemas fiscais/ERPs para os novos layouts da NFS-e/NF-e, acessar o ambiente de apuração assistida disponibilizado pela Receita Federal nesta semana e revisar o cadastro de fornecedores transportadores e produtores rurais dispensados de CNPJ técnico.",
-      "PRAZO: Abertura da apuração assistida para todas as empresas ocorre nesta semana; adequações operacionais para o destaque de CBS/IBS visam a transição de 2027, com a dispensa de CNPJ técnico estendida até 2028."
+      "RISCO: Divergências operacionais na emissão da NFSe e no destaque de CBS/IBS podem paralisar o aproveitamento de créditos fiscais no Lucro Real e gerar passivos por inadimplemento técnico junto aos fiscos municipal, estadual e federal.",
+      "AÇÃO: Homologar os novos campos dos documentos fiscais eletrônicos (NFSe) e realizar testes na plataforma de apuração assistida liberada pela Receita Federal nesta semana.",
+      "PRAZO: Entrada da Apuração Assistida aberta nesta semana; adequação total de sistemas ERP e processos fiscais indispensáveis visando o ambiente operacional de 2027."
     ],
-    "acao_prioritaria": "Acessar o sistema de apuração assistida da Receita Federal nesta semana e validar a parametrização do destaque de IBS/CBS nos sistemas emissores para evitar perdas de crédito fiscal."
+    "acao_prioritaria": "Mobilizar a equipe de TI e Tax para realizar os testes de validação no sistema de apuração assistida da Receita Federal nesta semana e adequar as regras de destaque de IBS/CBS nos ERPs."
   },
   "alertas": [
     {
       "tipo": "critico",
-      "titulo": "Abertura da Apuração Assistida e Regras de Destaque de CBS/IBS",
-      "texto": "A Receita Federal libera nesta semana o sistema de apuração assistida para todas as empresas. Falhas na parametrização do destaque de CBS/IBS na emissão de notas fiscais impedirão o creditamento correto pelos adquirentes e gerarão autuações fiscais e inconsistências na apuração.",
+      "titulo": "Erro no Destaque de IBS/CBS na NFSe e Perda de Créditos Fiscais",
+      "texto": "A liberação das novas funcionalidades do padrão nacional da NFSe e da Apuração Assistida exige validação imediata dos parâmetros de faturamento. Erros na parametrização impedem que tomadores de serviços apurem créditos tributários sob o regime de não cumulatividade no Lucro Real, além de expor a empresa a autos de infração.",
       "prazo": "Nesta semana"
     },
     {
-      "tipo": "critico",
-      "titulo": "Risco Elevado de Litígio e Divergência Entre IBS e CBS",
-      "texto": "Alerta emitido pelo TCU indica risco real de divergência jurisprudencial e administrativa entre o IBS e a CBS. Empresas optantes pelo Lucro Real devem blindar suas interpretações e manter governança sobre a apuração para evitar contencioso tributário duplo.",
-      "prazo": "Já em vigor"
+      "tipo": "alto",
+      "titulo": "Insegurança Jurídica por Divergências entre IBS e CBS",
+      "texto": "Avisos do TCU apontam para alto risco de contencioso fiscal devido às flexibilizações da Reforma Tributária. A falta de alinhamento interpretativo entre o Comitê Gestor do IBS e a Receita Federal (CBS) exigirá governança tributária rigorosa para evitar bitributação e custos judiciais.",
+      "prazo": "Planejamento 2027"
     }
   ],
   "prazos": [
     {
-      "quando": "Nesta semana",
+      "quando": "Nesta semana (Novembro/2026)",
       "urgencia": "urgente",
-      "titulo": "Testes e Homologação na Apuração Assistida da RFB",
-      "detalhe": "Realizar o acesso ao sistema de apuração assistida disponibilizado pela Receita Federal para validar o cruzamento de dados e antecipar eventuais inconsistências na apuração dos tributos."
+      "titulo": "Acesso e Testes na Apuração Assistida da Receita Federal",
+      "detalhe": "Efetuar testes operacionais na plataforma de apuração assistida aberta a todas as empresas para garantir alinhamento no cálculo e destaque do IBS/CBS."
     },
     {
-      "quando": "31/12/2027",
+      "quando": "Até 31/12/2027",
       "urgencia": "media",
-      "titulo": "Validade da Dispensa de CNPJ Técnico para Produtores Rurais e Transportadores",
-      "detalhe": "Mapear a cadeia de suprimentos e ajustar os cadastros de transportadores autônomos e produtores rurais não contribuintes de IBS/CBS, utilizando a dispensa do CNPJ técnico até 2028."
+      "titulo": "Transição Operacional do CNPJ Técnico para Produtores Rurais e Transportadores",
+      "detalhe": "Adequar o sistema de recepção de documentos fiscais para fornecedores rurais e transportadores não contribuintes, valendo-se da dispensa temporária do CNPJ técnico concedida até 2028."
     }
   ],
   "novas_normas": [
     {
       "tipo": "Ato",
-      "titulo": "Dispensa de CNPJ Técnico para Produtores Rurais e Transportadores Não Contribuintes de IBS/CBS",
-      "descricao": "Regulamentação conjunta da RFB e CGIBS que flexibiliza a exigência de inscrição em CNPJ técnico para produtores rurais e transportadores não contribuintes até 2028, reduzindo o impacto operacional nas emissões fiscais.",
+      "titulo": "Dispensa de CNPJ Técnico para Produtores Rurais e Transportadores Não Contribuintes",
+      "descricao": "Medida conjunta da Receita Federal e Comitê Gestor do IBS que flexibiliza a obrigatoriedade de emissão via CNPJ técnico para pequenos produtores e transportadores até 2028, reduzindo a trava de emissão na ponta de suprimentos.",
       "link": "https://www.reformatributaria.com/iva/receita-e-comite-gestor-dispensam-cnpj-tecnicos-para-produtores-rurais-e-transportadores-nao-contribuintes-de-ibs-cbs-ate-2028/",
-      "instituicao": "RFB / CGIBS"
+      "instituicao": "Receita Federal / Comitê Gestor do IBS"
     },
     {
       "tipo": "NT",
-      "titulo": "Rodada de Homologação de Novas Funcionalidades da NFS-e para a Reforma Tributária",
-      "descricao": "Atualização das especificações técnicas e homologação dos módulos da Nota Fiscal de Serviço eletrônica (NFS-e) para inclusão dos campos relativos à incidência e destaque do IBS e da CBS.",
+      "titulo": "Homologação de Funcionalidades da NFSe para Adaptação ao IBS/CBS",
+      "descricao": "Nova rodada de homologação técnica do Padrão Nacional da NFSe para inclusão dos campos de destaque da CBS e do IBS, viabilizando o fluxo de crédito e apuração assistida.",
       "link": "https://www.reformatributaria.com/documentos-fiscais/nfse-tem-rodada-de-homologacoes-de-novas-funcionalidades-para-adequacao-a-reforma-tributaria/",
-      "instituicao": "Receita Federal / Comitê Gestor da NFS-e"
+      "instituicao": "Receita Federal / Comitê Gestor da NFSe"
     }
   ],
   "noticias": [
