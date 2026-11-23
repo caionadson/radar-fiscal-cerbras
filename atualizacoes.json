@@ -1,5 +1,5 @@
 {
-  "gerado_em": "2026-11-23T11:57:27.136703-03:00",
+  "gerado_em": "2026-11-23T13:56:31.115420-03:00",
   "versao": "1.6",
   "revisao_radar": "23 nov/2026",
   "automacao": {
@@ -7,58 +7,29 @@
     "fontes_total": 2
   },
   "briefing": {
-    "titulo": "Briefing do dia — Foco em Risco e Ação",
+    "titulo": "Briefing do dia — Fallback",
     "bullets": [
-      "RISCO: Perda de créditos fiscais de IBS/CBS e autuações por divergências entre regras da CBS (federal) e IBS (subnacional), aliadas a erros no preenchimento do destaque dos novos tributos na NFS-e.",
-      "AÇÃO: Realizar os testes imediatos na plataforma de apuração assistida disponibilizada pela RFB e homologar a atualização dos ERPs para parametrização dos novos campos fiscais de IBS e CBS.",
-      "PRAZO: Liberação do sistema de apuração assistida ocorrendo nesta semana (novembro/2026), com adequações cadastrais de fornecedores valendo até 2028."
+      "Atenção: Não foi possível gerar o resumo por IA hoje."
     ],
-    "acao_prioritaria": "Testar a plataforma de apuração assistida da RFB esta semana e parametrizar o ERP para a nova estrutura de destaque de IBS/CBS em NFS-e, garantindo o aproveitamento integral dos créditos fiscais."
+    "acao_prioritaria": "Validar notas fiscais."
   },
   "alertas": [
     {
       "tipo": "critico",
-      "titulo": "Abertura da Apuração Assistida e Homologação de Destaque de IBS/CBS",
-      "texto": "A liberação da apuração assistida pela Receita exige revisão imediata dos parâmetros fiscais do ERP. O preenchimento incorreto ou a ausência do destaque de IBS/CBS nos documentos fiscais (NFS-e) resultará na perda de créditos tributários no Lucro Real e no apontamento de inconsistências fiscais de transmissão.",
-      "prazo": "Imediato (esta semana)"
-    },
-    {
-      "tipo": "critico",
-      "titulo": "Risco de Divergência Jurisprudencial entre IBS e CBS",
-      "texto": "Alertas emitidos pelo TCU indicam potencial desalinhamento nas interpretações regulatórias do IBS (estadual/municipal) e da CBS (federal). A falta de governança sobre essas divergências pode expor a empresa a litígios e contingências fiscais no apuramento acumulado.",
+      "titulo": "Validação de Notas",
+      "texto": "NF-e e CT-e exigem destaque CBS/IBS.",
       "prazo": "Já em vigor"
     }
   ],
   "prazos": [
     {
-      "quando": "18/11/2026 - Em andamento nesta semana",
+      "quando": "Contínuo",
       "urgencia": "urgente",
-      "titulo": "Validação no Sistema de Apuração Assistida da Receita Federal",
-      "detalhe": "Acessar o ambiente do sistema liberado pela RFB para testar a conciliação assistida das apurações fiscais e identificar discrepâncias antes do início da obrigatoriedade efetiva."
-    },
-    {
-      "quando": "Até 31/12/2028",
-      "urgencia": "urgente",
-      "titulo": "Revisão Cadastral: Dispensa de CNPJ Técnico",
-      "detalhe": "Adequar as regras do ERP para aceitar operações com produtores rurais e transportadores não contribuintes do IBS/CBS sem a exigência do CNPJ técnico até 2028, evitando bloqueios na escrituração de entradas."
+      "titulo": "Validação de Notas",
+      "detalhe": "CST, cClassTrib e CBS/IBS."
     }
   ],
-  "novas_normas": [
-    {
-      "tipo": "Ato",
-      "titulo": "Dispensa de CNPJ Técnico para Produtores Rurais e Transportadores Não Contribuintes de IBS/CBS",
-      "descricao": "Medida da RFB e Comitê Gestor do IBS que desobriga até 2028 a emissão com CNPJ técnico para fornecedores não contribuintes, impactando diretamente o cadastro de parceiros comerciais e escrituração no ERP.",
-      "link": "https://www.reformatributaria.com/iva/receita-e-comite-gestor-dispensam-cnpj-tecnicos-para-produtores-rurais-e-transportadores-nao-contribuintes-de-ibs-cbs-ate-2028/",
-      "instituicao": "RFB / CGIBS"
-    },
-    {
-      "tipo": "NT",
-      "titulo": "Especificações Técnicas da NFS-e para Homologação de Destaque de IBS/CBS",
-      "descricao": "Rodada de homologação de leiautes da NFS-e para recepção das regras de cálculo e campos de destaque do IBS e da CBS em serviços prestados e tomados.",
-      "link": "https://www.reformatributaria.com/documentos-fiscais/nfse-tem-rodada-de-homologacoes-de-novas-funcionalidades-para-adequacao-a-reforma-tributaria/",
-      "instituicao": "Receita Federal / Comitê Gestor da NFS-e"
-    }
-  ],
+  "novas_normas": [],
   "noticias": [
     {
       "data": "19/11/2026",
