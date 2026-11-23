@@ -1,5 +1,5 @@
 {
-  "gerado_em": "2026-11-23T15:55:04.673195-03:00",
+  "gerado_em": "2026-11-23T17:47:53.094983-03:00",
   "versao": "1.6",
   "revisao_radar": "23 nov/2026",
   "automacao": {
@@ -7,30 +7,75 @@
     "fontes_total": 2
   },
   "briefing": {
-    "titulo": "Briefing do dia — Fallback",
+    "titulo": "Briefing do dia — Foco em Risco e Ação",
     "bullets": [
-      "Atenção: Não foi possível gerar o resumo por IA hoje."
+      "RISCO: Falta de preparação técnica para o destaque de CBS/IBS e desacordo com as regras do Imposto Seletivo podem gerar perda de créditos tributários e trava no fluxo de caixa.",
+      "AÇÃO: Acessar o ambiente piloto da CBS com a inclusão da DeRE liberado pela RFB e adequar o ERP para a correta emissão e apuração de tributos.",
+      "PRAZO: As adequações de sistemas e parametrizações operacionais exigem início imediato com foco total na transição de 2027."
     ],
-    "acao_prioritaria": "Validar notas fiscais."
+    "acao_prioritaria": "Testar imediatamente os sistemas no ambiente piloto da CBS/DeRE disponibilizado pela Receita Federal e mapear impactos da nova MP do Imposto Seletivo."
   },
   "alertas": [
     {
       "tipo": "critico",
-      "titulo": "Validação de Notas",
-      "texto": "NF-e e CT-e exigem destaque CBS/IBS.",
+      "titulo": "Ambiente Piloto da CBS e DeRE Liberado para Empresas",
+      "texto": "A liberação do ambiente piloto exige validação imediata dos processos tributários. Empresas que não parametrizarem o destaque de CBS/IBS nos documentos fiscais arriscam perda de créditos tributários, inconsistências acessórias e retenção indevida no fluxo de caixa.",
       "prazo": "Já em vigor"
     }
   ],
   "prazos": [
     {
-      "quando": "Contínuo",
+      "quando": "Imediato",
       "urgencia": "urgente",
-      "titulo": "Validação de Notas",
-      "detalhe": "CST, cClassTrib e CBS/IBS."
+      "titulo": "Adequação dos Sistemas Fiscais para CBS/IBS e Imposto Seletivo",
+      "detalhe": "Parametrizar ERPs e treinar equipes contábeis sobre o destaque dos novos tributos nos documentos fiscais para garantir a manutenção do aproveitamento de créditos no Lucro Real."
     }
   ],
-  "novas_normas": [],
+  "novas_normas": [
+    {
+      "tipo": "MP",
+      "titulo": "Medida Provisória de Regulamentação do Imposto Seletivo e Transição do IPI",
+      "descricao": "Regulamenta a incidência do Imposto Seletivo e define o regime de transição das alíquotas do IPI, impactando a formação de custos, precificação e apuração de créditos no regime do Lucro Real.",
+      "link": "https://www.in.gov.br/consulta/-/buscar/dou?q=medida+provisoria+imposto+seletivo",
+      "instituicao": "Governo Federal"
+    }
+  ],
   "noticias": [
+    {
+      "data": "23/11/2026",
+      "titulo": "Receita libera para todas as empresas ambiente piloto da CBS com inclusão da DeRE; acesse",
+      "fonte": "Portal da Reforma Tributária",
+      "url": "https://www.reformatributaria.com/iva/receita-libera-para-todas-as-empresas-ambiente-piloto-da-cbs-com-inclusao-da-dere-acesse/",
+      "novo": true
+    },
+    {
+      "data": "23/11/2026",
+      "titulo": "Deputados têm a chance de rejeitar a proposta do governo que trava o caixa das empresas",
+      "fonte": "Portal da Reforma Tributária",
+      "url": "https://www.reformatributaria.com/opiniao/deputados-rejeitar-proposta-governo-trava-caixa-empresas/",
+      "novo": true
+    },
+    {
+      "data": "20/11/2026",
+      "titulo": "Flexibilizações da reforma são bem vistas por especialistas, mas ainda há ressalvas",
+      "fonte": "Portal da Reforma Tributária",
+      "url": "https://www.reformatributaria.com/governo/flexibilizacoes-da-reforma-sao-bem-vistas-por-especialistas-mas-ainda-ha-ressalvas/",
+      "novo": true
+    },
+    {
+      "data": "20/11/2026",
+      "titulo": "Reforma Tributária: o consumidor também precisa entrar na conversa",
+      "fonte": "Portal da Reforma Tributária",
+      "url": "https://www.reformatributaria.com/opiniao/reforma-tributaria-o-consumidor-tambem-precisa-entrar-nessa-conversa/",
+      "novo": true
+    },
+    {
+      "data": "20/11/2026",
+      "titulo": "Reforma Tributária 2027: o custo de uma área tributária que não está pronta",
+      "fonte": "Portal da Reforma Tributária",
+      "url": "https://www.reformatributaria.com/opiniao/reforma-tributaria-2027-o-custo-de-uma-area-tributaria-que-nao-esta-pronta/",
+      "novo": true
+    },
     {
       "data": "19/11/2026",
       "titulo": "Receita Federal e Comitê Gestor do IBS e CFC vão orientar 25 mil contadores sobre destaque de CBS/IBS",
@@ -42,36 +87,6 @@
       "titulo": "Serpro recebe prêmio na China por plataforma da reforma tributária",
       "fonte": "Portal da Reforma Tributária",
       "url": "https://www.reformatributaria.com/tecnologia/serpro-recebe-premio-na-china-por-plataforma-da-reforma-tributaria/"
-    },
-    {
-      "data": "19/11/2026",
-      "titulo": "Receita e Comitê Gestor dispensam “CNPJ técnicos” para produtores rurais e transportadores não contribuintes de IBS/CBS até 2028",
-      "fonte": "Portal da Reforma Tributária",
-      "url": "https://www.reformatributaria.com/iva/receita-e-comite-gestor-dispensam-cnpj-tecnicos-para-produtores-rurais-e-transportadores-nao-contribuintes-de-ibs-cbs-ate-2028/"
-    },
-    {
-      "data": "19/11/2026",
-      "titulo": "Flexibilizações da reforma abrem espaço para mais litígios, diz vice do TCU",
-      "fonte": "Portal da Reforma Tributária",
-      "url": "https://www.reformatributaria.com/justica/flexibilizacoes-da-reforma-abrem-espaco-para-mais-litigios-diz-vice-do-tcu/"
-    },
-    {
-      "data": "19/11/2026",
-      "titulo": "NFSe tem rodada de homologações de novas funcionalidades para adequação à reforma tributária",
-      "fonte": "Portal da Reforma Tributária",
-      "url": "https://www.reformatributaria.com/documentos-fiscais/nfse-tem-rodada-de-homologacoes-de-novas-funcionalidades-para-adequacao-a-reforma-tributaria/"
-    },
-    {
-      "data": "19/11/2026",
-      "titulo": "Receita recebe 1,09 milhão de solicitações pelo Simples Híbrido, mas 30 mil pediram cancelamento",
-      "fonte": "Portal da Reforma Tributária",
-      "url": "https://www.reformatributaria.com/iva/receita-recebe-109-milhao-de-solicitacoes-pelo-simples-hibrido-mas-30-000-pediram-cancelamento/"
-    },
-    {
-      "data": "19/11/2026",
-      "titulo": "Reforma Tributária: Senior promove webinar com todas as informações para empresas entrarem seguras em 2027",
-      "fonte": "Portal da Reforma Tributária",
-      "url": "https://www.reformatributaria.com/conteudo-patrocinado/senior-webinar-reforma-tributaria-2027/"
     },
     {
       "data": "19/11/2026",
@@ -93,18 +108,6 @@
     },
     {
       "data": "18/11/2026",
-      "titulo": "Sistema de apuração assistida será aberto a todas as empresas nesta semana, diz Receita",
-      "fonte": "Portal da Reforma Tributária",
-      "url": "https://www.reformatributaria.com/tecnologia/sistema-de-apuracao-assistida-sera-aberto-a-todas-as-empresas-nesta-semana-diz-receita/"
-    },
-    {
-      "data": "18/11/2026",
-      "titulo": "Há risco real de divergência judicial entre IBS e CBS, diz vice do TCU",
-      "fonte": "Portal da Reforma Tributária",
-      "url": "https://www.reformatributaria.com/justica/ha-risco-real-de-divergencia-judicial-entre-ibs-e-cbs-diz-vice-do-tcu/"
-    },
-    {
-      "data": "18/11/2026",
       "titulo": "No Senado, CFC defende transparência no cálculo da alíquota da CBS",
       "fonte": "CFC",
       "url": "https://cfc.org.br/noticias/no-senado-cfc-defende-transparencia-no-calculo-da-aliquota-da-cbs/"
@@ -120,6 +123,20 @@
       "titulo": "CFC fortalece diálogo com Embaixada do Brasil na Coreia do Sul e amplia perspectivas de cooperação internacional",
       "fonte": "CFC",
       "url": "https://cfc.org.br/noticias/cfc-fortalece-dialogo-com-embaixada-do-brasil-na-coreia-do-sul-e-amplia-perspectivas-de-cooperacao-internacional/"
+    },
+    {
+      "data": "18/11/2026",
+      "titulo": "Capacitações da Plataforma EduCont do Sistema CFC/CRCs geram mais de 70 pontos para o PEPC",
+      "fonte": "CFC",
+      "url": "https://cfc.org.br/noticias/capacitacoes-da-plataforma-educont-do-sistema-cfc-crcs-geram-mais-de-70-pontos-para-o-pepc/",
+      "novo": true
+    },
+    {
+      "data": "04/11/2026",
+      "titulo": "Governo publica Medida Provisória regulamentando o Imposto Seletivo e regras de transição do IPI",
+      "fonte": "Ministério da Fazenda",
+      "url": "https://www.in.gov.br/consulta/-/buscar/dou?q=medida+provisoria+imposto+seletivo",
+      "novo": true
     }
   ],
   "nts_criticas_lucro_real": [
