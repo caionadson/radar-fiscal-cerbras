@@ -1,5 +1,5 @@
 {
-  "gerado_em": "2026-11-23T19:48:26.241549-03:00",
+  "gerado_em": "2026-11-23T21:58:01.207552-03:00",
   "versao": "1.6",
   "revisao_radar": "23 nov/2026",
   "automacao": {
@@ -7,51 +7,29 @@
     "fontes_total": 2
   },
   "briefing": {
-    "titulo": "Briefing do dia — Foco em Risco e Ação",
+    "titulo": "Briefing do dia — Fallback",
     "bullets": [
-      "RISCO: Propostas que travam o fluxo de caixa corporativo no Congresso e o elevado custo operacional/fiscal para empresas que não adequarem seus sistemas e parametrizações até 2027.",
-      "AÇÃO: Acessar o ambiente piloto da CBS com inclusão da DeRE disponibilizado pela RFB e treinar a equipe fiscal na emissão e no destaque de CBS/IBS nos documentos fiscais.",
-      "PRAZO: Fase de testes operacional imediata (novembro/2026) visando o cumprimento integral das obrigações da transição tributária para 2027."
+      "Atenção: Não foi possível gerar o resumo por IA hoje."
     ],
-    "acao_prioritaria": "Iniciar testes imediatos no ambiente piloto da CBS/DeRE da Receita Federal e auditar os parâmetros de destaque de IBS/CBS para mitigar riscos de perda de crédito fiscal e travamento do caixa."
+    "acao_prioritaria": "Validar notas fiscais."
   },
   "alertas": [
     {
       "tipo": "critico",
-      "titulo": "Risco no Fluxo de Caixa e Inadequação Operacional para 2027",
-      "texto": "Propostas normativas podem comprometer o fluxo de caixa das empresas. Além disso, a falta de prontidão dos sistemas fiscais e contábeis para o destaque do IBS/CBS pode gerar glosa de créditos tributários e inconsistências perante a RFB e o Comitê Gestor.",
-      "prazo": "Imediato"
-    },
-    {
-      "tipo": "critico",
-      "titulo": "Publicação de MP do Imposto Seletivo e Transição do IPI",
-      "texto": "A edição da Medida Provisória altera a tributação sobre produtos sujeitos ao Imposto Seletivo e redefine o aproveitamento e transição do IPI, impactando a formação de preço e o IRPJ/CSLL no Lucro Real.",
+      "titulo": "Validação de Notas",
+      "texto": "NF-e e CT-e exigem destaque CBS/IBS.",
       "prazo": "Já em vigor"
     }
   ],
   "prazos": [
     {
-      "quando": "23/11/2026",
+      "quando": "Contínuo",
       "urgencia": "urgente",
-      "titulo": "Acesso e Testes no Ambiente Piloto da CBS/DeRE",
-      "detalhe": "Cadastrar a empresa no ambiente piloto liberado pela Receita Federal para homologar o funcionamento da DeRE e evitar penalidades na implantação oficial."
-    },
-    {
-      "quando": "01/01/2027",
-      "urgencia": "urgente",
-      "titulo": "Transição para o modelo IBS/CBS e Imposto Seletivo",
-      "detalhe": "Concluir a adequação dos ERPs e capacitação da equipe contábil/fiscal referente ao destaque unificado nos documentos fiscais."
+      "titulo": "Validação de Notas",
+      "detalhe": "CST, cClassTrib e CBS/IBS."
     }
   ],
-  "novas_normas": [
-    {
-      "tipo": "MP",
-      "titulo": "Medida Provisória do Imposto Seletivo e Regras de Transição do IPI",
-      "descricao": "Regulamenta a incidência do novo Imposto Seletivo e estabelece o regime transicional para o Imposto sobre Produtos Industrializados (IPI), afetando a apuração do Lucro Real e a gestão de créditos fiscais da cadeia produtiva.",
-      "link": "https://www.in.gov.br/consulta/-/buscar/dou?q=medida+provisoria+imposto+seletivo",
-      "instituicao": "Governo Federal / Presidência da República"
-    }
-  ],
+  "novas_normas": [],
   "noticias": [
     {
       "data": "23/11/2026",
