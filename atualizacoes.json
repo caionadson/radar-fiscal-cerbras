@@ -1,5 +1,5 @@
 {
-  "gerado_em": "2026-11-24T13:59:51.915458-03:00",
+  "gerado_em": "2026-11-24T15:53:59.664172-03:00",
   "versao": "1.6",
   "revisao_radar": "24 nov/2026",
   "automacao": {
@@ -7,30 +7,66 @@
     "fontes_total": 2
   },
   "briefing": {
-    "titulo": "Briefing do dia — Fallback",
+    "titulo": "Briefing do dia — Foco em Risco e Ação",
     "bullets": [
-      "Atenção: Não foi possível gerar o resumo por IA hoje."
+      "RISCO: A falta de parametrização no destaque de CBS/IBS e o atraso no alinhamento aos novos leiautes geram exposição direta a travamentos de caixa e glosa de créditos fiscais no Lucro Real.",
+      "AÇÃO: Iniciar a validação dos sistemas ERP no ambiente piloto da CBS com inclusão da DeRE liberado pela Receita Federal, garantindo a correta emissão e destaque nos documentos fiscais.",
+      "PRAZO: O ambiente piloto já está disponível para testes (novembro/2026), preparando as empresas para a virada operacional de 2027."
     ],
-    "acao_prioritaria": "Validar notas fiscais."
+    "acao_prioritaria": "Acessar o ambiente piloto da CBS/DeRE liberado pela Receita Federal e homologar as regras de destaque fiscal no ERP para evitar perda de créditos e sanções em 2027."
   },
   "alertas": [
     {
       "tipo": "critico",
-      "titulo": "Validação de Notas",
-      "texto": "NF-e e CT-e exigem destaque CBS/IBS.",
+      "titulo": "Liberação do Ambiente Piloto da CBS e DeRE pela Receita Federal",
+      "texto": "A liberação do ambiente de testes da CBS e a inserção da DeRE demandam homologação técnica imediata. A inércia no teste dos sistemas acarretará inconsistências no destaque dos tributos, com risco iminente de perda de créditos fiscais e travamento de caixa por erros no preenchimento de documentos fiscais.",
       "prazo": "Já em vigor"
+    },
+    {
+      "tipo": "atencao",
+      "titulo": "Harmonização de Regulamentos IBS/CBS pelo Comitê Gestor",
+      "texto": "O Comitê Gestor do IBS indicou os membros para alinhar as regras com a CBS. Empresas do Lucro Real devem acompanhar de perto essa harmonização para evitar distorções no aproveitamento de créditos acumulados entre impostos federais e subnacionais.",
+      "prazo": "23/11/2026"
     }
   ],
   "prazos": [
     {
-      "quando": "Contínuo",
+      "quando": "Novembro/2026",
       "urgencia": "urgente",
-      "titulo": "Validação de Notas",
-      "detalhe": "CST, cClassTrib e CBS/IBS."
+      "titulo": "Homologação de Sistemas no Piloto CBS/DeRE",
+      "detalhe": "Testar a emissão de documentos fiscais e a geração da DeRE no ambiente liberado pela RFB para mitigar falhas operacionais que impeçam a tomada de créditos."
+    },
+    {
+      "quando": "1º Trimestre/2027",
+      "urgencia": "medio",
+      "titulo": "Adequação Operacional dos Departamentos Tributários para 2027",
+      "detalhe": "Treinar equipes e reestruturar os processos internos do Lucro Real frente aos novos tributos (CBS/IBS), reduzindo custos operacionais de não conformidade."
     }
   ],
-  "novas_normas": [],
+  "novas_normas": [
+    {
+      "tipo": "Ato",
+      "titulo": "Liberação do Ambiente Piloto da CBS com inclusão da DeRE",
+      "descricao": "A Receita Federal abriu para todas as empresas o ambiente piloto para testes de conformidade do destaque da CBS e cumprimento da Declaração de Regime Especial (DeRE), passo fundamental para a operacionalização dos créditos do Lucro Real.",
+      "link": "https://www.reformatributaria.com/iva/receita-libera-para-todas-as-empresas-ambiente-piloto-da-cbs-com-inclusao-da-dere-acesse/",
+      "instituicao": "Receita Federal do Brasil"
+    }
+  ],
   "noticias": [
+    {
+      "data": "24/11/2026",
+      "titulo": "TCU convida sociedade a definir prioridades de fiscalização para 2027",
+      "fonte": "CFC",
+      "url": "https://cfc.org.br/noticias/tcu-convida-sociedade-a-definir-prioridades-de-fiscalizacao-para-2027/",
+      "novo": true
+    },
+    {
+      "data": "24/11/2026",
+      "titulo": "CFC amplia pontuação da Conferência Nacional de Perícia Contábil",
+      "fonte": "CFC",
+      "url": "https://cfc.org.br/noticias/cfc-amplia-pontuacao-da-conferencia-nacional-de-pericia-contabil/",
+      "novo": true
+    },
     {
       "data": "24/11/2026",
       "titulo": "Sistema CFC/CRCs atua no Congresso para evitar aumento da carga tributária e preservar direitos dos contribuintes",
@@ -108,18 +144,6 @@
       "titulo": "CFC, Fenacon, Receita Federal e Sebrae anunciam apoio direto a contadores e lançam canal para esclarecer dúvidas",
       "fonte": "CFC",
       "url": "https://cfc.org.br/noticias/cfc-fenacon-receita-federal-e-sebrae-anunciam-apoio-direto-a-contadores-e-lancam-canal-para-esclarecer-duvidas/"
-    },
-    {
-      "data": "18/11/2026",
-      "titulo": "CFC fortalece diálogo com Embaixada do Brasil na Coreia do Sul e amplia perspectivas de cooperação internacional",
-      "fonte": "CFC",
-      "url": "https://cfc.org.br/noticias/cfc-fortalece-dialogo-com-embaixada-do-brasil-na-coreia-do-sul-e-amplia-perspectivas-de-cooperacao-internacional/"
-    },
-    {
-      "data": "18/11/2026",
-      "titulo": "Capacitações da Plataforma EduCont do Sistema CFC/CRCs geram mais de 70 pontos para o PEPC",
-      "fonte": "CFC",
-      "url": "https://cfc.org.br/noticias/capacitacoes-da-plataforma-educont-do-sistema-cfc-crcs-geram-mais-de-70-pontos-para-o-pepc/"
     }
   ],
   "nts_criticas_lucro_real": [
