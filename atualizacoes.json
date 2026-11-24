@@ -1,5 +1,5 @@
 {
-  "gerado_em": "2026-11-23T21:58:01.207552-03:00",
+  "gerado_em": "2026-11-23T23:51:43.657890-03:00",
   "versao": "1.6",
   "revisao_radar": "23 nov/2026",
   "automacao": {
@@ -7,29 +7,51 @@
     "fontes_total": 2
   },
   "briefing": {
-    "titulo": "Briefing do dia — Fallback",
+    "titulo": "Briefing do dia — Foco em Risco e Ação",
     "bullets": [
-      "Atenção: Não foi possível gerar o resumo por IA hoje."
+      "RISCO: A falta de preparação dos sistemas fiscais/ERPs para o destaque de CBS/IBS e a ausência de simulação no ambiente piloto (DeRE) expõem a empresa no Lucro Real ao acúmulo de inconsistências fiscais, retendo caixa e provocando a glosa ou atraso no ressarcimento de créditos tributários.",
+      "AÇÃO: Mobilizar as equipes de TI, Fiscal e Contábil para acessar imediatamente o ambiente piloto da CBS liberado pela Receita Federal, testando a emissão com a inclusão da DeRE e parametrizando os sistemas de acordo com as novas regras da MP do Imposto Seletivo e IPI.",
+      "PRAZO: As adaptações nos sistemas e a capacitação das equipes devem ocorrer de forma imediata diante dos testes de 2026 e da implementação das regras de transição vigentes para 2027."
     ],
-    "acao_prioritaria": "Validar notas fiscais."
+    "acao_prioritaria": "Homologar os sistemas fiscais no ambiente piloto da CBS/DeRE da Receita Federal e mapear os impactos diretos da MP do Imposto Seletivo na precificação e no caixa da empresa."
   },
   "alertas": [
     {
       "tipo": "critico",
-      "titulo": "Validação de Notas",
-      "texto": "NF-e e CT-e exigem destaque CBS/IBS.",
+      "titulo": "Risco de Inoperância e Perda de Crédito com Início dos Testes da CBS/DeRE",
+      "texto": "Com a liberação do ambiente piloto da CBS contendo a DeRE, empresas no Lucro Real que não testarem a validação dos documentos fiscais correm o risco de sofrer travamentos na emissão de NF-e, atrasando operações e impedindo o aproveitamento integral de créditos fiscais no período de transição.",
       "prazo": "Já em vigor"
+    },
+    {
+      "tipo": "critico",
+      "titulo": "Impacto das Regras de Transição do IPI e Imposto Seletivo no Fluxo de Caixa",
+      "texto": "A publicação da Medida Provisória sobre o Imposto Seletivo e a transição do IPI exige a revisão imediata do custo de insumos e produtos. A inércia na parametrização resultará em recolhimento indevido e retenção desnecessária de capital de giro.",
+      "prazo": "Imediato"
     }
   ],
   "prazos": [
     {
-      "quando": "Contínuo",
+      "quando": "23/11/2026",
       "urgencia": "urgente",
-      "titulo": "Validação de Notas",
-      "detalhe": "CST, cClassTrib e CBS/IBS."
+      "titulo": "Homologação do Ambiente Piloto da CBS e DeRE",
+      "detalhe": "Iniciar os testes operacionais no ambiente da Receita Federal para ajustar a emissão de documentos fiscais e garantir o compliance das obrigações acessórias relativas à CBS."
+    },
+    {
+      "quando": "04/11/2026",
+      "urgencia": "urgente",
+      "titulo": "Adequação à MP do Imposto Seletivo e IPI",
+      "detalhe": "Revisar as alíquotas aplicáveis e os procedimentos de apuração do Imposto Seletivo e IPI para evitar autuações e recolhimentos a menor."
     }
   ],
-  "novas_normas": [],
+  "novas_normas": [
+    {
+      "tipo": "MP",
+      "titulo": "Medida Provisória do Imposto Seletivo e Regras de Transição do IPI",
+      "descricao": "Regulamenta a incidência e apuração do Imposto Seletivo, bem como estabelece as diretrizes de transição para o aproveitamento e redução do IPI, alterando diretamente a apuração do Lucro Real e os custos operacionais.",
+      "link": "https://www.in.gov.br/consulta/-/buscar/dou?q=medida+provisoria+imposto+seletivo",
+      "instituicao": "Governo Federal"
+    }
+  ],
   "noticias": [
     {
       "data": "23/11/2026",
