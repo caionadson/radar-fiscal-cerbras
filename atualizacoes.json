@@ -1,52 +1,43 @@
 {
-  "gerado_em": "2026-11-24T04:05:57.131945-03:00",
+  "gerado_em": "2026-11-24T05:57:55.048454-03:00",
   "versao": "1.6",
   "revisao_radar": "24 nov/2026",
   "automacao": {
-    "fontes_ok": 2,
+    "fontes_ok": 1,
     "fontes_total": 2
   },
   "briefing": {
-    "titulo": "Briefing do dia — Foco em Risco e Ação",
+    "titulo": "Briefing do dia — Fallback",
     "bullets": [
-      "RISCO: O despreparo operacional no destaque do IBS/CBS e a inadaptação à DeRE e ao Imposto Seletivo podem gerar retenção indevida de valores, perda de créditos fiscais e severo travamento do fluxo de caixa no Lucro Real.",
-      "AÇÃO: Iniciar imediatamente a parametrização e homologação dos sistemas ERP no ambiente piloto da CBS/DeRE liberado pela RFB e treinar a equipe no correto destaque dos novos tributos nos documentos fiscais.",
-      "PRAZO: Ambiente de testes já disponível em nov/2026 com vigência plena das regras de transição a partir de 2027; adequações de sistemas exigem ação imediata."
+      "Atenção: Não foi possível gerar o resumo por IA hoje."
     ],
-    "acao_prioritaria": "Ingressar no ambiente piloto da CBS com DeRE e revisar as rotinas de destaque de IBS/CBS nos documentos fiscais para evitar retenção de caixa e perda de créditos."
+    "acao_prioritaria": "Validar notas fiscais."
   },
   "alertas": [
     {
       "tipo": "critico",
-      "titulo": "Risco de Trava de Caixa e Perda de Crédito com Falhas no Destaque de IBS/CBS",
-      "texto": "A inconsistência na emissão de documentos fiscais e no destaque da CBS e do IBS impedirá o aproveitamento imediato de créditos e o ressarcimento rápido, comprometendo a liquidez e gerando riscos de autuações por descumprimento de obrigações acessórias no Lucro Real.",
-      "prazo": "Já em vigor (Fase Piloto / Transição 2027)"
-    },
-    {
-      "tipo": "critico",
-      "titulo": "Impacto Econômico e de Custos com a MP do Imposto Seletivo e Regras do IPI",
-      "texto": "A regulamentação do Imposto Seletivo e da transição do IPI via Medida Provisória impacta diretamente a formação de preços, a margem de lucro e a apuração tributária das empresas industriais e comerciais. A falta de adequação fiscal resultará no recolhimento incorreto do tributo.",
+      "titulo": "Validação de Notas",
+      "texto": "NF-e e CT-e exigem destaque CBS/IBS.",
       "prazo": "Já em vigor"
     }
   ],
   "prazos": [
     {
-      "quando": "Imediato (Novembro/2026)",
+      "quando": "Contínuo",
       "urgencia": "urgente",
-      "titulo": "Acesso e Testes no Ambiente Piloto da CBS e DeRE",
-      "detalhe": "Realizar o credenciamento e os testes de emissão de documentos fiscais com CBS e DeRE no ambiente piloto disponibilizado pela Receita Federal para validar sistemas de ERP antes da obrigatoriedade."
+      "titulo": "Validação de Notas",
+      "detalhe": "CST, cClassTrib e CBS/IBS."
     }
   ],
-  "novas_normas": [
-    {
-      "tipo": "MP",
-      "titulo": "Medida Provisória de Regulamentação do Imposto Seletivo e Transição do IPI",
-      "descricao": "Regulamenta as hipóteses de incidência, alíquotas e operacionalização do Imposto Seletivo, bem como estabelece as diretrizes de transição para o IPI, impactando a estrutura de custos e os procedimentos de apuração do Lucro Real.",
-      "link": "https://www.in.gov.br/consulta/-/buscar/dou?q=medida+provisoria+imposto+seletivo",
-      "instituicao": "Governo Federal"
-    }
-  ],
+  "novas_normas": [],
   "noticias": [
+    {
+      "data": "23/11/2026",
+      "titulo": "Comitê Gestor do IBS indica membros que farão harmonização tributária com a CBS",
+      "fonte": "Portal da Reforma Tributária",
+      "url": "https://www.reformatributaria.com/iva/comite-gestor-do-ibs-indica-membros-que-farao-harmonizacao-tributaria-com-a-cbs/",
+      "novo": true
+    },
     {
       "data": "23/11/2026",
       "titulo": "Receita libera para todas as empresas ambiente piloto da CBS com inclusão da DeRE; acesse",
@@ -82,13 +73,6 @@
       "titulo": "Receita Federal e Comitê Gestor do IBS e CFC vão orientar 25 mil contadores sobre destaque de CBS/IBS",
       "fonte": "Portal da Reforma Tributária",
       "url": "https://www.reformatributaria.com/documentos-fiscais/receita-federal-e-comite-gestor-do-ibs-e-cfc-vao-orientar-25-mil-contadores-sobre-destaque-de-cbs-ibs/"
-    },
-    {
-      "data": "19/11/2026",
-      "titulo": "Serpro recebe prêmio na China por plataforma da reforma tributária",
-      "fonte": "Portal da Reforma Tributária",
-      "url": "https://www.reformatributaria.com/tecnologia/serpro-recebe-premio-na-china-por-plataforma-da-reforma-tributaria/",
-      "novo": true
     },
     {
       "data": "19/11/2026",
