@@ -1,5 +1,5 @@
 {
-  "gerado_em": "2026-11-24T15:53:59.664172-03:00",
+  "gerado_em": "2026-11-24T17:49:45.879375-03:00",
   "versao": "1.6",
   "revisao_radar": "24 nov/2026",
   "automacao": {
@@ -9,47 +9,54 @@
   "briefing": {
     "titulo": "Briefing do dia — Foco em Risco e Ação",
     "bullets": [
-      "RISCO: A falta de parametrização no destaque de CBS/IBS e o atraso no alinhamento aos novos leiautes geram exposição direta a travamentos de caixa e glosa de créditos fiscais no Lucro Real.",
-      "AÇÃO: Iniciar a validação dos sistemas ERP no ambiente piloto da CBS com inclusão da DeRE liberado pela Receita Federal, garantindo a correta emissão e destaque nos documentos fiscais.",
-      "PRAZO: O ambiente piloto já está disponível para testes (novembro/2026), preparando as empresas para a virada operacional de 2027."
+      "RISCO: A ausência de homologação antecipada dos novos modelos de documentos fiscais e da DeRE no ambiente piloto da CBS pode travar o fluxo de caixa corporativo, impedir o creditamento correto de CBS/IBS e gerar autuações por descumprimento de obrigações acessórias na transição do Lucro Real.",
+      "AÇÃO: Acessar imediatamente o ambiente piloto liberado pela Receita Federal para realizar testes de emissão e validação do detalhamento de CBS/IBS com a inclusão da DeRE, capacitando a equipe fiscal nos novos canais oficiais do CFC/RFB.",
+      "PRAZO: Ambiente de testes liberado em novembro/2026; a adequação operacional e de ERPs precisa ser finalizada antes da vigência obrigatória prevista para 2027."
     ],
-    "acao_prioritaria": "Acessar o ambiente piloto da CBS/DeRE liberado pela Receita Federal e homologar as regras de destaque fiscal no ERP para evitar perda de créditos e sanções em 2027."
+    "acao_prioritaria": "Iniciar imediatamente os testes de homologação no ambiente piloto da CBS/DeRE liberado pela Receita Federal para evitar travamento de caixa e glosa de créditos na entrada do novo sistema."
   },
   "alertas": [
     {
       "tipo": "critico",
-      "titulo": "Liberação do Ambiente Piloto da CBS e DeRE pela Receita Federal",
-      "texto": "A liberação do ambiente de testes da CBS e a inserção da DeRE demandam homologação técnica imediata. A inércia no teste dos sistemas acarretará inconsistências no destaque dos tributos, com risco iminente de perda de créditos fiscais e travamento de caixa por erros no preenchimento de documentos fiscais.",
+      "titulo": "Liberação do Ambiente Piloto da CBS com DeRE",
+      "texto": "A Receita Federal disponibilizou o ambiente piloto para emissão e validação da CBS e DeRE. Empresas do Lucro Real que não adequarem seus ERPs correm o risco de ter documentos rejeitados, travamento nas operações de vendas e perda do direito a créditos fiscais de IVA.",
       "prazo": "Já em vigor"
     },
     {
-      "tipo": "atencao",
-      "titulo": "Harmonização de Regulamentos IBS/CBS pelo Comitê Gestor",
-      "texto": "O Comitê Gestor do IBS indicou os membros para alinhar as regras com a CBS. Empresas do Lucro Real devem acompanhar de perto essa harmonização para evitar distorções no aproveitamento de créditos acumulados entre impostos federais e subnacionais.",
-      "prazo": "23/11/2026"
+      "tipo": "alto",
+      "titulo": "Risco Financeiro e de Caixa por Propostas Legislativas",
+      "texto": "Tramitam no Congresso propostas que impactam diretamente a liquidez das empresas. O acompanhamento das alíquotas de CBS e IBS e a atuação de entidades junto ao Senado requerem revisão contínua das projeções financeiras do Lucro Real.",
+      "prazo": "Novembro/2026"
     }
   ],
   "prazos": [
     {
-      "quando": "Novembro/2026",
+      "quando": "23/11/2026",
       "urgencia": "urgente",
-      "titulo": "Homologação de Sistemas no Piloto CBS/DeRE",
-      "detalhe": "Testar a emissão de documentos fiscais e a geração da DeRE no ambiente liberado pela RFB para mitigar falhas operacionais que impeçam a tomada de créditos."
+      "titulo": "Testes de Emissão e Integração no Piloto da CBS/DeRE",
+      "detalhe": "Submeter massas de dados no ambiente piloto da RFB para validar os leiautes dos documentos fiscais e o destaque de CBS/IBS sem inconsistências."
     },
     {
-      "quando": "1º Trimestre/2027",
-      "urgencia": "medio",
-      "titulo": "Adequação Operacional dos Departamentos Tributários para 2027",
-      "detalhe": "Treinar equipes e reestruturar os processos internos do Lucro Real frente aos novos tributos (CBS/IBS), reduzindo custos operacionais de não conformidade."
+      "quando": "2027",
+      "urgencia": "urgente",
+      "titulo": "Entrada em vigor do Novo Sistema Tributário",
+      "detalhe": "Data-limite para total adequação da área tributária, sistemas e processos contábeis sob pena de autuações expressivas e ineficiência operacional."
     }
   ],
   "novas_normas": [
     {
       "tipo": "Ato",
-      "titulo": "Liberação do Ambiente Piloto da CBS com inclusão da DeRE",
-      "descricao": "A Receita Federal abriu para todas as empresas o ambiente piloto para testes de conformidade do destaque da CBS e cumprimento da Declaração de Regime Especial (DeRE), passo fundamental para a operacionalização dos créditos do Lucro Real.",
+      "titulo": "Liberação do Ambiente Piloto da CBS com Inclusão da DeRE",
+      "descricao": "Ato da Receita Federal que abre o ambiente de testes operacionais para todas as empresas referente à CBS e inclusão da DeRE, fundamental para validação de créditos e cumprimento de obrigações acessórias do Lucro Real.",
       "link": "https://www.reformatributaria.com/iva/receita-libera-para-todas-as-empresas-ambiente-piloto-da-cbs-com-inclusao-da-dere-acesse/",
       "instituicao": "Receita Federal do Brasil"
+    },
+    {
+      "tipo": "Ato",
+      "titulo": "Indicação de Membros para Harmonização Tributária IBS/CBS",
+      "descricao": "Ato do Comitê Gestor do IBS que designa integrantes para alinhamento e harmonização das regras fiscais entre o IBS (estadual/municipal) e a CBS (federal), prevenindo conflitos normativos na apuração dos tributos.",
+      "link": "https://www.reformatributaria.com/iva/comite-gestor-do-ibs-indica-membros-que-farao-harmonizacao-tributaria-com-a-cbs/",
+      "instituicao": "Comitê Gestor do IBS"
     }
   ],
   "noticias": [
@@ -57,15 +64,13 @@
       "data": "24/11/2026",
       "titulo": "TCU convida sociedade a definir prioridades de fiscalização para 2027",
       "fonte": "CFC",
-      "url": "https://cfc.org.br/noticias/tcu-convida-sociedade-a-definir-prioridades-de-fiscalizacao-para-2027/",
-      "novo": true
+      "url": "https://cfc.org.br/noticias/tcu-convida-sociedade-a-definir-prioridades-de-fiscalizacao-para-2027/"
     },
     {
       "data": "24/11/2026",
       "titulo": "CFC amplia pontuação da Conferência Nacional de Perícia Contábil",
       "fonte": "CFC",
-      "url": "https://cfc.org.br/noticias/cfc-amplia-pontuacao-da-conferencia-nacional-de-pericia-contabil/",
-      "novo": true
+      "url": "https://cfc.org.br/noticias/cfc-amplia-pontuacao-da-conferencia-nacional-de-pericia-contabil/"
     },
     {
       "data": "24/11/2026",
