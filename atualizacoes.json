@@ -1,7 +1,7 @@
 {
-  "gerado_em": "2026-11-23T23:51:43.657890-03:00",
+  "gerado_em": "2026-11-24T02:00:21.876768-03:00",
   "versao": "1.6",
-  "revisao_radar": "23 nov/2026",
+  "revisao_radar": "24 nov/2026",
   "automacao": {
     "fontes_ok": 1,
     "fontes_total": 2
@@ -9,50 +9,51 @@
   "briefing": {
     "titulo": "Briefing do dia — Foco em Risco e Ação",
     "bullets": [
-      "RISCO: A falta de preparação dos sistemas fiscais/ERPs para o destaque de CBS/IBS e a ausência de simulação no ambiente piloto (DeRE) expõem a empresa no Lucro Real ao acúmulo de inconsistências fiscais, retendo caixa e provocando a glosa ou atraso no ressarcimento de créditos tributários.",
-      "AÇÃO: Mobilizar as equipes de TI, Fiscal e Contábil para acessar imediatamente o ambiente piloto da CBS liberado pela Receita Federal, testando a emissão com a inclusão da DeRE e parametrizando os sistemas de acordo com as novas regras da MP do Imposto Seletivo e IPI.",
-      "PRAZO: As adaptações nos sistemas e a capacitação das equipes devem ocorrer de forma imediata diante dos testes de 2026 e da implementação das regras de transição vigentes para 2027."
+      "RISCO: A falta de adequação aos sistemas do novo IVA (CBS/IBS) e a inércia em relação à DeRE expõem a empresa ao risco de paralisação no faturamento, perda no aproveitamento de créditos tributários e forte retenção de fluxo de caixa.",
+      "AÇÃO: Mobilizar a TI e a equipe tributária para cadastrar e testar imediatamente a empresa no ambiente piloto da CBS/DeRE liberado pela Receita Federal, adequando os ERPs ao correto destaque fiscal.",
+      "PRAZO: Ambiente piloto liberado em 23/11/2026, exigindo validações imediatas antes do início da vigência em 2027."
     ],
-    "acao_prioritaria": "Homologar os sistemas fiscais no ambiente piloto da CBS/DeRE da Receita Federal e mapear os impactos diretos da MP do Imposto Seletivo na precificação e no caixa da empresa."
+    "acao_prioritaria": "Ingressar no ambiente piloto da Receita Federal para realizar testes operacionais do destaque da CBS/IBS e da DeRE, mitigando falhas na emissão de notas e perda de créditos."
   },
   "alertas": [
     {
       "tipo": "critico",
-      "titulo": "Risco de Inoperância e Perda de Crédito com Início dos Testes da CBS/DeRE",
-      "texto": "Com a liberação do ambiente piloto da CBS contendo a DeRE, empresas no Lucro Real que não testarem a validação dos documentos fiscais correm o risco de sofrer travamentos na emissão de NF-e, atrasando operações e impedindo o aproveitamento integral de créditos fiscais no período de transição.",
-      "prazo": "Já em vigor"
+      "titulo": "Liberação do Ambiente Piloto da CBS com DeRE",
+      "texto": "A Receita Federal liberou o ambiente piloto para homologação das empresas. A não adequação preventiva dos sistemas internos pode ocasionar rejeição de notas fiscais, retenção indesejada de caixa e impossibilidade de apropriação de créditos de CBS e IBS na vigência das novas regras.",
+      "prazo": "Já em vigor (Testes liberados em 23/11/2026)"
     },
     {
       "tipo": "critico",
-      "titulo": "Impacto das Regras de Transição do IPI e Imposto Seletivo no Fluxo de Caixa",
-      "texto": "A publicação da Medida Provisória sobre o Imposto Seletivo e a transição do IPI exige a revisão imediata do custo de insumos e produtos. A inércia na parametrização resultará em recolhimento indevido e retenção desnecessária de capital de giro.",
-      "prazo": "Imediato"
+      "titulo": "Regulamentação do Imposto Seletivo e Transição do IPI",
+      "texto": "A publicação da Medida Provisória exige revisão imediata da matriz fiscal de produtos sujeitos ao Imposto Seletivo e a transição do IPI, sob pena de recolhimento indevido ou penalidades por descumprimento de obrigações acessórias.",
+      "prazo": "Imediato / Em vigor"
     }
   ],
   "prazos": [
     {
       "quando": "23/11/2026",
       "urgencia": "urgente",
-      "titulo": "Homologação do Ambiente Piloto da CBS e DeRE",
-      "detalhe": "Iniciar os testes operacionais no ambiente da Receita Federal para ajustar a emissão de documentos fiscais e garantir o compliance das obrigações acessórias relativas à CBS."
-    },
-    {
-      "quando": "04/11/2026",
-      "urgencia": "urgente",
-      "titulo": "Adequação à MP do Imposto Seletivo e IPI",
-      "detalhe": "Revisar as alíquotas aplicáveis e os procedimentos de apuração do Imposto Seletivo e IPI para evitar autuações e recolhimentos a menor."
+      "titulo": "Homologação dos ERPs no Ambiente Piloto da CBS",
+      "detalhe": "Realizar testes no ambiente piloto da RFB para validar os leiautes de emissão de notas e garantir a conformidade da apuração da CBS e integração com a DeRE."
     }
   ],
   "novas_normas": [
     {
       "tipo": "MP",
-      "titulo": "Medida Provisória do Imposto Seletivo e Regras de Transição do IPI",
-      "descricao": "Regulamenta a incidência e apuração do Imposto Seletivo, bem como estabelece as diretrizes de transição para o aproveitamento e redução do IPI, alterando diretamente a apuração do Lucro Real e os custos operacionais.",
+      "titulo": "Medida Provisória regulamentando o Imposto Seletivo e regras de transição do IPI",
+      "descricao": "Estabelece as diretrizes e regras de transição do IPI para a implantação do Imposto Seletivo (IS), impactando diretamente a precificação, margem e apuração de empresas tributadas pelo Lucro Real.",
       "link": "https://www.in.gov.br/consulta/-/buscar/dou?q=medida+provisoria+imposto+seletivo",
       "instituicao": "Governo Federal"
     }
   ],
   "noticias": [
+    {
+      "data": "23/11/2026",
+      "titulo": "Comitê Gestor do IBS indica membros que farão harmonização tributária com a CBS",
+      "fonte": "Portal da Reforma Tributária",
+      "url": "https://www.reformatributaria.com/iva/comite-gestor-do-ibs-indica-membros-que-farao-harmonizacao-tributaria-com-a-cbs/",
+      "novo": true
+    },
     {
       "data": "23/11/2026",
       "titulo": "Receita libera para todas as empresas ambiente piloto da CBS com inclusão da DeRE; acesse",
@@ -88,12 +89,6 @@
       "titulo": "Receita Federal e Comitê Gestor do IBS e CFC vão orientar 25 mil contadores sobre destaque de CBS/IBS",
       "fonte": "Portal da Reforma Tributária",
       "url": "https://www.reformatributaria.com/documentos-fiscais/receita-federal-e-comite-gestor-do-ibs-e-cfc-vao-orientar-25-mil-contadores-sobre-destaque-de-cbs-ibs/"
-    },
-    {
-      "data": "19/11/2026",
-      "titulo": "Serpro recebe prêmio na China por plataforma da reforma tributária",
-      "fonte": "Portal da Reforma Tributária",
-      "url": "https://www.reformatributaria.com/tecnologia/serpro-recebe-premio-na-china-por-plataforma-da-reforma-tributaria/"
     },
     {
       "data": "19/11/2026",
