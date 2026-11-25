@@ -1,5 +1,5 @@
 {
-  "gerado_em": "2026-11-24T22:00:42.506833-03:00",
+  "gerado_em": "2026-11-24T23:53:12.605796-03:00",
   "versao": "1.6",
   "revisao_radar": "24 nov/2026",
   "automacao": {
@@ -7,51 +7,29 @@
     "fontes_total": 2
   },
   "briefing": {
-    "titulo": "Briefing do dia — Foco em Risco e Ação",
+    "titulo": "Briefing do dia — Fallback",
     "bullets": [
-      "RISCO: O descumprimento ou atraso na homologação do ambiente piloto da CBS/DeRE e nas regras de destaque de CBS/IBS gera risco de retenção do fluxo de caixa e perda do direito a créditos fiscais na transição do Lucro Real.",
-      "AÇÃO: Acessar imediatamente o ambiente de testes da Receita Federal, homologar os sistemas emissores (ERP) para a CBS/DeRE e inscrever a equipe de compliance no canal de orientação RFB/CFC.",
-      "PRAZO: O ambiente piloto da CBS já está disponível desde 23/11/2026; a adequação operacional dos documentos fiscais deve ser concluída antes do início dos testes massivos do IVA Dual."
+      "Atenção: Não foi possível gerar o resumo por IA hoje."
     ],
-    "acao_prioritaria": "Iniciar testes imediatos no ambiente piloto da CBS/DeRE liberado pela Receita Federal para homologar o destaque correto dos novos tributos nos documentos fiscais e mitigar riscos de caixa."
+    "acao_prioritaria": "Validar notas fiscais."
   },
   "alertas": [
     {
       "tipo": "critico",
-      "titulo": "Liberação do Ambiente Piloto da CBS e DeRE",
-      "texto": "A Receita Federal abriu para todas as empresas o ambiente piloto da CBS com inclusão da DeRE. Empresas que não testarem previamente o destaque tributário e as regras da DeRE correm risco de rejeição de notas fiscais, travamento de caixa e impedimento no aproveitamento de créditos fiscais no Lucro Real.",
+      "titulo": "Validação de Notas",
+      "texto": "NF-e e CT-e exigem destaque CBS/IBS.",
       "prazo": "Já em vigor"
-    },
-    {
-      "tipo": "atencao",
-      "titulo": "Exigência de Destaque Correto de CBS/IBS nos XMLs",
-      "texto": "A Receita Federal, CGIBS e CFC iniciaram orientação sobre o preenchimento de documentos fiscais. Falhas na parametrização dos XMLs de emissão própria impactarão diretamente o creditamento dos adquirentes e a liquidez das operações.",
-      "prazo": "Imediato"
     }
   ],
   "prazos": [
     {
-      "quando": "23/11/2026",
+      "quando": "Contínuo",
       "urgencia": "urgente",
-      "titulo": "Homologação do ERP no Ambiente Piloto CBS/DeRE",
-      "detalhe": "Realizar simulações de emissão de documentos fiscais no sistema da Receita Federal para validar os campos da CBS e DeRE evitando glosas de crédito no Lucro Real."
-    },
-    {
-      "quando": "19/11/2026",
-      "urgencia": "alta",
-      "titulo": "Capacitação da Equipe Fiscal (RFB/CGIBS/CFC)",
-      "detalhe": "Utilizar o novo canal oficial de dúvidas do CFC/RFB para treinar a equipe fiscal sobre as regras operacionais de destaque de CBS/IBS."
+      "titulo": "Validação de Notas",
+      "detalhe": "CST, cClassTrib e CBS/IBS."
     }
   ],
-  "novas_normas": [
-    {
-      "tipo": "Ato",
-      "titulo": "Liberação do Ambiente Piloto da CBS e inclusão da DeRE",
-      "descricao": "Disponibilização do ambiente experimental da Receita Federal para todas as empresas testarem a emissão, apuração e destaque da CBS e o módulo da DeRE antes da entrada em vigor da Reforma Tributária.",
-      "link": "https://www.reformatributaria.com/iva/receita-libera-para-todas-as-empresas-ambiente-piloto-da-cbs-com-inclusao-da-dere-acesse/",
-      "instituicao": "Receita Federal do Brasil"
-    }
-  ],
+  "novas_normas": [],
   "noticias": [
     {
       "data": "24/11/2026",
@@ -70,6 +48,13 @@
       "titulo": "Sistema CFC/CRCs atua no Congresso para evitar aumento da carga tributária e preservar direitos dos contribuintes",
       "fonte": "CFC",
       "url": "https://cfc.org.br/noticias/sistema-cfc-crcs-atua-no-congresso-para-evitar-aumento-da-carga-tributaria-e-preservar-direitos-dos-contribuintes/"
+    },
+    {
+      "data": "23/11/2026",
+      "titulo": "Comitê Gestor do IBS indica membros que farão harmonização tributária com a CBS",
+      "fonte": "Portal da Reforma Tributária",
+      "url": "https://www.reformatributaria.com/iva/comite-gestor-do-ibs-indica-membros-que-farao-harmonizacao-tributaria-com-a-cbs/",
+      "novo": true
     },
     {
       "data": "23/11/2026",
@@ -106,12 +91,6 @@
       "titulo": "Receita Federal e Comitê Gestor do IBS e CFC vão orientar 25 mil contadores sobre destaque de CBS/IBS",
       "fonte": "Portal da Reforma Tributária",
       "url": "https://www.reformatributaria.com/documentos-fiscais/receita-federal-e-comite-gestor-do-ibs-e-cfc-vao-orientar-25-mil-contadores-sobre-destaque-de-cbs-ibs/"
-    },
-    {
-      "data": "19/11/2026",
-      "titulo": "Serpro recebe prêmio na China por plataforma da reforma tributária",
-      "fonte": "Portal da Reforma Tributária",
-      "url": "https://www.reformatributaria.com/tecnologia/serpro-recebe-premio-na-china-por-plataforma-da-reforma-tributaria/"
     },
     {
       "data": "19/11/2026",
