@@ -1,5 +1,5 @@
 {
-  "gerado_em": "2026-11-25T05:59:43.774417-03:00",
+  "gerado_em": "2026-11-25T07:55:12.848056-03:00",
   "versao": "1.6",
   "revisao_radar": "25 nov/2026",
   "automacao": {
@@ -9,35 +9,35 @@
   "briefing": {
     "titulo": "Briefing do dia — Foco em Risco e Ação",
     "bullets": [
-      "RISCO: A inércia na adaptação dos sistemas fiscais (ERP) para o destaque de CBS/IBS e envio da DeRE pode paralisar o faturamento e gerar perda irrecuperável de créditos tributários no Lucro Real.",
-      "AÇÃO: Submeter a estrutura de TI e a equipe fiscal ao ambiente piloto da CBS liberado pela Receita Federal para homologar os leiautes de emissão de documentos fiscais e regras da DeRE.",
-      "PRAZO: O ambiente piloto já está liberado (novembro/2026), exigindo validação imediata para garantir a conformidade operacional antes da obrigatoriedade de 2027."
+      "RISCO: A ausência de homologação técnica no ambiente piloto da CBS/DeRE e o descumprimento dos novos padrões de destaque do IBS/CBS podem acarretar a glosa de créditos fiscais, travamento do fluxo de caixa e inconsistências na apuração do Lucro Real.",
+      "AÇÃO: Mobilizar as equipes de TI e Tax para acessar o ambiente piloto liberado pela Receita Federal, parametrizando o ERP para a correta emissão de documentos fiscais com destaque de CBS/IBS e regras da DeRE.",
+      "PRAZO: Mobilização e testes operacionais com efeito imediato (novembro/2026), visando a prontidão total antes da entrada em vigor da transição tributária de 2027."
     ],
-    "acao_prioritaria": "Iniciar imediatamente os testes de parametrização no ambiente piloto da CBS com inclusão da DeRE disponibilizado pela Receita Federal."
+    "acao_prioritaria": "Iniciar imediatamente os testes de integração do ERP no ambiente piloto da CBS e DeRE liberado pela Receita Federal para garantir a manutenção do direito aos créditos fiscais."
   },
   "alertas": [
     {
       "tipo": "critico",
-      "titulo": "Incompatibilidade Operacional no Destaque de CBS/IBS e DeRE",
-      "texto": "Empresas no Lucro Real que não adequarem seus sistemas para o destaque correto da CBS/IBS e o preenchimento da DeRE enfrentarão rejeição de notas fiscais, perda imediata do direito a créditos acumulados e severo impacto no fluxo de caixa pelo travamento de operações.",
+      "titulo": "Risco Operacional e de Caixa: Ambiente Piloto da CBS e Destaque de IBS/CBS",
+      "texto": "Empresas sujeitas ao Lucro Real que não validarem a emissão de documentos fiscais no novo ambiente piloto da CBS correm o risco de retenção indevida de tributos, impedimento no aproveitamento de créditos fiscais e falhas de compliance nas regras da DeRE. A falta de preparação do setor tributário até 2027 terá custo financeiro direto sobre o caixa da empresa.",
       "prazo": "Já em vigor"
     }
   ],
   "prazos": [
     {
-      "quando": "Imediato (Novembro/2026)",
+      "quando": "Imediato",
       "urgencia": "urgente",
-      "titulo": "Homologação dos Sistemas no Ambiente Piloto da CBS",
-      "detalhe": "Realizar o cadastro e os testes funcionais no ambiente piloto liberado pela RFB para validar a emissão de notas fiscais com destaque de CBS/IBS e prestação das informações da DeRE."
+      "titulo": "Homologação de ERP no Ambiente Piloto da CBS/DeRE",
+      "detalhe": "Realizar o cadastro e testes de emissão de NF-e/NFC-e com destaque de CBS/IBS no sistema disponibilizado pela Receita Federal para evitar penalidades e perda de créditos na fase de transição."
     }
   ],
   "novas_normas": [
     {
       "tipo": "Ato",
-      "titulo": "Liberação do Ambiente Piloto da CBS com Inclusão da DeRE",
-      "descricao": "Disponibilização pela Receita Federal do ambiente de testes da CBS e DeRE para todas as empresas, permitindo simular o destaque dos novos tributos e a aplicação dos regimes especiais no Lucro Real.",
+      "titulo": "Comunicado RFB - Liberação do Ambiente Piloto da CBS com inclusão da DeRE",
+      "descricao": "Disponibilização do ambiente de testes da Contribuição sobre Bens e Serviços (CBS) e da Declaração para todas as empresas, permitindo a simulação do destaque dos novos tributos e adequação dos sistemas ao Lucro Real.",
       "link": "https://www.reformatributaria.com/iva/receita-libera-para-todas-as-empresas-ambiente-piloto-da-cbs-com-inclusao-da-dere-acesse/",
-      "instituicao": "Receita Federal do Brasil (RFB)"
+      "instituicao": "Receita Federal do Brasil"
     }
   ],
   "noticias": [
