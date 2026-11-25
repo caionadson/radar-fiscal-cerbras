@@ -1,5 +1,5 @@
 {
-  "gerado_em": "2026-11-25T15:47:41.234909-03:00",
+  "gerado_em": "2026-11-25T17:51:46.189636-03:00",
   "versao": "1.6",
   "revisao_radar": "25 nov/2026",
   "automacao": {
@@ -53,8 +53,7 @@
       "data": "24/11/2026",
       "titulo": "Reforma Tributária: CFC debate desafios e impactos na gestão dos conselhos profissionais",
       "fonte": "CFC",
-      "url": "https://cfc.org.br/noticias/reforma-tributaria-cfc-debate-desafios-e-impactos-na-gestao-dos-conselhos-profissionais/",
-      "novo": true
+      "url": "https://cfc.org.br/noticias/reforma-tributaria-cfc-debate-desafios-e-impactos-na-gestao-dos-conselhos-profissionais/"
     },
     {
       "data": "24/11/2026",
@@ -120,8 +119,7 @@
       "data": "04/11/2026",
       "titulo": "Governo publica Medida Provisória regulamentando o Imposto Seletivo e regras de transição do IPI",
       "fonte": "Ministério da Fazenda",
-      "url": "https://www.in.gov.br/consulta/-/buscar/dou?q=medida+provisoria+imposto+seletivo",
-      "novo": true
+      "url": "https://www.in.gov.br/consulta/-/buscar/dou?q=medida+provisoria+imposto+seletivo"
     }
   ],
   "nts_criticas_lucro_real": [
