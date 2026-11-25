@@ -1,5 +1,5 @@
 {
-  "gerado_em": "2026-11-25T11:58:06.105462-03:00",
+  "gerado_em": "2026-11-25T14:00:27.179475-03:00",
   "versao": "1.6",
   "revisao_radar": "25 nov/2026",
   "automacao": {
@@ -7,65 +7,42 @@
     "fontes_total": 2
   },
   "briefing": {
-    "titulo": "Briefing do dia — Foco em Risco e Ação",
+    "titulo": "Briefing do dia — Fallback",
     "bullets": [
-      "RISCO: Despreparo tecnológico para a inclusão da DeRE e destaque de IBS/CBS nos documentos fiscais pode paralisar faturamentos e acarretar acúmulo indesejado de tributos no caixa ou glosa de créditos tributários no Lucro Real.",
-      "AÇÃO: Entrar no ambiente piloto da CBS disponibilizado pela Receita Federal para simular emissões, validar a parametrização do ERP e treinar a equipe fiscal quanto às novas obrigações acessórias.",
-      "PRAZO: Ambiente de testes já liberado pela RFB (Novembro/2026), com exigência operacional plena e impactos diretos no caixa previstos para o início de 2027."
+      "Atenção: Não foi possível gerar o resumo por IA hoje."
     ],
-    "acao_prioritaria": "Iniciar testes imediatos no ambiente piloto da CBS/DeRE junto à Receita Federal para auditar a capacidade dos sistemas internos de destacar corretamente o IBS/CBS."
+    "acao_prioritaria": "Validar notas fiscais."
   },
   "alertas": [
     {
       "tipo": "critico",
-      "titulo": "Risco de Glosa de Crédito: Ambiente Piloto CBS e DeRE Liberado",
-      "texto": "A liberação do ambiente piloto da CBS pela Receita Federal, com a inclusão da DeRE, expõe a necessidade de validação imediata dos sistemas da empresa. A falta de parametrização adequada impedirá o correto destaque de CBS/IBS nos documentos fiscais, impedindo os clientes de tomarem créditos e gerando impacto direto no fluxo de caixa e no compliance tributário.",
-      "prazo": "Já em vigor (Ambiente Piloto)"
-    },
-    {
-      "tipo": "critico",
-      "titulo": "Orientação Coletiva RFB/CGIBS sobre Destaque de CBS/IBS em Documentos Fiscais",
-      "texto": "Com a proximidade das regras de 2027, falhas na emissão de documentos fiscais sob o novo padrão IBS/CBS resultarão em autuações e descumprimento de obrigações acessórias. Empresas tributadas pelo Lucro Real que não adequarem seus ERPs até o final de 2026 pagarão tributos sem a devida compensação no regime não cumulativo.",
-      "prazo": "Janeiro de 2027"
+      "titulo": "Validação de Notas",
+      "texto": "NF-e e CT-e exigem destaque CBS/IBS.",
+      "prazo": "Já em vigor"
     }
   ],
   "prazos": [
     {
-      "quando": "Imediato (Novembro/2026)",
+      "quando": "Contínuo",
       "urgencia": "urgente",
-      "titulo": "Homologação do Ambiente Piloto da CBS com DeRE",
-      "detalhe": "Cadastrar e submeter notas no ambiente liberado pela RFB para testar a aderência dos sistemas de faturamento às novas regras do IVA federal."
-    },
-    {
-      "quando": "Janeiro de 2027",
-      "urgencia": "urgente",
-      "titulo": "Prontidão da Área Tributária para a Reforma Tributária 2027",
-      "detalhe": "Finalizar revisão de cadastros de produtos (NCM/NBS), regras de emissão e treinamento do time para evitar custos decorrentes da ineficiência fiscal na entrada do IBS e CBS."
+      "titulo": "Validação de Notas",
+      "detalhe": "CST, cClassTrib e CBS/IBS."
     }
   ],
-  "novas_normas": [
-    {
-      "tipo": "NT",
-      "titulo": "Liberação do Ambiente Piloto da CBS com inclusão da DeRE",
-      "descricao": "Publicação funcional da Receita Federal que disponibiliza o ambiente de homologação e testes da CBS com a adição da Declaração de Redução de Emissões/Efetividade (DeRE) para todas as empresas.",
-      "link": "https://www.reformatributaria.com/iva/receita-libera-para-todas-as-empresas-ambiente-piloto-da-cbs-com-inclusao-da-dere-acesse/",
-      "instituicao": "RFB"
-    },
-    {
-      "tipo": "Ato",
-      "titulo": "Diretrizes de Destaque de CBS/IBS em Documentos Fiscais",
-      "descricao": "Instrução conjunta e programa de capacitação promovidos pela Receita Federal, CGIBS e CFC orientando sobre o preenchimento dos novos campos do IBS e CBS nos documentos fiscais eletrônicos.",
-      "link": "https://www.reformatributaria.com/documentos-fiscais/receita-federal-e-comite-gestor-do-ibs-e-cfc-vao-orientar-25-mil-contadores-sobre-destaque-de-cbs-ibs/",
-      "instituicao": "RFB / CGIBS"
-    }
-  ],
+  "novas_normas": [],
   "noticias": [
+    {
+      "data": "25/11/2026",
+      "titulo": "CFC disponibiliza capacitação completa sobre Contabilidade Imobiliária e de Construtoras",
+      "fonte": "CFC",
+      "url": "https://cfc.org.br/noticias/cfc-disponibiliza-capacitacao-completa-sobre-contabilidade-imobiliaria-e-de-construtoras/",
+      "novo": true
+    },
     {
       "data": "25/11/2026",
       "titulo": "CFC assina recomendação para implementação do Guia de Custos para o Setor Público no Brasil",
       "fonte": "CFC",
-      "url": "https://cfc.org.br/destaque/cfc-assina-recomendacao-para-implementacao-do-guia-de-custos-para-o-setor-publico/",
-      "novo": true
+      "url": "https://cfc.org.br/destaque/cfc-assina-recomendacao-para-implementacao-do-guia-de-custos-para-o-setor-publico/"
     },
     {
       "data": "25/11/2026",
@@ -90,6 +67,13 @@
       "titulo": "Sistema CFC/CRCs atua no Congresso para evitar aumento da carga tributária e preservar direitos dos contribuintes",
       "fonte": "CFC",
       "url": "https://cfc.org.br/noticias/sistema-cfc-crcs-atua-no-congresso-para-evitar-aumento-da-carga-tributaria-e-preservar-direitos-dos-contribuintes/"
+    },
+    {
+      "data": "23/11/2026",
+      "titulo": "Comitê Gestor do IBS indica membros que farão harmonização tributária com a CBS",
+      "fonte": "Portal da Reforma Tributária",
+      "url": "https://www.reformatributaria.com/iva/comite-gestor-do-ibs-indica-membros-que-farao-harmonizacao-tributaria-com-a-cbs/",
+      "novo": true
     },
     {
       "data": "23/11/2026",
@@ -129,13 +113,6 @@
     },
     {
       "data": "19/11/2026",
-      "titulo": "Serpro recebe prêmio na China por plataforma da reforma tributária",
-      "fonte": "Portal da Reforma Tributária",
-      "url": "https://www.reformatributaria.com/tecnologia/serpro-recebe-premio-na-china-por-plataforma-da-reforma-tributaria/",
-      "novo": true
-    },
-    {
-      "data": "19/11/2026",
       "titulo": "Especialistas debatem perspectivas para 2027 em etapa da Reforma Tributária pelo Brasil no Rio Grande do Sul",
       "fonte": "CFC",
       "url": "https://cfc.org.br/noticias/especialistas-debatem-perspectivas-para-2027-em-etapa-da-reforma-tributaria-pelo-brasil-no-rio-grande-do-sul/"
@@ -145,12 +122,6 @@
       "titulo": "Receita Federal, CGIBS e CFC vão orientar mais de 25 mil profissionais da contabilidade sobre destaque de CBS/IBS em documentos fiscais",
       "fonte": "CFC",
       "url": "https://cfc.org.br/noticias/receita-federal-cgibs-e-cfc-vao-orientar-mais-de-25-mil-profissionais-da-contabilidade-sobre-destaque-de-cbs-ibs-em-documentos-fiscais/"
-    },
-    {
-      "data": "19/11/2026",
-      "titulo": "Classe contábil ganha novo canal para esclarecer dúvidas sobre a Reforma Tributária",
-      "fonte": "CFC",
-      "url": "https://cfc.org.br/noticias/novo-canal-de-atendimento-orienta-profissionais-da-contabilidade-sobre-a-reforma-tributaria/"
     }
   ],
   "nts_criticas_lucro_real": [
