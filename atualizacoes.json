@@ -1,5 +1,5 @@
 {
-  "gerado_em": "2026-11-25T17:51:46.189636-03:00",
+  "gerado_em": "2026-11-25T19:51:33.999177-03:00",
   "versao": "1.6",
   "revisao_radar": "25 nov/2026",
   "automacao": {
@@ -31,6 +31,13 @@
   ],
   "novas_normas": [],
   "noticias": [
+    {
+      "data": "25/11/2026",
+      "titulo": "Conselhos federais e ministros do TCU discutem regras de fiscalização em mesa-redonda na FGV",
+      "fonte": "CFC",
+      "url": "https://cfc.org.br/noticias/conselhos-federais-e-ministros-do-tcu-discutem-regras-de-fiscalizacao-em-mesa-redonda-na-fgv/",
+      "novo": true
+    },
     {
       "data": "25/11/2026",
       "titulo": "CFC disponibiliza capacitação completa sobre Contabilidade Imobiliária e de Construtoras",
@@ -75,12 +82,6 @@
     },
     {
       "data": "23/11/2026",
-      "titulo": "Comitê Gestor do IBS indica membros que farão harmonização tributária com a CBS",
-      "fonte": "Portal da Reforma Tributária",
-      "url": "https://www.reformatributaria.com/iva/comite-gestor-do-ibs-indica-membros-que-farao-harmonizacao-tributaria-com-a-cbs/"
-    },
-    {
-      "data": "23/11/2026",
       "titulo": "Receita libera para todas as empresas ambiente piloto da CBS com inclusão da DeRE; acesse",
       "fonte": "Portal da Reforma Tributária",
       "url": "https://www.reformatributaria.com/iva/receita-libera-para-todas-as-empresas-ambiente-piloto-da-cbs-com-inclusao-da-dere-acesse/"
@@ -116,10 +117,11 @@
       "url": "https://www.reformatributaria.com/documentos-fiscais/receita-federal-e-comite-gestor-do-ibs-e-cfc-vao-orientar-25-mil-contadores-sobre-destaque-de-cbs-ibs/"
     },
     {
-      "data": "04/11/2026",
-      "titulo": "Governo publica Medida Provisória regulamentando o Imposto Seletivo e regras de transição do IPI",
-      "fonte": "Ministério da Fazenda",
-      "url": "https://www.in.gov.br/consulta/-/buscar/dou?q=medida+provisoria+imposto+seletivo"
+      "data": "19/11/2026",
+      "titulo": "Serpro recebe prêmio na China por plataforma da reforma tributária",
+      "fonte": "Portal da Reforma Tributária",
+      "url": "https://www.reformatributaria.com/tecnologia/serpro-recebe-premio-na-china-por-plataforma-da-reforma-tributaria/",
+      "novo": true
     }
   ],
   "nts_criticas_lucro_real": [
