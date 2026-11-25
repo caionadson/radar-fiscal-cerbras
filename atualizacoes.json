@@ -1,5 +1,5 @@
 {
-  "gerado_em": "2026-11-24T19:53:27.109875-03:00",
+  "gerado_em": "2026-11-24T22:00:42.506833-03:00",
   "versao": "1.6",
   "revisao_radar": "24 nov/2026",
   "automacao": {
@@ -9,47 +9,47 @@
   "briefing": {
     "titulo": "Briefing do dia — Foco em Risco e Ação",
     "bullets": [
-      "RISCO: A falta de adequação dos sistemas fiscais e a não participação nos ambientes de teste da CBS/IBS expõem a empresa ao risco de travamento de fluxo de caixa, incorreção no destaque de tributos e perda ou glosa imprevista de créditos fiscais na transição para 2027.",
-      "AÇÃO: Submeter os sistemas da empresa ao ambiente piloto da CBS liberado pela Receita Federal para validar a emissão de documentos fiscais com a inclusão da DeRE e capacitar a equipe contábil nos treinamentos oficiais da RFB e CFC.",
-      "PRAZO: As adequações operacionais e testes do sistema devem ocorrer de forma imediata ao longo do final de 2026 para evitar o alto custo de conformidade emergencial antes do início da vigência em 2027."
+      "RISCO: O descumprimento ou atraso na homologação do ambiente piloto da CBS/DeRE e nas regras de destaque de CBS/IBS gera risco de retenção do fluxo de caixa e perda do direito a créditos fiscais na transição do Lucro Real.",
+      "AÇÃO: Acessar imediatamente o ambiente de testes da Receita Federal, homologar os sistemas emissores (ERP) para a CBS/DeRE e inscrever a equipe de compliance no canal de orientação RFB/CFC.",
+      "PRAZO: O ambiente piloto da CBS já está disponível desde 23/11/2026; a adequação operacional dos documentos fiscais deve ser concluída antes do início dos testes massivos do IVA Dual."
     ],
-    "acao_prioritaria": "Acessar e realizar testes no ambiente piloto da CBS com DeRE disponibilizado pela Receita Federal, ajustando os parâmetros do ERP para o correto destaque do IBS/CBS nos documentos fiscais."
+    "acao_prioritaria": "Iniciar testes imediatos no ambiente piloto da CBS/DeRE liberado pela Receita Federal para homologar o destaque correto dos novos tributos nos documentos fiscais e mitigar riscos de caixa."
   },
   "alertas": [
     {
       "tipo": "critico",
-      "titulo": "Liberação do Ambiente Piloto da CBS e DeRE para Todas as Empresas",
-      "texto": "A Receita Federal abriu o ambiente piloto da CBS incluindo a DeRE. A ausência de homologação prévia nos sistemas ERP da empresa aumenta significativamente o risco de falhas na geração de documentos fiscais, bloqueio de emissões e perda da não cumulatividade de créditos tributários no Lucro Real.",
+      "titulo": "Liberação do Ambiente Piloto da CBS e DeRE",
+      "texto": "A Receita Federal abriu para todas as empresas o ambiente piloto da CBS com inclusão da DeRE. Empresas que não testarem previamente o destaque tributário e as regras da DeRE correm risco de rejeição de notas fiscais, travamento de caixa e impedimento no aproveitamento de créditos fiscais no Lucro Real.",
       "prazo": "Já em vigor"
     },
     {
-      "tipo": "critico",
-      "titulo": "Risco Financeiro por Despreparo da Área Tributária para 2027",
-      "texto": "Empresas que atrasarem a reformulação da área tributária enfrentarão custos elevados com correções de emergência e potenciais travamentos no caixa devido a atrasos ou erros no aproveitamento dos novos créditos de IBS e CBS.",
+      "tipo": "atencao",
+      "titulo": "Exigência de Destaque Correto de CBS/IBS nos XMLs",
+      "texto": "A Receita Federal, CGIBS e CFC iniciaram orientação sobre o preenchimento de documentos fiscais. Falhas na parametrização dos XMLs de emissão própria impactarão diretamente o creditamento dos adquirentes e a liquidez das operações.",
       "prazo": "Imediato"
     }
   ],
   "prazos": [
     {
-      "quando": "Imediato",
+      "quando": "23/11/2026",
       "urgencia": "urgente",
-      "titulo": "Homologação do Ambiente Piloto CBS/DeRE",
-      "detalhe": "Iniciar os testes de integração de sistemas com a plataforma piloto da RFB para validar a transmissão da DeRE e adequar as regras de apuração."
+      "titulo": "Homologação do ERP no Ambiente Piloto CBS/DeRE",
+      "detalhe": "Realizar simulações de emissão de documentos fiscais no sistema da Receita Federal para validar os campos da CBS e DeRE evitando glosas de crédito no Lucro Real."
     },
     {
-      "quando": "Novembro/2026",
-      "urgencia": "urgente",
-      "titulo": "Treinamento em Destaque de CBS/IBS",
-      "detalhe": "Participar das orientações promovidas pela RFB, CGIBS e CFC sobre preenchimento e destaque da CBS/IBS nos documentos fiscais eletrônicos."
+      "quando": "19/11/2026",
+      "urgencia": "alta",
+      "titulo": "Capacitação da Equipe Fiscal (RFB/CGIBS/CFC)",
+      "detalhe": "Utilizar o novo canal oficial de dúvidas do CFC/RFB para treinar a equipe fiscal sobre as regras operacionais de destaque de CBS/IBS."
     }
   ],
   "novas_normas": [
     {
       "tipo": "Ato",
-      "titulo": "Liberação do Ambiente Piloto da CBS com Inclusão da DeRE",
-      "descricao": "A Receita Federal disponibilizou para a totalidade dos contribuintes o ambiente de testes da CBS e integração da DeRE, permitindo simular emissões e prevenir erros de enquadramento e parametrização nos sistemas legados.",
+      "titulo": "Liberação do Ambiente Piloto da CBS e inclusão da DeRE",
+      "descricao": "Disponibilização do ambiente experimental da Receita Federal para todas as empresas testarem a emissão, apuração e destaque da CBS e o módulo da DeRE antes da entrada em vigor da Reforma Tributária.",
       "link": "https://www.reformatributaria.com/iva/receita-libera-para-todas-as-empresas-ambiente-piloto-da-cbs-com-inclusao-da-dere-acesse/",
-      "instituicao": "Receita Federal"
+      "instituicao": "Receita Federal do Brasil"
     }
   ],
   "noticias": [
@@ -111,8 +111,7 @@
       "data": "19/11/2026",
       "titulo": "Serpro recebe prêmio na China por plataforma da reforma tributária",
       "fonte": "Portal da Reforma Tributária",
-      "url": "https://www.reformatributaria.com/tecnologia/serpro-recebe-premio-na-china-por-plataforma-da-reforma-tributaria/",
-      "novo": true
+      "url": "https://www.reformatributaria.com/tecnologia/serpro-recebe-premio-na-china-por-plataforma-da-reforma-tributaria/"
     },
     {
       "data": "19/11/2026",
