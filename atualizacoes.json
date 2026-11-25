@@ -1,5 +1,5 @@
 {
-  "gerado_em": "2026-11-25T07:55:12.848056-03:00",
+  "gerado_em": "2026-11-25T10:11:32.132323-03:00",
   "versao": "1.6",
   "revisao_radar": "25 nov/2026",
   "automacao": {
@@ -9,17 +9,17 @@
   "briefing": {
     "titulo": "Briefing do dia — Foco em Risco e Ação",
     "bullets": [
-      "RISCO: A ausência de homologação técnica no ambiente piloto da CBS/DeRE e o descumprimento dos novos padrões de destaque do IBS/CBS podem acarretar a glosa de créditos fiscais, travamento do fluxo de caixa e inconsistências na apuração do Lucro Real.",
-      "AÇÃO: Mobilizar as equipes de TI e Tax para acessar o ambiente piloto liberado pela Receita Federal, parametrizando o ERP para a correta emissão de documentos fiscais com destaque de CBS/IBS e regras da DeRE.",
-      "PRAZO: Mobilização e testes operacionais com efeito imediato (novembro/2026), visando a prontidão total antes da entrada em vigor da transição tributária de 2027."
+      "RISCO: A incompatibilidade dos sistemas de ERP no ambiente piloto da CBS/DeRE e erros no destaque fiscal do IBS/CBS podem resultar no estorno e perda de créditos tributários, além de gerar travamento do fluxo de caixa e multas por descumprimento de obrigações acessórias.",
+      "AÇÃO: Acessar imediatamente o ambiente piloto liberado pela Receita Federal, homologar as rotinas de geração da DeRE nos ERPs e treinar as equipes fiscais quanto aos novos parâmetros do Imposto Seletivo e destaque de CBS/IBS nas notas fiscais.",
+      "PRAZO: Impactos imediatos de adequação ao ambiente piloto e vigência direta da Medida Provisória do Imposto Seletivo para o planejamento fiscal com transição gradual até 2027."
     ],
-    "acao_prioritaria": "Iniciar imediatamente os testes de integração do ERP no ambiente piloto da CBS e DeRE liberado pela Receita Federal para garantir a manutenção do direito aos créditos fiscais."
+    "acao_prioritaria": "Homologar urgentemente a integração dos ERPs ao ambiente piloto da CBS e da DeRE liberado pela Receita Federal para evitar perdas de créditos e inconformidade fiscal."
   },
   "alertas": [
     {
       "tipo": "critico",
-      "titulo": "Risco Operacional e de Caixa: Ambiente Piloto da CBS e Destaque de IBS/CBS",
-      "texto": "Empresas sujeitas ao Lucro Real que não validarem a emissão de documentos fiscais no novo ambiente piloto da CBS correm o risco de retenção indevida de tributos, impedimento no aproveitamento de créditos fiscais e falhas de compliance nas regras da DeRE. A falta de preparação do setor tributário até 2027 terá custo financeiro direto sobre o caixa da empresa.",
+      "titulo": "Liberação do Ambiente Piloto da CBS/DeRE e Risco de Perda de Créditos Fiscais",
+      "texto": "Com a liberação do ambiente piloto da CBS e da inclusão da DeRE pela Receita Federal, empresas enquadradas no Lucro Real que não testarem a integração de seus sistemas correm alto risco de inoperância fiscal, erro no destaque dos novos tributos (IBS/CBS) em documentos fiscais e consequente glosa ou atraso no ressarcimento de créditos tributários.",
       "prazo": "Já em vigor"
     }
   ],
@@ -27,20 +27,27 @@
     {
       "quando": "Imediato",
       "urgencia": "urgente",
-      "titulo": "Homologação de ERP no Ambiente Piloto da CBS/DeRE",
-      "detalhe": "Realizar o cadastro e testes de emissão de NF-e/NFC-e com destaque de CBS/IBS no sistema disponibilizado pela Receita Federal para evitar penalidades e perda de créditos na fase de transição."
+      "titulo": "Adaptação ao Ambiente Piloto da CBS e Validação da DeRE",
+      "detalhe": "As empresas devem ingressar no ambiente piloto da Receita Federal para testar o envio de obrigações, parametrização do Imposto Seletivo e validação do destaque de CBS/IBS nos XMLs para evitar penalidades e perda de fluxo de caixa."
     }
   ],
   "novas_normas": [
     {
-      "tipo": "Ato",
-      "titulo": "Comunicado RFB - Liberação do Ambiente Piloto da CBS com inclusão da DeRE",
-      "descricao": "Disponibilização do ambiente de testes da Contribuição sobre Bens e Serviços (CBS) e da Declaração para todas as empresas, permitindo a simulação do destaque dos novos tributos e adequação dos sistemas ao Lucro Real.",
-      "link": "https://www.reformatributaria.com/iva/receita-libera-para-todas-as-empresas-ambiente-piloto-da-cbs-com-inclusao-da-dere-acesse/",
-      "instituicao": "Receita Federal do Brasil"
+      "tipo": "MP",
+      "titulo": "Medida Provisória de Regulamentação do Imposto Seletivo e Regras de Transição do IPI",
+      "descricao": "Regulamenta a incidência e cobrança do Imposto Seletivo (IS) e estabelece as regras de transição do IPI, impactando diretamente o custo produtivo, precificação e o aproveitamento de créditos fiscais de indústrias e grandes empresas optantes pelo Lucro Real.",
+      "link": "https://www.in.gov.br/consulta/-/buscar/dou?q=medida+provisoria+imposto+seletivo",
+      "instituicao": "Presidência da República / Receita Federal"
     }
   ],
   "noticias": [
+    {
+      "data": "25/11/2026",
+      "titulo": "Ao Correio Braziliense, presidente do CFC destaca protagonismo da contabilidade na transformação econômica do País",
+      "fonte": "CFC",
+      "url": "https://cfc.org.br/noticias/ao-correio-braziliense-presidente-do-cfc-destaca-protagonismo-da-contabilidade-na-transformacao-economica-do-pais/",
+      "novo": true
+    },
     {
       "data": "24/11/2026",
       "titulo": "TCU convida sociedade a definir prioridades de fiscalização para 2027",
@@ -58,6 +65,13 @@
       "titulo": "Sistema CFC/CRCs atua no Congresso para evitar aumento da carga tributária e preservar direitos dos contribuintes",
       "fonte": "CFC",
       "url": "https://cfc.org.br/noticias/sistema-cfc-crcs-atua-no-congresso-para-evitar-aumento-da-carga-tributaria-e-preservar-direitos-dos-contribuintes/"
+    },
+    {
+      "data": "23/11/2026",
+      "titulo": "Comitê Gestor do IBS indica membros que farão harmonização tributária com a CBS",
+      "fonte": "Portal da Reforma Tributária",
+      "url": "https://www.reformatributaria.com/iva/comite-gestor-do-ibs-indica-membros-que-farao-harmonizacao-tributaria-com-a-cbs/",
+      "novo": true
     },
     {
       "data": "23/11/2026",
@@ -97,12 +111,6 @@
     },
     {
       "data": "19/11/2026",
-      "titulo": "Serpro recebe prêmio na China por plataforma da reforma tributária",
-      "fonte": "Portal da Reforma Tributária",
-      "url": "https://www.reformatributaria.com/tecnologia/serpro-recebe-premio-na-china-por-plataforma-da-reforma-tributaria/"
-    },
-    {
-      "data": "19/11/2026",
       "titulo": "Especialistas debatem perspectivas para 2027 em etapa da Reforma Tributária pelo Brasil no Rio Grande do Sul",
       "fonte": "CFC",
       "url": "https://cfc.org.br/noticias/especialistas-debatem-perspectivas-para-2027-em-etapa-da-reforma-tributaria-pelo-brasil-no-rio-grande-do-sul/"
@@ -120,16 +128,11 @@
       "url": "https://cfc.org.br/noticias/novo-canal-de-atendimento-orienta-profissionais-da-contabilidade-sobre-a-reforma-tributaria/"
     },
     {
-      "data": "18/11/2026",
-      "titulo": "No Senado, CFC defende transparência no cálculo da alíquota da CBS",
-      "fonte": "CFC",
-      "url": "https://cfc.org.br/noticias/no-senado-cfc-defende-transparencia-no-calculo-da-aliquota-da-cbs/"
-    },
-    {
-      "data": "18/11/2026",
-      "titulo": "CFC, Fenacon, Receita Federal e Sebrae anunciam apoio direto a contadores e lançam canal para esclarecer dúvidas",
-      "fonte": "CFC",
-      "url": "https://cfc.org.br/noticias/cfc-fenacon-receita-federal-e-sebrae-anunciam-apoio-direto-a-contadores-e-lancam-canal-para-esclarecer-duvidas/"
+      "data": "04/11/2026",
+      "titulo": "Governo publica Medida Provisória regulamentando o Imposto Seletivo e regras de transição do IPI",
+      "fonte": "Ministério da Fazenda",
+      "url": "https://www.in.gov.br/consulta/-/buscar/dou?q=medida+provisoria+imposto+seletivo",
+      "novo": true
     }
   ],
   "nts_criticas_lucro_real": [
