@@ -1,50 +1,55 @@
 {
-  "gerado_em": "2026-11-25T02:02:19.551916-03:00",
+  "gerado_em": "2026-11-25T04:09:38.047154-03:00",
   "versao": "1.6",
   "revisao_radar": "25 nov/2026",
   "automacao": {
-    "fontes_ok": 1,
+    "fontes_ok": 2,
     "fontes_total": 2
   },
   "briefing": {
     "titulo": "Briefing do dia — Foco em Risco e Ação",
     "bullets": [
-      "RISCO: A falta de adequação aos testes do ambiente piloto da CBS e da DeRE pode causar retenções indevidas no fluxo de caixa e acarreta risco severo de glosa de créditos no Lucro Real.",
-      "AÇÃO: Mobilizar as equipes de TI e Fiscal para acessar o ambiente piloto disponibilizado pela Receita Federal e homologar a parametrização do destaque de CBS/IBS e regras da DeRE.",
-      "PRAZO: Ambiente piloto liberado pela Receita Federal em 23/11/2026, com foco de preparação total para a virada do sistema tributário em 2027."
+      "RISCO: O despreparo dos sistemas fiscais e o atraso na homologação da CBS/DeRE expõem a empresa a glosa de créditos, inconsistências no destaque em NF-e e severo impacto no fluxo de caixa.",
+      "AÇÃO: Acessar o ambiente piloto da CBS liberado pela Receita Federal para testar a integração da DeRE e capacitar a equipe tributária quanto às regras de destaque de IBS/CBS.",
+      "PRAZO: O ambiente piloto da CBS já está disponível para testes imediatos; a adequação operacional é crítica para a transição definitiva em 2027."
     ],
-    "acao_prioritaria": "Iniciar imediatamente os testes operacionais no ambiente piloto da CBS com DeRE e capacitar a equipe fiscal nas orientações da RFB/CGIBS sobre o destaque de impostos."
+    "acao_prioritaria": "Iniciar imediatamente os testes de emissão fiscal no ambiente piloto da CBS com a DeRE e alinhar os ERPs da empresa às diretrizes da Receita Federal e Comitê Gestor do IBS."
   },
   "alertas": [
     {
       "tipo": "critico",
-      "titulo": "Liberado Ambiente Piloto da CBS com DeRE e Risco de Trava no Fluxo de Caixa",
-      "texto": "A Receita Federal liberou para todas as empresas o ambiente piloto da CBS com a inclusão da DeRE (Declaração de Regimes Especiais). A ausência de testes e parametrização prévia pode travar as rotinas fiscais e comprometer o aproveitamento de créditos e o caixa das empresas do Lucro Real.",
+      "titulo": "Liberação do Ambiente Piloto da CBS e DeRE — Risco de Incompatibilidade de ERP",
+      "texto": "A Receita Federal liberou o ambiente piloto da CBS com a inclusão da DeRE. Empresas que não testarem previamente as regras de emissão e destaque correm o risco de retenções indevidas, inconsistências fiscais e travamento do fluxo de caixa na entrada em vigor das novas obrigações.",
       "prazo": "Já em vigor"
+    },
+    {
+      "tipo": "critico",
+      "titulo": "Risco de Elevação da Carga Tributária e Retenção de Caixa no Congresso",
+      "texto": "Mobilização da classe contábil no Congresso alerta para propostas governamentais que podem aumentar a carga fiscal no Lucro Real e reter liquidez das empresas. Exige acompanhamento preventivo da gestão financeira.",
+      "prazo": "Em trâmite legislativo"
     }
   ],
   "prazos": [
     {
-      "quando": "23/11/2026",
+      "quando": "Imediato",
       "urgencia": "urgente",
-      "titulo": "Acesso e Testes no Ambiente Piloto da CBS/DeRE",
-      "detalhe": "Ingressar na plataforma liberada pela Receita Federal para simular emissões, validar a inclusão da DeRE e garantir que as notas fiscais estejam prontas para o destaque correto de CBS e IBS."
+      "titulo": "Testes de Homologação no Ambiente Piloto da CBS e DeRE",
+      "detalhe": "Configurar e validar os cenários operacionais de emissão de notas no ambiente liberado pela RFB para mitigar falhas de adequação até 2027."
+    },
+    {
+      "quando": "Novembro/2026",
+      "urgencia": "urgente",
+      "titulo": "Capacitação no Destaque de CBS/IBS nos Documentos Fiscais",
+      "detalhe": "Engajar o time fiscal nos treinamentos oficiais promovidos pela Receita Federal, CGIBS e CFC para padronização do preenchimento das NF-es."
     }
   ],
   "novas_normas": [
     {
       "tipo": "Ato",
       "titulo": "Liberação do Ambiente Piloto da CBS com inclusão da DeRE",
-      "descricao": "Disponibilização oficial do ambiente de testes da CBS pela Receita Federal para todas as empresas, permitindo simular obrigações e regras do IVA federal e regimes especiais no Lucro Real.",
+      "descricao": "Abertura do ambiente de testes da Contribuição sobre Bens e Serviços (CBS) integrando a Declaração de Regime Específico (DeRE) para todas as empresas analisarem impactos operacionais e sistêmicos no Lucro Real.",
       "link": "https://www.reformatributaria.com/iva/receita-libera-para-todas-as-empresas-ambiente-piloto-da-cbs-com-inclusao-da-dere-acesse/",
       "instituicao": "RFB"
-    },
-    {
-      "tipo": "Ato",
-      "titulo": "Orientações Conjuntas RFB/CGIBS/CFC sobre Destaque de CBS/IBS em Documentos Fiscais",
-      "descricao": "Iniciativa e diretrizes técnicas para instrução de profissionais contábeis e empresas quanto ao preenchimento e destaque de CBS/IBS nos documentos fiscais eletrônicos.",
-      "link": "https://cfc.org.br/noticias/receita-federal-cgibs-e-cfc-vao-orientar-mais-de-25-mil-profissionais-da-contabilidade-sobre-destaque-de-cbs-ibs-em-documentos-fiscais/",
-      "instituicao": "RFB / Comitê Gestor do IBS / CFC"
     }
   ],
   "noticias": [
@@ -106,8 +111,7 @@
       "data": "19/11/2026",
       "titulo": "Serpro recebe prêmio na China por plataforma da reforma tributária",
       "fonte": "Portal da Reforma Tributária",
-      "url": "https://www.reformatributaria.com/tecnologia/serpro-recebe-premio-na-china-por-plataforma-da-reforma-tributaria/",
-      "novo": true
+      "url": "https://www.reformatributaria.com/tecnologia/serpro-recebe-premio-na-china-por-plataforma-da-reforma-tributaria/"
     },
     {
       "data": "19/11/2026",
