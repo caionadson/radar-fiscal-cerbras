@@ -1,5 +1,5 @@
 {
-  "gerado_em": "2026-11-26T14:02:01.013462-03:00",
+  "gerado_em": "2026-11-26T15:53:22.252628-03:00",
   "versao": "1.6",
   "revisao_radar": "26 nov/2026",
   "automacao": {
@@ -80,17 +80,10 @@
       "url": "https://cfc.org.br/noticias/reforma-tributaria-cfc-debate-desafios-e-impactos-na-gestao-dos-conselhos-profissionais/"
     },
     {
-      "data": "24/11/2026",
-      "titulo": "TCU convida sociedade a definir prioridades de fiscalização para 2027",
-      "fonte": "CFC",
-      "url": "https://cfc.org.br/noticias/tcu-convida-sociedade-a-definir-prioridades-de-fiscalizacao-para-2027/"
-    },
-    {
       "data": "23/11/2026",
       "titulo": "Comitê Gestor do IBS indica membros que farão harmonização tributária com a CBS",
       "fonte": "Portal da Reforma Tributária",
-      "url": "https://www.reformatributaria.com/iva/comite-gestor-do-ibs-indica-membros-que-farao-harmonizacao-tributaria-com-a-cbs/",
-      "novo": true
+      "url": "https://www.reformatributaria.com/iva/comite-gestor-do-ibs-indica-membros-que-farao-harmonizacao-tributaria-com-a-cbs/"
     },
     {
       "data": "23/11/2026",
@@ -121,6 +114,13 @@
       "titulo": "Reforma Tributária 2027: o custo de uma área tributária que não está pronta",
       "fonte": "Portal da Reforma Tributária",
       "url": "https://www.reformatributaria.com/opiniao/reforma-tributaria-2027-o-custo-de-uma-area-tributaria-que-nao-esta-pronta/"
+    },
+    {
+      "data": "19/11/2026",
+      "titulo": "Receita Federal e Comitê Gestor do IBS e CFC vão orientar 25 mil contadores sobre destaque de CBS/IBS",
+      "fonte": "Portal da Reforma Tributária",
+      "url": "https://www.reformatributaria.com/documentos-fiscais/receita-federal-e-comite-gestor-do-ibs-e-cfc-vao-orientar-25-mil-contadores-sobre-destaque-de-cbs-ibs/",
+      "novo": true
     }
   ],
   "nts_criticas_lucro_real": [
