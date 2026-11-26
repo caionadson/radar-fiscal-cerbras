@@ -1,5 +1,5 @@
 {
-  "gerado_em": "2026-11-26T02:00:37.791114-03:00",
+  "gerado_em": "2026-11-26T04:08:35.449260-03:00",
   "versao": "1.6",
   "revisao_radar": "26 nov/2026",
   "automacao": {
@@ -9,41 +9,49 @@
   "briefing": {
     "titulo": "Briefing do dia — Foco em Risco e Ação",
     "bullets": [
-      "RISCO: O despreparo dos sistemas fiscais e das equipes contábeis frente ao ambiente piloto da CBS e da DeRE pode resultar em erros no destaque do tributo, retenção indevida de fluxo de caixa e perda de créditos fiscais de IBS/CBS.",
-      "AÇÃO: Acessar imediatamente o ambiente piloto liberado pela Receita Federal, homologar os parâmetros do ERP para o destaque de CBS/IBS e alinhar o time fiscal com o treinamento de 25 mil contadores promovido pelo Comitê Gestor.",
-      "PRAZO: As adequações de TI e parametrização fiscal devem ocorrer de imediato, visando o pleno funcionamento dos testes antes da virada definitiva para o modelo de 2027."
+      "RISCO: A falta de adequação aos ambientes de homologação da CBS/IBS e da DeRE pode paralisar a emissão de documentos fiscais e comprometer o aproveitamento de créditos fiscais no início do novo sistema em 2027.",
+      "AÇÃO: Realizar testes imediatos no ambiente piloto disponibilizado pela Receita Federal para validar o destaque de CBS/IBS e o preenchimento da DeRE pelos sistemas ERP da empresa.",
+      "PRAZO: Impacto operacional imediato no planejamento tributário para o exercício de 2026/2027, exigindo parametrização dos sistemas fiscais antes do início dos testes operacionais definitivos."
     ],
-    "acao_prioritaria": "Implantar plano de testes no ambiente piloto da CBS/DeRE da Receita Federal e auditar as parametrizações fiscais para impedir impactos no caixa em 2027."
+    "acao_prioritaria": "Inscrever a equipe fiscal nos testes do ambiente piloto da CBS/DeRE disponibilizado pela Receita Federal para auditar a compatibilidade do ERP com as novas obrigações acessórias."
   },
   "alertas": [
     {
       "tipo": "critico",
-      "titulo": "Abertura do Ambiente Piloto da CBS com DeRE pela RFB",
-      "texto": "A Receita Federal disponibilizou o ambiente piloto da CBS com inclusão da Declaração de Regimes Especiais (DeRE). Empresas no Lucro Real que não testarem a integração com o ambiente da RFB correm o risco de retenção de caixa por parametrização incorreta do tributo e inconsistências no aproveitamento de créditos fiscais.",
+      "titulo": "Liberação do Ambiente Piloto da CBS e DeRE pela RFB",
+      "texto": "A Receita Federal abriu o ambiente piloto da CBS para todas as empresas, incluindo a Declaração de Redução de Alíquotas ou Isenção (DeRE). Empresas no Lucro Real que não adequarem seus sistemas de emissão de NF-e/NFS-e aos campos de destaque de CBS e IBS correm o risco de retenção de caixas e impossibilidade de geração de créditos tributários na transição.",
       "prazo": "Já em vigor"
     },
     {
       "tipo": "critico",
-      "titulo": "Risco Financeiro e Despreparo na Mudança Tributária para 2027",
-      "texto": "Propostas legislativas e a falta de prontidão tecnológica do departamento tributário ameaçam a liquidez imediata das empresas. A falta de destaque correto dos novos tributos afetará diretamente a apuração de PIS/Cofins/CBS e a formação de preços.",
-      "prazo": "Dezembro/2026 - Janeiro/2027"
+      "titulo": "Risco de Restrição de Caixa por Propostas Legislativas da Reforma",
+      "texto": "Tramitam no Congresso propostas que alteram a sistemática de ressarcimento e aproveitamento de créditos, o que pode prorrogar a liquidez do crédito acumulado de IVA e afunilar o fluxo de caixa das empresas industriais e comerciais.",
+      "prazo": "Em trâmite legislativo"
     }
   ],
   "prazos": [
     {
-      "quando": "Imediato",
+      "quando": "23/11/2026",
       "urgencia": "urgente",
-      "titulo": "Homologação do Ambiente Piloto CBS/DeRE",
-      "detalhe": "Acessar o ambiente de testes da Receita Federal para validar as regras de apuração da CBS e entrega da DeRE, prevenindo penalidades e garantindo o alinhamento do software emissor de documentos fiscais."
+      "titulo": "Acesso e Testes no Ambiente Piloto da CBS / DeRE",
+      "detalhe": "Cadastrar a empresa e iniciar simulação de emissão de documentos fiscais no sistema piloto da RFB para homologação do leiaute do destaque de tributos."
     },
     {
-      "quando": "19/11/2026 - Em andamento",
+      "quando": "2027",
       "urgencia": "urgente",
-      "titulo": "Capacitação sobre Destaque de CBS/IBS",
-      "detalhe": "Inscrever as equipes fiscais no programa de orientação promovido pela RFB, Comitê Gestor do IBS e CFC para padronização do destaque dos novos tributos nos documentos fiscais."
+      "titulo": "Adequação Total do ERP para a Reforma Tributária (IBS/CBS)",
+      "detalhe": "Revisão de cadastros de produtos (NCM), regras de parametrização fiscal e treinamento da equipe tributária para evitar inconsistências no encerramento de apurações de PIS/Cofins e transição para CBS."
     }
   ],
-  "novas_normas": [],
+  "novas_normas": [
+    {
+      "tipo": "Ato",
+      "titulo": "Disponibilização do Ambiente Piloto da CBS e DeRE",
+      "descricao": "Liberação do ambiente de testes da Receita Federal para homologação de emissão de notas fiscais com destaque de CBS e prestação de informações da DeRE para empresas em geral.",
+      "link": "https://www.reformatributaria.com/iva/receita-libera-para-todas-as-empresas-ambiente-piloto-da-cbs-com-inclusao-da-dere-acesse/",
+      "instituicao": "RFB"
+    }
+  ],
   "noticias": [
     {
       "data": "25/11/2026",
