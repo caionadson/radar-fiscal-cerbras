@@ -1,32 +1,46 @@
 {
-  "gerado_em": "2026-11-25T23:50:58.548566-03:00",
+  "gerado_em": "2026-11-26T02:00:37.791114-03:00",
   "versao": "1.6",
-  "revisao_radar": "25 nov/2026",
+  "revisao_radar": "26 nov/2026",
   "automacao": {
     "fontes_ok": 1,
     "fontes_total": 2
   },
   "briefing": {
-    "titulo": "Briefing do dia — Fallback",
+    "titulo": "Briefing do dia — Foco em Risco e Ação",
     "bullets": [
-      "Atenção: Não foi possível gerar o resumo por IA hoje."
+      "RISCO: O despreparo dos sistemas fiscais e das equipes contábeis frente ao ambiente piloto da CBS e da DeRE pode resultar em erros no destaque do tributo, retenção indevida de fluxo de caixa e perda de créditos fiscais de IBS/CBS.",
+      "AÇÃO: Acessar imediatamente o ambiente piloto liberado pela Receita Federal, homologar os parâmetros do ERP para o destaque de CBS/IBS e alinhar o time fiscal com o treinamento de 25 mil contadores promovido pelo Comitê Gestor.",
+      "PRAZO: As adequações de TI e parametrização fiscal devem ocorrer de imediato, visando o pleno funcionamento dos testes antes da virada definitiva para o modelo de 2027."
     ],
-    "acao_prioritaria": "Validar notas fiscais."
+    "acao_prioritaria": "Implantar plano de testes no ambiente piloto da CBS/DeRE da Receita Federal e auditar as parametrizações fiscais para impedir impactos no caixa em 2027."
   },
   "alertas": [
     {
       "tipo": "critico",
-      "titulo": "Validação de Notas",
-      "texto": "NF-e e CT-e exigem destaque CBS/IBS.",
+      "titulo": "Abertura do Ambiente Piloto da CBS com DeRE pela RFB",
+      "texto": "A Receita Federal disponibilizou o ambiente piloto da CBS com inclusão da Declaração de Regimes Especiais (DeRE). Empresas no Lucro Real que não testarem a integração com o ambiente da RFB correm o risco de retenção de caixa por parametrização incorreta do tributo e inconsistências no aproveitamento de créditos fiscais.",
       "prazo": "Já em vigor"
+    },
+    {
+      "tipo": "critico",
+      "titulo": "Risco Financeiro e Despreparo na Mudança Tributária para 2027",
+      "texto": "Propostas legislativas e a falta de prontidão tecnológica do departamento tributário ameaçam a liquidez imediata das empresas. A falta de destaque correto dos novos tributos afetará diretamente a apuração de PIS/Cofins/CBS e a formação de preços.",
+      "prazo": "Dezembro/2026 - Janeiro/2027"
     }
   ],
   "prazos": [
     {
-      "quando": "Contínuo",
+      "quando": "Imediato",
       "urgencia": "urgente",
-      "titulo": "Validação de Notas",
-      "detalhe": "CST, cClassTrib e CBS/IBS."
+      "titulo": "Homologação do Ambiente Piloto CBS/DeRE",
+      "detalhe": "Acessar o ambiente de testes da Receita Federal para validar as regras de apuração da CBS e entrega da DeRE, prevenindo penalidades e garantindo o alinhamento do software emissor de documentos fiscais."
+    },
+    {
+      "quando": "19/11/2026 - Em andamento",
+      "urgencia": "urgente",
+      "titulo": "Capacitação sobre Destaque de CBS/IBS",
+      "detalhe": "Inscrever as equipes fiscais no programa de orientação promovido pela RFB, Comitê Gestor do IBS e CFC para padronização do destaque dos novos tributos nos documentos fiscais."
     }
   ],
   "novas_normas": [],
