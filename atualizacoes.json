@@ -1,5 +1,5 @@
 {
-  "gerado_em": "2026-11-26T07:56:03.054322-03:00",
+  "gerado_em": "2026-11-26T10:10:17.782979-03:00",
   "versao": "1.6",
   "revisao_radar": "26 nov/2026",
   "automacao": {
@@ -32,6 +32,13 @@
   "novas_normas": [],
   "noticias": [
     {
+      "data": "26/11/2026",
+      "titulo": "Evento debate desafios e perspectivas da contabilidade regulatória no Brasil",
+      "fonte": "CFC",
+      "url": "https://cfc.org.br/noticias/evento-debate-desafios-e-perspectivas-da-contabilidade-regulatoria-no-brasil/",
+      "novo": true
+    },
+    {
       "data": "25/11/2026",
       "titulo": "Conselhos federais e ministros do TCU discutem regras de fiscalização em mesa-redonda na FGV",
       "fonte": "CFC",
@@ -47,7 +54,8 @@
       "data": "25/11/2026",
       "titulo": "CFC assina recomendação para implementação do Guia de Custos para o Setor Público no Brasil",
       "fonte": "CFC",
-      "url": "https://cfc.org.br/destaque/cfc-assina-recomendacao-para-implementacao-do-guia-de-custos-para-o-setor-publico/"
+      "url": "https://cfc.org.br/noticias/cfc-assina-recomendacao-para-implementacao-do-guia-de-custos-para-o-setor-publico/",
+      "novo": true
     },
     {
       "data": "25/11/2026",
@@ -72,12 +80,6 @@
       "titulo": "CFC amplia pontuação da Conferência Nacional de Perícia Contábil",
       "fonte": "CFC",
       "url": "https://cfc.org.br/noticias/cfc-amplia-pontuacao-da-conferencia-nacional-de-pericia-contabil/"
-    },
-    {
-      "data": "24/11/2026",
-      "titulo": "Sistema CFC/CRCs atua no Congresso para evitar aumento da carga tributária e preservar direitos dos contribuintes",
-      "fonte": "CFC",
-      "url": "https://cfc.org.br/noticias/sistema-cfc-crcs-atua-no-congresso-para-evitar-aumento-da-carga-tributaria-e-preservar-direitos-dos-contribuintes/"
     },
     {
       "data": "23/11/2026",
