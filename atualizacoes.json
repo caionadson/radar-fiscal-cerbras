@@ -1,5 +1,5 @@
 {
-  "gerado_em": "2026-11-26T10:10:17.782979-03:00",
+  "gerado_em": "2026-11-26T11:55:47.478835-03:00",
   "versao": "1.6",
   "revisao_radar": "26 nov/2026",
   "automacao": {
@@ -33,10 +33,23 @@
   "noticias": [
     {
       "data": "26/11/2026",
+      "titulo": "CFC defende regulamentação do Conselho de Gestão Fiscal para aprimorar a qualidade do gasto público",
+      "fonte": "CFC",
+      "url": "https://cfc.org.br/noticias/cfc-defende-regulamentacao-do-conselho-de-gestao-fiscal-para-aprimorar-a-qualidade-do-gasto-publico/",
+      "novo": true
+    },
+    {
+      "data": "26/11/2026",
+      "titulo": "CFC publica resultado do Prêmio Olivio Koliver e destaca pesquisa sobre hedge no agronegócio",
+      "fonte": "CFC",
+      "url": "https://cfc.org.br/noticias/cfc-publica-resultado-do-premio-olivio-koliver-e-destaca-pesquisa-sobre-hedge-no-agronegocio/",
+      "novo": true
+    },
+    {
+      "data": "26/11/2026",
       "titulo": "Evento debate desafios e perspectivas da contabilidade regulatória no Brasil",
       "fonte": "CFC",
-      "url": "https://cfc.org.br/noticias/evento-debate-desafios-e-perspectivas-da-contabilidade-regulatoria-no-brasil/",
-      "novo": true
+      "url": "https://cfc.org.br/noticias/evento-debate-desafios-e-perspectivas-da-contabilidade-regulatoria-no-brasil/"
     },
     {
       "data": "25/11/2026",
@@ -54,8 +67,7 @@
       "data": "25/11/2026",
       "titulo": "CFC assina recomendação para implementação do Guia de Custos para o Setor Público no Brasil",
       "fonte": "CFC",
-      "url": "https://cfc.org.br/noticias/cfc-assina-recomendacao-para-implementacao-do-guia-de-custos-para-o-setor-publico/",
-      "novo": true
+      "url": "https://cfc.org.br/noticias/cfc-assina-recomendacao-para-implementacao-do-guia-de-custos-para-o-setor-publico/"
     },
     {
       "data": "25/11/2026",
@@ -74,18 +86,6 @@
       "titulo": "TCU convida sociedade a definir prioridades de fiscalização para 2027",
       "fonte": "CFC",
       "url": "https://cfc.org.br/noticias/tcu-convida-sociedade-a-definir-prioridades-de-fiscalizacao-para-2027/"
-    },
-    {
-      "data": "24/11/2026",
-      "titulo": "CFC amplia pontuação da Conferência Nacional de Perícia Contábil",
-      "fonte": "CFC",
-      "url": "https://cfc.org.br/noticias/cfc-amplia-pontuacao-da-conferencia-nacional-de-pericia-contabil/"
-    },
-    {
-      "data": "23/11/2026",
-      "titulo": "Comitê Gestor do IBS indica membros que farão harmonização tributária com a CBS",
-      "fonte": "Portal da Reforma Tributária",
-      "url": "https://www.reformatributaria.com/iva/comite-gestor-do-ibs-indica-membros-que-farao-harmonizacao-tributaria-com-a-cbs/"
     },
     {
       "data": "23/11/2026",
