@@ -1,5 +1,5 @@
 {
-  "gerado_em": "2026-11-27T02:00:43.176012-03:00",
+  "gerado_em": "2026-11-27T04:09:04.164359-03:00",
   "versao": "1.6",
   "revisao_radar": "27 nov/2026",
   "automacao": {
@@ -9,48 +9,47 @@
   "briefing": {
     "titulo": "Briefing do dia — Foco em Risco e Ação",
     "bullets": [
-      "RISCO: Despreparo operacional e tecnológico na integração da CBS e DeRE no ambiente piloto da RFB, podendo gerar inoperância na emissão de documentos fiscais, acúmulo ilíquido de créditos e aplicação de penalidades acessórias no Lucro Real.",
-      "AÇÃO: Mobilizar imediatamente as equipes de TI e Fiscal para cadastrar a empresa e executar testes de parametrização do destaque de CBS/IBS e DeRE no ambiente piloto disponibilizado pela Receita Federal.",
-      "PRAZO: Testes operacionais e capacitações técnicos já estão disponíveis; a conformidade com as regras de destaque e escrituração impacta diretamente as operações a partir do período de transição (2026/2027)."
+      "Risco: O despreparo dos sistemas fiscais (ERP) para a gravação do destaque do IBS/CBS e a omissão na prestação de informações via DeRE gerarão impedimento de creditamento automático pelos clientes, retenções indevidas e autuações fiscais.",
+      "Ação: Acessar imediatamente o ambiente piloto da CBS liberado pela Receita Federal para efetuar testes operacionais de emissão, parametrização e simulação do leiaute da DeRE.",
+      "Prazo: Adequação técnica e capacitação da equipe fiscal devem ocorrer de forma imediata no ambiente liberado desde 23/11/2026 para evitar colapso operado na transição de 2026/2027."
     ],
-    "acao_prioritaria": "Ingressar imediatamente no ambiente piloto da Receita Federal para simular a emissão de notas com CBS/DeRE e parametrizar o ERP para a não-cumulatividade pleníssima."
+    "acao_prioritaria": "Mobilizar a TI e a equipe tributária para homologar os testes no ambiente piloto da CBS/DeRE disponibilizado pela Receita Federal e parametrizar as regras de destaque do IBS/CBS."
   },
   "alertas": [
     {
       "tipo": "critico",
-      "titulo": "Disponibilização do Ambiente Piloto da CBS e DeRE pela Receita Federal",
-      "texto": "A liberação do ambiente de testes exige validação imediata dos sistemas fiscais do Lucro Real. A falha na adaptação prévia para o destaque e escrituração da CBS e inclusão da DeRE causará retenção de créditos fiscais no fluxo de caixa, impossibilidade de emissão NFe e passivos por não conformidade acessória.",
+      "titulo": "Incompatibilidade Operacional no Piloto da CBS e DeRE",
+      "texto": "A liberação do ambiente piloto da CBS com a inclusão da Declaração de Regimes Especiais (DeRE) exige testes prévios imediatos. Empresas do Lucro Real que não adequarem seus ERPs correm o risco de emitir documentos com erro no destaque de CBS/IBS, gerando glosa imediata de créditos fiscais para adquirentes e restrição no fluxo de caixa.",
       "prazo": "Já em vigor"
     },
     {
       "tipo": "critico",
-      "titulo": "Risco de Restrições ao Fluxo de Caixa no Modelo de Ressarcimento do IVA",
-      "texto": "Propostas legislativas que postergam a devolução de créditos de IBS e CBS ou travam o caixa corporativo exigem revisão urgente do planejamento financeiro e projeção de necessidade de capital de giro para o início do novo regime tributário.",
-      "prazo": "Em trâmite legislativo"
+      "titulo": "Risco de Restrição de Caixa por Regra de Retenção",
+      "texto": "Debates legislativos apontam para propostas que tratam do represamento de caixa ligado à arrecadação dos novos tributos. A falta de governança sobre a não cumulatividade plena pode imobilizar recursos de capital de giro.",
+      "prazo": "Imediato"
     }
   ],
   "prazos": [
     {
-      "quando": "Imediato",
+      "quando": "23/11/2026",
       "urgencia": "urgente",
-      "titulo": "Homologação de Sistemas no Ambiente Piloto CBS/DeRE",
-      "detalhe": "Efetuar simulações de emissão fiscal com os novos campos de CBS e IBS no ambiente piloto liberado pela RFB para prevenir travamento de faturamento e glosa de créditos na entrada em vigor."
+      "titulo": "Validação no Ambiente Piloto da CBS e DeRE",
+      "detalhe": "Cadastrar a empresa e iniciar os testes de envio no ambiente disponibilizado pela Receita Federal para validar se as parametrizações fiscais estão aderentes às exigências da CBS."
+    },
+    {
+      "quando": "19/11/2026",
+      "urgencia": "urgente",
+      "titulo": "Alinhamento das Regras de Destaque de IBS/CBS",
+      "detalhe": "Capacitar a equipe fiscal conforme as orientações conjuntas da RFB, Comitê Gestor do IBS e CFC para garantir que a emissão de notas fiscais atenda à sistemática de não cumulatividade sem gerar perdas de crédito."
     }
   ],
   "novas_normas": [
     {
       "tipo": "Ato",
-      "titulo": "Liberação do Ambiente Piloto da CBS com Inclusão da DeRE",
-      "descricao": "Disponibilização oficial do ambiente de testes da Receita Federal do Brasil para validação da CBS e da Declaração de Regime Específico (DeRE), essencial para adaptação do ERP das empresas enquadradas no Lucro Real.",
+      "titulo": "Liberação do Ambiente Piloto da CBS e inclusão da DeRE",
+      "descricao": "Ato de disponibilização pela Receita Federal do ambiente de testes da CBS com a inclusão da Declaração de Regimes Especiais (DeRE) para todas as empresas, permitindo a simulação do cumprimento das novas obrigações fiscais do Lucro Real.",
       "link": "https://www.reformatributaria.com/iva/receita-libera-para-todas-as-empresas-ambiente-piloto-da-cbs-com-inclusao-da-dere-acesse/",
-      "instituicao": "Receita Federal do Brasil"
-    },
-    {
-      "tipo": "Ato",
-      "titulo": "Designação de Membros para Harmonização Tributária IBS/CBS",
-      "descricao": "Ato do Comitê Gestor do IBS nomeando representantes para alinhamento infralegal e harmonização das regras do Imposto sobre Bens e Serviços (IBS) com a Contribuição sobre Bens e Serviços (CBS).",
-      "link": "https://www.reformatributaria.com/iva/comite-gestor-do-ibs-indica-membros-que-farao-harmonizacao-tributaria-com-a-cbs/",
-      "instituicao": "Comitê Gestor do IBS"
+      "instituicao": "Receita Federal do Brasil (RFB)"
     }
   ],
   "noticias": [
