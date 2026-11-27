@@ -1,5 +1,5 @@
 {
-  "gerado_em": "2026-11-26T22:06:41.269341-03:00",
+  "gerado_em": "2026-11-26T23:52:33.143484-03:00",
   "versao": "1.6",
   "revisao_radar": "26 nov/2026",
   "automacao": {
@@ -81,6 +81,13 @@
     },
     {
       "data": "23/11/2026",
+      "titulo": "Comitê Gestor do IBS indica membros que farão harmonização tributária com a CBS",
+      "fonte": "Portal da Reforma Tributária",
+      "url": "https://www.reformatributaria.com/iva/comite-gestor-do-ibs-indica-membros-que-farao-harmonizacao-tributaria-com-a-cbs/",
+      "novo": true
+    },
+    {
+      "data": "23/11/2026",
       "titulo": "Receita libera para todas as empresas ambiente piloto da CBS com inclusão da DeRE; acesse",
       "fonte": "Portal da Reforma Tributária",
       "url": "https://www.reformatributaria.com/iva/receita-libera-para-todas-as-empresas-ambiente-piloto-da-cbs-com-inclusao-da-dere-acesse/"
@@ -114,13 +121,6 @@
       "titulo": "Receita Federal e Comitê Gestor do IBS e CFC vão orientar 25 mil contadores sobre destaque de CBS/IBS",
       "fonte": "Portal da Reforma Tributária",
       "url": "https://www.reformatributaria.com/documentos-fiscais/receita-federal-e-comite-gestor-do-ibs-e-cfc-vao-orientar-25-mil-contadores-sobre-destaque-de-cbs-ibs/"
-    },
-    {
-      "data": "19/11/2026",
-      "titulo": "Serpro recebe prêmio na China por plataforma da reforma tributária",
-      "fonte": "Portal da Reforma Tributária",
-      "url": "https://www.reformatributaria.com/tecnologia/serpro-recebe-premio-na-china-por-plataforma-da-reforma-tributaria/",
-      "novo": true
     }
   ],
   "nts_criticas_lucro_real": [
