@@ -1,5 +1,5 @@
 {
-  "gerado_em": "2026-11-27T15:52:10.335634-03:00",
+  "gerado_em": "2026-11-27T17:51:44.362148-03:00",
   "versao": "1.6",
   "revisao_radar": "27 nov/2026",
   "automacao": {
@@ -68,18 +68,6 @@
       "url": "https://cfc.org.br/noticias/cfc-disponibiliza-capacitacao-completa-sobre-contabilidade-imobiliaria-e-de-construtoras/"
     },
     {
-      "data": "25/11/2026",
-      "titulo": "CFC assina recomendação para implementação do Guia de Custos para o Setor Público no Brasil",
-      "fonte": "CFC",
-      "url": "https://cfc.org.br/noticias/cfc-assina-recomendacao-para-implementacao-do-guia-de-custos-para-o-setor-publico/"
-    },
-    {
-      "data": "25/11/2026",
-      "titulo": "Ao Correio Braziliense, presidente do CFC destaca protagonismo da contabilidade na transformação econômica do País",
-      "fonte": "CFC",
-      "url": "https://cfc.org.br/noticias/ao-correio-braziliense-presidente-do-cfc-destaca-protagonismo-da-contabilidade-na-transformacao-economica-do-pais/"
-    },
-    {
       "data": "23/11/2026",
       "titulo": "Comitê Gestor do IBS indica membros que farão harmonização tributária com a CBS",
       "fonte": "Portal da Reforma Tributária",
@@ -120,6 +108,20 @@
       "titulo": "Receita Federal e Comitê Gestor do IBS e CFC vão orientar 25 mil contadores sobre destaque de CBS/IBS",
       "fonte": "Portal da Reforma Tributária",
       "url": "https://www.reformatributaria.com/documentos-fiscais/receita-federal-e-comite-gestor-do-ibs-e-cfc-vao-orientar-25-mil-contadores-sobre-destaque-de-cbs-ibs/"
+    },
+    {
+      "data": "04/11/2026",
+      "titulo": "Governo publica Medida Provisória regulamentando o Imposto Seletivo e regras de transição do IPI",
+      "fonte": "Ministério da Fazenda",
+      "url": "https://www.in.gov.br/consulta/-/buscar/dou?q=medida+provisoria+imposto+seletivo",
+      "novo": true
+    },
+    {
+      "data": "02/11/2026",
+      "titulo": "CBS de 11,3% surpreende empresas e pressiona preços, dizem especialistas",
+      "fonte": "Portal da Reforma Tributária",
+      "url": "https://www.reformatributaria.com/iva/aliquota-de-113-da-cbs-surpreende-empresas-e-pressiona-precos-dizem-especialistas/",
+      "novo": true
     }
   ],
   "nts_criticas_lucro_real": [
