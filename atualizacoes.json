@@ -1,5 +1,5 @@
 {
-  "gerado_em": "2026-11-27T14:00:36.012692-03:00",
+  "gerado_em": "2026-11-27T15:52:10.335634-03:00",
   "versao": "1.6",
   "revisao_radar": "27 nov/2026",
   "automacao": {
@@ -7,58 +7,29 @@
     "fontes_total": 2
   },
   "briefing": {
-    "titulo": "Briefing do dia — Foco em Risco e Ação",
+    "titulo": "Briefing do dia — Fallback",
     "bullets": [
-      "RISCO: A falta de homologação dos sistemas no novo ambiente piloto da CBS/DeRE e potenciais travas legislativas de caixa podem gerar acúmulo indesejado de saldo credor e perda de créditos fiscais no Lucro Real.",
-      "AÇÃO: Mobilizar as equipes de TI e Tax para ingressar no ambiente piloto da CBS da Receita Federal e validar o destaque correto de tributos e a integração com a Declaração de Regimes Especiais (DeRE).",
-      "PRAZO: Testes operacionais no ambiente piloto de CBS da RFB disponíveis imediatamente; regularização de pontuação PEPC/CFC dos responsáveis técnicos até 31/12/2026."
+      "Atenção: Não foi possível gerar o resumo por IA hoje."
     ],
-    "acao_prioritaria": "Iniciar imediatamente os testes no ambiente piloto da CBS com a DeRE da Receita Federal para validar parametrizações de saída e garantir a não cumulatividade plena sem retenções indevidas de caixa."
+    "acao_prioritaria": "Validar notas fiscais."
   },
   "alertas": [
     {
       "tipo": "critico",
-      "titulo": "Liberação do Ambiente Piloto da CBS e DeRE pela RFB",
-      "texto": "A Receita Federal liberou o ambiente de testes da CBS para todas as empresas. A não realização de testes prévios acarretará falhas na emissão de documentos fiscais, erros no cálculo de créditos do Lucro Real e reterá indevidamente o fluxo de caixa corporativo na entrada em vigor.",
+      "titulo": "Validação de Notas",
+      "texto": "NF-e e CT-e exigem destaque CBS/IBS.",
       "prazo": "Já em vigor"
-    },
-    {
-      "tipo": "critico",
-      "titulo": "Proposta Legislativa com Trava de Liquidez no Caixa",
-      "texto": "Tramitação de medidas que dificultam o ressarcimento rápido e a compensação de tributos na transição para o IVA, exigindo revisão imediata do planejamento financeiro e projeções sob a sistemática do Lucro Real.",
-      "prazo": "Em tramitação"
     }
   ],
   "prazos": [
     {
-      "quando": "31/12/2026",
+      "quando": "Contínuo",
       "urgencia": "urgente",
-      "titulo": "Prazo Final para Pontuação do PEPC/CFC",
-      "detalhe": "Profissionais de contabilidade responsáveis pelas demonstrações e apurações do Lucro Real devem completar os 40 pontos no Programa de Educação Profissional Continuada para evitar penalidades e impedimentos operacionais."
-    },
-    {
-      "quando": "Imediato",
-      "urgencia": "urgente",
-      "titulo": "Capacitação e Parametrização no Destaque de CBS/IBS",
-      "detalhe": "Participar das orientações conjuntas da RFB, Comitê Gestor do IBS e CFC sobre o correto destaque de CBS/IBS nas notas fiscais de operações sob Lucro Real."
+      "titulo": "Validação de Notas",
+      "detalhe": "CST, cClassTrib e CBS/IBS."
     }
   ],
-  "novas_normas": [
-    {
-      "tipo": "Ato",
-      "titulo": "Disponibilização do Ambiente Piloto da CBS com DeRE",
-      "descricao": "Ato normativo/operacional da Receita Federal que abre a todas as empresas o ambiente de testes da CBS, incorporando a Declaração de Regimes Especiais (DeRE) para adaptação das obrigações acessórias do Lucro Real.",
-      "link": "https://www.reformatributaria.com/iva/receita-libera-para-todas-as-empresas-ambiente-piloto-da-cbs-com-inclusao-da-dere-acesse/",
-      "instituicao": "Receita Federal do Brasil"
-    },
-    {
-      "tipo": "Ato",
-      "titulo": "Designação de Membros para Harmonização Tributária IBS/CBS",
-      "descricao": "Indicação oficial de membros pelo Comitê Gestor do IBS para conduzir a harmonização de regulamentos e procedimentos de apuração entre o IBS e a CBS.",
-      "link": "https://www.reformatributaria.com/iva/comite-gestor-do-ibs-indica-membros-que-farao-harmonizacao-tributaria-com-a-cbs/",
-      "instituicao": "Comitê Gestor do IBS"
-    }
-  ],
+  "novas_normas": [],
   "noticias": [
     {
       "data": "27/11/2026",
@@ -112,8 +83,7 @@
       "data": "23/11/2026",
       "titulo": "Comitê Gestor do IBS indica membros que farão harmonização tributária com a CBS",
       "fonte": "Portal da Reforma Tributária",
-      "url": "https://www.reformatributaria.com/iva/comite-gestor-do-ibs-indica-membros-que-farao-harmonizacao-tributaria-com-a-cbs/",
-      "novo": true
+      "url": "https://www.reformatributaria.com/iva/comite-gestor-do-ibs-indica-membros-que-farao-harmonizacao-tributaria-com-a-cbs/"
     },
     {
       "data": "23/11/2026",
