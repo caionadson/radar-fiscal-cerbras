@@ -1,5 +1,5 @@
 {
-  "gerado_em": "2026-11-27T17:51:44.362148-03:00",
+  "gerado_em": "2026-11-27T19:52:43.507240-03:00",
   "versao": "1.6",
   "revisao_radar": "27 nov/2026",
   "automacao": {
@@ -7,29 +7,45 @@
     "fontes_total": 2
   },
   "briefing": {
-    "titulo": "Briefing do dia — Fallback",
+    "titulo": "Briefing do dia — Foco em Risco e Ação",
     "bullets": [
-      "Atenção: Não foi possível gerar o resumo por IA hoje."
+      "RISCO: A alíquota de 11,3% da CBS e a regulamentação do Imposto Seletivo pressionam as margens do Lucro Real, exigindo revisão imediata da precificação para evitar perda de caixa e descompasso no aproveitamento de créditos.",
+      "AÇÃO: Adequar a infraestrutura de ERP e a conciliação bancária ao Split Payment no Pix, garantindo o crédito tempestivo de IBS/CBS e revisando a parametrização fiscal dos produtos afetados pela MP do Imposto Seletivo.",
+      "PRAZO: Atentar para o encerramento do prazo do PEPC (40 pontos) em 31/12/2026 para os responsáveis técnicos e à vigência imediata das regras de transição do IPI/IS trazidas pela nova Medida Provisória."
     ],
-    "acao_prioritaria": "Validar notas fiscais."
+    "acao_prioritaria": "Revisar a formação de preços frente à CBS de 11,3% e adequar os sistemas de TI ao processamento instantâneo do split payment."
   },
   "alertas": [
     {
       "tipo": "critico",
-      "titulo": "Validação de Notas",
-      "texto": "NF-e e CT-e exigem destaque CBS/IBS.",
+      "titulo": "CBS de 11,3% e Compressão de Margem no Lucro Real",
+      "texto": "A confirmação da alíquota da CBS em 11,3% surpreendeu o mercado e impõe forte pressão sobre o fluxo de caixa. Empresas que não recalcularem seus custos e repactuarem contratos sofrerão degradação direta da margem líquida e risco de acúmulo indesejado de saldos credores.",
       "prazo": "Já em vigor"
+    },
+    {
+      "tipo": "critico",
+      "titulo": "Risco Operacional e de Crédito no Split Payment via Pix",
+      "texto": "Atrasos na homologação e retenção do split payment via Pix podem impedir o creditamento tempestivo do IBS e da CBS, gerando gargalos de liquidez e divergências na escrituração fiscal digital.",
+      "prazo": "Em adequação"
     }
   ],
   "prazos": [
     {
-      "quando": "Contínuo",
+      "quando": "31/12/2026",
       "urgencia": "urgente",
-      "titulo": "Validação de Notas",
-      "detalhe": "CST, cClassTrib e CBS/IBS."
+      "titulo": "Pontuação Mínima no PEPC/CFC",
+      "detalhe": "Contadores e auditores responsáveis pelo Lucro Real devem completar os 40 pontos do Programa de Educação Continuada para evitar infrações e impedimento do exercício da função técnica."
     }
   ],
-  "novas_normas": [],
+  "novas_normas": [
+    {
+      "tipo": "MP",
+      "titulo": "Medida Provisória do Imposto Seletivo e Regras de Transição do IPI",
+      "descricao": "Regulamenta a incidência do Imposto Seletivo e disciplina a transição do IPI no âmbito da Reforma Tributária. Impacta diretamente o custo industrial, a parametrização de cadastros e o planejamento de créditos no Lucro Real.",
+      "link": "https://www.in.gov.br/consulta/-/buscar/dou?q=medida+provisoria+imposto+seletivo",
+      "instituicao": "Governo Federal"
+    }
+  ],
   "noticias": [
     {
       "data": "27/11/2026",
@@ -57,6 +73,13 @@
     },
     {
       "data": "25/11/2026",
+      "titulo": "CLP propõe mudanças no Imposto Seletivo para ampliar impacto na saúde pública",
+      "fonte": "Portal da Reforma Tributária",
+      "url": "https://www.reformatributaria.com/impostoseletivo/clp-mudancas-imposto-seletivo-saude-publica/",
+      "novo": true
+    },
+    {
+      "data": "25/11/2026",
       "titulo": "Conselhos federais e ministros do TCU discutem regras de fiscalização em mesa-redonda na FGV",
       "fonte": "CFC",
       "url": "https://cfc.org.br/noticias/conselhos-federais-e-ministros-do-tcu-discutem-regras-de-fiscalizacao-em-mesa-redonda-na-fgv/"
@@ -68,60 +91,30 @@
       "url": "https://cfc.org.br/noticias/cfc-disponibiliza-capacitacao-completa-sobre-contabilidade-imobiliaria-e-de-construtoras/"
     },
     {
-      "data": "23/11/2026",
-      "titulo": "Comitê Gestor do IBS indica membros que farão harmonização tributária com a CBS",
+      "data": "24/11/2026",
+      "titulo": "Desafio do split payment será processar Pix no prazo correto, diz diretor de pagamentos do Santander",
       "fonte": "Portal da Reforma Tributária",
-      "url": "https://www.reformatributaria.com/iva/comite-gestor-do-ibs-indica-membros-que-farao-harmonizacao-tributaria-com-a-cbs/"
+      "url": "https://www.reformatributaria.com/tecnologia/desafio-do-split-payment-sera-processar-pix-no-prazo-correto-diz-diretor-de-pagamentos-do-santander/",
+      "novo": true
     },
     {
-      "data": "23/11/2026",
-      "titulo": "Receita libera para todas as empresas ambiente piloto da CBS com inclusão da DeRE; acesse",
+      "data": "24/11/2026",
+      "titulo": "Webinar do Portal debaterá aumento da carga tributária no PLP 299 de 2026",
       "fonte": "Portal da Reforma Tributária",
-      "url": "https://www.reformatributaria.com/iva/receita-libera-para-todas-as-empresas-ambiente-piloto-da-cbs-com-inclusao-da-dere-acesse/"
-    },
-    {
-      "data": "23/11/2026",
-      "titulo": "Deputados têm a chance de rejeitar a proposta do governo que trava o caixa das empresas",
-      "fonte": "Portal da Reforma Tributária",
-      "url": "https://www.reformatributaria.com/opiniao/deputados-rejeitar-proposta-governo-trava-caixa-empresas/"
-    },
-    {
-      "data": "20/11/2026",
-      "titulo": "Flexibilizações da reforma são bem vistas por especialistas, mas ainda há ressalvas",
-      "fonte": "Portal da Reforma Tributária",
-      "url": "https://www.reformatributaria.com/governo/flexibilizacoes-da-reforma-sao-bem-vistas-por-especialistas-mas-ainda-ha-ressalvas/"
-    },
-    {
-      "data": "20/11/2026",
-      "titulo": "Reforma Tributária: o consumidor também precisa entrar na conversa",
-      "fonte": "Portal da Reforma Tributária",
-      "url": "https://www.reformatributaria.com/opiniao/reforma-tributaria-o-consumidor-tambem-precisa-entrar-nessa-conversa/"
-    },
-    {
-      "data": "20/11/2026",
-      "titulo": "Reforma Tributária 2027: o custo de uma área tributária que não está pronta",
-      "fonte": "Portal da Reforma Tributária",
-      "url": "https://www.reformatributaria.com/opiniao/reforma-tributaria-2027-o-custo-de-uma-area-tributaria-que-nao-esta-pronta/"
-    },
-    {
-      "data": "19/11/2026",
-      "titulo": "Receita Federal e Comitê Gestor do IBS e CFC vão orientar 25 mil contadores sobre destaque de CBS/IBS",
-      "fonte": "Portal da Reforma Tributária",
-      "url": "https://www.reformatributaria.com/documentos-fiscais/receita-federal-e-comite-gestor-do-ibs-e-cfc-vao-orientar-25-mil-contadores-sobre-destaque-de-cbs-ibs/"
+      "url": "https://www.reformatributaria.com/reforma-tributaria-congresso-nacional/webinar-do-portal-debatera-aumento-da-carga-tributaria-no-plp-299-2026/",
+      "novo": true
     },
     {
       "data": "04/11/2026",
       "titulo": "Governo publica Medida Provisória regulamentando o Imposto Seletivo e regras de transição do IPI",
       "fonte": "Ministério da Fazenda",
-      "url": "https://www.in.gov.br/consulta/-/buscar/dou?q=medida+provisoria+imposto+seletivo",
-      "novo": true
+      "url": "https://www.in.gov.br/consulta/-/buscar/dou?q=medida+provisoria+imposto+seletivo"
     },
     {
       "data": "02/11/2026",
       "titulo": "CBS de 11,3% surpreende empresas e pressiona preços, dizem especialistas",
       "fonte": "Portal da Reforma Tributária",
-      "url": "https://www.reformatributaria.com/iva/aliquota-de-113-da-cbs-surpreende-empresas-e-pressiona-precos-dizem-especialistas/",
-      "novo": true
+      "url": "https://www.reformatributaria.com/iva/aliquota-de-113-da-cbs-surpreende-empresas-e-pressiona-precos-dizem-especialistas/"
     }
   ],
   "nts_criticas_lucro_real": [
