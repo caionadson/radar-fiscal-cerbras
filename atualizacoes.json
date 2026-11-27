@@ -1,5 +1,5 @@
 {
-  "gerado_em": "2026-11-27T05:58:55.180303-03:00",
+  "gerado_em": "2026-11-27T07:52:38.071325-03:00",
   "versao": "1.6",
   "revisao_radar": "27 nov/2026",
   "automacao": {
@@ -9,54 +9,54 @@
   "briefing": {
     "titulo": "Briefing do dia — Foco em Risco e Ação",
     "bullets": [
-      "RISCO: A falta de parametrização e adaptação prévia dos sistemas fiscais para a CBS/IBS pode gerar retenções indevidas, perda de créditos acumulados no Lucro Real e sérios impactos no fluxo de caixa corporativo.",
-      "AÇÃO: Acessar imediatamente o ambiente piloto da CBS com DeRE liberado pela Receita Federal para validar as regras operacionais, bem como capacitar o time fiscal no preenchimento e destaque dos tributos nos documentos fiscais.",
-      "PRAZO: O ambiente piloto já está liberado para testes em novembro de 2026, com foco de implementação prática visando o início da transição em 2027."
+      "RISCO: A parametrização incorreta de ERPs e o desconhecimento das regras de destaque de IBS/CBS na emissão de notas fiscais podem gerar a rejeição dos documentos, impedimento de aproveitamento de créditos e retenção imediata de caixa.",
+      "AÇÃO: Acessar imediatamente o ambiente piloto da CBS liberado pela RFB para homologar sistemas (incluindo a DeRE) e inscrever as equipes de compliance fiscal nas capacitações técnicas conjuntas da RFB, Comitê Gestor do IBS e CFC.",
+      "PRAZO: As homologações técnicas no ambiente piloto devem ser iniciadas de imediato, antecedendo a obrigatoriedade da Reforma Tributária em 2027 para evitar custos emergenciais de TI e passivos fiscais."
     ],
-    "acao_prioritaria": "Cadastrar a empresa no ambiente piloto da CBS/DeRE disponibilizado pela RFB e auditar a prontidão do ERP para o destaque de CBS e IBS."
+    "acao_prioritaria": "Iniciar a homologação dos sistemas da empresa no ambiente piloto da CBS com a DeRE e alinhar as regras de destaque do IVA Dual com a TI para resguardar o fluxo de caixa e os créditos tributários."
   },
   "alertas": [
     {
       "tipo": "critico",
-      "titulo": "Liberação do Ambiente Piloto da CBS/DeRE e Validação de Créditos",
-      "texto": "A liberação do ambiente de testes da CBS e DeRE pela RFB exige validação técnica imediata. A ausência de testes antecipados aumenta o risco de falhas na apuração do Lucro Real, inconsistência no destaque do tributo e consequente glosa de créditos fiscais.",
-      "prazo": "Já em vigor (Novembro/2026)"
+      "titulo": "Liberação do Ambiente Piloto da CBS e Inclusão da DeRE",
+      "texto": "A Receita Federal liberou para todas as empresas o ambiente piloto da CBS com a inserção da DeRE. A não adaptação prévia dos sistemas da empresa impedirá a simulação do encargo fiscal e a emissão correta de obrigações, aumentando o risco de GLOSA de créditos e impactos negativos no fluxo de caixa no início da vigência.",
+      "prazo": "Já em vigor"
     },
     {
-      "tipo": "alto",
-      "titulo": "Proposta Legislativa sobre Trava de Caixa das Empresas",
-      "texto": "Acompanhamento da votação de proposta governamental na Câmara dos Deputados que pode impactar a liquidez e o fluxo de caixa corporativo por meio de novas retenções fiscais.",
-      "prazo": "Em trâmite na Câmara dos Deputados"
+      "tipo": "critico",
+      "titulo": "Regras de Destaque de IBS/CBS e Harmonização Fiscal",
+      "texto": "RFB e Comitê Gestor do IBS estabeleceram ações diretas de orientação para 25 mil contadores sobre a obrigatoriedade do destaque correto do IVA Dual. Erros no destaque do imposto acarretam autuações e impossibilidade de ressarcimento/compensação de créditos pelos adquirentes no regime de Lucro Real.",
+      "prazo": "Imediato"
     }
   ],
   "prazos": [
     {
-      "quando": "Imediato (Novembro/2026)",
+      "quando": "23/11/2026",
       "urgencia": "urgente",
-      "titulo": "Homologação no Ambiente Piloto CBS/DeRE",
-      "detalhe": "Realizar testes operacionais no ambiente piloto disponibilizado pela Receita Federal para prevenir incompatibilidades fiscais antes da obrigatoriedade."
+      "titulo": "Testes de Integração no Ambiente Piloto da CBS (DeRE)",
+      "detalhe": "Realizar testes operacionais do ambiente piloto da CBS disponibilizado pela RFB para garantir que a inclusão da DeRE esteja integrada aos sistemas legados antes do prazo compulsório."
     },
     {
-      "quando": "Exercício de 2027",
+      "quando": "Visão 2027",
       "urgencia": "urgente",
-      "titulo": "Adequação do Destaque de CBS/IBS na Emissão Fiscal",
-      "detalhe": "Capacitar a equipe contábil/fiscal referente às diretrizes da RFB e Comitê Gestor para garantir o aproveitamento integral de créditos no Lucro Real."
+      "titulo": "Reestruturação e Treinamento da Área Tributária",
+      "detalhe": "Capacitar a equipe tributária e adaptar a arquitetura de software contábil/fiscal às normas de harmonização expedidas pelo Comitê Gestor do IBS e pela RFB para evitar custos operacionais exorbitantes decorrentes de inadequação de última hora."
     }
   ],
   "novas_normas": [
     {
       "tipo": "Ato",
-      "titulo": "Disponibilização do Ambiente Piloto da CBS e DeRE",
-      "descricao": "Liberação pela Receita Federal do ambiente piloto para testes de emissão e apuração da CBS com a inclusão da Declaração de Regimes Especiais (DeRE), fundamental para a simulação de impactos fiscais nas empresas.",
+      "titulo": "Liberação do Ambiente Piloto da CBS com DeRE",
+      "descricao": "Disponibilização do ambiente piloto da Contribuição sobre Bens e Serviços (CBS) pela Receita Federal, contemplando a funcionalidade da Declaração de Redução ou Isenção (DeRE) para testes operacionais pelas empresas do Lucro Real.",
       "link": "https://www.reformatributaria.com/iva/receita-libera-para-todas-as-empresas-ambiente-piloto-da-cbs-com-inclusao-da-dere-acesse/",
       "instituicao": "RFB"
     },
     {
       "tipo": "Ato",
-      "titulo": "Diretrizes de Orientação para Destaque de CBS e IBS",
-      "descricao": "Programa de orientação técnica liderado pela Receita Federal, Comitê Gestor do IBS e CFC focado em padronizar as regras de preenchimento e destaque de CBS/IBS em documentos fiscais.",
-      "link": "https://www.reformatributaria.com/documentos-fiscais/receita-federal-e-comite-gestor-do-ibs-e-cfc-vao-orientar-25-mil-contadores-sobre-destaque-de-cbs-ibs/",
-      "instituicao": "RFB / Comitê Gestor do IBS / CFC"
+      "titulo": "Indicação de Membros para Harmonização Tributária IBS/CBS",
+      "descricao": "Nomeação dos representantes do Comitê Gestor do IBS que atuarão em conjunto com a Receita Federal na harmonização técnica, infralegal e de sistemas do Imposto sobre Bens e Serviços (IBS) e da CBS.",
+      "link": "https://www.reformatributaria.com/iva/comite-gestor-do-ibs-indica-membros-que-farao-harmonizacao-tributaria-com-a-cbs/",
+      "instituicao": "Comitê Gestor do IBS"
     }
   ],
   "noticias": [
@@ -110,6 +110,13 @@
     },
     {
       "data": "23/11/2026",
+      "titulo": "Comitê Gestor do IBS indica membros que farão harmonização tributária com a CBS",
+      "fonte": "Portal da Reforma Tributária",
+      "url": "https://www.reformatributaria.com/iva/comite-gestor-do-ibs-indica-membros-que-farao-harmonizacao-tributaria-com-a-cbs/",
+      "novo": true
+    },
+    {
+      "data": "23/11/2026",
       "titulo": "Receita libera para todas as empresas ambiente piloto da CBS com inclusão da DeRE; acesse",
       "fonte": "Portal da Reforma Tributária",
       "url": "https://www.reformatributaria.com/iva/receita-libera-para-todas-as-empresas-ambiente-piloto-da-cbs-com-inclusao-da-dere-acesse/"
@@ -143,13 +150,6 @@
       "titulo": "Receita Federal e Comitê Gestor do IBS e CFC vão orientar 25 mil contadores sobre destaque de CBS/IBS",
       "fonte": "Portal da Reforma Tributária",
       "url": "https://www.reformatributaria.com/documentos-fiscais/receita-federal-e-comite-gestor-do-ibs-e-cfc-vao-orientar-25-mil-contadores-sobre-destaque-de-cbs-ibs/"
-    },
-    {
-      "data": "19/11/2026",
-      "titulo": "Serpro recebe prêmio na China por plataforma da reforma tributária",
-      "fonte": "Portal da Reforma Tributária",
-      "url": "https://www.reformatributaria.com/tecnologia/serpro-recebe-premio-na-china-por-plataforma-da-reforma-tributaria/",
-      "novo": true
     }
   ],
   "nts_criticas_lucro_real": [
